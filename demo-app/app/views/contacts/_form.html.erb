@@ -29,7 +29,7 @@
   </div>
   <div class="field">
     <%= f.label :lead_type %><br />
-    <%= f.text_field :lead_type %>
+    <%= select(:contact, :lead_type, LeadType::LEAD_TYPES) %>
   </div>
   <div class="actions">
     <%= f.submit %>
