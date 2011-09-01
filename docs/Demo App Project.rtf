@@ -1,0 +1,275 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138
+\stshfdbch0{\fonttbl\f0\fnil\fcharset0 Cochin;}
+{\colortbl;\red255\green255\blue255;}
+
+{\stylesheet {\s0 Normal;}}
+{\info
+{\title Demo App Project}
+{\author Jim Holmes}
+{\creatim\yr2011\mo8\dy7\hr18\min18\sec46\timesinceref334448326}
+{\revtim\yr2011\mo8\dy7\hr18\min18\sec46\timesinceref334448326}}\margl1440\margr1440\viewkind1
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\b\fs28 \cf0 \widowctrl 
+
+\pgnrestart\pgnstarts1
+{\header {\pard\qr {\f0 \fs28 Demo App Project\b0 \i0 \ul0 \par}}}
+{\footer {\pard\qc {\f0 \fs28 {\chpgn}\b0 \i0 \ul0 \par}}}
+
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl360\slmult1\pardirnatural
+\cf0 {\*\bkmkstart Overview}Overview{\*\bkmkend Overview}\
+\pard\tx720\tx1440\tx2160\fi360\sl288\slmult1\pardirnatural
+
+\b0 \cf0 Demo app is for complete standalone demos showing off features of Test Studio.\
+\
+The app has to focus on enabling repeatable demos in as simple an environment as possible.\
+\
+No reliance on databases or external services \'97 eg no Internet link required.\
+\pard\tx720\tx1440\tx2160\sl288\slmult1\pardirnatural\qc
+\cf0 ###\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl360\slmult1\pardirnatural
+
+\b \cf0 {\*\bkmkstart System_Description}System Description{\*\bkmkend System_Description}\
+\pard\tx720\tx1440\tx2160\fi360\sl288\slmult1\pardirnatural
+
+\b0 \cf0 This system will demonstrate a Customer Relations Management system. We will have users of the system and customers we are tracking.\
+\pard\tx720\tx1440\tx2160\sl288\slmult1\pardirnatural\qc
+\cf0 ###\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl360\slmult1\pardirnatural
+
+\b \cf0 {\*\bkmkstart System_Data}System Data{\*\bkmkend System_Data}\
+\pard\tx720\tx1440\tx2160\fi360\sl288\slmult1\pardirnatural
+
+\b0 \cf0 The system shall load all data from flat XML files.\
+\
+Persistence back to the file is still TBD. Having only session-based persistence is an advantage since we don\'92t have to reset anything; however, it may be a problem when trying to do more complex tests.\
+\
+Data should be stored for contacts and system users (two separate data types).\
+\
+Contacts should store fname, lname, e-mail, URL for a LinkedIn profile, and a lead type which is hot, neutral, or cold.\
+\
+The LinkedIn profile pages will simply load a static file from disk, so we may need a hidden/non-displayed field to reference the file on disk.\
+\page \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl360\slmult1\pardirnatural
+
+\b\fs32 \cf0 {\*\bkmkstart User_stories}User stories{\*\bkmkend User_stories}\
+
+\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl360\slmult1\pardirnatural
+
+\b\fs28 \cf0 {\*\bkmkstart Login}Login{\*\bkmkend Login}\
+\pard\tx720\tx1440\tx2160\fi360\sl288\slmult1\pardirnatural
+
+\b0 \cf0 As a system user,\
+I want to log on to the system,\
+So that I can interact with my customer data\
+\
+\
+The system must have a logon link on the screen. Clicking that link will pop up a new modal which prompts for a username and password. A Logon button will be displayed as disabled until the username and password are entered.\
+\
+Notes: password should just be plain text in the user / config file. SIMPLE.\
+\
+Demo actions supported\
+* Modal\
+* Disabled element (login button disabled until username and password entered)\
+\pard\tx720\tx1440\tx2160\sl288\slmult1\pardirnatural\qc
+\cf0 ###\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl360\slmult1\pardirnatural
+
+\b \cf0 {\*\bkmkstart Load_Help_Video}Load Help Video{\*\bkmkend Load_Help_Video}\
+\pard\tx720\tx1440\tx2160\fi360\sl288\slmult1\pardirnatural
+
+\b0 \cf0 As a logged on system user,\
+I want to click a link and load a help video\
+So that I can get past a confusing area of the system\
+\
+The system user should be able to click a link which launches an extremely short video (15 seconds?). The sole purpose of this is to simply show HTML 5 video and how we test around it.\
+\
+Demo actions\
+* HTML5 video tag\
+\page \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl360\slmult1\pardirnatural
+
+\b\fs32 \cf0 {\*\bkmkstart Contact_Grid}Contact Grid{\*\bkmkend Contact_Grid}\
+
+\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl360\slmult1\pardirnatural
+
+\b\fs28 \cf0 {\*\bkmkstart Hoverover_Note_field}Hoverover Note field{\*\bkmkend Hoverover_Note_field}\
+\pard\tx720\tx1440\tx2160\fi360\sl288\slmult1\pardirnatural
+
+\b0 \cf0 As a logged on system user, \
+I want to hover over a contact\'92s Notes icon,\
+So that I can edit the notes when a popup appears\
+\
+This story needs only be implemented in one grid, whichever type it\'92s easiest to do it in. (Thought: we should likely avoid using the RAD Grid in order to show testing this 
+\i\b without
+\i0\b0  using our custom translators.)\
+\
+Demo Actions\
+* Show waiting for a hover up to appear\
+* Show distance thresholds for the pop up\
+\pard\tx720\tx1440\tx2160\sl288\slmult1\pardirnatural\qc
+\cf0 ###\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl360\slmult1\pardirnatural
+
+\b \cf0 {\*\bkmkstart Bad_HTML_DOM}Bad HTML DOM{\*\bkmkend Bad_HTML_DOM}\
+\pard\tx720\tx1440\tx2160\fi360\sl288\slmult1\pardirnatural
+
+\b0 \cf0 The badly done HTML DOM should be something with the following bad practices:\
+* Table-driven layout\
+	** Tables within tables highly encouraged\
+* Large number of nested divs\
+* No useful CSS classes\
+* No useful ID values inside the table(s) \'97 look to a DIV upstream\
+\
+\
+This is a coder\'92s chance to put to practice all the awful stuff you\'92ve seen in practice maintaining other people\'92s lousy sites.\
+\pard\tx720\tx1440\tx2160\sl288\slmult1\pardirnatural\qc
+\cf0 ###\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl360\slmult1\pardirnatural
+
+\b \cf0 {\*\bkmkstart Silverlight_Grid}Silverlight Grid{\*\bkmkend Silverlight_Grid}\
+\pard\tx720\tx1440\tx2160\fi360\sl288\slmult1\pardirnatural
+
+\b0 \cf0 This grid will display the contacts in a non-Telerik Silverlight grid. No other 3
+\fs18 \super rd
+\fs28 \nosupersub  party grid should be used. Look for standard MS components or just hack one together.\
+\pard\tx720\tx1440\tx2160\sl288\slmult1\pardirnatural\qc
+\cf0 ###\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl360\slmult1\pardirnatural
+
+\b \cf0 {\*\bkmkstart RAD_Grid}RAD Grid{\*\bkmkend RAD_Grid}\
+\pard\tx720\tx1440\tx2160\fi360\sl288\slmult1\pardirnatural
+
+\b0 \cf0 Use Telerik controls ({\field{\*\fldinst{HYPERLINK "http://ASP.NET"}}{\fldrslt ASP.NET}}?) to show the grid.\
+\
+Using {\field{\*\fldinst{HYPERLINK "http://ASP.NET"}}{\fldrslt ASP.NET}} controls will let us show this separate from Silverlight.\
+\pard\tx720\tx1440\tx2160\sl288\slmult1\pardirnatural\qc
+\cf0 ###\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl360\slmult1\pardirnatural
+
+\b \cf0 {\*\bkmkstart HTML5_Grid}HTML5 Grid{\*\bkmkend HTML5_Grid}\
+\pard\tx720\tx1440\tx2160\fi360\sl288\slmult1\pardirnatural
+
+\b0 \cf0 Use HTML5 to show the grid.\
+\pard\tx720\tx1440\tx2160\sl288\slmult1\pardirnatural\qc
+\cf0 ###\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl360\slmult1\pardirnatural
+
+\b \cf0 {\*\bkmkstart Grid_overview}Grid overview{\*\bkmkend Grid_overview}\
+\pard\tx720\tx1440\tx2160\fi360\sl288\slmult1\pardirnatural
+
+\b0 \cf0 The system should grids of contacts using several different technologies\
+* HTML 5\
+* Silverlight\
+* RAD Grid\
+* Badly-formatted HTML DOM\
+\
+The same data must be displayed in each grid (see separate user stories). The point is to demo how we can test across several different rendering methods.\
+\
+Each grid should display lname, fname, e-mail, lead type icon. A link or button should be displayed for Edit.\
+\
+Each grid should support \
+* Editing a user (pop up to new window)\
+* Drag and drop lead type icon\
+\
+ONE grid type, whichever is easiest to implement in, should have a Note icon which displays an editable hoverover popup. See separate user story.\
+\page \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl360\slmult1\pardirnatural
+
+\b\fs32 \cf0 {\*\bkmkstart Common_Grid_user_stories}Common Grid user stories{\*\bkmkend Common_Grid_user_stories}\
+
+\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl360\slmult1\pardirnatural
+
+\b\fs28 \cf0 {\*\bkmkstart ViewEdit_Contact}View/Edit Contact{\*\bkmkend ViewEdit_Contact}\
+\pard\tx720\tx1440\tx2160\fi360\sl288\slmult1\pardirnatural
+
+\b0 \cf0 As a logged on system user,\
+I want to view/edit a contact\
+So that I can see that contact\'92s information and change if necessary\
+\
+\
+Clicking \'93View Contact\'94 from any grid should open that contact in a new window.\
+\
+Editing a user (no extra action needed, View opens in edit mode) lets you change the user\'92s info. Also, display the LinkedIn profile in an iFrame\
+\
+Demo Actions:\
+* New window\
+* Drag and Drop of lead type\
+* Display in iFrame \
+\pard\tx720\tx1440\tx2160\sl288\slmult1\pardirnatural\qc
+\cf0 ###\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl360\slmult1\pardirnatural
+
+\b \cf0 {\*\bkmkstart Change_contact_lead_type}Change contact lead type{\*\bkmkend Change_contact_lead_type}\
+\pard\tx720\tx1440\tx2160\fi360\sl288\slmult1\pardirnatural
+
+\b0 \cf0 As a signed on user,\
+I want to change a contact\'92s lead type from the grid\
+So I can demonstrate dealing with an Ajax call\
+\
+A user clicks a \'93Lead Type\'94 link in a contact\'92s row. An AJAX menu pops up with choices of \'93Hot, Neutral, and Cold.\'94 User selects a type, that type is persisted (Session? Flat file?)\
+\
+Demo Actions\
+* Show testing of an AJAX call\
+\pard\tx720\tx1440\tx2160\sl288\slmult1\pardirnatural\qc
+\cf0 ###\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl360\slmult1\pardirnatural
+
+\b \cf0 {\*\bkmkstart Export_to_PDF_or_Excel}Export to PDF or Excel{\*\bkmkend Export_to_PDF_or_Excel}\
+\pard\tx720\tx1440\tx2160\fi360\sl288\slmult1\pardirnatural
+
+\b0 \cf0 As a logged in user, \
+I want to export the contact grid to Excel\
+So that I can demonstrate dealing with OS browse dialogs\
+\
+This feature should be the same across all grid types, just launch common functionality.\
+\
+The user clicks a button to export the grid to the file system. Browser launches OS-level browse dialog. Show that we can successfully deal with automating that.\
+\
+
+\i\b NOTE:
+\i0\b0  We don\'92t even have to export to Excel. Just fake that. We don\'92t care if we get something on the file system, just that we deal with the \'93Save As\'85\'94 dialog.\
+\
+Demo actions:\
+* Show we deal with the OS dialog\
+\pard\tx720\tx1440\tx2160\sl288\slmult1\pardirnatural\qc
+\cf0 ###\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl360\slmult1\pardirnatural
+
+\b \cf0 {\*\bkmkstart Treeview_to_filter_users_by_lead_type}Treeview to filter users by lead type{\*\bkmkend Treeview_to_filter_users_by_lead_type}\
+\pard\tx720\tx1440\tx2160\fi360\sl288\slmult1\pardirnatural
+
+\b0 \cf0 As a logged on system user\
+I want a treeview to filter contacts by lead type\
+So I can quickly see what contacts are in what category\
+\
+\
+\page \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl360\slmult1\pardirnatural
+
+\b\fs32 \cf0 {\*\bkmkstart EditAdd_Contact}Edit/Add Contact{\*\bkmkend EditAdd_Contact}\
+
+\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl360\slmult1\pardirnatural
+
+\b\fs28 \cf0 {\*\bkmkstart Add_New_Contact}Add New Contact{\*\bkmkend Add_New_Contact}\
+\pard\tx720\tx1440\tx2160\fi360\sl288\slmult1\pardirnatural
+
+\b0 \cf0 As a logged on user\
+I want to add a new contact\
+So that I can demonstrate key pieces of test functionality\
+\
+From the main UI, click an icon. The add new user screen appears in a new window.\
+Enter user fields for fname, lname, e-mail address, LinkedIn URL\
+Use drag and drop to select a lead type\
+\
+Also use a check box to use hidden/visible fields.\
+	*Check \'93Gov\'92t Contact?\'94\
+		** When checked, make visible two previously hidden fields \'93DOD\'94 and \'93Other\'94\
+\
+\
+Demo Actions\
+* Work with new window\
+* HTML 5 validation of e-mail field\
+* Drag and drop of lead type icon\
+* Image validation of lead type icon\
+}
