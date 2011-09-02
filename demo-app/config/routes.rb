@@ -4,7 +4,6 @@ DemoApp::Application.routes.draw do
   get 'login' => 'sessions#new', :as => 'login'
 
   resources :contacts
-  resources :users
   resources :sessions
 
   # The priority is based upon order of creation:
