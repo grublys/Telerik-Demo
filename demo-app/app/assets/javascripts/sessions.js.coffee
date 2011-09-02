@@ -5,16 +5,16 @@
 $ ->
   $('#login_button').attr 'disabled', true
   $('#username').keyup ->
-    if $('#username').val() != '' and $('#password').val() != ''
-      $('#login_button').attr 'disabled', false
+    if login_allowed()
+      enable_login()
     else
-      $('#login_button').attr 'disabled', true
+      disable_login()
 
   $('#password').keyup ->
-    if $('#username').val() != '' and $('#password').val() != ''
-      $('#login_button').attr 'disabled', false
+    if login_allowed()
+      enable_login()
     else
-      $('#login_button').attr 'disabled', true
+      disable_login()
 
   $('#login_dialog').dialog(
     autoOpen: false,
@@ -25,3 +25,6 @@ $ ->
   $('#show_login_dialog').click ->
     $('#login_dialog').dialog 'open'
 
+login_allowed = () -> $('#username').val() != '' and $('#password').val() != ''
+enable_login = () -> $('#login_button').attr 'disabled', false
+disable_login = () -> $('#login_button').attr 'disabled', true
