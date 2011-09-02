@@ -7,7 +7,7 @@ $ ->
     autoOpen: false,
     height: 200,
     width: 250,
-    modal: true
-  )
+    modal: true)
+
   $('#show_login_dialog').click ->
     $('#login_dialog').dialog 'open'
