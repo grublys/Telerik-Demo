@@ -14,6 +14,9 @@ Contact.create(first_name: 'Jane', last_name: 'Doe',
                email: 'jane.doe@example.com', linkedin_profile: 'http://linkedin.com/in/jane-doe',
                lead_type: 'NEUTRAL')
 
+User.delete_all
+User.create(username: 'testuser', password: 'abc123')
+
 # TEMPLATE
 # Contact.create(first_name: '', last_name: '',
 #                email: '', linkedin_profile: '',

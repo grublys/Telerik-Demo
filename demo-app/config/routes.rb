@@ -1,7 +1,11 @@
 DemoApp::Application.routes.draw do
   root :to => 'welcome#index'
+  get 'logout' => 'sessions#destroy', :as => 'logout'
+  get 'login' => 'sessions#new', :as => 'login'
 
   resources :contacts
+  resources :users
+  resources :sessions
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
