@@ -5,16 +5,10 @@
 $ ->
   $('#login_button').attr 'disabled', true
   $('#username').keyup ->
-    if login_allowed()
-      enable_login()
-    else
-      disable_login()
+    if login_allowed() then enable_login() else disable_login()
 
   $('#password').keyup ->
-    if login_allowed()
-      enable_login()
-    else
-      disable_login()
+    if login_allowed() then enable_login() else disable_login()
 
   $('#login_dialog').dialog(
     autoOpen: false,
