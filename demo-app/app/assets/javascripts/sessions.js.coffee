@@ -3,7 +3,8 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 #
 $ ->
-  $('#login_button').attr 'disabled', true
+  disable_login()
+
   $('#username').keyup ->
     if login_allowed() then enable_login() else disable_login()
 
