@@ -1,0 +1,59 @@
+<mockup version="1.0" skin="sketch" measuredW="1416" measuredH="1045" mockupW="1280" mockupH="1024">
+  <controls>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="126" y="11" w="1280" h="1024" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Telerik%20Demo%20App%0Ahttp%3A//localhost</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Image" x="145" y="91" w="386" h="95" measuredW="77" measuredH="79" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Telerik%20Logo</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::DataGrid" x="145" y="201" w="1246" h="375" measuredW="835" measuredH="116" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>First%20Name%2C%20Last%20Name%2C%20Email%2C%20LinkedIn%2C%20Notes%2C%20Lead%20Type%0ATodd%2C%20Kaufman%2C%20toddkaufman@gmail.com%2C%20http%3A//www.linkedin.com/pub/todd-kaufman/2/a58/1b1%2C%20%2C%0AJim%2C%20Holmes%2C%20jim@iterativerose.com%2C%20http%3A//www.linkedin.com/pub/jim-holmes/2/124/b02%2C%20%2C%0AMatt%2C%20Boston%2C%20mboston@pillartechnology.com%2C%20http%3A//www.linkedin.com/in/mboston%2C%20%2C</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::LinkBar" x="1204" y="91" w="-1" h="-1" measuredW="187" measuredH="23" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Home%2C%20Help%20Video%2C%20Logout</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::ComboBox" x="1287" y="227" w="78" h="-1" measuredW="52" measuredH="23" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Hot</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::ComboBox" x="1287" y="259" w="78" h="-1" measuredW="52" measuredH="23" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Hot</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::ComboBox" x="1287" y="290" w="-1" h="-1" measuredW="78" measuredH="23" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Neutral</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Link" x="1223" y="226" w="-1" h="-1" measuredW="39" measuredH="23" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Notes</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Link" x="1223" y="258" w="-1" h="-1" measuredW="39" measuredH="23" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Notes</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Link" x="1223" y="289" w="-1" h="-1" measuredW="39" measuredH="23" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Notes</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Button" x="1282" y="591" w="-1" h="-1" measuredW="109" measuredH="28" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Export%20to%20PDF</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
