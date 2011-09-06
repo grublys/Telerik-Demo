@@ -3,13 +3,13 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 #
 $ ->
-  disable_login()
+  toggle_login_button()
 
   $('#username').keyup ->
-    if login_allowed() then enable_login() else disable_login()
+    toggle_login_button()
 
   $('#password').keyup ->
-    if login_allowed() then enable_login() else disable_login()
+    toggle_login_button()
 
   $('#login_dialog').dialog(
     autoOpen: false,
@@ -20,6 +20,7 @@ $ ->
   $('#show_login_dialog').click ->
     $('#login_dialog').dialog 'open'
 
+toggle_login_button = () -> if login_allowed() then enable_login() else disable_login()
 login_allowed = () -> $('#username').val() != '' and $('#password').val() != ''
 enable_login = () -> $('#login_button').attr 'disabled', false
 disable_login = () -> $('#login_button').attr 'disabled', true
