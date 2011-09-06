@@ -8,11 +8,7 @@
 </head>
 <body>
 
-  <% if current_user %>
-    <%= link_to 'Logout', logout_path %>
-  <% else %>
-    <a href='#' id='show_login_dialog'>Login</a>
-  <% end %>
+  <%= render :partial => 'sessions/login' %>
 
   <%= yield %>
 
