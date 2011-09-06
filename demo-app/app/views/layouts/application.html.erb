@@ -14,6 +14,10 @@
     <%= render :partial => 'sessions/login' %>
   </div>
 
+  <% if not current_user %>
+    <%= render :partial => 'sessions/form' %>
+  <% end %>
+
   <%= yield %>
 
 </body>
