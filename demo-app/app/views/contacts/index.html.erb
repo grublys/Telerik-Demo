@@ -1,3 +1,7 @@
+<% lead_types = { 'HOT' => 'hot-icon.png',
+                  'COLD' => 'cold-icon.png',
+                  'NEUTRAL' => 'neutral-icon.png' } %>
+
 <p id="notice"><%= notice %></p>
 
 <table>
@@ -18,7 +22,7 @@
     <td><%= contact.last_name %></td>
     <td><%= contact.email %></td>
     <td><%= contact.linkedin_profile %></td>
-    <td><%= contact.lead_type %></td>
+    <td><%= image_tag lead_types[contact.lead_type], :size => '13x13' %></td>
     <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
   </tr>
 <% end %>
