@@ -1,3 +1,40 @@
+<script type='text/javascript'>
+$(document).ready(function() {
+  function handleDragStart(e) {
+    this.style.opacity = '0.4';
+  }
+
+  function handleDragOver(e) {
+    if (e.preventDefault) {
+      e.preventDefault(); // Necessary. Allows us to drop.
+    }
+
+    e.dataTransfer.dropEffect = 'move';
+
+    return false;
+  }
+
+  function handleDragEnter(e) {
+    this.className = 'over';
+  }
+
+  function handleDragLeave(e) {
+    this.className = '';
+  }
+
+  var cols = document.querySelectorAll('#columns .column');
+  [].forEach.call(cols, function(col) {
+      col.addEventListener('dragstart', handleDragStart, false);
+  });
+
+  var drop_targets = document.querySelectorAll('#drop_target');
+  [].forEach.call(drop_targets, function(tag) {
+    tag.addEventListener('dragenter' , handleDragEnter , false);
+    tag.addEventListener('dragover'  , handleDragOver  , false);
+    tag.addEventListener('dragleave' , handleDragLeave , false);
+  });
+});
+</script>
 <%= form_for(@contact) do |f| %>
   <% if @contact.errors.any? %>
     <div id="error_explanation">
@@ -25,14 +62,21 @@
   </div>
   <div class="field">
     <%= f.label :linkedin_profile %><br />
-    <%= f.text_field :linkedin_profile %>
+    <%= f.text_field :linkedin_profile %> <%= link_to 'View', 'linkein_profile' %>
+  </div>
+  <div id="columns">
+    <div class="column" draggable="true"><%= image_tag 'hot-icon.png'     , :size => '23x23' %></div>
+    <div class="column" draggable="true"><%= image_tag 'neutral-icon.png' , :size => '23x23' %></div>
+    <div class="column" draggable="true"><%= image_tag 'cold-icon.png'    , :size => '23x23' %></div>
   </div>
   <div class="field">
     <%= f.label :lead_type %><br />
-    <%= select(:contact, :lead_type, LeadType::LEAD_TYPES) %>
+    <div id="drop_target">
+      <%= image_tag lead_type_icon(@contact.lead_type), :size => '23x23' %>
+    </div>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
-  <%= link_to 'Cancel', contacts_path %>
+  <%= link_to_function 'Cancel', 'window.close();' %>
 <% end %>
