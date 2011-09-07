@@ -23,6 +23,7 @@
     <td><%= contact.email %></td>
     <td><%= contact.linkedin_profile %></td>
     <td><%= image_tag lead_types[contact.lead_type], :size => '13x13' %></td>
+    <td><%= link_to 'View', contact %></td>
     <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
   </tr>
 <% end %>
