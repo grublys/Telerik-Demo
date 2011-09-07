@@ -2,6 +2,9 @@
 $(document).ready(function() {
   function handleDragStart(e) {
     this.style.opacity = '0.4';
+
+    e.dataTransfer.effectAllowed = 'move';
+    e.dataTransfer.setData('text/html', this.innerHTML);
   }
 
   function handleDragOver(e) {
@@ -15,11 +18,39 @@ $(document).ready(function() {
   }
 
   function handleDragEnter(e) {
-    this.className = 'over';
+    $(this).addClass('over');
   }
 
   function handleDragLeave(e) {
-    this.className = '';
+    $(this).removeClass('over');
+  }
+
+  function handleDrop(e) {
+    if (e.stopPropagation) {
+      e.stopPropagation(); // stops the browser from redirecting.
+    }
+
+    var lead_types = new Object();
+    lead_types['hot-icon.png'] = 'HOT';
+    lead_types['neutral-icon.png'] = 'NEUTRAL';
+    lead_types['cold-icon.png'] = 'COLD';
+
+    this.innerHTML = e.dataTransfer.getData('text/html');
+    var transferredIcon = getIcon(e.dataTransfer.getData('text/html'));
+    $('#contact_lead_type').val(lead_types[transferredIcon]);
+
+    return false;
+  }
+
+  function getIcon(data) {
+    var image_src = /(hot-icon\.png|neutral-icon\.png|cold-icon\.png)/i.exec(data);
+    return image_src[0];
+  }
+
+  function handleDragEnd(e) {
+    [].forEach.call(cols, function (col) {
+      $(col).removeClass('over');
+    });
   }
 
   var cols = document.querySelectorAll('#columns .column');
@@ -28,10 +59,12 @@ $(document).ready(function() {
   });
 
   var drop_targets = document.querySelectorAll('#drop_target');
-  [].forEach.call(drop_targets, function(tag) {
-    tag.addEventListener('dragenter' , handleDragEnter , false);
-    tag.addEventListener('dragover'  , handleDragOver  , false);
-    tag.addEventListener('dragleave' , handleDragLeave , false);
+  [].forEach.call(drop_targets, function(target) {
+    target.addEventListener('dragenter' , handleDragEnter , false);
+    target.addEventListener('dragover'  , handleDragOver  , false);
+    target.addEventListener('dragleave' , handleDragLeave , false);
+    target.addEventListener('drop'      , handleDrop      , false);
+    target.addEventListener('dragend'   , handleDragEnd   , false);
   });
 });
 </script>
@@ -65,15 +98,16 @@ $(document).ready(function() {
     <%= f.text_field :linkedin_profile %> <%= link_to 'View', 'linkein_profile' %>
   </div>
   <div id="columns">
-    <div class="column" draggable="true"><%= image_tag 'hot-icon.png'     , :size => '23x23' %></div>
-    <div class="column" draggable="true"><%= image_tag 'neutral-icon.png' , :size => '23x23' %></div>
-    <div class="column" draggable="true"><%= image_tag 'cold-icon.png'    , :size => '23x23' %></div>
+    <%= image_tag 'hot-icon.png'     , :size => '23x23' , 'draggable' => true %>
+    <%= image_tag 'neutral-icon.png' , :size => '23x23' , 'draggable' => true %>
+    <%= image_tag 'cold-icon.png'    , :size => '23x23' , 'draggable' => true %>
   </div>
   <div class="field">
     <%= f.label :lead_type %><br />
     <div id="drop_target">
       <%= image_tag lead_type_icon(@contact.lead_type), :size => '23x23' %>
     </div>
+    <%= f.hidden_field :lead_type %>
   </div>
   <div class="actions">
     <%= f.submit %>
