@@ -1,3 +1,8 @@
+<script type='text/javascript'>
+  function openInIframe() {
+    $('#linkedin_frame').attr('src', '/static/Jim_Holmes_LinkedIn.html');
+  }
+</script>
 <%= form_for(@contact) do |f| %>
   <% if @contact.errors.any? %>
     <div id="error_explanation">
@@ -25,7 +30,7 @@
   </div>
   <div class="field">
     <%= f.label :linkedin_profile %><br />
-    <%= f.text_field :linkedin_profile %> <%= link_to 'View', 'linkein_profile' %>
+    <%= f.text_field :linkedin_profile %> <%= link_to_function 'View', 'openInIframe()' %>
   </div>
   <div id="lead_types">
     <%= image_tag 'hot-icon.png'     , :size => '23x23' , 'draggable' => true %>
@@ -42,5 +47,7 @@
   <div class="actions">
     <%= f.submit %>
   </div>
-  <%= link_to_function 'Cancel', 'window.close();' %>
+  <%= link_to_function 'Cancel', 'window.close()' %>
 <% end %>
+
+<%= render :partial => 'linkedin_frame' %>
