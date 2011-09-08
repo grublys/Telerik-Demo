@@ -25,13 +25,22 @@
   </div>
   <div class="field">
     <%= f.label :linkedin_profile %><br />
-    <%= f.text_field :linkedin_profile %>
+    <%= f.text_field :linkedin_profile %> <%= link_to 'View', 'linkein_profile' %>
+  </div>
+  <div id="lead_types">
+    <%= image_tag 'hot-icon.png'     , :size => '23x23' , 'draggable' => true %>
+    <%= image_tag 'neutral-icon.png' , :size => '23x23' , 'draggable' => true %>
+    <%= image_tag 'cold-icon.png'    , :size => '23x23' , 'draggable' => true %>
   </div>
   <div class="field">
     <%= f.label :lead_type %><br />
-    <%= select(:contact, :lead_type, LeadType::LEAD_TYPES) %>
+    <div id="drop_target">
+      <%= image_tag lead_type_icon(@contact.lead_type), :size => '23x23' %>
+    </div>
+    <%= f.hidden_field :lead_type %>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
+  <%= link_to_function 'Cancel', 'window.close();' %>
 <% end %>

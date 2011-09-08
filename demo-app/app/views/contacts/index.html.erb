@@ -1,11 +1,11 @@
-<h1>Listing contacts</h1>
+<p id="notice"><%= notice %></p>
 
 <table>
   <tr>
-    <th>First name</th>
-    <th>Last name</th>
+    <th>First Name</th>
+    <th>Last Name</th>
     <th>Email</th>
-    <th>Linkedin profile</th>
+    <th>LinkedIn</th>
     <th>Lead type</th>
     <th></th>
     <th></th>
@@ -13,19 +13,17 @@
   </tr>
 
 <% @contacts.each do |contact| %>
-  <tr>
+  <tr class="<%= cycle('even', 'odd') %>">
     <td><%= contact.first_name %></td>
     <td><%= contact.last_name %></td>
     <td><%= contact.email %></td>
     <td><%= contact.linkedin_profile %></td>
-    <td><%= contact.lead_type %></td>
-    <td><%= link_to 'Show', contact %></td>
-    <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
-    <td><%= link_to 'Destroy', contact, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= image_tag lead_type_icon(contact.lead_type), :size => '13x13' %></td>
+    <td><%= link_to 'View Contact', edit_contact_path(contact), 'target' => '_blank' %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Contact', new_contact_path %>
+<%= link_to 'New Contact', new_contact_path, 'target' => '_blank' %>

@@ -8,7 +8,15 @@
 </head>
 <body>
 
-  <%= render :partial => 'sessions/login' %>
+  <div id="top-menu">
+    <%= link_to 'Home', root_path %> |
+    <%= link_to 'Help', help_path %> |
+    <%= render :partial => 'sessions/login' %>
+  </div>
+
+  <% if not current_user %>
+    <%= render :partial => 'sessions/form' %>
+  <% end %>
 
   <%= yield %>
 

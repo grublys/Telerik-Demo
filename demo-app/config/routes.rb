@@ -1,7 +1,9 @@
 DemoApp::Application.routes.draw do
-  root :to => 'welcome#index'
+  root :to => 'contacts#index'
+  get 'welcome' => 'welcome#index', :as => 'welcome'
   get 'logout' => 'sessions#destroy', :as => 'logout'
   get 'login' => 'sessions#new', :as => 'login'
+  get 'help' => 'help#index', :as => 'help'
 
   resources :contacts
   resources :sessions
