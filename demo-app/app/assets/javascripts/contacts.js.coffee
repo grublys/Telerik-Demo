@@ -27,9 +27,7 @@ handleDragStart = (e) ->
   e.dataTransfer.setData('text/html', @innerHTML)
 
 handleDragOver = (e) ->
-  if e.preventDefault()
-    e.preventDefault # Necessary. Allows us to drop.
-
+  e.preventDefault() if e.preventDefault() # Necessary. Allows us to drop.
   e.dataTransfer.dropEffect = 'move'
 
 handleDragEnter = (e) ->
@@ -39,8 +37,7 @@ handleDragLeave = (e) ->
   $(this).removeClass 'over'
 
 handleDrop = (e) ->
-  if e.stopPropagation()
-    e.stopPropagation # stops the browser from redirecting.
+  e.stopPropagation() if e.stopPropagation() # stops the browser from redirecting.
 
   lead_types = new Array()
   lead_types['hot-icon.png'] = 'HOT'
