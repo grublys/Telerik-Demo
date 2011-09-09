@@ -60,3 +60,6 @@ handleDragEnd = (e) ->
 getIcon = (data) ->
   /(hot-icon\.png|neutral-icon\.png|cold-icon\.png)/i.exec(data)[0]
 
+@openInIframe = () ->
+  $('#linkedin_frame').attr('src', '/static/Jim_Holmes_LinkedIn.html')
+
