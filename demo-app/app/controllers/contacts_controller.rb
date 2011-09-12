@@ -80,4 +80,18 @@ class ContactsController < ApplicationController
       format.json { head :ok }
     end
   end
+
+  def update_lead_type
+    @contact = Contact.find(params[:id])
+    @contact.lead_type = params[:lead_type]
+
+    respond_to do |format|
+      if @contact.save
+        format.html { redirect_to contacts_url }
+        format.json { head :ok }
+      else
+        format.json { render json: @contact.errors, status: :unprocessable_entity }
+      end
+    end
+  end
 end

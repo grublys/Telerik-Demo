@@ -6,6 +6,24 @@ $ ->
   attachDraggables()
   attachDropTargets()
 
+  # index
+  $('#lead_type_dialog').dialog(
+    autoOpen: false,
+    height: 75,
+    width: 50,
+    modal: true)
+
+  $('.contact_lead_type').live('click', (e) ->
+    e.preventDefault()
+    $('#lead_types img').attr('data-contact_id', this.dataset.contact_id)
+    openLeadTypeSelection()
+  )
+
+  $('.lead_type_selection').live('click', (e) ->
+    e.preventDefault()
+    updateLeadType(this.dataset.contact_id, this.dataset.lead_type)
+  )
+
   # form
   handleClicks '#view_contact_linkedin_profile', openInIframe
 
@@ -62,4 +80,22 @@ getIcon = (data) ->
 
 openInIframe = () ->
   $('#linkedin_frame').attr('src', '/static/Jim_Holmes_LinkedIn.html')
+
+openLeadTypeSelection = () ->
+  $('#lead_type_dialog').dialog 'open'
+
+closeLeadTypeSelection = () ->
+  $('#lead_type_dialog').dialog 'close'
+
+updateLeadType = (id, lead_type) ->
+  $.ajax(
+    type: 'POST'
+    url: "/contacts/update_lead_type",
+    data: "id=#{id}&lead_type=#{lead_type}",
+    success: (data) -> updateLeadTypeSuccess(data),
+  )
+
+updateLeadTypeSuccess = (data) ->
+  closeLeadTypeSelection()
+  # refresh list
 

@@ -18,7 +18,7 @@
     <td><%= contact.last_name %></td>
     <td><%= contact.email %></td>
     <td><%= contact.linkedin_profile %></td>
-    <td><%= image_tag lead_type_icon(contact.lead_type), :size => '13x13' %></td>
+    <td><%= image_tag lead_type_icon(contact.lead_type), :size => '13x13', :class => 'contact_lead_type', 'data-contact_id' => contact.id %></td>
     <td><%= link_to 'View Contact', edit_contact_path(contact), 'target' => '_blank' %></td>
   </tr>
 <% end %>
@@ -27,3 +27,5 @@
 <br />
 
 <%= link_to 'New Contact', new_contact_path, 'target' => '_blank' %>
+
+<%= render :partial => 'lead_type_dialog' %>

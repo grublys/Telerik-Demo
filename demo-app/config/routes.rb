@@ -5,6 +5,8 @@ DemoApp::Application.routes.draw do
   get 'login' => 'sessions#new', :as => 'login'
   get 'help' => 'help#index', :as => 'help'
 
+  post '/contacts/update_lead_type' => 'contacts#update_lead_type', :as => 'contacts/update_lead_type'
+
   resources :contacts
   resources :sessions
 
