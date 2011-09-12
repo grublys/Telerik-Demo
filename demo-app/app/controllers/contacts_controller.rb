@@ -87,8 +87,7 @@ class ContactsController < ApplicationController
 
     respond_to do |format|
       if @contact.save
-        format.html { redirect_to contacts_url }
-        format.json { head :ok }
+        format.json { render json: @contact }
       else
         format.json { render json: @contact.errors, status: :unprocessable_entity }
       end

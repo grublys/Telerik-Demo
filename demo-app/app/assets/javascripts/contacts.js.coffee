@@ -3,9 +3,6 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 #
 $ ->
-  attachDraggables()
-  attachDropTargets()
-
   # index
   $('#lead_type_dialog').dialog(
     autoOpen: false,
@@ -15,16 +12,19 @@ $ ->
 
   $('.contact_lead_type').live('click', (e) ->
     e.preventDefault()
-    $('#lead_types img').attr('data-contact_id', this.dataset.contact_id)
+    $('#lead_types img').attr('data-contact_id', @dataset.contact_id)
     openLeadTypeSelection()
   )
 
   $('.lead_type_selection').live('click', (e) ->
     e.preventDefault()
-    updateLeadType(this.dataset.contact_id, this.dataset.lead_type)
+    updateLeadType(@dataset.contact_id, @dataset.lead_type)
   )
 
   # form
+  attachDraggables()
+  attachDropTargets()
+
   handleClicks '#view_contact_linkedin_profile', openInIframe
 
 attachDraggables = () ->
@@ -92,10 +92,15 @@ updateLeadType = (id, lead_type) ->
     type: 'POST'
     url: "/contacts/update_lead_type",
     data: "id=#{id}&lead_type=#{lead_type}",
+    dataType: 'json'
     success: (data) -> updateLeadTypeSuccess(data),
   )
 
 updateLeadTypeSuccess = (data) ->
   closeLeadTypeSelection()
-  # refresh list
+  refreshContactRow(data)
+
+refreshContactRow = (contact) ->
+  image_html = "<img class='contact_lead_type' data-contact_id='#{contact.id}' height='13' src='/assets/#{contact.lead_type.toLowerCase()}-icon.png' width='13' /></td>"
+  $("#lead_type_cell-#{contact.id}").html(image_html)
 
