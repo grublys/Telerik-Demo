@@ -6,6 +6,9 @@ $ ->
   attachDraggables()
   attachDropTargets()
 
+  # form
+  handleClicks '#view_contact_linkedin_profile', openInIframe
+
 attachDraggables = () ->
   draggables = $('#lead_types img')
   [].forEach.call(draggables, (draggable) ->
@@ -27,9 +30,7 @@ handleDragStart = (e) ->
   e.dataTransfer.setData('text/html', @innerHTML)
 
 handleDragOver = (e) ->
-  if e.preventDefault()
-    e.preventDefault # Necessary. Allows us to drop.
-
+  e.preventDefault() if e.preventDefault() # Necessary. Allows us to drop.
   e.dataTransfer.dropEffect = 'move'
 
 handleDragEnter = (e) ->
@@ -39,8 +40,7 @@ handleDragLeave = (e) ->
   $(this).removeClass 'over'
 
 handleDrop = (e) ->
-  if e.stopPropagation()
-    e.stopPropagation # stops the browser from redirecting.
+  e.stopPropagation() if e.stopPropagation() # stops the browser from redirecting.
 
   lead_types = new Array()
   lead_types['hot-icon.png'] = 'HOT'
@@ -60,6 +60,6 @@ handleDragEnd = (e) ->
 getIcon = (data) ->
   /(hot-icon\.png|neutral-icon\.png|cold-icon\.png)/i.exec(data)[0]
 
-@openInIframe = () ->
+openInIframe = () ->
   $('#linkedin_frame').attr('src', '/static/Jim_Holmes_LinkedIn.html')
 
