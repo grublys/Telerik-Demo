@@ -25,7 +25,7 @@
   </div>
   <div class="field">
     <%= f.label :linkedin_profile %><br />
-    <%= f.text_field :linkedin_profile %> <%= link_to_function 'View', 'openInIframe()' %>
+    <%= f.text_field :linkedin_profile %> <%= link_to 'View', '#', :id => 'view_contact_linkedin_profile' %>
   </div>
   <div id="lead_types">
     <%= image_tag 'hot-icon.png'     , :size => '23x23' , 'draggable' => true %>
