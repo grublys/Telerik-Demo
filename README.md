@@ -2,9 +2,9 @@ Clone the repo
 
 ```$ git clone git@github.com:PillarTechnology/Telerik-Demo.git```
 
-`cd` into the rails demo-app
+Install missing bundles
 
-```$ cd demo-app```
+```$ bundle install```
 
 Run the migrations
 
