@@ -28,6 +28,11 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
+group :production do
+  # heroku specific gems
+  gem 'pg'
+end
+
 group :test do
   # Pretty printed test output
   gem 'turn', :require => false
