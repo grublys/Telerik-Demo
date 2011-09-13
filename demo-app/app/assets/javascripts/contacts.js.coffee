@@ -77,13 +77,13 @@ openLeadTypeSelection = () ->
 closeLeadTypeSelection = () ->
   $('#lead_type_dialog').dialog 'close'
 
-updateLeadType = (id, lead_type) ->
+updateLeadType = (contact_id, lead_type) ->
   $.ajax(
-    type: 'POST'
+    type: 'POST',
     url: "/contacts/update_lead_type",
-    data: "id=#{id}&lead_type=#{lead_type}",
-    dataType: 'json'
-    success: (data) -> updateLeadTypeSuccess(data),
+    data: "id=#{contact_id}&lead_type=#{lead_type}",
+    dataType: 'json',
+    success: (data) -> updateLeadTypeSuccess(data)
   )
 
 updateLeadTypeSuccess = (data) ->
