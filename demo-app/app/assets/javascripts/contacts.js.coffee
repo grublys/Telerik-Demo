@@ -59,17 +59,10 @@ handleDragLeave = (e) ->
 
 handleDrop = (e) ->
   e.stopPropagation() if e.stopPropagation() # stops the browser from redirecting.
-
-  lead_types = new Array()
-  lead_types['hot-icon.png'] = 'HOT'
-  lead_types['neutral-icon.png'] = 'NEUTRAL'
-  lead_types['cold-icon.png'] = 'COLD'
-
   @innerHTML = e.dataTransfer.getData 'text/html'
-  transferredIcon = getIcon(e.dataTransfer.getData('text/html'))
-  $('#contact_lead_type').val(lead_types[transferredIcon])
 
 handleDragEnd = (e) ->
+  $('#contact_lead_type').val @dataset.lead_type
   drop_targets = $('#drop_target')
   [].forEach.call(drop_targets, (target) ->
     $(target).removeClass 'over'
