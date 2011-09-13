@@ -1,3 +1,6 @@
+require 'prawn'
+require 'json'
+
 class ContactsController < ApplicationController
   # GET /contacts
   # GET /contacts.json
@@ -92,5 +95,15 @@ class ContactsController < ApplicationController
         format.json { render json: @contact.errors, status: :unprocessable_entity }
       end
     end
+  end
+
+  def export
+    @contacts = Contact.all
+    Prawn::Document.generate('contacts.pdf') do |pdf|
+      @contacts.each do |contact|
+        pdf.text contact.to_json
+      end
+    end
+    send_file('contacts.pdf')
   end
 end

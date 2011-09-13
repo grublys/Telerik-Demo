@@ -4,6 +4,7 @@ DemoApp::Application.routes.draw do
   get 'logout' => 'sessions#destroy', :as => 'logout'
   get 'login' => 'sessions#new', :as => 'login'
   get 'help' => 'help#index', :as => 'help'
+  get '/contacts/export' => 'contacts#export', :as => 'export_contacts'
 
   post '/contacts/update_lead_type' => 'contacts#update_lead_type', :as => 'contacts/update_lead_type'
 
