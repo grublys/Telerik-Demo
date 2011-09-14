@@ -21,11 +21,21 @@
   </div>
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.text_field :email %>
+    <%= f.text_field :email, 'type' => 'email' %>
   </div>
   <div class="field">
     <%= f.label :linkedin_profile %><br />
     <%= f.text_field :linkedin_profile %> <%= link_to 'View', '#', :id => 'view_contact_linkedin_profile' %>
+  </div>
+  <div class="field">
+    <%= f.check_box :govt_contract %>
+    <%= f.label :govt_contract, "Gov't Contract?" %>
+  </div>
+  <div class="field" id="govt_contracts">
+    <%= f.check_box :dod %>
+    <%= f.label :dod, "DOD" %><br />
+    <%= f.check_box :other %>
+    <%= f.label :other, "Other" %>
   </div>
   <div id="lead_types">
     <%= image_tag 'hot-icon.png'     , :size => '23x23' , 'draggable' => true , 'data-lead_type' => 'HOT' %>
@@ -42,6 +52,5 @@
   <div class="actions">
     <%= f.submit %>
   </div>
-  <%= link_to_function 'Cancel', 'window.close()' %>
 <% end %>
 

@@ -27,6 +27,11 @@ $ ->
 
   handleClicks '#view_contact_linkedin_profile', openInIframe
 
+  $('#govt_contracts').hide()
+  $('#contact_govt_contract').live('click', (e) ->
+    $('#govt_contracts').toggle()
+  )
+
 attachDraggables = () ->
   draggables = $('#lead_types img')
   [].forEach.call(draggables, (draggable) ->
