@@ -34,8 +34,8 @@
   </div>
   <div class="field">
     <%= f.label :lead_type %><br />
-    <div id="drop_target">
-      <%= image_tag lead_type_icon(@contact.lead_type), :size => '23x23' %>
+    <div class="drop_target">
+      <%= image_tag(lead_type_icon(@contact.lead_type), :size => '23x23') if @contact.lead_type %>
     </div>
     <%= f.hidden_field :lead_type %>
   </div>

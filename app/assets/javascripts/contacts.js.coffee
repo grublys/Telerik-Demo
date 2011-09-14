@@ -35,7 +35,7 @@ attachDraggables = () ->
   )
 
 attachDropTargets = () ->
-  drop_targets = $('#drop_target')
+  drop_targets = $('.drop_target')
   [].forEach.call(drop_targets, (target) ->
     target.addEventListener('dragenter' , handleDragEnter , false)
     target.addEventListener('dragover'  , handleDragOver  , false)
@@ -63,7 +63,7 @@ handleDrop = (e) ->
 
 handleDragEnd = (e) ->
   $('#contact_lead_type').val @dataset.lead_type
-  drop_targets = $('#drop_target')
+  drop_targets = $('.drop_target')
   [].forEach.call(drop_targets, (target) ->
     $(target).removeClass 'over'
   )
