@@ -106,4 +106,8 @@ class ContactsController < ApplicationController
     end
     send_file('contacts.pdf')
   end
+
+  def treeview
+    @contacts = Contact.all
+  end
 end

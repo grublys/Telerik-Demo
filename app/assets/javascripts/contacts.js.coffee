@@ -32,6 +32,13 @@ $ ->
     $('#govt_contracts').toggle()
   )
 
+  # treeview
+  $('.lead_type_children').toggle()
+  $('.lead_type_parent').live('click', (e) ->
+    e.preventDefault()
+    openChilren(this)
+  )
+
 attachDraggables = () ->
   draggables = $('#lead_types img')
   [].forEach.call(draggables, (draggable) ->
@@ -99,3 +106,5 @@ refreshContactRow = (contact) ->
   image_html = "<img class='contact_lead_type' data-contact_id='#{contact.id}' height='13' src='/assets/#{contact.lead_type.toLowerCase()}-icon.png' width='13' /></td>"
   $("#lead_type_cell-#{contact.id}").html(image_html)
 
+openChilren = (parent) ->
+  $(".lead_type_children.#{$(parent).html()}").toggle()
