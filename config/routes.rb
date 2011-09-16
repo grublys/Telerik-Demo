@@ -6,6 +6,7 @@ DemoApp::Application.routes.draw do
   get 'help' => 'help#index', :as => 'help'
   get '/contacts/export' => 'contacts#export', :as => 'export_contacts'
   get '/contacts/treeview' => 'contacts#treeview', :as => 'contacts_treeview'
+  get '/contacts/:id/edit_inline' => 'contacts#edit_inline', :as => 'edit_inline_contact'
 
   post '/contacts/update_lead_type' => 'contacts#update_lead_type', :as => 'contacts/update_lead_type'
 

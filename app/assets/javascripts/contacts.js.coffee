@@ -39,14 +39,14 @@ $ ->
     openChilren(@dataset.lead_type)
   )
 
-attachDraggables = () ->
+@attachDraggables = () ->
   draggables = $('#lead_types img')
   [].forEach.call(draggables, (draggable) ->
     draggable.addEventListener('dragstart' , handleDragStart , false)
     draggable.addEventListener('dragend'   , handleDragEnd   , false)
   )
 
-attachDropTargets = () ->
+@attachDropTargets = () ->
   drop_targets = $('.drop_target')
   [].forEach.call(drop_targets, (target) ->
     target.addEventListener('dragenter' , handleDragEnter , false)

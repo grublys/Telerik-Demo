@@ -4,12 +4,14 @@
       <li><%= link_to lead_type, '#', :class => 'lead_type_parent', 'data-lead_type' => lead_type %></li>
       <ul class="lead_type_children <%= lead_type %>">
         <% @contacts.find_all { |c| c.lead_type == lead_type }.each do |contact_with_lead_type| %>
-          <li><%= link_to contact_with_lead_type.full_name, '#' %></li>
+          <li><%= link_to contact_with_lead_type.full_name,
+                    edit_inline_contact_path(contact_with_lead_type),
+                    'data-contact_id' => contact_with_lead_type.id,
+                    :remote => true %></li>
         <% end %>
       </ul>
     <% end %>
   </ul>
 </div>
-<% if @contact %>
-  <%= render 'form' %>
-<% end %>
+<div id="inline_contact_edit_form">
+</div>

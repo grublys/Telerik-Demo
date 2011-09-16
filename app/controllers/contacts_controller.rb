@@ -40,6 +40,15 @@ class ContactsController < ApplicationController
     @contact = Contact.find(params[:id])
   end
 
+  # GET /contacts/1/edit_inline
+  def edit_inline
+    @contact = Contact.find(params[:id])
+
+    respond_to do |format|
+      format.js
+    end
+  end
+
   # POST /contacts
   # POST /contacts.json
   def create
