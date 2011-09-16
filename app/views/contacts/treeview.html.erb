@@ -1,7 +1,7 @@
 <div id='treeview'>
   <ul>
     <% LeadType::LEAD_TYPES.each do |lead_type| %>
-      <li><%= link_to lead_type, '#', :class => 'lead_type_parent' %></li>
+      <li><%= link_to lead_type, '#', :class => 'lead_type_parent', 'data-lead_type' => lead_type %></li>
       <ul class="lead_type_children <%= lead_type %>">
         <% @contacts.find_all { |c| c.lead_type == lead_type }.each do |contact_with_lead_type| %>
           <li><%= link_to contact_with_lead_type.full_name, '#' %></li>
