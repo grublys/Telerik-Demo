@@ -57,7 +57,7 @@ $ ->
 
 handleDragStart = (e) ->
   e.dataTransfer.effectAllowed = 'move'
-  e.dataTransfer.setData('text/html', @innerHTML)
+  e.dataTransfer.setData('text/html', @innerHTML())
 
 handleDragOver = (e) ->
   e.preventDefault() if e.preventDefault() # Necessary. Allows us to drop.
@@ -70,7 +70,7 @@ handleDragLeave = (e) ->
   $(this).removeClass 'over'
 
 handleDrop = (e) ->
-  e.stopPropagation() if e.stopPropagation() # stops the browser from redirecting.
+  e.preventDefault() if e.preventDefault()
   @innerHTML = e.dataTransfer.getData 'text/html'
 
 handleDragEnd = (e) ->
