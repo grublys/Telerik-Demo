@@ -9,3 +9,7 @@
   position: absolute;
   right: 10px
 }
+
+#flash_alert {
+  color: red;
+}

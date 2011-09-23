@@ -12,11 +12,13 @@ $ ->
   $('#login_dialog').dialog(
     autoOpen: false,
     height: 200,
-    width: 250,
+    width: 300,
     modal: true)
 
 toggleLoginButton = () -> if loginAllowed() then enableLogin() else disableLogin()
 loginAllowed = () -> $('#username').val() != '' and $('#password').val() != ''
 enableLogin = () -> $('#login_button').attr 'disabled', false
 disableLogin = () -> $('#login_button').attr 'disabled', true
-openLoginDialog = () -> $('#login_dialog').dialog 'open'
+openLoginDialog = () ->
+  $('#flash_alert').html('')
+  $('#login_dialog').dialog 'open'

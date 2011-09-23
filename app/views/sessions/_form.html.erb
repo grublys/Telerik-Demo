@@ -1,5 +1,9 @@
 <div id='login_dialog' title='Login'>
-  <%= form_tag sessions_path do %>
+  <% flash.each do |name, msg| %>
+    <%= content_tag :div, msg, :id => "flash_#{name}" %>
+  <% end %>
+  <br />
+  <%= form_tag sessions_path, :remote => true do %>
     <div class="field">
       <%= label_tag :username %>
       <%= text_field_tag :username, params[:username] %>
