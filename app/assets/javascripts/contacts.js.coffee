@@ -57,7 +57,7 @@ $ ->
 
 handleDragStart = (e) ->
   e.dataTransfer.effectAllowed = 'move'
-  e.dataTransfer.setData('text/html', @innerHTML())
+  e.dataTransfer.setData('text/html', image(this))
 
 handleDragOver = (e) ->
   e.preventDefault() if e.preventDefault() # Necessary. Allows us to drop.
@@ -71,7 +71,7 @@ handleDragLeave = (e) ->
 
 handleDrop = (e) ->
   e.preventDefault() if e.preventDefault()
-  @innerHTML = e.dataTransfer.getData 'text/html'
+  $(this).prop('innerHTML', e.dataTransfer.getData('text/html'))
 
 handleDragEnd = (e) ->
   $('#contact_lead_type').val @dataset.lead_type
@@ -79,6 +79,9 @@ handleDragEnd = (e) ->
   [].forEach.call(drop_targets, (target) ->
     $(target).removeClass 'over'
   )
+
+image = (element) ->
+  "<img src='#{element.src}' height='#{element.height}' width='#{element.width}' alt='#{element.alt}'/>"
 
 openInIframe = () ->
   $('#linkedin_frame').attr('src', '/static/Jim_Holmes_LinkedIn.html')
