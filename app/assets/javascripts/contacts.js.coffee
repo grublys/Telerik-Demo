@@ -11,13 +11,13 @@ $ ->
     modal: true)
 
   $('.contact_lead_type').live('click', (e) ->
-    e.preventDefault()
+    e.preventDefault() if e.preventDefault()
     $('#lead_types img').attr('data-contact_id', @dataset.contact_id)
     openLeadTypeSelection()
   )
 
   $('.lead_type_selection').live('click', (e) ->
-    e.preventDefault()
+    e.preventDefault() if e.preventDefault()
     updateLeadType(@dataset.contact_id, @dataset.lead_type)
   )
 
@@ -35,7 +35,7 @@ $ ->
   # treeview
   $('.lead_type_children').toggle()
   $('.lead_type_parent').live('click', (e) ->
-    e.preventDefault()
+    e.preventDefault() if e.preventDefault()
     openChildren(@dataset.lead_type)
   )
 
