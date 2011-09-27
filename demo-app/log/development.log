@@ -1,0 +1,2148 @@
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-07 09:27:56 -0400
+  Processing by ContactsController#index as HTML
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 0ms
+
+
+Started GET "/welcome" for 127.0.0.1 at 2011-09-07 09:28:00 -0400
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.html.erb within layouts/application (25.4ms)
+Compiled application.css  (4ms)  (pid 432)
+Compiled contacts.css  (4ms)  (pid 432)
+Compiled help.css  (3ms)  (pid 432)
+Compiled scaffolds.css  (7ms)  (pid 432)
+Compiled sessions.css  (0ms)  (pid 432)
+Compiled smoothness/jquery-ui-1.8.16.custom.css  (1ms)  (pid 432)
+Compiled users.css  (0ms)  (pid 432)
+Compiled welcome.css  (15ms)  (pid 432)
+Compiled application.js  (6ms)  (pid 432)
+Compiled jquery.js  (5ms)  (pid 432)
+Compiled jquery-ui.js  (9ms)  (pid 432)
+Compiled jquery_ujs.js  (0ms)  (pid 432)
+Compiled contacts.js  (133ms)  (pid 432)
+Compiled help.js  (77ms)  (pid 432)
+Compiled sessions.js  (129ms)  (pid 432)
+Compiled users.js  (76ms)  (pid 432)
+Compiled welcome.js  (78ms)  (pid 432)
+Rendered sessions/_login.html.erb (0.0ms)
+Rendered sessions/_form.html.erb (1.0ms)
+Completed 200 OK in 812ms (Views: 812.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-09-07 09:28:01 -0400
+Served asset /contacts.css - 200 OK (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-07 09:28:01 -0400
+Served asset /application.css - 200 OK (3ms)
+
+
+Started GET "/assets/help.css?body=1" for 127.0.0.1 at 2011-09-07 09:28:01 -0400
+Served asset /help.css - 200 OK (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-09-07 09:28:01 -0400
+Served asset /scaffolds.css - 200 OK (6ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-09-07 09:28:01 -0400
+Served asset /jquery-ui.js - 200 OK (13ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-09-07 09:28:01 -0400
+Served asset /jquery.js - 200 OK (26ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-09-07 09:28:01 -0400
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 200 OK (4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-09-07 09:28:01 -0400
+Served asset /sessions.css - 200 OK (6ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-09-07 09:28:01 -0400
+Served asset /users.css - 200 OK (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-09-07 09:28:01 -0400
+Served asset /jquery_ujs.js - 200 OK (6ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-07 09:28:01 -0400
+Served asset /welcome.css - 200 OK (9ms)
+
+
+Started GET "/assets/help.js?body=1" for 127.0.0.1 at 2011-09-07 09:28:01 -0400
+Served asset /help.js - 200 OK (40ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-09-07 09:28:01 -0400
+Served asset /contacts.js - 200 OK (5ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-09-07 09:28:01 -0400
+Served asset /sessions.js - 200 OK (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-09-07 09:28:01 -0400
+Served asset /users.js - 200 OK (4ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-07 09:28:01 -0400
+Served asset /welcome.js - 200 OK (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-07 09:28:01 -0400
+Served asset /application.js - 200 OK (6ms)
+
+
+Started GET "/assets/smoothness/images/ui-bg_flat_75_ffffff_40x100.png" for 127.0.0.1 at 2011-09-07 09:28:01 -0400
+Served asset /smoothness/images/ui-bg_flat_75_ffffff_40x100.png - 200 OK (4ms)
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.9ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (2.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateContacts (20110901135421)
+  [1m[35m (0.0ms)[0m  CREATE TABLE "contacts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "email" varchar(255), "linkedin_profile" varchar(255), "lead_type" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20110901135421')[0m
+Migrating to CreateUsers (20110901213529)
+  [1m[35m (2.9ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "password_digest" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20110901213529')[0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("contacts")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mSQL (5.9ms)[0m  DELETE FROM "contacts"
+  [1m[36mSQL (65.4ms)[0m  [1mINSERT INTO "contacts" ("created_at", "email", "first_name", "last_name", "lead_type", "linkedin_profile", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Sep 2011 18:43:10 UTC +00:00], ["email", "john.smith@test.com"], ["first_name", "John"], ["last_name", "Smith"], ["lead_type", "HOT"], ["linkedin_profile", "http://linkedin.com/in/john-smith"], ["updated_at", Wed, 07 Sep 2011 18:43:10 UTC +00:00]]
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "contacts" ("created_at", "email", "first_name", "last_name", "lead_type", "linkedin_profile", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Sep 2011 18:43:10 UTC +00:00], ["email", "jane.doe@example.com"], ["first_name", "Jane"], ["last_name", "Doe"], ["lead_type", "NEUTRAL"], ["linkedin_profile", "http://linkedin.com/in/jane-doe"], ["updated_at", Wed, 07 Sep 2011 18:43:10 UTC +00:00]]
+  [1m[36mSQL (3.9ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("created_at", "password_digest", "updated_at", "username") VALUES (?, ?, ?, ?)  [["created_at", Wed, 07 Sep 2011 18:43:10 UTC +00:00], ["password_digest", "$2a$10$mnCHNqz2Vzj7l.QcCZPhsuXyRkVFxjRu5CHUakGuepGHwedbZCKF2"], ["updated_at", Wed, 07 Sep 2011 18:43:10 UTC +00:00], ["username", "testuser"]]
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-09-07 15:09:20 -0400
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T8q+/eDidx2awe4Z2WcYBfzGh1+pdeEZGOLU83W0Q/E=", "username"=>"testuser", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'testuser' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 298ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-07 15:09:26 -0400
+  Processing by ContactsController#index as HTML
+  [1m[35mUser Load (35.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (54.7ms)
+Rendered sessions/_login.html.erb (1.0ms)
+Completed 200 OK in 260ms (Views: 216.8ms | ActiveRecord: 35.2ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-09-07 15:09:26 -0400
+Served asset /contacts.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-07 15:09:26 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-09-07 15:09:26 -0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-09-07 15:09:26 -0400
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-09-07 15:09:26 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/help.css?body=1" for 127.0.0.1 at 2011-09-07 15:09:26 -0400
+Served asset /help.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-09-07 15:09:26 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-09-07 15:09:26 -0400
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-09-07 15:09:26 -0400
+Served asset /jquery-ui.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-09-07 15:09:26 -0400
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-09-07 15:09:26 -0400
+Served asset /contacts.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/help.js?body=1" for 127.0.0.1 at 2011-09-07 15:09:26 -0400
+Served asset /help.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-07 15:09:26 -0400
+Served asset /welcome.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-09-07 15:09:26 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-09-07 15:09:26 -0400
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-07 15:09:26 -0400
+Served asset /welcome.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-07 15:09:26 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/hot-icon.png" for 127.0.0.1 at 2011-09-07 15:09:27 -0400
+Served asset /hot-icon.png - 200 OK (4ms)
+
+
+Started GET "/assets/neutral-icon.png" for 127.0.0.1 at 2011-09-07 15:09:27 -0400
+Served asset /neutral-icon.png - 200 OK (3ms)
+
+
+Started GET "/contacts/1/edit" for 127.0.0.1 at 2011-09-07 15:09:40 -0400
+  Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered contacts/_form.html.erb (20.5ms)
+Rendered contacts/edit.html.erb within layouts/application (26.4ms)
+Rendered sessions/_login.html.erb (0.0ms)
+Completed 200 OK in 115ms (Views: 81.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-09-07 15:09:40 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.css?body=1" for 127.0.0.1 at 2011-09-07 15:09:40 -0400
+Served asset /help.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-09-07 15:09:40 -0400
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-09-07 15:09:40 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-09-07 15:09:40 -0400
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-09-07 15:09:40 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-07 15:09:40 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-07 15:09:40 -0400
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-09-07 15:09:40 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-09-07 15:09:40 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-09-07 15:09:40 -0400
+Served asset /contacts.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-09-07 15:09:40 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.js?body=1" for 127.0.0.1 at 2011-09-07 15:09:40 -0400
+Served asset /help.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-09-07 15:09:40 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-07 15:09:40 -0400
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-09-07 15:09:40 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-07 15:09:40 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-09-07 15:09:45 -0400
+  Processing by ContactsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (6.8ms)
+Rendered sessions/_login.html.erb (0.0ms)
+Completed 200 OK in 23ms (Views: 15.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-09-07 15:09:45 -0400
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.css?body=1" for 127.0.0.1 at 2011-09-07 15:09:45 -0400
+Served asset /help.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-09-07 15:09:45 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-09-07 15:09:45 -0400
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-09-07 15:09:45 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-07 15:09:45 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-09-07 15:09:45 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-09-07 15:09:45 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-09-07 15:09:45 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-07 15:09:45 -0400
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-09-07 15:09:45 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-09-07 15:09:45 -0400
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.js?body=1" for 127.0.0.1 at 2011-09-07 15:09:45 -0400
+Served asset /help.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-09-07 15:09:45 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-09-07 15:09:45 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-07 15:09:45 -0400
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-07 15:09:45 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hot-icon.png" for 127.0.0.1 at 2011-09-07 15:09:45 -0400
+Served asset /hot-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/neutral-icon.png" for 127.0.0.1 at 2011-09-07 15:09:45 -0400
+Served asset /neutral-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/contacts/1/edit" for 127.0.0.1 at 2011-09-07 15:17:16 -0400
+  Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered contacts/_form.html.erb (15.6ms)
+Rendered contacts/edit.html.erb within layouts/application (18.6ms)
+Rendered sessions/_login.html.erb (0.0ms)
+Completed 200 OK in 41ms (Views: 32.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-07 15:17:16 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-09-07 15:17:16 -0400
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.css?body=1" for 127.0.0.1 at 2011-09-07 15:17:16 -0400
+Served asset /help.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-09-07 15:17:16 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-09-07 15:17:16 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-09-07 15:17:16 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-07 15:17:16 -0400
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-09-07 15:17:16 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-09-07 15:17:16 -0400
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.js?body=1" for 127.0.0.1 at 2011-09-07 15:17:16 -0400
+Served asset /help.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-09-07 15:17:16 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-09-07 15:17:16 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-07 15:17:16 -0400
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-07 15:17:16 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-09-07 15:17:16 -0400
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-09-07 15:17:16 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-09-07 15:17:16 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-09-07 15:17:19 -0400
+  Processing by ContactsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (22.5ms)
+Rendered sessions/_login.html.erb (1.0ms)
+Completed 200 OK in 40ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-09-07 15:17:19 -0400
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-09-07 15:17:19 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-07 15:17:19 -0400
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-09-07 15:17:19 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-09-07 15:17:19 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-09-07 15:17:19 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-09-07 15:17:19 -0400
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.js?body=1" for 127.0.0.1 at 2011-09-07 15:17:19 -0400
+Served asset /help.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-09-07 15:17:19 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-09-07 15:17:19 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-07 15:17:19 -0400
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-07 15:17:19 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.css?body=1" for 127.0.0.1 at 2011-09-07 15:17:19 -0400
+Served asset /help.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-09-07 15:17:19 -0400
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-09-07 15:17:19 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-09-07 15:17:19 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-07 15:17:19 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hot-icon.png" for 127.0.0.1 at 2011-09-07 15:17:19 -0400
+Served asset /hot-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/neutral-icon.png" for 127.0.0.1 at 2011-09-07 15:17:19 -0400
+Served asset /neutral-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2011-09-07 15:20:55 -0400
+  Processing by ContactsController#new as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Rendered contacts/_form.html.erb (12.7ms)
+Rendered contacts/new.html.erb within layouts/application (13.7ms)
+Rendered sessions/_login.html.erb (0.0ms)
+Completed 200 OK in 31ms (Views: 23.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-07 15:20:55 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-09-07 15:20:55 -0400
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.css?body=1" for 127.0.0.1 at 2011-09-07 15:20:55 -0400
+Served asset /help.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-09-07 15:20:55 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-07 15:20:55 -0400
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-09-07 15:20:55 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-09-07 15:20:55 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-09-07 15:20:55 -0400
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-09-07 15:20:55 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-09-07 15:20:55 -0400
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.js?body=1" for 127.0.0.1 at 2011-09-07 15:20:55 -0400
+Served asset /help.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-09-07 15:20:55 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-09-07 15:20:55 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-07 15:20:55 -0400
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-07 15:20:55 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-09-07 15:20:55 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-09-07 15:20:55 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2011-09-07 15:21:03 -0400
+  Processing by ContactsController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Rendered contacts/_form.html.erb (24.4ms)
+Rendered contacts/new.html.erb within layouts/application (25.4ms)
+Rendered sessions/_login.html.erb (0.0ms)
+Completed 200 OK in 76ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:03 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:03 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:03 -0400
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:03 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:03 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:03 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:04 -0400
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:04 -0400
+Served asset /help.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:04 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:04 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:04 -0400
+Served asset /welcome.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:04 -0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:04 -0400
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:04 -0400
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:04 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:04 -0400
+Served asset /help.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:04 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2011-09-07 15:21:39 -0400
+  Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T8q+/eDidx2awe4Z2WcYBfzGh1+pdeEZGOLU83W0Q/E=", "contact"=>{"first_name"=>"Jim", "last_name"=>"Holmes", "email"=>"jim", "linkedin_profile"=>"foo", "lead_type"=>"HOT"}, "commit"=>"Create Contact"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSQL (9.8ms)[0m  [1mINSERT INTO "contacts" ("created_at", "email", "first_name", "last_name", "lead_type", "linkedin_profile", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Sep 2011 19:21:39 UTC +00:00], ["email", "jim"], ["first_name", "Jim"], ["last_name", "Holmes"], ["lead_type", "HOT"], ["linkedin_profile", "foo"], ["updated_at", Wed, 07 Sep 2011 19:21:39 UTC +00:00]]
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 28ms
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-09-07 15:21:39 -0400
+  Processing by ContactsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (21.5ms)
+Rendered sessions/_login.html.erb (0.0ms)
+Completed 200 OK in 42ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:39 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:39 -0400
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:39 -0400
+Served asset /help.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:39 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:39 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:39 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:39 -0400
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:39 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:39 -0400
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:39 -0400
+Served asset /help.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:39 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:39 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:39 -0400
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:39 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:39 -0400
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:39 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:39 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hot-icon.png" for 127.0.0.1 at 2011-09-07 15:21:40 -0400
+Served asset /hot-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/neutral-icon.png" for 127.0.0.1 at 2011-09-07 15:21:40 -0400
+Served asset /neutral-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2011-09-07 15:21:53 -0400
+  Processing by ContactsController#new as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Rendered contacts/_form.html.erb (25.4ms)
+Rendered contacts/new.html.erb within layouts/application (27.3ms)
+Rendered sessions/_login.html.erb (1.0ms)
+Completed 200 OK in 45ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:53 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:53 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:53 -0400
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:53 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:53 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:53 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:53 -0400
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:53 -0400
+Served asset /help.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:53 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:53 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:53 -0400
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:53 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:53 -0400
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:53 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:53 -0400
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:53 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:53 -0400
+Served asset /help.css - 304 Not Modified (0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-09-07 15:21:57 -0400
+  Processing by ContactsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mContact Load (1.0ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (6.8ms)
+Rendered sessions/_login.html.erb (0.0ms)
+Completed 200 OK in 26ms (Views: 18.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:57 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:57 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:57 -0400
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:57 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:57 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:57 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:57 -0400
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:57 -0400
+Served asset /help.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:57 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:57 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:57 -0400
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-07 15:21:57 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:57 -0400
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:57 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:57 -0400
+Served asset /help.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:57 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-09-07 15:21:57 -0400
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/neutral-icon.png" for 127.0.0.1 at 2011-09-07 15:21:57 -0400
+Served asset /neutral-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hot-icon.png" for 127.0.0.1 at 2011-09-07 15:21:57 -0400
+Served asset /hot-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2011-09-07 15:36:06 -0400
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-07 15:36:06 -0400
+  Processing by ContactsController#index as HTML
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 1ms
+
+
+Started GET "/welcome" for 127.0.0.1 at 2011-09-07 15:36:06 -0400
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Rendered sessions/_login.html.erb (0.0ms)
+Rendered sessions/_form.html.erb (2.0ms)
+Completed 200 OK in 31ms (Views: 27.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-07 15:36:06 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/help.css?body=1" for 127.0.0.1 at 2011-09-07 15:36:06 -0400
+Served asset /help.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-09-07 15:36:06 -0400
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-09-07 15:36:06 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-09-07 15:36:06 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-07 15:36:06 -0400
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-09-07 15:36:06 -0400
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-09-07 15:36:06 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-09-07 15:36:06 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-09-07 15:36:06 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-09-07 15:36:06 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-09-07 15:36:06 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.js?body=1" for 127.0.0.1 at 2011-09-07 15:36:06 -0400
+Served asset /help.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-09-07 15:36:06 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-09-07 15:36:06 -0400
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-07 15:36:06 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-07 15:36:06 -0400
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/images/ui-bg_flat_75_ffffff_40x100.png" for 127.0.0.1 at 2011-09-07 15:36:07 -0400
+Served asset /smoothness/images/ui-bg_flat_75_ffffff_40x100.png - 304 Not Modified (9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2011-09-07 16:41:43 -0400
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+
+Rendered d:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-08 13:02:07 -0400
+  Processing by ContactsController#index as HTML
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 1ms
+
+
+Started GET "/welcome" for 127.0.0.1 at 2011-09-08 13:02:11 -0400
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.html.erb within layouts/application (27.3ms)
+Compiled contacts.css  (4ms)  (pid 3016)
+Compiled application.css  (4ms)  (pid 3016)
+Compiled contacts.js  (237ms)  (pid 3016)
+Compiled application.js  (7ms)  (pid 3016)
+Rendered sessions/_login.html.erb (1.0ms)
+Rendered sessions/_form.html.erb (2.0ms)
+Completed 200 OK in 476ms (Views: 475.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-08 13:02:11 -0400
+Served asset /application.css - 200 OK (3ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-09-08 13:02:11 -0400
+Served asset /contacts.css - 200 OK (3ms)
+
+
+Started GET "/assets/help.css?body=1" for 127.0.0.1 at 2011-09-08 13:02:11 -0400
+Served asset /help.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-09-08 13:02:12 -0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-09-08 13:02:12 -0400
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-09-08 13:02:12 -0400
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-09-08 13:02:12 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-09-08 13:02:12 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-09-08 13:02:12 -0400
+Served asset /jquery-ui.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-08 13:02:12 -0400
+Served asset /welcome.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-09-08 13:02:12 -0400
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-09-08 13:02:12 -0400
+Served asset /contacts.js - 200 OK (56ms)
+
+
+Started GET "/assets/help.js?body=1" for 127.0.0.1 at 2011-09-08 13:02:12 -0400
+Served asset /help.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-09-08 13:02:12 -0400
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-09-08 13:02:12 -0400
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-08 13:02:12 -0400
+Served asset /application.js - 200 OK (26ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-08 13:02:12 -0400
+Served asset /welcome.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/smoothness/images/ui-bg_flat_75_ffffff_40x100.png" for 127.0.0.1 at 2011-09-08 13:02:12 -0400
+Served asset /smoothness/images/ui-bg_flat_75_ffffff_40x100.png - 304 Not Modified (36ms)
+
+
+Started GET "/assets/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png" for 127.0.0.1 at 2011-09-08 13:02:25 -0400
+Served asset /smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png - 200 OK (8ms)
+
+
+Started GET "/assets/smoothness/images/ui-icons_222222_256x240.png" for 127.0.0.1 at 2011-09-08 13:02:25 -0400
+Served asset /smoothness/images/ui-icons_222222_256x240.png - 200 OK (6ms)
+
+
+Started GET "/assets/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png" for 127.0.0.1 at 2011-09-08 13:02:25 -0400
+Served asset /smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png - 200 OK (4ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-09-08 13:02:32 -0400
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9RaKSiTTrJ6h6K1cjfzt7Mm4JWi+ToYszS0ITWTvxE8=", "username"=>"testuser", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'testuser' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 145ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-08 13:02:32 -0400
+  Processing by ContactsController#index as HTML
+  [1m[35mUser Load (40.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (7.8ms)
+Rendered sessions/_login.html.erb (0.0ms)
+Completed 200 OK in 65ms (Views: 17.6ms | ActiveRecord: 41.0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-09-08 13:02:32 -0400
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-09-08 13:02:32 -0400
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-09-08 13:02:32 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-09-08 13:02:32 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.css?body=1" for 127.0.0.1 at 2011-09-08 13:02:32 -0400
+Served asset /help.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-08 13:02:32 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-09-08 13:02:32 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-08 13:02:32 -0400
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-09-08 13:02:32 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-09-08 13:02:32 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-09-08 13:02:32 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-09-08 13:02:33 -0400
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.js?body=1" for 127.0.0.1 at 2011-09-08 13:02:33 -0400
+Served asset /help.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-09-08 13:02:33 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-09-08 13:02:33 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-08 13:02:33 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hot-icon.png" for 127.0.0.1 at 2011-09-08 13:02:33 -0400
+Served asset /hot-icon.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/neutral-icon.png" for 127.0.0.1 at 2011-09-08 13:02:33 -0400
+Served asset /neutral-icon.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-08 13:02:33 -0400
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/contacts/1/edit" for 127.0.0.1 at 2011-09-08 13:02:39 -0400
+  Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered contacts/_form.html.erb (12.7ms)
+Rendered contacts/edit.html.erb within layouts/application (13.7ms)
+Rendered sessions/_login.html.erb (0.0ms)
+Completed 200 OK in 38ms (Views: 30.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/help.css?body=1" for 127.0.0.1 at 2011-09-08 13:02:39 -0400
+Served asset /help.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-09-08 13:02:39 -0400
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-09-08 13:02:39 -0400
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-09-08 13:02:39 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-09-08 13:02:39 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-08 13:02:39 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-09-08 13:02:39 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-09-08 13:02:39 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-08 13:02:39 -0400
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-09-08 13:02:39 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-09-08 13:02:40 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.js?body=1" for 127.0.0.1 at 2011-09-08 13:02:40 -0400
+Served asset /help.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-09-08 13:02:40 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-09-08 13:02:40 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-09-08 13:02:40 -0400
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-08 13:02:40 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cold-icon.png" for 127.0.0.1 at 2011-09-08 13:02:40 -0400
+Served asset /cold-icon.png - 200 OK (6ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-08 13:02:40 -0400
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hot-icon.png" for 127.0.0.1 at 2011-09-08 13:02:40 -0400
+Served asset /hot-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/neutral-icon.png" for 127.0.0.1 at 2011-09-08 13:02:40 -0400
+Served asset /neutral-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/contacts/1/linkein_profile" for 127.0.0.1 at 2011-09-08 13:02:46 -0400
+
+ActionController::RoutingError (No route matches [GET] "/contacts/1/linkein_profile"):
+  
+
+Rendered d:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/assets/neutral-icon.png" for 127.0.0.1 at 2011-09-08 13:02:52 -0400
+Served asset /neutral-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/contacts/1/edit" for 127.0.0.1 at 2011-09-08 13:03:00 -0400
+  Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered contacts/_form.html.erb (7.8ms)
+Rendered contacts/edit.html.erb within layouts/application (8.8ms)
+Rendered sessions/_login.html.erb (1.0ms)
+Completed 200 OK in 26ms (Views: 19.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/help.css?body=1" for 127.0.0.1 at 2011-09-08 13:03:00 -0400
+Served asset /help.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-09-08 13:03:00 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-09-08 13:03:00 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-09-08 13:03:00 -0400
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-08 13:03:00 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-09-08 13:03:00 -0400
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-09-08 13:03:00 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-09-08 13:03:00 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-09-08 13:03:00 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-09-08 13:03:00 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.js?body=1" for 127.0.0.1 at 2011-09-08 13:03:00 -0400
+Served asset /help.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-09-08 13:03:00 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-08 13:03:00 -0400
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-09-08 13:03:00 -0400
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-09-08 13:03:00 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-08 13:03:00 -0400
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-08 13:03:00 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cold-icon.png" for 127.0.0.1 at 2011-09-08 13:03:00 -0400
+Served asset /cold-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hot-icon.png" for 127.0.0.1 at 2011-09-08 13:03:00 -0400
+Served asset /hot-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/neutral-icon.png" for 127.0.0.1 at 2011-09-08 13:03:00 -0400
+Served asset /neutral-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cold-icon.png" for 127.0.0.1 at 2011-09-08 13:03:03 -0400
+Served asset /cold-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cold-icon.png" for 127.0.0.1 at 2011-09-08 13:03:03 -0400
+Served asset /cold-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/contacts/2/edit" for 127.0.0.1 at 2011-09-08 13:18:10 -0400
+  Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", "2"]]
+Rendered contacts/_form.html.erb (15.6ms)
+Rendered contacts/edit.html.erb within layouts/application (17.6ms)
+Rendered sessions/_login.html.erb (0.0ms)
+Completed 200 OK in 82ms (Views: 66.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-08 13:18:10 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-09-08 13:18:10 -0400
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.css?body=1" for 127.0.0.1 at 2011-09-08 13:18:10 -0400
+Served asset /help.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-09-08 13:18:10 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-09-08 13:18:10 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-09-08 13:18:10 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-09-08 13:18:10 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-08 13:18:10 -0400
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-09-08 13:18:10 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-09-08 13:18:10 -0400
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.js?body=1" for 127.0.0.1 at 2011-09-08 13:18:10 -0400
+Served asset /help.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-09-08 13:18:10 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-09-08 13:18:10 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-08 13:18:10 -0400
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-08 13:18:10 -0400
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/cold-icon.png" for 127.0.0.1 at 2011-09-08 13:18:10 -0400
+Served asset /cold-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-09-08 13:18:10 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-09-08 13:18:10 -0400
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hot-icon.png" for 127.0.0.1 at 2011-09-08 13:18:10 -0400
+Served asset /hot-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/neutral-icon.png" for 127.0.0.1 at 2011-09-08 13:18:10 -0400
+Served asset /neutral-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-12 11:18:42 -0400
+  Processing by ContactsController#index as HTML
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 0ms
+
+
+Started GET "/welcome" for 127.0.0.1 at 2011-09-12 11:18:48 -0400
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.html.erb within layouts/application (27.3ms)
+Compiled contacts.js  (266ms)  (pid 576)
+Compiled sessions.js  (117ms)  (pid 576)
+Compiled application.js  (20ms)  (pid 576)
+Compiled helpers.js  (95ms)  (pid 576)
+Rendered sessions/_login.html.erb (1.0ms)
+Rendered sessions/_form.html.erb (1.0ms)
+Completed 200 OK in 728ms (Views: 727.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-12 11:18:49 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-09-12 11:18:49 -0400
+Served asset /contacts.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/help.css?body=1" for 127.0.0.1 at 2011-09-12 11:18:49 -0400
+Served asset /help.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-09-12 11:18:49 -0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-09-12 11:18:49 -0400
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-09-12 11:18:49 -0400
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-09-12 11:18:49 -0400
+Served asset /users.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-12 11:18:49 -0400
+Served asset /welcome.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-09-12 11:18:49 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-09-12 11:18:49 -0400
+Served asset /jquery-ui.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-09-12 11:18:49 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-09-12 11:18:49 -0400
+Served asset /contacts.js - 200 OK (4ms)
+
+
+Started GET "/assets/help.js?body=1" for 127.0.0.1 at 2011-09-12 11:18:49 -0400
+Served asset /help.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/helpers.js?body=1" for 127.0.0.1 at 2011-09-12 11:18:49 -0400
+Served asset /helpers.js - 200 OK (6ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-09-12 11:18:49 -0400
+Served asset /sessions.js - 200 OK (3ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-09-12 11:18:49 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-12 11:18:49 -0400
+Served asset /welcome.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-12 11:18:49 -0400
+Served asset /application.js - 200 OK (22ms)
+
+
+Started GET "/assets/smoothness/images/ui-bg_flat_75_ffffff_40x100.png" for 127.0.0.1 at 2011-09-12 11:18:49 -0400
+Served asset /smoothness/images/ui-bg_flat_75_ffffff_40x100.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png" for 127.0.0.1 at 2011-09-12 11:18:54 -0400
+Served asset /smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png" for 127.0.0.1 at 2011-09-12 11:18:54 -0400
+Served asset /smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png - 304 Not Modified (5ms)
+
+
+Started GET "/assets/smoothness/images/ui-icons_222222_256x240.png" for 127.0.0.1 at 2011-09-12 11:18:54 -0400
+Served asset /smoothness/images/ui-icons_222222_256x240.png - 304 Not Modified (5ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-09-12 11:18:56 -0400
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IYqfOUMDJu5nIc7VTmSyW/n/kBQHNvZX65x1so+E/sM=", "username"=>"testuser", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'testuser' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 139ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-12 11:18:56 -0400
+  Processing by ContactsController#index as HTML
+  [1m[35mUser Load (36.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (6.8ms)
+Rendered sessions/_login.html.erb (1.0ms)
+Completed 200 OK in 62ms (Views: 17.6ms | ActiveRecord: 37.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-12 11:18:56 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-09-12 11:18:56 -0400
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.css?body=1" for 127.0.0.1 at 2011-09-12 11:18:56 -0400
+Served asset /help.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-09-12 11:18:56 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-09-12 11:18:56 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-09-12 11:18:56 -0400
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-09-12 11:18:56 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-09-12 11:18:56 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-12 11:18:56 -0400
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-09-12 11:18:56 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-09-12 11:18:56 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-09-12 11:18:56 -0400
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.js?body=1" for 127.0.0.1 at 2011-09-12 11:18:56 -0400
+Served asset /help.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/helpers.js?body=1" for 127.0.0.1 at 2011-09-12 11:18:56 -0400
+Served asset /helpers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-09-12 11:18:56 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-09-12 11:18:56 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-12 11:18:56 -0400
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-12 11:18:56 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hot-icon.png" for 127.0.0.1 at 2011-09-12 11:18:56 -0400
+Served asset /hot-icon.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/neutral-icon.png" for 127.0.0.1 at 2011-09-12 11:18:56 -0400
+Served asset /neutral-icon.png - 304 Not Modified (1ms)
+
+
+Started GET "/contacts/3/edit" for 127.0.0.1 at 2011-09-12 11:19:00 -0400
+  Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mContact Load (1.0ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Rendered contacts/_form.html.erb (7.8ms)
+Rendered contacts/_linkedin_frame.html.erb (0.0ms)
+Rendered contacts/edit.html.erb within layouts/application (10.7ms)
+Rendered sessions/_login.html.erb (1.0ms)
+Completed 200 OK in 28ms (Views: 20.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:00 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:00 -0400
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:00 -0400
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:00 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:00 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:00 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:00 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:00 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:00 -0400
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:00 -0400
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:00 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:00 -0400
+Served asset /help.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:00 -0400
+Served asset /help.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/helpers.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:00 -0400
+Served asset /helpers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:00 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:00 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:00 -0400
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:00 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cold-icon.png" for 127.0.0.1 at 2011-09-12 11:19:00 -0400
+Served asset /cold-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hot-icon.png" for 127.0.0.1 at 2011-09-12 11:19:00 -0400
+Served asset /hot-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/neutral-icon.png" for 127.0.0.1 at 2011-09-12 11:19:00 -0400
+Served asset /neutral-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/analytics/noauthtracker?type=leo%2EpageTracking&pageType=full_page&pageKey=nprofile_public_jsbeacon&trackingInfo=6270770,http://localhost:3000/contacts/3/edit" for 127.0.0.1 at 2011-09-12 11:19:02 -0400
+
+ActionController::RoutingError (No route matches [GET] "/analytics/noauthtracker"):
+  
+
+Rendered d:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started PUT "/contacts/3" for 127.0.0.1 at 2011-09-12 11:19:09 -0400
+  Processing by ContactsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IYqfOUMDJu5nIc7VTmSyW/n/kBQHNvZX65x1so+E/sM=", "contact"=>{"first_name"=>"Jim", "last_name"=>"Holmes", "email"=>"jim", "linkedin_profile"=>"foo", "lead_type"=>"HOT"}, "commit"=>"Update Contact", "id"=>"3"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 13ms
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-09-12 11:19:09 -0400
+  Processing by ContactsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (6.8ms)
+Rendered sessions/_login.html.erb (1.0ms)
+Completed 200 OK in 25ms (Views: 17.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:09 -0400
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:09 -0400
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:09 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:09 -0400
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:09 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:09 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:09 -0400
+Served asset /help.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:09 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:09 -0400
+Served asset /help.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:09 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:09 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:09 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:09 -0400
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:09 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:09 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/helpers.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:09 -0400
+Served asset /helpers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:09 -0400
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:09 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/neutral-icon.png" for 127.0.0.1 at 2011-09-12 11:19:09 -0400
+Served asset /neutral-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hot-icon.png" for 127.0.0.1 at 2011-09-12 11:19:09 -0400
+Served asset /hot-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/contacts/3/edit" for 127.0.0.1 at 2011-09-12 11:19:13 -0400
+  Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Rendered contacts/_form.html.erb (8.8ms)
+Rendered contacts/_linkedin_frame.html.erb (0.0ms)
+Rendered contacts/edit.html.erb within layouts/application (10.7ms)
+Rendered sessions/_login.html.erb (1.0ms)
+Completed 200 OK in 27ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:13 -0400
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:13 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:13 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:13 -0400
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:13 -0400
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:13 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:13 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:13 -0400
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/helpers.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:13 -0400
+Served asset /helpers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:13 -0400
+Served asset /help.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:13 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:13 -0400
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:13 -0400
+Served asset /help.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:13 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:13 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:13 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:13 -0400
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:13 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hot-icon.png" for 127.0.0.1 at 2011-09-12 11:19:13 -0400
+Served asset /hot-icon.png - 304 Not Modified (17ms)
+
+
+Started GET "/assets/neutral-icon.png" for 127.0.0.1 at 2011-09-12 11:19:13 -0400
+Served asset /neutral-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cold-icon.png" for 127.0.0.1 at 2011-09-12 11:19:13 -0400
+Served asset /cold-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cold-icon.png" for 127.0.0.1 at 2011-09-12 11:19:17 -0400
+Served asset /cold-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cold-icon.png" for 127.0.0.1 at 2011-09-12 11:19:17 -0400
+Served asset /cold-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/contacts/3/edit" for 127.0.0.1 at 2011-09-12 11:19:27 -0400
+  Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Rendered contacts/_form.html.erb (20.5ms)
+Rendered contacts/_linkedin_frame.html.erb (0.0ms)
+Rendered contacts/edit.html.erb within layouts/application (22.5ms)
+Rendered sessions/_login.html.erb (1.0ms)
+Completed 200 OK in 41ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:27 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:27 -0400
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:27 -0400
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:27 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:27 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:27 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:27 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:27 -0400
+Served asset /help.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:27 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:27 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-09-12 11:19:27 -0400
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:27 -0400
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/help.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:27 -0400
+Served asset /help.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/helpers.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:27 -0400
+Served asset /helpers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:27 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:27 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:27 -0400
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-12 11:19:27 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/neutral-icon.png" for 127.0.0.1 at 2011-09-12 11:19:27 -0400
+Served asset /neutral-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hot-icon.png" for 127.0.0.1 at 2011-09-12 11:19:27 -0400
+Served asset /hot-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cold-icon.png" for 127.0.0.1 at 2011-09-12 11:19:27 -0400
+Served asset /cold-icon.png - 304 Not Modified (0ms)
