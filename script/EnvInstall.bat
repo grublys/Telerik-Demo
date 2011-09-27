@@ -16,15 +16,16 @@ path=%path%;c:\utils\bin;c:\utils\Git1.7.6\bin;c:\utils\Ruby1.9.2\bin;c:\utils\w
 @echo+
 @echo+
 
-rem @echo ----------------------------------------------------------------
-rem @echo STEP 2/8: Configuring wget
-rem @echo ----------------------------------------------------------------
+@echo ----------------------------------------------------------------
+@echo STEP 2/8: Configuring wget
+@echo ----------------------------------------------------------------
 wget www.google.com --quiet
 IF ERRORLEVEL 9009 (
   @echo+
   @echo You must first download wget, here: http://users.ugent.be/~bpuype/wget/#download
   @echo And place into c:\utils
   @echo+
+  pause ...
   GOTO Cleanup
 )
 del %CD%\index.html
