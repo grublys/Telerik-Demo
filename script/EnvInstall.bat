@@ -28,7 +28,6 @@ IF ERRORLEVEL 9009 (
   pause ...
   GOTO Cleanup
 )
-del %CD%\index.html
 @echo+
 @echo+
 
