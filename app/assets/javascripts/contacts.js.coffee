@@ -53,7 +53,7 @@ $ ->
 
 handleDragStart = (e) ->
   e.dataTransfer.effectAllowed = 'move'
-  e.dataTransfer.setData 'text/html', image(this)
+  e.dataTransfer.setData 'Text', image(this)
 
 handleDragOver = (e) ->
   e.preventDefault() if e.preventDefault() # Necessary. Allows us to drop.
@@ -67,7 +67,7 @@ handleDragLeave = (e) ->
 
 handleDrop = (e) ->
   e.preventDefault() if e.preventDefault()
-  $(this).prop 'innerHTML', e.dataTransfer.getData('text/html')
+  $(this).prop 'innerHTML', e.dataTransfer.getData('Text')
 
 handleDragEnd = (e) ->
   $('#contact_lead_type').val $(this).attr('data-lead_type')
