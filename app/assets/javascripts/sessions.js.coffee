@@ -9,11 +9,11 @@ $ ->
   handleKeyups '#password', toggleLoginButton
   handleClicks '#login_link', openLoginDialog
 
-  $('#login_dialog').dialog(
+  $('#login_dialog').dialog
     autoOpen: false,
     height: 200,
     width: 300,
-    modal: true)
+    modal: true
 
 toggleLoginButton = () -> if loginAllowed() then enableLogin() else disableLogin()
 loginAllowed = () -> $('#username').val() != '' and $('#password').val() != ''

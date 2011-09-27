@@ -4,22 +4,20 @@
 #
 $ ->
   # index
-  $('#lead_type_dialog').dialog(
+  $('#lead_type_dialog').dialog
     autoOpen: false,
     height: 75,
     width: 50,
-    modal: true)
+    modal: true
 
-  $('.contact_lead_type').live('click', (e) ->
+  $('.contact_lead_type').live 'click', (e) ->
     e.preventDefault() if e.preventDefault()
     $('#lead_types img').attr('data-contact_id', @dataset.contact_id)
     openLeadTypeSelection()
-  )
 
-  $('.lead_type_selection').live('click', (e) ->
+  $('.lead_type_selection').live 'click', (e) ->
     e.preventDefault() if e.preventDefault()
     updateLeadType(@dataset.contact_id, @dataset.lead_type)
-  )
 
   # form
   attachDraggables()
@@ -28,32 +26,28 @@ $ ->
   handleClicks '#view_contact_linkedin_profile', openInIframe
 
   $('#govt_contracts').hide()
-  $('#contact_govt_contract').live('click', (e) ->
+  $('#contact_govt_contract').live 'click', (e) ->
     $('#govt_contracts').toggle()
-  )
 
   # treeview
   $('.lead_type_children').toggle()
-  $('.lead_type_parent').live('click', (e) ->
+  $('.lead_type_parent').live 'click', (e) ->
     e.preventDefault() if e.preventDefault()
     openChildren(@dataset.lead_type)
-  )
 
 @attachDraggables = () ->
   draggables = $('#lead_types img')
-  [].forEach.call(draggables, (draggable) ->
+  [].forEach.call draggables, (draggable) ->
     draggable.addEventListener('dragstart' , handleDragStart , false)
     draggable.addEventListener('dragend'   , handleDragEnd   , false)
-  )
 
 @attachDropTargets = () ->
   drop_targets = $('.drop_target')
-  [].forEach.call(drop_targets, (target) ->
+  [].forEach.call drop_targets, (target) ->
     target.addEventListener('dragenter' , handleDragEnter , false)
     target.addEventListener('dragover'  , handleDragOver  , false)
     target.addEventListener('dragleave' , handleDragLeave , false)
     target.addEventListener('drop'      , handleDrop      , false)
-  )
 
 handleDragStart = (e) ->
   e.dataTransfer.effectAllowed = 'move'
@@ -76,9 +70,8 @@ handleDrop = (e) ->
 handleDragEnd = (e) ->
   $('#contact_lead_type').val @dataset.lead_type
   drop_targets = $('.drop_target')
-  [].forEach.call(drop_targets, (target) ->
+  [].forEach.call drop_targets, (target) ->
     $(target).removeClass 'over'
-  )
 
 image = (element) ->
   "<img src='#{element.src}' height='#{element.height}' width='#{element.width}' alt='#{element.alt}'/>"
@@ -93,13 +86,12 @@ closeLeadTypeSelection = () ->
   $('#lead_type_dialog').dialog 'close'
 
 updateLeadType = (contact_id, lead_type) ->
-  $.ajax(
+  $.ajax
     type: 'POST',
     url: "/contacts/update_lead_type",
     data: "id=#{contact_id}&lead_type=#{lead_type}",
     dataType: 'json',
     success: (data) -> updateLeadTypeSuccess(data)
-  )
 
 updateLeadTypeSuccess = (data) ->
   closeLeadTypeSelection()

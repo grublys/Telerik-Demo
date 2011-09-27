@@ -5,8 +5,7 @@
   handlers selector, callback, 'keyup'
 
 @handlers = (selector, callback, event) ->
-  $(selector).live(event, (e) ->
+  $(selector).live event, (e) ->
     e.preventDefault()
     callback $(this)
-  )
 
