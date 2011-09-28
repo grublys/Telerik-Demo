@@ -51,6 +51,7 @@
   </div>
   <div class="actions">
     <%= f.submit %>
+    <%= button_to_function 'Cancel', 'window.close()' unless controller.action_name == 'edit_inline' %>
   </div>
 <% end %>
 
