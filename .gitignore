@@ -1,4 +1,7 @@
 Gemfile.lock
+bin
+obj
+*.suo
 .bundle
 db/*.sqlite3
 log/*.log
