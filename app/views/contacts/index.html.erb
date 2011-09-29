@@ -22,6 +22,16 @@
     <td><%= link_to 'View Contact', edit_contact_path(contact), 'target' => '_blank' %></td>
   </tr>
 <% end %>
+<% (10 - @contacts.count).times do %>
+  <tr class="<%= @contacts.count.even? ? cycle('even', 'odd') : cycle('odd', 'even') %>">
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+<% end %>
 </table>
 
 <br />
