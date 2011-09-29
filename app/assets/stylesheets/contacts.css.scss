@@ -57,11 +57,21 @@ td {
   border: 2px dashed #000;
 }
 
+#treeview_container {
+  width: 100%;
+}
+
 #treeview {
   float: left;
+  height: 100%;
+
+  ul ul li {
+    margin-left: 10px; }
 }
 
 #inline_contact_edit_form {
-  float: left;
-  margin: 0px 50px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  width: 250px;
 }
