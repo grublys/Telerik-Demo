@@ -28,8 +28,8 @@ class ContactsController < ApplicationController
   # GET /contacts/new.json
   def new
     @contact = Contact.new
-	
-	#sleep 5
+
+    #sleep 5
 
     respond_to do |format|
       format.html # new.html.erb
