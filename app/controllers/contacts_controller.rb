@@ -54,6 +54,9 @@ class ContactsController < ApplicationController
   # POST /contacts
   # POST /contacts.json
   def create
+  
+	#sleep 1
+	
     @contact = Contact.new(params[:contact])
 
     respond_to do |format|
