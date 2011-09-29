@@ -41,6 +41,10 @@ h1 {
   margin-bottom: 15px;
 }
 
+h2 {
+  margin-bottom: 10px;
+}
+
 label {
   width: 75px;
   float: left;
@@ -50,4 +54,8 @@ label {
 
 #login_dialog {
   text-align: right;
+}
+
+#description {
+  margin-bottom: 15px;
 }
