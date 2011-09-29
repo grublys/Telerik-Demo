@@ -12,7 +12,8 @@ pause ...
 ECHO STEP 1/8: Updating User Path ...
 @echo ----------------------------------------------------------------
 IF NOT EXIST c:\utils mkdir c:\utils
-path=%path%;c:\utils\bin;c:\utils\Git1.7.6\bin;c:\utils\Ruby1.9.2\bin;c:\utils\wget.exe
+setx path "%PATH%;c:\utils\bin;c:\utils\Git1.7.6\bin;c:\utils\Ruby1.9.2\bin"
+path=%path%;c:\utils\bin;c:\utils\Git1.7.6\bin;c:\utils\Ruby1.9.2\bin
 @echo+
 @echo+
 
@@ -23,7 +24,7 @@ wget www.google.com --quiet
 IF ERRORLEVEL 9009 (
   @echo+
   @echo You must first download wget, here: http://users.ugent.be/~bpuype/wget/#download
-  @echo And place into c:\utils
+  @echo And place into c:\utils\bin
   @echo+
   pause ...
   GOTO Cleanup
