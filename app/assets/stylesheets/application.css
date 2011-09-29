@@ -65,3 +65,17 @@ label {
 #description {
   margin-bottom: 15px;
 }
+
+.link_as_button {
+  color: black;
+  background-color: green;
+  text-transform: uppercase;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.link_as_button:hover {
+  background-color: #343841;
+  color: white;
+}

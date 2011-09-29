@@ -27,7 +27,10 @@
 <br />
 
 <%= link_to 'New Contact', new_contact_path, 'target' => '_blank' %>
-<%= link_to 'Export to PDF', export_contacts_path %>
 <%= link_to 'Treeview', contacts_treeview_path %>
+
+<div style="float: right;">
+  <%= link_to 'Export to PDF', export_contacts_path, :class => 'link_as_button' %>
+</div>
 
 <%= render :partial => 'lead_type_dialog' %>
