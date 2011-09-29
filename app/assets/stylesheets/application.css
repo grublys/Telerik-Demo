@@ -13,6 +13,11 @@
   border-bottom: 1px solid #d4d4d4;
 }
 
+#header h1 {
+  float: left;
+  color: green;
+}
+
 #top-menu {
   position: absolute;
   right: 20px;
