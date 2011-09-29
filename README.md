@@ -41,3 +41,5 @@ Run the migrations [if needed]
 Seed the production database [if needed]
 
 ```$ heroku run rake db:seed```
+
+NOTE: Running `heroku run rake db:seed` will delete all values in the production database to refresh to a known state.
