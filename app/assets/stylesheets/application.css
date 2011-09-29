@@ -40,3 +40,14 @@
 h1 {
   margin-bottom: 15px;
 }
+
+label {
+  width: 75px;
+  float: left;
+  text-align: right;
+  margin-right: 10px;
+}
+
+#login_dialog {
+  text-align: right;
+}
