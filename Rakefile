@@ -21,6 +21,7 @@ def start
   puts "------------------------------------------------------"
   puts "Starting Rails Server"
   puts "------------------------------------------------------"
+  puts "\nYou may begin the demo. Visit: http://localhost:3000\n"
   puts "\nPress Ctrl-C to shutdown the server.\n\n"
   `rails server`
 end
