@@ -8,6 +8,7 @@ $ ->
   handleKeyups '#username', toggleLoginButton
   handleKeyups '#password', toggleLoginButton
   handleClicks '#login_link', openLoginDialog
+  handleClicks '#cancel_login', closeLoginDialog
 
   $('#login_dialog').dialog
     autoOpen: false,
@@ -21,4 +22,8 @@ enableLogin = () -> $('#login_button').attr 'disabled', false
 disableLogin = () -> $('#login_button').attr 'disabled', true
 openLoginDialog = () ->
   $('#flash_alert').html('')
+  $('#username').val('')
+  $('#password').val('')
   $('#login_dialog').dialog 'open'
+closeLoginDialog = () ->
+  $('#login_dialog').dialog 'close'
