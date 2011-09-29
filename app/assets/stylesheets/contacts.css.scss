@@ -3,11 +3,19 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
   border: none;
 }
 
-td {
-  border: none;
+th {
+  background-color: #343841;
+  color: #ffffff;
+  padding: 5px;
+  text-align: center;
 }
 
 tr.even {
@@ -16,6 +24,10 @@ tr.even {
 
 tr.odd {
   background-color: #eee
+}
+
+td {
+  padding: 5px;
 }
 
 [draggable] {
