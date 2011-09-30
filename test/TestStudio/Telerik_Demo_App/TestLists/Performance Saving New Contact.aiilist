@@ -1,7 +1,7 @@
 <TestList Type="ArtOfTest.WebAii.Design.Execution.TestList" Version="2011.2.928.0">
-  <ID Type="System.String">8073a0c7-c02a-4217-bf4e-85abc931eb00</ID>
-  <TestListName Type="System.String">Contact List Performance</TestListName>
-  <Date Type="System.DateTime">2011-09-28 18:21:35Z</Date>
+  <ID Type="System.String">99e9fae6-0b68-4d87-a3c7-6736db94d04f</ID>
+  <TestListName Type="System.String">Performance Saving New Contact</TestListName>
+  <Date Type="System.DateTime">2011-09-29 18:25:42Z</Date>
   <Settings Type="ArtOfTest.WebAii.Core.Settings" Version="2011.2.928.0">
     <WebSettings Type="ArtOfTest.WebAii.Core.Settings+WebSettings" Version="2011.2.928.0">
       <DefaultBrowser Type="ArtOfTest.WebAii.Core.BrowserType">InternetExplorer</DefaultBrowser>
@@ -18,11 +18,7 @@
       <EnableSilverlight Type="System.Boolean">False</EnableSilverlight>
       <VerboseHttpProxy Type="System.Boolean">False</VerboseHttpProxy>
       <SilverlightConnectTimeout Type="System.Int32">30000</SilverlightConnectTimeout>
-      <MultiBrowsersExecution>
-        <Item Type="ArtOfTest.WebAii.Core.BrowserExecutionType">InternetExplorer</Item>
-        <Item Type="ArtOfTest.WebAii.Core.BrowserExecutionType">FireFox</Item>
-      </MultiBrowsersExecution>
-      <UseMultiBrowsers Type="System.Boolean">True</UseMultiBrowsers>
+      <UseMultiBrowsers Type="System.Boolean">False</UseMultiBrowsers>
       <IsProfilingExecution Type="System.Boolean">True</IsProfilingExecution>
       <ProfilerConfigurations />
     </WebSettings>
@@ -46,8 +42,8 @@
   </Settings>
   <Tests>
     <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2011.2.928.0">
-      <ID Type="System.String">6ef4f20c-2dda-419c-997c-854a69210f65</ID>
-      <Path Type="System.String">New Contact\Clicking New Contact from grid opens form in new window.tstest</Path>
+      <ID Type="System.String">6297519a-b92c-43dd-8442-7e9f619d4431</ID>
+      <Path Type="System.String">New Contact\Saving a New Contact with valid values shows user on grid.tstest</Path>
     </Item>
   </Tests>
   <Filter Type="ArtOfTest.WebAii.Design.Execution.Filter" Version="2011.2.928.0">

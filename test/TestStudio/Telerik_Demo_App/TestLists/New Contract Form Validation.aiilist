@@ -1,7 +1,7 @@
 <TestList Type="ArtOfTest.WebAii.Design.Execution.TestList" Version="2011.2.928.0">
-  <ID Type="System.String">8073a0c7-c02a-4217-bf4e-85abc931eb00</ID>
-  <TestListName Type="System.String">Contact List Performance</TestListName>
-  <Date Type="System.DateTime">2011-09-28 18:21:35Z</Date>
+  <ID Type="System.String">f777a064-51c1-438b-9841-2608395c8cfd</ID>
+  <TestListName Type="System.String">New Contract Form Validation</TestListName>
+  <Date Type="System.DateTime">2011-09-29 18:39:14Z</Date>
   <Settings Type="ArtOfTest.WebAii.Core.Settings" Version="2011.2.928.0">
     <WebSettings Type="ArtOfTest.WebAii.Core.Settings+WebSettings" Version="2011.2.928.0">
       <DefaultBrowser Type="ArtOfTest.WebAii.Core.BrowserType">InternetExplorer</DefaultBrowser>
@@ -18,12 +18,8 @@
       <EnableSilverlight Type="System.Boolean">False</EnableSilverlight>
       <VerboseHttpProxy Type="System.Boolean">False</VerboseHttpProxy>
       <SilverlightConnectTimeout Type="System.Int32">30000</SilverlightConnectTimeout>
-      <MultiBrowsersExecution>
-        <Item Type="ArtOfTest.WebAii.Core.BrowserExecutionType">InternetExplorer</Item>
-        <Item Type="ArtOfTest.WebAii.Core.BrowserExecutionType">FireFox</Item>
-      </MultiBrowsersExecution>
-      <UseMultiBrowsers Type="System.Boolean">True</UseMultiBrowsers>
-      <IsProfilingExecution Type="System.Boolean">True</IsProfilingExecution>
+      <UseMultiBrowsers Type="System.Boolean">False</UseMultiBrowsers>
+      <IsProfilingExecution Type="System.Boolean">False</IsProfilingExecution>
       <ProfilerConfigurations />
     </WebSettings>
     <ClientReadyTimeout Type="System.Int32">30000</ClientReadyTimeout>
@@ -46,8 +42,8 @@
   </Settings>
   <Tests>
     <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2011.2.928.0">
-      <ID Type="System.String">6ef4f20c-2dda-419c-997c-854a69210f65</ID>
-      <Path Type="System.String">New Contact\Clicking New Contact from grid opens form in new window.tstest</Path>
+      <ID Type="System.String">e3533232-8b38-46e2-b909-2ed207e6c877</ID>
+      <Path Type="System.String">New Contact\Visually Verify New Contact Form.tstest</Path>
     </Item>
   </Tests>
   <Filter Type="ArtOfTest.WebAii.Design.Execution.Filter" Version="2011.2.928.0">
@@ -55,5 +51,5 @@
     <Comparisons />
     <Values />
   </Filter>
-  <TestListType Type="ArtOfTest.WebAii.Design.TestListType">Performance</TestListType>
+  <TestListType Type="ArtOfTest.WebAii.Design.TestListType">Manual</TestListType>
 </TestList>

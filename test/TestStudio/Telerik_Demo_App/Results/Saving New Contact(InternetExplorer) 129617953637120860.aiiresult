@@ -1,0 +1,71 @@
+<RunResult Type="ArtOfTest.WebAii.Design.Execution.RunResult" Version="2011.2.928.0">
+  <TestListName Type="System.String">Saving New Contact(InternetExplorer)</TestListName>
+  <StartTime Type="System.DateTime">2011-09-29 18:42:40Z</StartTime>
+  <EndTime Type="System.DateTime">2011-09-29 18:42:43Z</EndTime>
+  <DataCollectors />
+  <TestResults>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestResult" Version="2011.2.928.0">
+      <TestId Type="System.String">6297519a-b92c-43dd-8442-7e9f619d4431</TestId>
+      <TestName Type="System.String">Saving a New Contact with valid values shows user on grid</TestName>
+      <TestPath Type="System.String">New Contact\Saving a New Contact with valid values shows user on grid.tstest</TestPath>
+      <ProjectPath Type="System.String">
+      </ProjectPath>
+      <ResultType Type="ArtOfTest.Common.Design.ResultType">Fail</ResultType>
+      <AutomationStepResults />
+      <NotRunStepDescriptions>
+        <Item Type="System.String">Execute test 'Clicking New Contact from grid opens form in new window'</Item>
+        <Item Type="System.String">Set 'ContactFirstNameText' text to 'Jim'</Item>
+        <Item Type="System.String">Set 'ContactLastNameText' text to 'Haswell'</Item>
+        <Item Type="System.String">Set 'ContactEmailEmail' text to 'jh@foo.com'</Item>
+        <Item Type="System.String">Set 'ContactLinkedinProfileText' text to 'http://mypage'</Item>
+        <Item Type="System.String">Click 'NeutralIconImage'</Item>
+        <Item Type="System.String">Desktop command: Drag &amp; Drop NeutralIconImage to Div</Item>
+        <Item Type="System.String">Click 'CommitSubmit'</Item>
+        <Item Type="System.String">Verify 'TextContent' 'Contains' 'jh@foo.com' on 'JhFooComTableCell'</Item>
+        <Item Type="System.String">Close pop-up window : '/contacts'</Item>
+      </NotRunStepDescriptions>
+      <PerStepMessages Type="System.String">------------------------------------------------------------
+'9/29/2011 2:42:40 PM' - Starting execution....
+'9/29/2011 2:42:42 PM' - Failure detected during execution. Details:
+------------------------------------------------------------
+'9/29/2011 2:42:42 PM' - System.NullReferenceException: Object reference not set to an instance of an object.
+   at ArtOfTest.WebAii.Messaging.Http.HttpProxyManager.StartProfiling()
+   at ArtOfTest.WebAii.Design.Execution.Profiler.HttpTrafficProfilerComponent.Start(ExecutionContext executionContext)
+   at ArtOfTest.WebAii.Design.Execution.Profiler.ProfilerClient.Start(ExecutionContext executionContext)
+   at ArtOfTest.WebAii.Design.Execution.TestExecuteProxy.ExecuteTest(Test test, Settings settings, String deploymentFolder, String binariesFolder, ExecutionType exeType, Guid firstStepGuid, Guid lastStepGuid, IntPtr existingBrowserHandle, DebuggerOptions debuggerOptions)
+------------------------------------------------------------
+'9/29/2011 2:42:43 PM' - Test completed!
+</PerStepMessages>
+      <TotalNumberOfPassedSteps Type="System.Int32">0</TotalNumberOfPassedSteps>
+      <ExecutingTestStepCount Type="System.Int32">0</ExecutingTestStepCount>
+      <TotalNumberOfNotRunSteps Type="System.Int32">0</TotalNumberOfNotRunSteps>
+      <IsDataDrivenResult Type="System.Boolean">False</IsDataDrivenResult>
+      <SeparatorLineCharCount Type="System.Int32">60</SeparatorLineCharCount>
+      <ExecutionType Type="ArtOfTest.Common.Design.ExecutionType">QuickExecution</ExecutionType>
+      <EndTime Type="System.DateTime">2011-09-29 18:42:42Z</EndTime>
+      <StarTime Type="System.DateTime">2011-09-29 18:42:40Z</StarTime>
+      <DataIterationResults />
+      <VersionGroupKey Type="System.String">00000000-0000-0000-0000-000000000000</VersionGroupKey>
+    </Item>
+  </TestResults>
+  <ResultId Type="System.String">a13f9620-a101-481c-9e4c-ebb1011146e4</ResultId>
+  <Machine Type="ArtOfTest.WebAii.Design.Execution.Scheduling.Machine" Version="2011.2.928.0">
+    <Id Type="System.String">00000000-0000-0000-0000-000000000000</Id>
+    <NetworkName Type="System.String">DEMO</NetworkName>
+    <OperatingSystem Type="System.String">Windows 7</OperatingSystem>
+    <InstalledBrowsers>
+      <Item Type="ArtOfTest.WebAii.Design.Execution.Scheduling.BrowserInformation" Version="2011.2.928.0">
+        <BrowserType Type="ArtOfTest.WebAii.Core.BrowserType">InternetExplorer</BrowserType>
+        <Version Type="System.String">9.0.8112.16421</Version>
+      </Item>
+      <Item Type="ArtOfTest.WebAii.Design.Execution.Scheduling.BrowserInformation" Version="2011.2.928.0">
+        <BrowserType Type="ArtOfTest.WebAii.Core.BrowserType">FireFox</BrowserType>
+        <Version Type="System.String">7.0 (en-US)</Version>
+      </Item>
+    </InstalledBrowsers>
+    <Status Type="ArtOfTest.WebAii.Design.Execution.Scheduling.MachineStatus">Ready</Status>
+    <DBState Type="System.Int32">0</DBState>
+  </Machine>
+  <IsManual Type="System.Boolean">False</IsManual>
+  <TestListId Type="System.String">df812673-bdbe-438d-a9c7-bc1acb21bbe1</TestListId>
+</RunResult>
