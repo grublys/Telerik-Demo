@@ -12,7 +12,10 @@ table, th, td {
 }
 
 th {
-  background-color: #343841;
+  background: #343841;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4e4f58), to(#2d3134));
+  background: -moz-linear-gradient(top,  #4e4f58,  #2d3134);
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#4e4f58', endColorstr='#2d3134');
   color: #ffffff;
   padding: 5px;
   text-align: center;
