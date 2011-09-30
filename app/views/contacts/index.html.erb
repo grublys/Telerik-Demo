@@ -40,7 +40,7 @@
 <%= link_to 'Treeview', contacts_treeview_path %>
 
 <div style="float: right;">
-  <%= link_to 'Export to PDF', export_contacts_path, :class => 'link_as_button' %>
+  <%= button_to 'Export to PDF', export_contacts_path, :method => :get, :class => 'large_button green' %>
 </div>
 
 <%= render :partial => 'lead_type_dialog' %>
