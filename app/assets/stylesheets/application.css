@@ -7,16 +7,16 @@
  *= require_tree .
 */
 
-#header {
+#top-bar {
   height: 25px;
   background-color: #a9a9a9;
   padding: 10px 10px 10px 10px;
   border-bottom: 1px solid #d4d4d4;
 }
 
-#header h1 {
+#top-bar h1 {
   float: left;
-  color: green;
+  color: #000000;
 }
 
 #top-menu {
@@ -40,8 +40,27 @@
   color: red;
 }
 
+#body {
+  height: 100%;
+  background: #dee1e3;
+  padding: 15px 15px 15px 15px;
+}
+
 #content {
-  padding: 50px 50px 50px 50px;
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 15px 15px 50px 15px;
+  margin-top: 15px;
+}
+
+#body h2 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c9cccf;
+}
+
+#content h2 {
+  color: green;
+  border: none;
 }
 
 h1 {

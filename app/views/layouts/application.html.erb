@@ -8,7 +8,7 @@
 </head>
 <body>
 
-  <div id="header">
+  <div id="top-bar">
     <h1>[telerik logo]</h1>
     <div id="top-menu">
       <%= link_to 'Home', root_path %>
@@ -17,8 +17,12 @@
     </div>
   </div>
 
-  <div id="content">
-    <%= yield %>
+
+  <div id="body">
+    <h2>[test studio logo]</h2>
+    <div id="content">
+      <%= yield %>
+    </div>
   </div>
 
   <% if not current_user %>
