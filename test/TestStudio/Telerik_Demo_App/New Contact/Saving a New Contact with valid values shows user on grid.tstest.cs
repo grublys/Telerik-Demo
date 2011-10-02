@@ -19,31 +19,31 @@ using ArtOfTest.WebAii.Silverlight.UI;
 namespace Telerik_Demo_App
 {
 
-	//
-	// You can add custom execution steps by simply
-	// adding a void function and decorating it with the [CodedStep] 
-	// attribute to the test method. 
-	// Those steps will automatically show up in the test steps on save.
-	//
-	// The BaseWebAiiTest exposes all key objects that you can use
-	// to access the current testcase context. [i.e. ActiveBrowser, Find ..etc]
-	//
-	// Data driven tests can use the Data[columnIndex] or Data["columnName"] 
-	// to access data for a specific data iteration.
-	//
-	// Example:
-	//
-	// [CodedStep("MyCustom Step Description")]
-	// public void MyCustomStep()
-	// {
-	//		// Custom code goes here
-	//      ActiveBrowser.NavigateTo("http://www.google.com");
-	//
-	//		// Or
-	//		ActiveBrowser.NavigateTo(Data["url"]);
-	// }
-	//
-		
+    //
+    // You can add custom execution steps by simply
+    // adding a void function and decorating it with the [CodedStep] 
+    // attribute to the test method. 
+    // Those steps will automatically show up in the test steps on save.
+    //
+    // The BaseWebAiiTest exposes all key objects that you can use
+    // to access the current testcase context. [i.e. ActiveBrowser, Find ..etc]
+    //
+    // Data driven tests can use the Data[columnIndex] or Data["columnName"] 
+    // to access data for a specific data iteration.
+    //
+    // Example:
+    //
+    // [CodedStep("MyCustom Step Description")]
+    // public void MyCustomStep()
+    // {
+    //        // Custom code goes here
+    //      ActiveBrowser.NavigateTo("http://www.google.com");
+    //
+    //        // Or
+    //        ActiveBrowser.NavigateTo(Data["url"]);
+    // }
+    //
+        
 
     public class Saving_a_New_Contact_with_valid_values_shows_user_on_grid : BaseWebAiiTest
     {
@@ -56,20 +56,31 @@ namespace Telerik_Demo_App
         /// to all the elements, frames or regions
         /// in this project.
         /// </summary>
-		public Pages Pages
-		{
-			get
-			{
-				if (_pages == null)
-				{
-					_pages = new Pages(Manager.Current);
-				}
-				return _pages;
-			}
+        public Pages Pages
+        {
+            get
+            {
+                if (_pages == null)
+                {
+                    _pages = new Pages(Manager.Current);
+                }
+                return _pages;
+            }
         }
 
         #endregion
         
-		// Add your test methods here...
+        // Add your test methods here...
+    
+        //[CodedStep(@"New Coded Step")]
+        //public void Saving_a_New_Contact_with_valid_values_shows_user_on_grid_CodedStep()
+        //{
+            
+            
+            //THIS IS C# CODE HERE!!
+            
+            //stand up a web service call
+            //call to delete the record we just made
+        //}
     }
 }

@@ -159,7 +159,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>1</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>ead96225-f680-4c0e-b235-102b4d23f2d9</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>06ea7622-b4d8-4346-a2b9-eca3dc2b06b0</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ExecuteTestActionDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -194,7 +194,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>2</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>7863fb4f-e8c6-4c13-8c06-cc423c975ba0</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>f310f38e-e131-46d2-bc86-8c3a144f5dd4</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:SetTextActionDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -287,7 +287,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>3</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>64fd176a-e3ff-4a45-988d-cdba6008fafc</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>4a800c44-b049-4ce0-bfcb-428a34730aa7</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:SetTextActionDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -380,7 +380,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>4</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>8dc82319-a0bb-4060-8e9a-009f92ce21d6</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>f2b61b3c-2ed6-468c-9342-1b12f5b1c028</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:SetTextActionDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -473,7 +473,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>5</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>f8ac6823-83af-4932-934a-c73abaad26d6</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>be1d2a8f-9455-492d-a984-a6f256cce66b</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:SetTextActionDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -566,7 +566,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>6</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>cf6b132d-9b39-41eb-baf7-c1e97cc3f482</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>f78f37a5-2644-4cbf-a2a2-9954d1e6a061</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ClickActionDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -649,7 +649,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>7</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>d7dc674c-5c22-496c-8df1-85a7fc87d482</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>25bc85f0-6130-4bb5-8e41-54af5c50e9f7</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:DragDropActionDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -807,7 +807,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>8</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>3c767f76-d2c8-4c72-9a19-e1e595b083fe</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>c27a0daa-cb9b-4a5e-8f28-d7ee2b677225</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ClickActionDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -890,7 +890,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>9</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>7981d2a3-73c7-4186-a865-9f11e2204b4b</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>cbc7cefd-0367-474f-9b5c-2fec910b2522</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ContentVerificationDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -977,7 +977,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>10</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>d1d31eb4-fa22-41ed-8e6f-200f213bf2cb</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>a3d937b6-44d2-424e-bda2-9fb2c80afde7</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:HtmlDialogHandlerDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -1020,7 +1020,7 @@
   </CurrentReferences>
   <DeploymentItems xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <DomStatesCounter xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-  <HasCodeBehind>false</HasCodeBehind>
+  <HasCodeBehind>true</HasCodeBehind>
   <HtmlDescription />
   <InheritParentDataSource>false</InheritParentDataSource>
   <IsManual>false</IsManual>
@@ -1051,9 +1051,9 @@
   <SilverlightAppWebUrl />
   <SilverlightEnabled>false</SilverlightEnabled>
   <StopTestListOnFailure>false</StopTestListOnFailure>
-  <TestAssembly i:nil="true" />
-  <TestAssemblyPath i:nil="true" />
-  <TestClass i:nil="true" />
+  <TestAssembly>Telerik_Demo_App.dll</TestAssembly>
+  <TestAssemblyPath>D:\projects\Telerik-Demo\test\TestStudio\Telerik_Demo_App\bin</TestAssemblyPath>
+  <TestClass>Telerik_Demo_App.Saving_a_New_Contact_with_valid_values_shows_user_on_grid</TestClass>
   <TestLinks xmlns:d2p1="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.ProjectModel.TestLinks" />
   <TestType>Web</TestType>
   <UniqueId>6297519a-b92c-43dd-8442-7e9f619d4431</UniqueId>
