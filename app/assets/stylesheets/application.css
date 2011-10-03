@@ -9,7 +9,7 @@
 
 #top-bar {
   height: 25px;
-  background-color: #a9a9a9;
+  background-color: #000000;
   padding: 10px 10px 10px 10px;
   border-bottom: 1px solid #d4d4d4;
 }
@@ -42,7 +42,7 @@
 
 #body {
   height: 100%;
-  background: #dee1e3;
+  background: #d6dadd;
   padding: 15px 15px 15px 15px;
 }
 
