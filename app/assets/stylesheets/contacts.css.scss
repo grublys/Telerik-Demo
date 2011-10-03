@@ -60,13 +60,16 @@ td {
   border: 2px dashed #000;
 }
 
-#treeview_container {
-  width: 100%;
-}
-
 #treeview {
   float: left;
   height: 100%;
+
+  ul {
+    margin-left: 15px;
+    list-style-type: disc;
+
+    ul {
+      list-style-type: circle; } }
 
   ul ul li {
     margin-left: 10px; }
