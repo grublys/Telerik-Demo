@@ -36,11 +36,15 @@
 
 <br />
 
-<%= link_to 'New Contact', new_contact_path, 'target' => '_blank' %>
-<%= link_to 'Treeview', contacts_treeview_path %>
+<div id="buttons">
+  <div class="left">
+    <%= link_to 'New Contact', new_contact_path, 'target' => '_blank' %>
+    <%= link_to 'Treeview', contacts_treeview_path %>
+  </div>
 
-<div style="float: right;">
-  <%= button_to 'Export to PDF', export_contacts_path, :method => :get, :class => 'large_button green' %>
+  <div class="right">
+    <%= button_to 'Export to PDF', export_contacts_path, :method => :get, :class => 'large_button green' %>
+  </div>
 </div>
 
 <%= render 'lead_type_dialog' %>
