@@ -38,12 +38,12 @@
 
 <div id="buttons">
   <div class="left">
-    <%= link_to 'New Contact', new_contact_path, 'target' => '_blank' %>
-    <%= link_to 'Treeview', contacts_treeview_path %>
+    <%= link_to 'New Contact', new_contact_path, 'target' => '_blank', :class => 'large_button gray' %>
+    <%= link_to 'Treeview', contacts_treeview_path, :class => 'large_button gray' %>
   </div>
 
   <div class="right">
-    <%= button_to 'Export to PDF', export_contacts_path, :method => :get, :class => 'large_button green' %>
+    <%= link_to 'Export to PDF', export_contacts_path, :class => 'large_button green' %>
   </div>
 </div>
 
