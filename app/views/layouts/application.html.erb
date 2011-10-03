@@ -13,7 +13,7 @@
     <div id="top-menu">
       <%= link_to 'Home', root_path %>
       <%= link_to 'Help', help_path %>
-      <%= render :partial => 'sessions/login' %>
+      <%= render 'sessions/login' %>
     </div>
   </div>
 
@@ -26,7 +26,7 @@
   </div>
 
   <% if not current_user %>
-    <%= render :partial => 'sessions/form' %>
+    <%= render 'sessions/form' %>
   <% end %>
 
 </body>
