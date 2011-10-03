@@ -1,0 +1,170 @@
+<html><head><META content="IE=9.0000" http-equiv="X-UA-Compatible">
+  <title>Telerik Customer Relations Management System</title>
+  <link rel="stylesheet" type="text/css" href="/assets/application.css?body=1" media="screen">
+<link rel="stylesheet" type="text/css" href="/assets/jquery-ui-1.8.16.custom.css?body=1" media="screen">
+<link rel="stylesheet" type="text/css" href="/assets/contacts.css?body=1" media="screen">
+<link rel="stylesheet" type="text/css" href="/assets/help.css?body=1" media="screen">
+<link rel="stylesheet" type="text/css" href="/assets/scaffolds.css?body=1" media="screen">
+<link rel="stylesheet" type="text/css" href="/assets/sessions.css?body=1" media="screen">
+<link rel="stylesheet" type="text/css" href="/assets/users.css?body=1" media="screen">
+<link rel="stylesheet" type="text/css" href="/assets/welcome.css?body=1" media="screen">
+  <script type="text/javascript" src="/assets/jquery.js?body=1"></script>
+<script type="text/javascript" src="/assets/jquery-ui.js?body=1"></script>
+<script type="text/javascript" src="/assets/jquery_ujs.js?body=1"></script>
+<script type="text/javascript" src="/assets/contacts.js?body=1"></script>
+<script type="text/javascript" src="/assets/helpers.js?body=1"></script>
+<script type="text/javascript" src="/assets/sessions.js?body=1"></script>
+<script type="text/javascript" src="/assets/application.js?body=1"></script>
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="SEC6bwP8gGXVtD2cteJFRCyYVJgMDUWJ68ovHfcRdNw=">
+
+</head><body>
+
+  <div id="top-bar">
+	  <h1><img alt="Teleriklogo" src="/assets/TelerikLogo.png" width="129" height="33"> </h1>
+    <div id="top-menu">
+      <a href="/">Home</a>
+      <a href="/help">Help</a>
+        <a href="/logout">Logout</a>
+
+    </div>
+  </div>
+
+
+  <div id="body">
+	  <h2><img alt="Teststudiologo" src="/assets/TestStudioLogo.png" width="163" height="38"> </h2>
+    <div id="content">
+      <div id="description">
+  <h2>Demonstration Application: Customer Relations Management System</h2>
+
+  <p>This is a demonstration application designed to help you evaluate Telerik's Test Studio. The application is a skeleton around the metaphor of a Customer Relations Management (CRM) system. You can create new contacts, view existing ones, export the grid to a file, and a number of other actions.</p>
+  <p>This CRM application is <strong>not</strong> a real application; it's designed to give you the chance to work with several common problems around automation. This way you'll be able to use Test Studio and see how well it works! You can use the existing Test Studio project under test/TestStudio, or you can create your own.</p>
+
+</div>
+
+
+
+<p id="notice"></p>
+
+<table>
+  <tbody><tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+    <th>LinkedIn</th>
+    <th>Lead type</th>
+    <th>Action</th>
+  </tr>
+
+  <tr class="even">
+    <td>Jim</td>
+    <td>Holmes</td>
+    <td>jim@iterativerose.com</td>
+    <td>http://www.linkedin.com/pub/jim-holmes/2/124/b02</td>
+    <td id="lead_type_cell-15"><img class="contact_lead_type" alt="Hot-icon" src="/assets/hot-icon.png" width="13" height="13" data-contact_id="15"></td>
+    <td><a href="/contacts/15/edit" target="_blank">View Contact</a></td>
+  </tr>
+  <tr class="odd">
+    <td>Todd</td>
+    <td>Kaufman</td>
+    <td>toddkaufman@gmail.com</td>
+    <td>http://www.linkedin.com/pub/todd-kaufman/2/a58/1b1</td>
+    <td id="lead_type_cell-16"><img class="contact_lead_type" alt="Hot-icon" src="/assets/hot-icon.png" width="13" height="13" data-contact_id="16"></td>
+    <td><a href="/contacts/16/edit" target="_blank">View Contact</a></td>
+  </tr>
+  <tr class="even">
+    <td>Matthew</td>
+    <td>Boston</td>
+    <td>matthew.boston@gmail.com</td>
+    <td>http://www.linkedin.com/in/mboston</td>
+    <td id="lead_type_cell-17"><img class="contact_lead_type" alt="Neutral-icon" src="/assets/neutral-icon.png" width="13" height="13" data-contact_id="17"></td>
+    <td><a href="/contacts/17/edit" target="_blank">View Contact</a></td>
+  </tr>
+  <tr class="odd">
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="even">
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="odd">
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="even">
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="odd">
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="even">
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="odd">
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</tbody></table>
+
+<br>
+
+<a href="/contacts/new" target="_blank">New Contact</a>
+<a href="/contacts/treeview">Treeview</a>
+
+<div style="float: right;">
+  <form class="button_to" method="get" action="/contacts/export"><div><input class="large_button green" value="Export to PDF" type="submit"></div></form>
+</div>
+
+
+
+
+<div id="moreInfo">
+	<p>Interested in learing more about Test Studio? Visit us at <a href="http://www.telerik.com/automated-testing-tools.aspx">the Test Studio home page.</a> You can also <a href="http://www.telerik.com/automated-testing-tools.aspx">download a fully functional trial of Test Studio</a> complete with our full priority support to help you get started!</p>
+</div>
+
+
+    </div>
+  </div>
+
+
+
+
+<div style="outline: 0px; display: none; position: absolute; z-index: 1000;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-resizable" role="dialog" tabIndex="-1" aria-labelledby="ui-dialog-title-lead_type_dialog"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-dialog-title-lead_type_dialog" class="ui-dialog-title">Lead Type</span><a class="ui-dialog-titlebar-close ui-corner-all" role="button" href="#"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="lead_type_dialog" class="ui-dialog-content ui-widget-content">
+  <div id="lead_types">
+    <img class="lead_type_selection" alt="Hot-icon" src="/assets/hot-icon.png" width="23" height="23" data-lead_type="HOT">
+    <img class="lead_type_selection" alt="Neutral-icon" src="/assets/neutral-icon.png" width="23" height="23" data-lead_type="NEUTRAL">
+    <img class="lead_type_selection" alt="Cold-icon" src="/assets/cold-icon.png" width="23" height="23" data-lead_type="COLD">
+  </div>
+</div><div class="ui-resizable-handle ui-resizable-n"></div><div class="ui-resizable-handle ui-resizable-e"></div><div class="ui-resizable-handle ui-resizable-s"></div><div class="ui-resizable-handle ui-resizable-w"></div><div style="z-index: 1001;" class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se"></div><div style="z-index: 1002;" class="ui-resizable-handle ui-resizable-sw"></div><div style="z-index: 1003;" class="ui-resizable-handle ui-resizable-ne"></div><div style="z-index: 1004;" class="ui-resizable-handle ui-resizable-nw"></div></div></body></html>
