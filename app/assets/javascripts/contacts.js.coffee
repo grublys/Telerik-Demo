@@ -100,7 +100,7 @@ updateLeadTypeSuccess = (data) ->
   refreshContactRow(data)
 
 refreshContactRow = (contact) ->
-  image_html = "<img class='contact_lead_type' data-contact_id='#{contact.id}' height='13' src='/assets/#{contact.lead_type.toLowerCase()}-icon.png' width='13' /></td>"
+  image_html = "<img class='contact_lead_type' data-contact_id='#{contact.id}' height='13' src='/assets/#{contact.lead_type}.png' width='13' /></td>"
   $("#lead_type_cell-#{contact.id}").html(image_html)
 
 openChildren = (lead_type) ->
