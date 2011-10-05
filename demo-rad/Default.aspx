@@ -25,7 +25,7 @@
                 <telerik:GridBoundColumn DataField="email" HeaderText="Email" />
                 <telerik:GridBoundColumn DataField="linkedin_profile" HeaderText="LinkedIn" />
                 <telerik:GridImageColumn DataImageUrlFormatString="http://localhost:3000/assets/{0}.png" DataImageUrlFields="lead_type" HeaderText="Lead Type" ImageHeight="23" ImageWidth="23" />
-                <telerik:GridHyperlinkColumn Text="View Contact" DataNavigateUrlFormatString="http://localhost:3000/contacts/{0}/edit" DataNavigateUrlFields="id" HeaderText="Action" Target="_blank" />
+                <telerik:GridHyperlinkColumn DataNavigateUrlFormatString="http://localhost:3000/contacts/{0}/edit" DataNavigateUrlFields="id" HeaderText="Action" Text="View Contact" Target="_blank" />
             </Columns>
         </MasterTableView>
 
