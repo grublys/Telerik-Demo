@@ -20,8 +20,8 @@ path=%path%;c:\utils\bin;c:\utils\Git1.7.6\bin;c:\utils\Ruby1.9.2\bin
 @echo ----------------------------------------------------------------
 @ECHO STEP 2/6: Installing Git ...
 @echo ----------------------------------------------------------------
-IF NOT EXIST Git-1.7.6-preview20110708.exe wget http://msysgit.googlecode.com/files/Git-1.7.6-preview20110708.exe
-Git-1.7.6-preview20110708.exe /silent /dir=c:\utils\Git1.7.6
+IF NOT EXIST .\script\Git-1.7.6-preview20110708.exe wget http://msysgit.googlecode.com/files/Git-1.7.6-preview20110708.exe .\script\Git-1.7.6-preview20110708.exe
+.\script\Git-1.7.6-preview20110708.exe /silent /dir=c:\utils\Git1.7.6
 @echo+
 @echo+
 
@@ -29,8 +29,8 @@ Git-1.7.6-preview20110708.exe /silent /dir=c:\utils\Git1.7.6
 @echo ----------------------------------------------------------------
 ECHO STEP 3/6: Installing Ruby ...
 @echo ----------------------------------------------------------------
-IF NOT EXIST rubyinstaller-1.9.2-p290.exe wget http://rubyforge.org/frs/download.php/75127/rubyinstaller-1.9.2-p290.exe
-rubyinstaller-1.9.2-p290.exe /silent /dir=c:\utils\Ruby1.9.2
+IF NOT EXIST .\script\rubyinstaller-1.9.2-p290.exe wget http://rubyforge.org/frs/download.php/75127/rubyinstaller-1.9.2-p290.exe .\script\rubyinstaller-1.9.2-p290.exe
+.\script\rubyinstaller-1.9.2-p290.exe /silent /dir=c:\utils\Ruby1.9.2
 @echo+
 @echo+
 
