@@ -24,12 +24,11 @@ class ContactsController < ApplicationController
     end
   end
 
+  
   # GET /contacts/new
   # GET /contacts/new.json
   def new
     @contact = Contact.new
-
-    #sleep 5
 
     respond_to do |format|
       format.html # new.html.erb
@@ -51,11 +50,30 @@ class ContactsController < ApplicationController
     end
   end
 
+  def delay_three_seconds_and_spike_cpu
+	begin
+		Timeout.timeout(3) do	
+			$loopCount = 100
+			$index = 0
+			
+			while $index < $loopCount do
+				100000000000.times{ (1231231232312313 * 12312312312312312312) / 
+									(12873612876312873621 * 123123123123) }
+				$index+=1
+			end
+		end
+	rescue 
+	end
+  end
+  
   # POST /contacts
   # POST /contacts.json
   def create
   
-	#sleep 1
+	# Uncomment the following method call when you need to demo a short delay
+	# and CPU spike when saving a new contact.
+	
+	#delay_three_seconds_and_spike_cpu
 	
     @contact = Contact.new(params[:contact])
 
