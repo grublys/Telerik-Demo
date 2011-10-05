@@ -18,7 +18,7 @@
 
     <h2>RadGrid</h2>
     <telerik:RadGrid ID="RadGrid1" runat="server" PageSize="10" AutoGenerateColumns="false">
-        <MasterTableView>
+        <MasterTableView AlternatingItemStyle-CssClass="odd">
             <Columns>
                 <telerik:GridBoundColumn DataField="first_name" HeaderText="First Name" />
                 <telerik:GridBoundColumn DataField="last_name" HeaderText="Last Name" />
