@@ -38,14 +38,14 @@
     <%= f.label :other, "Other" %>
   </div>
   <div id="lead_types">
-    <%= image_tag 'HOT.png'     , :size => '23x23' , 'draggable' => true , 'data-lead_type' => 'HOT' %>
-    <%= image_tag 'NEUTRAL.png' , :size => '23x23' , 'draggable' => true , 'data-lead_type' => 'NEUTRAL'%>
-    <%= image_tag 'COLD.png'    , :size => '23x23' , 'draggable' => true , 'data-lead_type' => 'COLD' %>
+    <%= image_tag 'HOT.png'     , 'draggable' => true , 'data-lead_type' => 'HOT' %>
+    <%= image_tag 'NEUTRAL.png' , 'draggable' => true , 'data-lead_type' => 'NEUTRAL'%>
+    <%= image_tag 'COLD.png'    , 'draggable' => true , 'data-lead_type' => 'COLD' %>
   </div>
   <div class="field">
     <%= f.label :lead_type %><br />
     <div class="drop_target">
-      <%= image_tag(lead_type_icon(@contact.lead_type), :size => '23x23') if @contact.lead_type %>
+      <%= image_tag(lead_type_icon(@contact.lead_type)) if @contact.lead_type %>
     </div>
     <%= f.hidden_field :lead_type %>
   </div>

@@ -6,8 +6,8 @@ $ ->
   # index
   $('#lead_type_dialog').dialog
     autoOpen: false,
-    height: 75,
-    width: 50,
+    height: 110,
+    width: 200,
     modal: true
 
   $('.contact_lead_type').live 'click', (e) ->
@@ -57,6 +57,7 @@ handleDragStart = (e) ->
 
 handleDragOver = (e) ->
   e.preventDefault() if e.preventDefault() # Necessary. Allows us to drop.
+  $(this).addClass 'over'
   e.dataTransfer.dropEffect = 'move'
 
 handleDragEnter = (e) ->
@@ -100,7 +101,7 @@ updateLeadTypeSuccess = (data) ->
   refreshContactRow(data)
 
 refreshContactRow = (contact) ->
-  image_html = "<img class='contact_lead_type' data-contact_id='#{contact.id}' height='13' src='/assets/#{contact.lead_type}.png' width='13' /></td>"
+  image_html = "<img class='contact_lead_type' data-contact_id='#{contact.id}' height='23' src='/assets/#{contact.lead_type}.png' width='23' /></td>"
   $("#lead_type_cell-#{contact.id}").html(image_html)
 
 openChildren = (lead_type) ->
