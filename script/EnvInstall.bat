@@ -12,7 +12,6 @@ pause ...
 ECHO STEP 1/6: Updating User Path ...
 @echo ----------------------------------------------------------------
 IF NOT EXIST c:\utils mkdir c:\utils
-setx path "%PATH%;c:\utils\bin;c:\utils\Git1.7.6\bin;c:\utils\Ruby1.9.2\bin"
 path=%path%;c:\utils\bin;c:\utils\Git1.7.6\bin;c:\utils\Ruby1.9.2\bin
 @echo+
 @echo+
