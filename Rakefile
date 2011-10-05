@@ -9,12 +9,20 @@ DemoApp::Application.load_tasks
 task :default => [:demo]
 
 task :demo do
+  setup_path
   migrate
   seed
   start
 end
 
 task :install do
+end
+
+def setup_path
+  puts "------------------------------------------------------"
+  puts "Configuring %PATH%"
+  puts "------------------------------------------------------"
+  `path=%PATH%;c:\utils\Git-1.7.6\bin;c:\utils\Ruby1.9.2\bin`
 end
 
 def start
