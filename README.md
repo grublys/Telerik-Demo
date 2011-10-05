@@ -4,6 +4,20 @@ Clone the repo
 
 ```$ git clone git@github.com:PillarTechnology/Telerik-Demo.git```
 
+Setup the environment (windows)
+
+```$ .\script\EnvInstall.bat```
+
+## Running the Demo ##
+
+### Windows ###
+
+```$ ./demo.bat```
+
+### Mac OS X ###
+
+```$ rake demo```
+
 ## Development ##
 
 Install missing bundles
