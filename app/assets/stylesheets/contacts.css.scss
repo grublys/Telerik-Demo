@@ -48,16 +48,15 @@ td {
   display: table-cell;
   vertical-align: middle;
 
+  &.over {
+    border: 2px dashed #000;
+  }
+
   img {
     position: relative;
     display: block;
     margin: auto;
-    z-index: -1;
   }
-}
-
-.over {
-  border: 2px dashed #000;
 }
 
 #treeview {

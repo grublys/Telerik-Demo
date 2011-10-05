@@ -75,6 +75,7 @@ class ContactsController < ApplicationController
 	
 	#delay_three_seconds_and_spike_cpu
 	
+
     @contact = Contact.new(params[:contact])
 
     respond_to do |format|
