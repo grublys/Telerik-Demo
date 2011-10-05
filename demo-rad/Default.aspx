@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
     CodeFile="Default.aspx.cs" Inherits="_Default" %>
     <%@ Register Assembly="Telerik.Web.UI"
         Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
@@ -16,6 +16,7 @@
         <p>This CRM application is <strong>not</strong> a real application; it's designed to give you the chance to work with several common problems around automation. This way you'll be able to use Test Studio and see how well it works! You can use the existing Test Studio project under test/TestStudio, or you can create your own.</p>
     </div>
 
+    <h2>RadGrid</h2>
     <telerik:RadGrid ID="RadGrid1" runat="server" PageSize="10" AutoGenerateColumns="false">
         <MasterTableView>
             <Columns>
@@ -24,7 +25,7 @@
                 <telerik:GridBoundColumn DataField="email" HeaderText="Email" />
                 <telerik:GridBoundColumn DataField="linkedin_profile" HeaderText="LinkedIn" />
                 <telerik:GridBoundColumn DataField="lead_type" HeaderText="Lead Type" />
-                <telerik:GridBoundColumn DataField="" HeaderText="Action" />
+                <telerik:GridHyperlinkColumn Text="View Contact" NavigateUrl="#" HeaderText="Action" Target="_blank" />
             </Columns>
         </MasterTableView>
 
@@ -35,15 +36,17 @@
 
     <script type="text/javascript">
         function pageLoad() {
-            $.getJSON('http://localhost:3000/contacts.json', function (json) {    
-                var mtv = $find("<%=RadGrid1.ClientID %>").get_masterTableView(); mtv.set_dataSource(json); mtv.dataBind();
+            $.getJSON('http://localhost:3000/contacts.json', function (json) {
+                var mtv = $find("<%= RadGrid1.ClientID %>").get_masterTableView(); mtv.set_dataSource(json); mtv.dataBind();
             });
         }
     </script>
 
+    <br />
+
     <div id="buttons">
         <div class="left">
-            <a href="http://localhost:3000/contacts/new" class="large_button gray" target="_blank">New Contacts</a>
+            <a href="http://localhost:3000/contacts/new" class="large_button gray" target="_blank">New Contact</a>
             <a href="http://localhost:3000/contacts/treeview" class="large_button gray">Treeview</a>
         </div>
 
