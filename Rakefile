@@ -17,27 +17,27 @@ end
 task :install do
 end
 
-def start
-  puts "------------------------------------------------------"
-  puts "Starting Rails Server"
-  puts "------------------------------------------------------"
-  puts "\nYou may begin the demo. Visit: http://localhost:3000\n"
-  puts "\nPress Ctrl-C to shutdown the server.\n\n"
-  `rails server`
-end
-
 def migrate
-  puts "------------------------------------------------------"
-  puts "Migrating Database"
-  puts "------------------------------------------------------"
+  puts "----------------------------------------------------------------"
+  puts "STEP 1/3 Migrating Database"
+  puts "----------------------------------------------------------------"
   `rake db:migrate`
   puts "complete..."
 end
 
 def seed
-  puts "------------------------------------------------------"
-  puts "Seeding Database"
-  puts "------------------------------------------------------"
+  puts "----------------------------------------------------------------"
+  puts "STEP 2/3 Seeding Database"
+  puts "----------------------------------------------------------------"
   `rake db:seed`
   puts "complete..."
+end
+
+def start
+  puts "----------------------------------------------------------------"
+  puts "STEP 3/3 Starting Rails Server"
+  puts "----------------------------------------------------------------"
+  puts "\nYou may begin the demo. Visit: http://localhost:3000\n"
+  puts "\nPress Ctrl-C to shutdown the server.\n\n"
+  `rails server`
 end
