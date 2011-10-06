@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   private
 
   def require_login
-    unless current_user
+    unless current_user || request.format == 'json'
       redirect_to welcome_url
     end
   end
