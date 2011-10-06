@@ -12,7 +12,7 @@ Setup the environment (windows)
 
 ### Windows ###
 
-```$ ./demo.bat```
+```$ demo.bat```
 
 ### Mac OS X ###
 
