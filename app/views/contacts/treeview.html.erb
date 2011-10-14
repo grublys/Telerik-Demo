@@ -1,3 +1,8 @@
+<h2>
+  HTML5
+  <%= render 'selection' %>
+</h2>
+
 <div id="treeview">
   <ul>
     <% LeadType::LEAD_TYPES.each do |lead_type| %>
@@ -15,10 +20,4 @@
 </div>
 
 <div id="inline_contact_edit_form">
-</div>
-
-<div id="buttons">
-  <div class="left">
-    <%= link_to 'Gridview', contacts_path, :class => 'large_button gray' %>
-  </div>
 </div>
