@@ -1,0 +1,4 @@
+<div id="selection">
+  <%= select "selection", "technology", Technology::TYPES, :prompt => "Select Technology" %>
+  <%= select_tag("selection_view", [], {:prompt => "Select View", :disabled => "disabled"}) %>
+</div>

@@ -21,6 +21,10 @@ $ ->
     e.preventDefault() if e.preventDefault()
     updateLeadType $(this).attr('data-contact_id'), $(this).attr('data-lead_type')
 
+  $('#selection_technology').change (e) ->
+    e.preventDefault() if e.preventDefault()
+    updateViewsForTechnology $('select#selection_technology :selected').val()
+
   # form
   attachDraggables()
   attachDropTargets()
@@ -87,6 +91,28 @@ openLeadTypeSelection = () ->
 
 closeLeadTypeSelection = () ->
   $('#lead_type_dialog').dialog 'close'
+
+updateViewsForTechnology = (tech) ->
+  if tech
+    $.ajax
+      type: 'GET',
+      url: '/contacts/update_views_for_technology',
+      data: "tech=#{tech}",
+      dataType: 'json',
+      success: (data) -> updateViewSelection(data)
+  else
+    resetSelectionView()
+    $('#selection_view').attr('disabled', 'disabled')
+
+updateViewSelection = (views) ->
+  resetSelectionView()
+  $.each views, (value, text) ->
+    $('#selection_view').append($('<option></option>').attr('value',value).text(text))
+  $('#selection_view').removeAttr('disabled')
+
+resetSelectionView = () ->
+  $('#selection_view').empty()
+  $('#selection_view').append($('<option></option>').text('Select View'))
 
 updateLeadType = (contact_id, lead_type) ->
   $.ajax

@@ -143,4 +143,17 @@ class ContactsController < ApplicationController
   def treeview
     @contacts = Contact.all
   end
+
+  def update_views_for_technology
+    @technology = params[:tech]
+
+    @technology_views = {
+      "HTML5" => [ "HTML5 Grid", "HTML5 Tree" ],
+      "RadControls" => [ "RadGrid", "RadTree" ]
+    }
+
+    respond_to do |format|
+      format.json { render json: @technology_views[@technology] }
+    end
+  end
 end
