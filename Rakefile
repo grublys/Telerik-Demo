@@ -14,9 +14,6 @@ task :demo do
   start
 end
 
-task :install do
-end
-
 def migrate
   puts "----------------------------------------------------------------"
   puts "STEP 1/3 Migrating Database"
