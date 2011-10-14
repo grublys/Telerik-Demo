@@ -19,14 +19,19 @@
     <d2p1:AutomationStep i:type="d2p1:AutomationStep">
       <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
       <d2p1:CustomDescription i:nil="true" />
-      <d2p1:Description>Execute test 'Logging in as test user displays proper header'</d2p1:Description>
+      <d2p1:Description>Execute test 'Logging in as test user displays proper header.tstest'</d2p1:Description>
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>1</d2p1:Order>
       <d2p1:Runtime_x0020_ID>6560ab4f-fad5-4520-9348-4f7a3baf8083</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ExecuteTestActionDescriptor">
         <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <d6p1:KeyValueOfstringstring>
+              <d6p1:Key>RunsAgainstVersion</d6p1:Key>
+              <d6p1:Value />
+            </d6p1:KeyValueOfstringstring>
+          </ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
@@ -38,7 +43,7 @@
         <d2p1:UseStepWaitOnElementsTimout>false</d2p1:UseStepWaitOnElementsTimout>
         <d2p1:WaitOnElements>true</d2p1:WaitOnElements>
         <d2p1:WaitOnElementsTimeout>10000</d2p1:WaitOnElementsTimeout>
-        <d2p1:TestName>Logging in as test user displays proper header</d2p1:TestName>
+        <d2p1:TestName>Logging in as test user displays proper header.tstest</d2p1:TestName>
         <d2p1:TestPath>Login\Logging in as test user displays proper header.tstest</d2p1:TestPath>
         <d2p1:TestUniqueId>d85de241-5219-4b09-b501-7a7aa86be76b</d2p1:TestUniqueId>
       </d2p1:Step>
@@ -104,7 +109,7 @@
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
                 <d2p1:EquivalentUrls />
                 <d2p1:Fragment />
-                <d2p1:FriendlyName>DemoApp2</d2p1:FriendlyName>
+                <d2p1:FriendlyName>Main Grid Page</d2p1:FriendlyName>
                 <d2p1:Path>/contacts</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>DemoApp</d2p1:Title>
@@ -191,7 +196,7 @@
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
                 <d2p1:EquivalentUrls />
                 <d2p1:Fragment />
-                <d2p1:FriendlyName>DemoApp2</d2p1:FriendlyName>
+                <d2p1:FriendlyName>Main Grid Page</d2p1:FriendlyName>
                 <d2p1:Path>/contacts</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>DemoApp</d2p1:Title>
@@ -278,7 +283,7 @@
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
                 <d2p1:EquivalentUrls />
                 <d2p1:Fragment />
-                <d2p1:FriendlyName>DemoApp2</d2p1:FriendlyName>
+                <d2p1:FriendlyName>Main Grid Page</d2p1:FriendlyName>
                 <d2p1:Path>/contacts</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>DemoApp</d2p1:Title>

@@ -14,19 +14,24 @@
   </DataInfo>
   <Description />
   <IndependentDescriptors />
-  <Name>Adding empty contact generates appropriate four errors</Name>
+  <Name>Adding empty contact generates appropriate field and style errors</Name>
   <Steps xmlns:d2p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0">
     <d2p1:AutomationStep i:type="d2p1:AutomationStep">
       <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
       <d2p1:CustomDescription i:nil="true" />
-      <d2p1:Description>Execute test 'Clicking New Contact from grid opens form in new window'</d2p1:Description>
+      <d2p1:Description>Execute test 'Clicking New Contact from grid opens form in new window.tstest'</d2p1:Description>
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>1</d2p1:Order>
       <d2p1:Runtime_x0020_ID>db13da9b-03a2-4195-b582-4bdb503debce</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ExecuteTestActionDescriptor">
         <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <d6p1:KeyValueOfstringstring>
+              <d6p1:Key>RunsAgainstVersion</d6p1:Key>
+              <d6p1:Value />
+            </d6p1:KeyValueOfstringstring>
+          </ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
@@ -38,7 +43,7 @@
         <d2p1:UseStepWaitOnElementsTimout>false</d2p1:UseStepWaitOnElementsTimout>
         <d2p1:WaitOnElements>true</d2p1:WaitOnElements>
         <d2p1:WaitOnElementsTimeout>10000</d2p1:WaitOnElementsTimeout>
-        <d2p1:TestName>Clicking New Contact from grid opens form in new window</d2p1:TestName>
+        <d2p1:TestName>Clicking New Contact from grid opens form in new window.tstest</d2p1:TestName>
         <d2p1:TestPath>New Contact\Clicking New Contact from grid opens form in new window.tstest</d2p1:TestPath>
         <d2p1:TestUniqueId>6ef4f20c-2dda-419c-997c-854a69210f65</d2p1:TestUniqueId>
       </d2p1:Step>
@@ -187,7 +192,7 @@
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
                 <d2p1:EquivalentUrls />
                 <d2p1:Fragment />
-                <d2p1:FriendlyName>DemoApp2</d2p1:FriendlyName>
+                <d2p1:FriendlyName>Main Grid Page</d2p1:FriendlyName>
                 <d2p1:Path>/contacts</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>DemoApp</d2p1:Title>
@@ -274,7 +279,7 @@
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
                 <d2p1:EquivalentUrls />
                 <d2p1:Fragment />
-                <d2p1:FriendlyName>DemoApp2</d2p1:FriendlyName>
+                <d2p1:FriendlyName>Main Grid Page</d2p1:FriendlyName>
                 <d2p1:Path>/contacts</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>DemoApp</d2p1:Title>
@@ -361,7 +366,7 @@
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
                 <d2p1:EquivalentUrls />
                 <d2p1:Fragment />
-                <d2p1:FriendlyName>DemoApp2</d2p1:FriendlyName>
+                <d2p1:FriendlyName>Main Grid Page</d2p1:FriendlyName>
                 <d2p1:Path>/contacts</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>DemoApp</d2p1:Title>
@@ -448,7 +453,7 @@
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
                 <d2p1:EquivalentUrls />
                 <d2p1:Fragment />
-                <d2p1:FriendlyName>DemoApp2</d2p1:FriendlyName>
+                <d2p1:FriendlyName>Main Grid Page</d2p1:FriendlyName>
                 <d2p1:Path>/contacts</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>DemoApp</d2p1:Title>
@@ -535,7 +540,7 @@
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
                 <d2p1:EquivalentUrls />
                 <d2p1:Fragment />
-                <d2p1:FriendlyName>DemoApp2</d2p1:FriendlyName>
+                <d2p1:FriendlyName>Main Grid Page</d2p1:FriendlyName>
                 <d2p1:Path>/contacts</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>DemoApp</d2p1:Title>
@@ -631,7 +636,7 @@
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
                 <d2p1:EquivalentUrls />
                 <d2p1:Fragment />
-                <d2p1:FriendlyName>DemoApp2</d2p1:FriendlyName>
+                <d2p1:FriendlyName>Main Grid Page</d2p1:FriendlyName>
                 <d2p1:Path>/contacts</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>DemoApp</d2p1:Title>
@@ -727,7 +732,7 @@
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
                 <d2p1:EquivalentUrls />
                 <d2p1:Fragment />
-                <d2p1:FriendlyName>DemoApp2</d2p1:FriendlyName>
+                <d2p1:FriendlyName>Main Grid Page</d2p1:FriendlyName>
                 <d2p1:Path>/contacts</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>DemoApp</d2p1:Title>
@@ -823,7 +828,7 @@
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
                 <d2p1:EquivalentUrls />
                 <d2p1:Fragment />
-                <d2p1:FriendlyName>DemoApp2</d2p1:FriendlyName>
+                <d2p1:FriendlyName>Main Grid Page</d2p1:FriendlyName>
                 <d2p1:Path>/contacts</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>DemoApp</d2p1:Title>
@@ -879,14 +884,14 @@
   <IsSilverlightApp>false</IsSilverlightApp>
   <IsTestFragment>false</IsTestFragment>
   <Owner i:nil="true" />
-  <Path>New Contact\Adding empty contact generates appropriate four errors.tstest</Path>
+  <Path>New Contact\Adding empty contact generates appropriate field and style errors.tstest</Path>
   <Priority>0</Priority>
   <ProfilerBenchmarkResultsFilePath i:nil="true" />
   <ProfilerBenchmarkResultsId>00000000-0000-0000-0000-000000000000</ProfilerBenchmarkResultsId>
   <ProfilerConfigurations xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <ProfilerResultsDirectory i:nil="true" />
   <ProfilerServerName i:nil="true" />
-  <ResourceFilePath>New Contact\Adding empty contact generates appropriate four errors.resx</ResourceFilePath>
+  <ResourceFilePath>New Contact\Adding empty contact generates appropriate field and style errors.resx</ResourceFilePath>
   <ReuseAppWindow>0</ReuseAppWindow>
   <SilverlightAppLocalDirectory />
   <SilverlightAppOriginUri i:nil="true" />

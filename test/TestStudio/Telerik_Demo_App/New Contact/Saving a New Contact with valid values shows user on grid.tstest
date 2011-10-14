@@ -140,7 +140,7 @@
         <d4p1:CompareMode>FullPathAndQuery</d4p1:CompareMode>
         <d4p1:EquivalentUrls xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d4p1:Fragment />
-        <d4p1:FriendlyName>DemoApp2</d4p1:FriendlyName>
+        <d4p1:FriendlyName>Main Grid Page</d4p1:FriendlyName>
         <d4p1:Path>/contacts</d4p1:Path>
         <d4p1:Query />
         <d4p1:Title>DemoApp</d4p1:Title>
@@ -155,11 +155,11 @@
     <d2p1:AutomationStep i:type="d2p1:AutomationStep">
       <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
       <d2p1:CustomDescription i:nil="true" />
-      <d2p1:Description>Execute test 'Clicking New Contact from grid opens form in new window'</d2p1:Description>
+      <d2p1:Description>Execute test 'Clicking New Contact from grid opens form in new window.tstest'</d2p1:Description>
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>1</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>cd278fdb-e126-41cf-8950-1abc1b543041</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>f1c786a4-c961-4ccc-886a-2961d01b2d95</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ExecuteTestActionDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -194,7 +194,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>2</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>bb5a5870-bab4-4c63-b3b6-900eb91e8cad</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>7851e756-d813-43f1-b1a5-b65e38b45742</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:SetTextActionDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -287,7 +287,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>3</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>460a5058-5164-46a3-a3a1-b225a8d95815</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>d82aee43-783a-4a16-a166-b1e27ce315f5</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:SetTextActionDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -380,7 +380,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>4</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>881223cb-1a1b-47de-b712-79a433c4f21f</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>143c895e-b935-408f-aff8-2951f39cd47a</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:SetTextActionDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -473,7 +473,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>5</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>6f65aaf3-69ce-435e-bc62-b47495ad01ad</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>021b7be9-5684-48eb-a1e9-6c9657399304</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:SetTextActionDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -566,7 +566,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>6</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>2bbddead-2816-4773-aeed-42da65269262</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>2f8a5368-ee82-4af0-893d-78b010be8d53</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ClickActionDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -584,7 +584,7 @@
             <d5p1:Value>
               <DomStateKey />
               <FindExpression i:type="HtmlFindExpressionElement">
-                <BackupSearchClause>/html[1]/body[1]/form[1]/div[8]/img[2]</BackupSearchClause>
+                <BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/form[1]/div[8]/img[2]</BackupSearchClause>
                 <FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
                   <d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
                     <d9p1:key>Html</d9p1:key>
@@ -592,10 +592,10 @@
                       <ChainStops />
                       <Clauses>
                         <HtmlFindClause>
-                          <Clause>src=/assets/neutral-icon.png</Clause>
+                          <Clause>tagname=img</Clause>
                         </HtmlFindClause>
                         <HtmlFindClause>
-                          <Clause>tagname=img</Clause>
+                          <Clause>src=/assets/NEUTRAL.png</Clause>
                         </HtmlFindClause>
                       </Clauses>
                       <Constraints />
@@ -649,7 +649,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>7</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>5e33d360-a857-4434-b8b3-5dfdc341b97f</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>2f3d8bb4-0174-4e1a-b473-b0cb04f77494</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:DragDropActionDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -667,7 +667,7 @@
             <d5p1:Value>
               <DomStateKey />
               <FindExpression i:type="HtmlFindExpressionElement">
-                <BackupSearchClause>/html[1]/body[1]/form[1]/div[8]/img[2]</BackupSearchClause>
+                <BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/form[1]/div[8]/img[2]</BackupSearchClause>
                 <FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
                   <d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
                     <d9p1:key>Html</d9p1:key>
@@ -678,7 +678,7 @@
                           <Clause>tagname=img</Clause>
                         </HtmlFindClause>
                         <HtmlFindClause>
-                          <Clause>src=/assets/neutral-icon.png</Clause>
+                          <Clause>src=/assets/NEUTRAL.png</Clause>
                         </HtmlFindClause>
                       </Clauses>
                       <Constraints />
@@ -807,7 +807,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>8</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>f410acd0-ee1c-47b1-a6fa-9045488bd209</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>2b6fccbc-f4e7-477a-be37-2ecbd614bc2a</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ClickActionDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -890,7 +890,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>9</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>dcddfba5-79d8-4c25-bbad-fb9fdb9081c4</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>8726b119-ef9d-483e-96dd-0b67476c4dec</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ContentVerificationDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -941,7 +941,7 @@
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
                 <d2p1:EquivalentUrls />
                 <d2p1:Fragment />
-                <d2p1:FriendlyName>DemoApp2</d2p1:FriendlyName>
+                <d2p1:FriendlyName>Main Grid Page</d2p1:FriendlyName>
                 <d2p1:Path>/contacts</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>DemoApp</d2p1:Title>
@@ -977,7 +977,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>10</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>f1bace89-6e21-411b-9919-434db02c2d5b</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>b54041b3-9b52-4688-81a5-ffba79b91cce</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:HtmlDialogHandlerDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
