@@ -4,7 +4,7 @@
   <Date Type="System.DateTime">2011-09-15 20:48:56Z</Date>
   <Settings Type="ArtOfTest.WebAii.Core.Settings" Version="2011.2.928.0">
     <WebSettings Type="ArtOfTest.WebAii.Core.Settings+WebSettings" Version="2011.2.928.0">
-      <DefaultBrowser Type="ArtOfTest.WebAii.Core.BrowserType">InternetExplorer</DefaultBrowser>
+      <DefaultBrowser Type="ArtOfTest.WebAii.Core.BrowserType">FireFox</DefaultBrowser>
       <WebAppPhysicalPath Type="System.String">
       </WebAppPhysicalPath>
       <EnableScriptLogging Type="System.Boolean">False</EnableScriptLogging>
@@ -18,6 +18,9 @@
       <EnableSilverlight Type="System.Boolean">False</EnableSilverlight>
       <VerboseHttpProxy Type="System.Boolean">False</VerboseHttpProxy>
       <SilverlightConnectTimeout Type="System.Int32">30000</SilverlightConnectTimeout>
+      <MultiBrowsersExecution>
+        <Item Type="ArtOfTest.WebAii.Core.BrowserExecutionType">FireFox</Item>
+      </MultiBrowsersExecution>
       <UseMultiBrowsers Type="System.Boolean">False</UseMultiBrowsers>
       <IsProfilingExecution Type="System.Boolean">False</IsProfilingExecution>
       <ProfilerConfigurations />
@@ -70,16 +73,16 @@
       <Path Type="System.String">New Contact\Dragging Contact Types to new contact sets correct values.tstest</Path>
     </Item>
     <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2011.2.928.0">
-      <ID Type="System.String">3a67af50-a176-4237-97df-8c6a66252944</ID>
-      <Path Type="System.String">New Contact\Exporting Grid to PDF saves a file to filesystem.tstest</Path>
-    </Item>
-    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2011.2.928.0">
       <ID Type="System.String">6297519a-b92c-43dd-8442-7e9f619d4431</ID>
       <Path Type="System.String">New Contact\Saving a New Contact with valid values shows user on grid.tstest</Path>
     </Item>
     <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2011.2.928.0">
       <ID Type="System.String">38266c9d-e309-4cf7-b748-3a55719df26e</ID>
       <Path Type="System.String">Initial Grid\Initial Grid loaded from baseline data contains correct records.tstest</Path>
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2011.2.928.0">
+      <ID Type="System.String">3a67af50-a176-4237-97df-8c6a66252944</ID>
+      <Path Type="System.String">Initial Grid\Exporting Grid to PDF saves a file to filesystem.tstest</Path>
     </Item>
   </Tests>
   <Filter Type="ArtOfTest.WebAii.Design.Execution.Filter" Version="2011.2.928.0">
