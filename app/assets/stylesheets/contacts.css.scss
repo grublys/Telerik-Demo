@@ -1,0 +1,96 @@
+// Place all the styles related to the Contacts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: none;
+}
+
+th {
+  background: #343841;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4e4f58), to(#2d3134));
+  background: -moz-linear-gradient(top,  #4e4f58,  #2d3134);
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#4e4f58', endColorstr='#2d3134');
+  color: #ffffff;
+  padding: 5px;
+  text-align: center;
+}
+
+tr.even {
+  background-color: #fff
+}
+
+tr.odd {
+  background-color: #eee
+}
+
+td {
+  height: 25px;
+  padding: 3px;
+}
+
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.drop_target {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ccc;
+  display: table-cell;
+  vertical-align: middle;
+
+  &.over {
+    border: 2px dashed #000;
+  }
+
+  img {
+    position: relative;
+    display: block;
+    margin: auto;
+  }
+}
+
+#treeview {
+  float: left;
+  height: 100%;
+
+  ul {
+    margin-left: 15px;
+    list-style-type: disc;
+
+    ul {
+      list-style-type: circle; } }
+
+  ul ul li {
+    margin-left: 10px; }
+}
+
+#inline_contact_edit_form {
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  width: 250px;
+}
+
+#buttons {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 15px;
+
+  div.left {
+    float: left; }
+  div.right {
+    float: right; }
+
+  a {
+    color: #ffffff; }
+}

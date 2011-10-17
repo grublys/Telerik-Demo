@@ -1,0 +1,56 @@
+<%= render 'description' %>
+
+<p id="notice"><%= notice %></p>
+
+<h2>
+  HTML5
+  <%= render 'selection' %>
+</h2>
+
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+    <th>LinkedIn</th>
+    <th>Lead Type</th>
+    <th>Action</th>
+  </tr>
+
+<% @contacts.each do |contact| %>
+  <tr class="<%= cycle('even', 'odd') %>">
+    <td><%= contact.first_name %></td>
+    <td><%= contact.last_name %></td>
+    <td><%= contact.email %></td>
+    <td><%= contact.linkedin_profile %></td>
+    <td id="lead_type_cell-<%= contact.id %>"><%= image_tag lead_type_icon(contact.lead_type), :size => '23x23', :class => 'contact_lead_type', 'data-contact_id' => contact.id %></td>
+    <td><%= link_to 'View Contact', edit_contact_path(contact), 'target' => '_blank' %></td>
+  </tr>
+<% end %>
+<% (10 - @contacts.count).times do %>
+  <tr class="<%= @contacts.count.even? ? cycle('even', 'odd') : cycle('odd', 'even') %>">
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<div id="buttons">
+  <div class="left">
+    <%= link_to 'New Contact', new_contact_path, 'target' => '_blank', :class => 'large_button gray' %>
+  </div>
+
+  <div class="right">
+    <%= link_to 'Export to PDF', export_contacts_path, :class => 'large_button green' %>
+  </div>
+</div>
+
+<%= render 'lead_type_dialog' %>
+
+<%= render 'moreInfo' %>

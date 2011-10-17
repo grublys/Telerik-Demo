@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="7d4de194-72e4-4ac1-b47b-39f9b6c1c1fd" name="Administrator@DEMO 2011-09-27 17:33:57" runUser="DEMO\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="04631126-fc02-48ae-b489-402e7f392b45">
+    <Deployment userDeploymentRoot="D:\projects\Telerik-Demo\test\TestStudio\Telerik_Demo_App\TestResults" useDefaultDeploymentRoot="false" runDeploymentRoot="Administrator_DEMO 2011-09-27 17_33_57" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-09-27T17:33:57.4051016-04:00" queuing="2011-09-27T17:33:57.4842031-04:00" start="2011-09-27T17:33:57.4939688-04:00" finish="2011-09-27T17:34:15.6326406-04:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <WebAiiTest name="Exporting Grid to PDF saves a file to filesystem" storage="d:\projects\telerik-demo\test\teststudio\telerik_demo_app\new contact\exporting grid to pdf saves a file to filesystem.tstest" priority="0" id="3a67af50-a176-4237-97df-8c6a66252944" xmlns="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0">
+      <Description xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">WebAii Testcase</Description>
+      <DeploymentItems xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+        <DeploymentItem filename="..\bin\Telerik_Demo_App.dll" />
+        <DeploymentItem filename="..\Login\Logging in as test user displays proper header.tstest" />
+      </DeploymentItems>
+      <Execution id="6dae4bf1-f61c-4309-b376-0fe134bf6545" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" />
+    </WebAiiTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="3a67af50-a176-4237-97df-8c6a66252944" executionId="6dae4bf1-f61c-4309-b376-0fe134bf6545" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <WebAiiTestResult executionId="6dae4bf1-f61c-4309-b376-0fe134bf6545" testId="3a67af50-a176-4237-97df-8c6a66252944" testName="Exporting Grid to PDF saves a file to filesystem" computerName="DEMO" duration="00:00:17.7864343" startTime="2011-09-27T17:33:57.6863516-04:00" endTime="2011-09-27T17:34:15.4724844-04:00" testType="c4241296-3c6e-46b1-bf92-e0bd3e0eb017" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6dae4bf1-f61c-4309-b376-0fe134bf6545" xmlns="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0">
+      <Output xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+        <ErrorInfo>
+          <Message>Overall Result: Fail
+------------------------------------------------------------
+'9/27/2011 5:33:57 PM' - Starting execution....
+'9/27/2011 5:33:59 PM' - Detected custom code in test. Locating test assembly: Telerik_Demo_App.dll.
+'9/27/2011 5:33:59 PM' - Assembly Found: D:\projects\Telerik-Demo\test\TestStudio\Telerik_Demo_App\TestResults\Administrator_DEMO 2011-09-27 17_33_57\Out\Telerik_Demo_App.dll
+'9/27/2011 5:33:59 PM' - Loading code class: 'Telerik_Demo_App.Exporting_Grid_to_PDF_saves_a_file_to_filesystem'.
+------------------------------------------------------------
+'9/27/2011 5:34:03 PM' - 'Pass' : 1. Execute test 'Logging in as test user displays proper header'
+
+&gt;&gt;&gt; Test-as-Step 'Login\Logging in as test user displays proper header.tstest' log starts:
+
+Overall Result: Pass
+'9/27/2011 5:34:01 PM' - 'Pass' : 1. Navigate to : 'http://localhost:3000'
+'9/27/2011 5:34:01 PM' - 'Pass' : 2. Click 'LoginLinkLink'
+'9/27/2011 5:34:01 PM' - 'Pass' : 3. Set 'UsernameText' text to 'testuser'
+'9/27/2011 5:34:02 PM' - 'Pass' : 4. Set 'PasswordPassword' text to 'abc123'
+'9/27/2011 5:34:03 PM' - 'Pass' : 5. Click 'LoginButtonSubmit'
+'9/27/2011 5:34:03 PM' - 'Pass' : 6. Verify 'TextContent' 'Contains' 'Logout' on 'LogoutLink'
+'9/27/2011 5:34:03 PM' - 'Pass' : 7. Verify 'TextContent' 'Contains' 'Home' on 'HomeLink'
+'9/27/2011 5:34:03 PM' - 'Pass' : 8. Verify 'TextContent' 'Contains' 'Help' on 'HelpLink'
+------------------------------------------------------------
+'9/27/2011 5:34:03 PM' - Overall Result: Pass
+'9/27/2011 5:34:03 PM' - Duration: [0 min: 3 sec: 273 msec]
+------------------------------------------------------------
+
+&lt;&lt;&lt; Test-as-Step 'Login\Logging in as test user displays proper header.tstest' log ends.
+
+'9/27/2011 5:34:03 PM' - 'Pass' : 2. Click 'ExportToPDFLink'
+'9/27/2011 5:34:03 PM' - LOG: Target File: C:\Users\Administrator\Documents\..\Downloads\contact.pdf
+'9/27/2011 5:34:03 PM' - 'Fail' : 3. Verify the exported file exists on the physical file system
+------------------------------------------------------------
+Failure Information: 
+~~~~~~~~~~~~~~~
+Exception thrown executing coded step: 'Verify the exported file exists on the physical file system'.
+InnerException:
+ArtOfTest.Common.Exceptions.AssertException: Assert.IsTrue - [Expected:True],[Actual:False]
+   at ArtOfTest.Common.UnitTesting.Assert.IsTrue(Boolean condition, String message)
+   at ArtOfTest.Common.UnitTesting.Assert.IsTrue(Boolean condition)
+   at Telerik_Demo_App.Exporting_Grid_to_PDF_saves_a_file_to_filesystem.Exporting_Grid_to_PDF_saves_a_file_to_filesystem_CodedStep() in D:\projects\Telerik-Demo\test\TestStudio\Telerik_Demo_App\New Contact\Exporting Grid to PDF saves a file to filesystem.tstest.cs:line 85
+------------------------------------------------------------
+'9/27/2011 5:34:03 PM' - Detected a failure. Step is marked 'ContinueOnFailure=False' aborting test execution.
+------------------------------------------------------------
+'9/27/2011 5:34:03 PM' - Overall Result: Fail
+'9/27/2011 5:34:03 PM' - Duration: [0 min: 3 sec: 886 msec]
+------------------------------------------------------------
+'9/27/2011 5:34:04 PM' - Test completed!
+</Message>
+        </ErrorInfo>
+      </Output>
+      <WebAiiTestResult Type="ArtOfTest.WebAii.Design.Execution.TestResult" Version="2011.2.927.0" xmlns="">
+        <TestId Type="System.String">3a67af50-a176-4237-97df-8c6a66252944</TestId>
+        <TestName Type="System.String">Exporting Grid to PDF saves a file to filesystem</TestName>
+        <TestPath Type="System.String">New Contact\Exporting Grid to PDF saves a file to filesystem.tstest</TestPath>
+        <ProjectPath Type="System.String">
+        </ProjectPath>
+        <ResultType Type="ArtOfTest.Common.Design.ResultType">Fail</ResultType>
+        <AutomationStepResults>
+          <Item Type="ArtOfTest.WebAii.Design.Execution.TestAsStepResult" Version="2011.2.927.0">
+            <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+            <StepDescription Type="System.String">Execute test 'Logging in as test user displays proper header'</StepDescription>
+            <TestId Type="System.String">3a67af50-a176-4237-97df-8c6a66252944</TestId>
+            <TestName Type="System.String">Exporting Grid to PDF saves a file to filesystem</TestName>
+            <TestPath Type="System.String">New Contact\Exporting Grid to PDF saves a file to filesystem.tstest</TestPath>
+            <TestStepNumber Type="System.Int32">0</TestStepNumber>
+            <Order Type="System.Int32">1</Order>
+            <LogMessageOnError Type="System.String">
+            </LogMessageOnError>
+            <HashCode Type="System.Int32">-832664899</HashCode>
+            <IsManual Type="System.Boolean">False</IsManual>
+            <WasStepEnabled Type="System.Boolean">False</WasStepEnabled>
+            <TestResult Type="ArtOfTest.WebAii.Design.Execution.TestResult" Version="2011.2.927.0">
+              <TestId Type="System.String">d85de241-5219-4b09-b501-7a7aa86be76b</TestId>
+              <TestName Type="System.String">Logging in as test user displays proper header</TestName>
+              <TestPath Type="System.String">Login\Logging in as test user displays proper header.tstest</TestPath>
+              <ProjectPath Type="System.String">
+              </ProjectPath>
+              <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+              <AutomationStepResults>
+                <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.927.0">
+                  <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+                  <StepDescription Type="System.String">Navigate to : 'http://localhost:3000'</StepDescription>
+                  <TestId Type="System.String">d85de241-5219-4b09-b501-7a7aa86be76b</TestId>
+                  <TestName Type="System.String">Logging in as test user displays proper header</TestName>
+                  <TestPath Type="System.String">Login\Logging in as test user displays proper header.tstest</TestPath>
+                  <TestStepNumber Type="System.Int32">0</TestStepNumber>
+                  <Order Type="System.Int32">1</Order>
+                  <LogMessageOnError Type="System.String">
+                  </LogMessageOnError>
+                  <HashCode Type="System.Int32">1347723234</HashCode>
+                  <IsManual Type="System.Boolean">False</IsManual>
+                  <WasStepEnabled Type="System.Boolean">False</WasStepEnabled>
+                </Item>
+                <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.927.0">
+                  <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+                  <StepDescription Type="System.String">Click 'LoginLinkLink'</StepDescription>
+                  <TestId Type="System.String">d85de241-5219-4b09-b501-7a7aa86be76b</TestId>
+                  <TestName Type="System.String">Logging in as test user displays proper header</TestName>
+                  <TestPath Type="System.String">Login\Logging in as test user displays proper header.tstest</TestPath>
+                  <TestStepNumber Type="System.Int32">1</TestStepNumber>
+                  <Order Type="System.Int32">2</Order>
+                  <LogMessageOnError Type="System.String">
+                  </LogMessageOnError>
+                  <HashCode Type="System.Int32">2087960561</HashCode>
+                  <IsManual Type="System.Boolean">False</IsManual>
+                  <WasStepEnabled Type="System.Boolean">False</WasStepEnabled>
+                </Item>
+                <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.927.0">
+                  <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+                  <StepDescription Type="System.String">Set 'UsernameText' text to 'testuser'</StepDescription>
+                  <TestId Type="System.String">d85de241-5219-4b09-b501-7a7aa86be76b</TestId>
+                  <TestName Type="System.String">Logging in as test user displays proper header</TestName>
+                  <TestPath Type="System.String">Login\Logging in as test user displays proper header.tstest</TestPath>
+                  <TestStepNumber Type="System.Int32">2</TestStepNumber>
+                  <Order Type="System.Int32">3</Order>
+                  <LogMessageOnError Type="System.String">
+                  </LogMessageOnError>
+                  <HashCode Type="System.Int32">1106498605</HashCode>
+                  <IsManual Type="System.Boolean">False</IsManual>
+                  <WasStepEnabled Type="System.Boolean">False</WasStepEnabled>
+                </Item>
+                <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.927.0">
+                  <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+                  <StepDescription Type="System.String">Set 'PasswordPassword' text to 'abc123'</StepDescription>
+                  <TestId Type="System.String">d85de241-5219-4b09-b501-7a7aa86be76b</TestId>
+                  <TestName Type="System.String">Logging in as test user displays proper header</TestName>
+                  <TestPath Type="System.String">Login\Logging in as test user displays proper header.tstest</TestPath>
+                  <TestStepNumber Type="System.Int32">3</TestStepNumber>
+                  <Order Type="System.Int32">4</Order>
+                  <LogMessageOnError Type="System.String">
+                  </LogMessageOnError>
+                  <HashCode Type="System.Int32">1106498606</HashCode>
+                  <IsManual Type="System.Boolean">False</IsManual>
+                  <WasStepEnabled Type="System.Boolean">False</WasStepEnabled>
+                </Item>
+                <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.927.0">
+                  <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+                  <StepDescription Type="System.String">Click 'LoginButtonSubmit'</StepDescription>
+                  <TestId Type="System.String">d85de241-5219-4b09-b501-7a7aa86be76b</TestId>
+                  <TestName Type="System.String">Logging in as test user displays proper header</TestName>
+                  <TestPath Type="System.String">Login\Logging in as test user displays proper header.tstest</TestPath>
+                  <TestStepNumber Type="System.Int32">4</TestStepNumber>
+                  <Order Type="System.Int32">5</Order>
+                  <LogMessageOnError Type="System.String">
+                  </LogMessageOnError>
+                  <HashCode Type="System.Int32">2087960564</HashCode>
+                  <IsManual Type="System.Boolean">False</IsManual>
+                  <WasStepEnabled Type="System.Boolean">False</WasStepEnabled>
+                </Item>
+                <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.927.0">
+                  <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+                  <StepDescription Type="System.String">Verify 'TextContent' 'Contains' 'Logout' on 'LogoutLink'</StepDescription>
+                  <TestId Type="System.String">d85de241-5219-4b09-b501-7a7aa86be76b</TestId>
+                  <TestName Type="System.String">Logging in as test user displays proper header</TestName>
+                  <TestPath Type="System.String">Login\Logging in as test user displays proper header.tstest</TestPath>
+                  <TestStepNumber Type="System.Int32">5</TestStepNumber>
+                  <Order Type="System.Int32">6</Order>
+                  <LogMessageOnError Type="System.String">
+                  </LogMessageOnError>
+                  <HashCode Type="System.Int32">-1313506168</HashCode>
+                  <IsManual Type="System.Boolean">False</IsManual>
+                  <WasStepEnabled Type="System.Boolean">False</WasStepEnabled>
+                </Item>
+                <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.927.0">
+                  <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+                  <StepDescription Type="System.String">Verify 'TextContent' 'Contains' 'Home' on 'HomeLink'</StepDescription>
+                  <TestId Type="System.String">d85de241-5219-4b09-b501-7a7aa86be76b</TestId>
+                  <TestName Type="System.String">Logging in as test user displays proper header</TestName>
+                  <TestPath Type="System.String">Login\Logging in as test user displays proper header.tstest</TestPath>
+                  <TestStepNumber Type="System.Int32">6</TestStepNumber>
+                  <Order Type="System.Int32">7</Order>
+                  <LogMessageOnError Type="System.String">
+                  </LogMessageOnError>
+                  <HashCode Type="System.Int32">-1313506167</HashCode>
+                  <IsManual Type="System.Boolean">False</IsManual>
+                  <WasStepEnabled Type="System.Boolean">False</WasStepEnabled>
+                </Item>
+                <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.927.0">
+                  <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+                  <StepDescription Type="System.String">Verify 'TextContent' 'Contains' 'Help' on 'HelpLink'</StepDescription>
+                  <TestId Type="System.String">d85de241-5219-4b09-b501-7a7aa86be76b</TestId>
+                  <TestName Type="System.String">Logging in as test user displays proper header</TestName>
+                  <TestPath Type="System.String">Login\Logging in as test user displays proper header.tstest</TestPath>
+                  <TestStepNumber Type="System.Int32">7</TestStepNumber>
+                  <Order Type="System.Int32">8</Order>
+                  <LogMessageOnError Type="System.String">
+                  </LogMessageOnError>
+                  <HashCode Type="System.Int32">-1313506166</HashCode>
+                  <IsManual Type="System.Boolean">False</IsManual>
+                  <WasStepEnabled Type="System.Boolean">False</WasStepEnabled>
+                </Item>
+              </AutomationStepResults>
+              <NotRunStepDescriptions />
+              <PerStepMessages Type="System.String">Overall Result: Pass
+'9/27/2011 5:34:01 PM' - 'Pass' : 1. Navigate to : 'http://localhost:3000'
+'9/27/2011 5:34:01 PM' - 'Pass' : 2. Click 'LoginLinkLink'
+'9/27/2011 5:34:01 PM' - 'Pass' : 3. Set 'UsernameText' text to 'testuser'
+'9/27/2011 5:34:02 PM' - 'Pass' : 4. Set 'PasswordPassword' text to 'abc123'
+'9/27/2011 5:34:03 PM' - 'Pass' : 5. Click 'LoginButtonSubmit'
+'9/27/2011 5:34:03 PM' - 'Pass' : 6. Verify 'TextContent' 'Contains' 'Logout' on 'LogoutLink'
+'9/27/2011 5:34:03 PM' - 'Pass' : 7. Verify 'TextContent' 'Contains' 'Home' on 'HomeLink'
+'9/27/2011 5:34:03 PM' - 'Pass' : 8. Verify 'TextContent' 'Contains' 'Help' on 'HelpLink'
+------------------------------------------------------------
+'9/27/2011 5:34:03 PM' - Overall Result: Pass
+'9/27/2011 5:34:03 PM' - Duration: [0 min: 3 sec: 273 msec]
+------------------------------------------------------------
+</PerStepMessages>
+              <TotalNumberOfPassedSteps Type="System.Int32">8</TotalNumberOfPassedSteps>
+              <ExecutingTestStepCount Type="System.Int32">8</ExecutingTestStepCount>
+              <TotalNumberOfNotRunSteps Type="System.Int32">0</TotalNumberOfNotRunSteps>
+              <IsDataDrivenResult Type="System.Boolean">False</IsDataDrivenResult>
+              <SeparatorLineCharCount Type="System.Int32">60</SeparatorLineCharCount>
+              <ExecutionType Type="ArtOfTest.Common.Design.ExecutionType">QuickExecution</ExecutionType>
+              <EndTime Type="System.DateTime">2011-09-27 21:34:03Z</EndTime>
+              <StarTime Type="System.DateTime">2011-09-27 21:33:59Z</StarTime>
+              <DataIterationResults />
+              <VersionGroupKey Type="System.String">00000000-0000-0000-0000-000000000000</VersionGroupKey>
+            </TestResult>
+          </Item>
+          <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.927.0">
+            <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+            <StepDescription Type="System.String">Click 'ExportToPDFLink'</StepDescription>
+            <TestId Type="System.String">3a67af50-a176-4237-97df-8c6a66252944</TestId>
+            <TestName Type="System.String">Exporting Grid to PDF saves a file to filesystem</TestName>
+            <TestPath Type="System.String">New Contact\Exporting Grid to PDF saves a file to filesystem.tstest</TestPath>
+            <TestStepNumber Type="System.Int32">1</TestStepNumber>
+            <Order Type="System.Int32">2</Order>
+            <LogMessageOnError Type="System.String">
+            </LogMessageOnError>
+            <HashCode Type="System.Int32">2087960561</HashCode>
+            <IsManual Type="System.Boolean">False</IsManual>
+            <WasStepEnabled Type="System.Boolean">False</WasStepEnabled>
+          </Item>
+          <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.927.0">
+            <ResultType Type="ArtOfTest.Common.Design.ResultType">Fail</ResultType>
+            <ExecutionException Type="ArtOfTest.Common.Design.Exceptions.ExecutionException" Version="2011.2.927.0">
+              <HostState Type="ArtOfTest.WebAii.Design.AutomationHostState" Version="2011.2.927.0">
+                <Mode Type="ArtOfTest.WebAii.Design.BrowserStateCaptureMode">DomAndImage</Mode>
+                <TechType Type="ArtOfTest.Common.TechnologyType">Html</TechType>
+                <FriendlyName Type="System.String">Capture Of 'Page (DemoApp)' @9/27/2011 5:34:03 PM</FriendlyName>
+              </HostState>
+              <ExceptionMessage Type="System.String">Exception thrown executing coded step: 'Verify the exported file exists on the physical file system'.</ExceptionMessage>
+            </ExecutionException>
+            <StepDescription Type="System.String">Verify the exported file exists on the physical file system</StepDescription>
+            <TestId Type="System.String">3a67af50-a176-4237-97df-8c6a66252944</TestId>
+            <TestName Type="System.String">Exporting Grid to PDF saves a file to filesystem</TestName>
+            <TestPath Type="System.String">New Contact\Exporting Grid to PDF saves a file to filesystem.tstest</TestPath>
+            <TestStepNumber Type="System.Int32">2</TestStepNumber>
+            <Order Type="System.Int32">3</Order>
+            <LogMessageOnError Type="System.String">
+            </LogMessageOnError>
+            <HashCode Type="System.Int32">2113398268</HashCode>
+            <IsManual Type="System.Boolean">False</IsManual>
+            <WasStepEnabled Type="System.Boolean">False</WasStepEnabled>
+          </Item>
+        </AutomationStepResults>
+        <NotRunStepDescriptions />
+        <PerStepMessages Type="System.String">Overall Result: Fail
+------------------------------------------------------------
+'9/27/2011 5:33:57 PM' - Starting execution....
+'9/27/2011 5:33:59 PM' - Detected custom code in test. Locating test assembly: Telerik_Demo_App.dll.
+'9/27/2011 5:33:59 PM' - Assembly Found: D:\projects\Telerik-Demo\test\TestStudio\Telerik_Demo_App\TestResults\Administrator_DEMO 2011-09-27 17_33_57\Out\Telerik_Demo_App.dll
+'9/27/2011 5:33:59 PM' - Loading code class: 'Telerik_Demo_App.Exporting_Grid_to_PDF_saves_a_file_to_filesystem'.
+------------------------------------------------------------
+'9/27/2011 5:34:03 PM' - 'Pass' : 1. Execute test 'Logging in as test user displays proper header'
+
+&gt;&gt;&gt; Test-as-Step 'Login\Logging in as test user displays proper header.tstest' log starts:
+
+Overall Result: Pass
+'9/27/2011 5:34:01 PM' - 'Pass' : 1. Navigate to : 'http://localhost:3000'
+'9/27/2011 5:34:01 PM' - 'Pass' : 2. Click 'LoginLinkLink'
+'9/27/2011 5:34:01 PM' - 'Pass' : 3. Set 'UsernameText' text to 'testuser'
+'9/27/2011 5:34:02 PM' - 'Pass' : 4. Set 'PasswordPassword' text to 'abc123'
+'9/27/2011 5:34:03 PM' - 'Pass' : 5. Click 'LoginButtonSubmit'
+'9/27/2011 5:34:03 PM' - 'Pass' : 6. Verify 'TextContent' 'Contains' 'Logout' on 'LogoutLink'
+'9/27/2011 5:34:03 PM' - 'Pass' : 7. Verify 'TextContent' 'Contains' 'Home' on 'HomeLink'
+'9/27/2011 5:34:03 PM' - 'Pass' : 8. Verify 'TextContent' 'Contains' 'Help' on 'HelpLink'
+------------------------------------------------------------
+'9/27/2011 5:34:03 PM' - Overall Result: Pass
+'9/27/2011 5:34:03 PM' - Duration: [0 min: 3 sec: 273 msec]
+------------------------------------------------------------
+
+&lt;&lt;&lt; Test-as-Step 'Login\Logging in as test user displays proper header.tstest' log ends.
+
+'9/27/2011 5:34:03 PM' - 'Pass' : 2. Click 'ExportToPDFLink'
+'9/27/2011 5:34:03 PM' - LOG: Target File: C:\Users\Administrator\Documents\..\Downloads\contact.pdf
+'9/27/2011 5:34:03 PM' - 'Fail' : 3. Verify the exported file exists on the physical file system
+------------------------------------------------------------
+Failure Information: 
+~~~~~~~~~~~~~~~
+Exception thrown executing coded step: 'Verify the exported file exists on the physical file system'.
+InnerException:
+ArtOfTest.Common.Exceptions.AssertException: Assert.IsTrue - [Expected:True],[Actual:False]
+   at ArtOfTest.Common.UnitTesting.Assert.IsTrue(Boolean condition, String message)
+   at ArtOfTest.Common.UnitTesting.Assert.IsTrue(Boolean condition)
+   at Telerik_Demo_App.Exporting_Grid_to_PDF_saves_a_file_to_filesystem.Exporting_Grid_to_PDF_saves_a_file_to_filesystem_CodedStep() in D:\projects\Telerik-Demo\test\TestStudio\Telerik_Demo_App\New Contact\Exporting Grid to PDF saves a file to filesystem.tstest.cs:line 85
+------------------------------------------------------------
+'9/27/2011 5:34:03 PM' - Detected a failure. Step is marked 'ContinueOnFailure=False' aborting test execution.
+------------------------------------------------------------
+'9/27/2011 5:34:03 PM' - Overall Result: Fail
+'9/27/2011 5:34:03 PM' - Duration: [0 min: 3 sec: 886 msec]
+------------------------------------------------------------
+'9/27/2011 5:34:04 PM' - Test completed!
+</PerStepMessages>
+        <TotalNumberOfPassedSteps Type="System.Int32">2</TotalNumberOfPassedSteps>
+        <ExecutingTestStepCount Type="System.Int32">3</ExecutingTestStepCount>
+        <TotalNumberOfNotRunSteps Type="System.Int32">0</TotalNumberOfNotRunSteps>
+        <IsDataDrivenResult Type="System.Boolean">False</IsDataDrivenResult>
+        <SeparatorLineCharCount Type="System.Int32">60</SeparatorLineCharCount>
+        <ExecutionType Type="ArtOfTest.Common.Design.ExecutionType">QuickExecution</ExecutionType>
+        <FailureException Type="ArtOfTest.Common.Design.Exceptions.ExecutionException" Version="2011.2.927.0">
+          <HostState Type="ArtOfTest.WebAii.Design.AutomationHostState" Version="2011.2.927.0">
+            <Mode Type="ArtOfTest.WebAii.Design.BrowserStateCaptureMode">DomAndImage</Mode>
+            <TechType Type="ArtOfTest.Common.TechnologyType">Html</TechType>
+            <FriendlyName Type="System.String">Capture Of 'Page (DemoApp)' @9/27/2011 5:34:03 PM</FriendlyName>
+          </HostState>
+          <ExceptionMessage Type="System.String">Exception thrown executing coded step: 'Verify the exported file exists on the physical file system'.</ExceptionMessage>
+        </FailureException>
+        <EndTime Type="System.DateTime">2011-09-27 21:34:03Z</EndTime>
+        <StarTime Type="System.DateTime">2011-09-27 21:33:59Z</StarTime>
+        <DataIterationResults />
+        <VersionGroupKey Type="System.String">00000000-0000-0000-0000-000000000000</VersionGroupKey>
+      </WebAiiTestResult>
+    </WebAiiTestResult>
+  </Results>
+</TestRun>

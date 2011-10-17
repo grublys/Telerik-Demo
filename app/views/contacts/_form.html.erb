@@ -1,0 +1,57 @@
+<%= form_for(@contact) do |f| %>
+  <% if @contact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+
+      <ul>
+      <% @contact.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email, 'type' => 'email' %>
+  </div>
+  <div class="field">
+    <%= f.label :linkedin_profile %><br />
+    <%= f.text_field :linkedin_profile %> <%= link_to 'View', '#', :id => 'view_contact_linkedin_profile' unless controller.action_name == 'edit_inline' %>
+  </div>
+  <div class="field">
+    <%= f.check_box :govt_contract %>
+    <%= f.label :govt_contract, "Gov't Contract?" %>
+  </div>
+  <div class="field" id="govt_contracts">
+    <%= f.check_box :dod %>
+    <%= f.label :dod, "DOD" %><br />
+    <%= f.check_box :other %>
+    <%= f.label :other, "Other" %>
+  </div>
+  <div id="lead_types">
+    <%= image_tag 'HOT.png'     , 'draggable' => true , 'data-lead_type' => 'HOT' %>
+    <%= image_tag 'NEUTRAL.png' , 'draggable' => true , 'data-lead_type' => 'NEUTRAL'%>
+    <%= image_tag 'COLD.png'    , 'draggable' => true , 'data-lead_type' => 'COLD' %>
+  </div>
+  <div class="field">
+    <%= f.label :lead_type %><br />
+    <div class="drop_target">
+      <%= image_tag(lead_type_icon(@contact.lead_type)) if @contact.lead_type %>
+    </div>
+    <%= f.hidden_field :lead_type %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+    <%= button_to_function 'Cancel', 'window.close()' unless controller.action_name == 'edit_inline' %>
+  </div>
+<% end %>
+
