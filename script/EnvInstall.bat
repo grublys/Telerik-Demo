@@ -29,7 +29,7 @@ Git-1.7.6-preview20110708.exe /silent /dir=%CD%\utils\Git1.7.6
 @ECHO STEP 3/5: Installing Ruby ...
 @echo ----------------------------------------------------------------
 IF NOT EXIST rubyinstaller-1.9.2-p290.exe wget http://rubyforge.org/frs/download.php/75127/rubyinstaller-1.9.2-p290.exe rubyinstaller-1.9.2-p290.exe
-rubyinstaller-1.9.2-p290.exe /silent /dir=%CD%\utils\Ruby1.9.2
+rubyinstaller-1.9.2-p290.exe /silent /dir="%CD%\utils\Ruby1.9.2"
 @echo+
 @echo+
 
