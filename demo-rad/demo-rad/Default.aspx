@@ -16,7 +16,9 @@
         <p>This CRM application is <strong>not</strong> a real application; it's designed to give you the chance to work with several common problems around automation. This way you'll be able to use Test Studio and see how well it works! You can use the existing Test Studio project under test/TestStudio, or you can create your own.</p>
     </div>
 
-    <h2>RadGrid</h2>
+    <h2>
+    RadGrid
+    </h2>
     <telerik:RadGrid ID="RadGrid1" runat="server" PageSize="10" AutoGenerateColumns="false">
         <MasterTableView AlternatingItemStyle-CssClass="odd">
             <Columns>
@@ -47,7 +49,7 @@
     <div id="buttons">
         <div class="left">
             <a href="http://localhost:3000/contacts/new" class="large_button gray" target="_blank">New Contact</a>
-            <a href="http://localhost:3000/contacts/treeview" class="large_button gray">Treeview</a>
+            <a href="Treeview.aspx" class="large_button gray">Treeview</a>
         </div>
 
         <div class="right">
