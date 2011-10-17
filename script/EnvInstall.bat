@@ -11,7 +11,7 @@ pause ...
 @echo ----------------------------------------------------------------
 @ECHO STEP 1/5: Updating User Path ...
 @echo ----------------------------------------------------------------
-path=%path%;.\utils\bin;c:\utils\Git1.7.6\bin;c:\utils\Ruby1.9.2\bin
+path=%path%;%CD%\utils\bin;%CD%\utils\Git1.7.6\bin;%CD%\utils\Ruby1.9.2\bin
 @echo+
 @echo+
 
@@ -20,7 +20,7 @@ path=%path%;.\utils\bin;c:\utils\Git1.7.6\bin;c:\utils\Ruby1.9.2\bin
 @ECHO STEP 2/5: Installing Git ...
 @echo ----------------------------------------------------------------
 IF NOT EXIST Git-1.7.6-preview20110708.exe wget http://msysgit.googlecode.com/files/Git-1.7.6-preview20110708.exe Git-1.7.6-preview20110708.exe
-Git-1.7.6-preview20110708.exe /silent /dir=.\utils\Git1.7.6
+Git-1.7.6-preview20110708.exe /silent /dir=%CD%\utils\Git1.7.6
 @echo+
 @echo+
 
@@ -29,7 +29,7 @@ Git-1.7.6-preview20110708.exe /silent /dir=.\utils\Git1.7.6
 @ECHO STEP 3/5: Installing Ruby ...
 @echo ----------------------------------------------------------------
 IF NOT EXIST rubyinstaller-1.9.2-p290.exe wget http://rubyforge.org/frs/download.php/75127/rubyinstaller-1.9.2-p290.exe rubyinstaller-1.9.2-p290.exe
-rubyinstaller-1.9.2-p290.exe /silent /dir=.\utils\Ruby1.9.2
+rubyinstaller-1.9.2-p290.exe /silent /dir=%CD%\utils\Ruby1.9.2
 @echo+
 @echo+
 
