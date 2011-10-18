@@ -37,8 +37,6 @@
     </control>
     <control controlID="11" controlTypeID="com.balsamiq.mockups::Link" x="1223" y="226" w="-1" h="-1" measuredW="39" measuredH="23" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
-        <href>Notes%26bm%3BNotes.bmml%26bm%3BNotes.bmml%26bm%3BNotes.bmml</href>
-        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%221097%2C215%2C1136%2C238%22%20href%3D%22Notes.bmml%22%20alt%3D%22Notes%22%20id%3D%2211%22/%3E</map>
         <text>Notes</text>
       </controlProperties>
     </control>
@@ -55,6 +53,26 @@
     <control controlID="14" controlTypeID="com.balsamiq.mockups::Button" x="1282" y="591" w="-1" h="-1" measuredW="109" measuredH="28" zOrder="10" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Export%20to%20PDF</text>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::TitleWindow" x="649" y="82" w="-1" h="-1" measuredW="450" measuredH="400" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Notes</text>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::TextArea" x="666" y="119" w="411" h="302" measuredW="200" measuredH="140" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Contacted%20Todd%2C%20discussed%20scotch%2C%20software%2C%20but%20mostly%20scotch.</text>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::Button" x="748" y="426" w="-1" h="-1" measuredW="52" measuredH="28" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Save</text>
+      </controlProperties>
+    </control>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::Button" x="935" y="426" w="-1" h="-1" measuredW="63" measuredH="28" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Cancel</text>
       </controlProperties>
     </control>
   </controls>
