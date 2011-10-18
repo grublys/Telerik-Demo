@@ -85,7 +85,7 @@ namespace Telerik_Demo_App
             string downloadPath = @"d:\temp\contacts.pdf";
             SetExtractedValue("downloadPath", downloadPath );
             
-            if (System.IO.File.Exists(downloadPath.ToString())) {
+            if (System.IO.File.Exists(downloadPath)) {
                 System.IO.File.Delete(downloadPath);
             }
         }
