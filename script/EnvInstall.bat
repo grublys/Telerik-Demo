@@ -50,6 +50,6 @@ echo update: --no-ri --no-rdoc >> %userprofile%/.gemrc
 call gem install rails
 call gem install rspec
 call gem install rake
-bundle install
+call bundle install
 @echo+
 @echo+
