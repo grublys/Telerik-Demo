@@ -34,7 +34,8 @@ $ ->
   attachDraggables()
   attachDropTargets()
 
-  handleClicks '#view_contact_linkedin_profile', openInIframe
+  openInIframe()
+  #handleClicks '#view_contact_linkedin_profile', openInIframe
 
   $('#govt_contracts').hide()
   $('#contact_govt_contract').live 'click', (e) ->
