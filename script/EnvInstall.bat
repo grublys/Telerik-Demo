@@ -11,7 +11,7 @@ pause ...
 @echo ----------------------------------------------------------------
 @ECHO STEP 1/4: Updating User Path ...
 @echo ----------------------------------------------------------------
-path=%path%;%CD%\utils\bin;%CD%\utils\Git1.7.6\bin;%CD%\utils\Ruby1.9.2\bin
+path=%path%;%CD%\utils\bin;C:\RailsInstaller\Git\bin;C:\RailsInstaller\Ruby1.9.2\bin
 @echo+
 @echo+
 
@@ -19,7 +19,7 @@ path=%path%;%CD%\utils\bin;%CD%\utils\Git1.7.6\bin;%CD%\utils\Ruby1.9.2\bin
 @echo ----------------------------------------------------------------
 @ECHO STEP 2/4: Installing Ruby and Rails ...
 @echo ----------------------------------------------------------------
-IF NOT EXIST rubyinstaller-1.9.2-p290.exe wget http://rubyforge.org/frs/download.php/75346/railsinstaller-2.0.0.exe railsinstaller-2.0.0.exe
+IF NOT EXIST railsinstaller-2.0.0.exe wget http://rubyforge.org/frs/download.php/75346/railsinstaller-2.0.0.exe 
 railsinstaller-2.0.0.exe /silent
 @echo+
 @echo+
