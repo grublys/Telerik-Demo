@@ -23,7 +23,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id>Initialize</d2p1:Id>
       <d2p1:Order>1</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>cb0b26d7-35bc-4948-9a09-0203a329cfbc</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>3078808c-7dfb-4b55-b3d5-6b7b941de140</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:CodedStepDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -46,7 +46,7 @@
         <d2p1:Code>            string downloadPath = @"d:\temp\contacts.pdf";
             SetExtractedValue("downloadPath", downloadPath );
             
-            if (System.IO.File.Exists(downloadPath.ToString())) {
+            if (System.IO.File.Exists(downloadPath)) {
                 System.IO.File.Delete(downloadPath);
             }</d2p1:Code>
         <d2p1:RequiresSilverlight>false</d2p1:RequiresSilverlight>
@@ -62,7 +62,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>2</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>7c0f8bcd-a31d-4bdb-88ec-59a98df900af</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>f3556347-6e22-4841-9631-5a46a7dc6100</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ExecuteTestActionDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -97,7 +97,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>3</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>ee30cac8-e88f-45fb-9406-08eaae555ecd</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>50c72b4c-e11f-47c2-8f34-03a1568cb80d</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ClickActionDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -180,7 +180,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>4</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>9f884589-db74-4f46-b0a2-f811bd86e3d2</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>10c64de9-5841-44fb-83fb-3c547d15abd4</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:DownloadDialogHandlerDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -221,7 +221,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id>Exporting_Grid_to_PDF_saves_a_file_to_filesystem_CodedStep</d2p1:Id>
       <d2p1:Order>5</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>480952d1-fa4a-43da-a4ee-5523507aca12</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>8e5fde69-eebf-4818-b959-8dff1305a815</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:CodedStepDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">

@@ -42,16 +42,13 @@
     <None Include="Login\Invalid username and password combo shows error message.tstest" />
     <None Include="Login\Logging in as test user displays proper header.tstest" />
     <None Include="Login\Login Submit button disabled until both username &amp; password entered.tstest" />
+    <None Include="Login\WebTest.tstest" />
     <None Include="New Contact\Adding empty contact generates appropriate field and style errors.tstest" />
-    <None Include="New Contact\Can drag and drop.tstest" />
     <None Include="New Contact\Clicking New Contact from grid opens form in new window.tstest" />
     <None Include="New Contact\Dragging Contact Types to new contact sets correct values.tstest" />
     <None Include="New Contact\Invalid EMail formats generate appropriate errors.tstest" />
     <None Include="New Contact\Saving a New Contact with valid values shows user on grid.tstest" />
-    <None Include="New Contact\Validation.tstest">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="New Contact\Visual Verification.tstest" />
+    <None Include="New Contact\Visually Verify layout of New Contact Form.tstest" />
     <None Include="New Contact\Visually Verify New Contact Form.tstest" />
   </ItemGroup>
   <ItemGroup>
@@ -98,16 +95,18 @@
     <None Include="Initial Grid\Exporting Grid to PDF saves a file to filesystem.resx">
       <DependentUpon>Exporting Grid to PDF saves a file to filesystem.tstest</DependentUpon>
     </None>
-    <None Include="New Contact\Can drag and drop.resx">
-      <DependentUpon>Can drag and drop.tstest</DependentUpon>
-    </None>
-    <None Include="New Contact\Visual Verification.resx">
-      <DependentUpon>Visual Verification.tstest</DependentUpon>
-    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Login\WebTest.resx">
+      <DependentUpon>WebTest.tstest</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New Contact\Visually Verify layout of New Contact Form.resx">
+      <DependentUpon>Visually Verify layout of New Contact Form.tstest</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties VsProjectLanguage="CSharp" Version="2011.2.912.0" Name="Telerik_Demo_App" />
+      <UserProperties Name="Telerik_Demo_App" Version="2011.2.912.0" VsProjectLanguage="CSharp" />
     </VisualStudio>
   </ProjectExtensions>
   <Import Condition="true" Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
