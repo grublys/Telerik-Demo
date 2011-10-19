@@ -11,12 +11,13 @@ task :default => [:demo]
 task :demo do
   migrate
   seed
-  start
+  rails
+  iisexpress
 end
 
 def migrate
   puts "----------------------------------------------------------------"
-  puts "STEP 1/3 Migrating Database"
+  puts "STEP 1/4 Migrating Database"
   puts "----------------------------------------------------------------"
   `rake db:migrate`
   puts "complete..."
@@ -24,17 +25,33 @@ end
 
 def seed
   puts "----------------------------------------------------------------"
-  puts "STEP 2/3 Seeding Database"
+  puts "STEP 2/4 Seeding Database"
   puts "----------------------------------------------------------------"
   `rake db:seed`
   puts "complete..."
 end
 
-def start
+def rails
   puts "----------------------------------------------------------------"
-  puts "STEP 3/3 Starting Rails Server"
+  puts "STEP 3/4 Starting Rails Server"
+  puts "----------------------------------------------------------------"
+  `rails server`
+end
+
+def iisexpress
+  puts "----------------------------------------------------------------"
+  puts "STEP 4/4 Starting IISExpress Server"
   puts "----------------------------------------------------------------"
   puts "\nYou may begin the demo. Visit: http://localhost:3000\n"
   puts "\nPress Ctrl-C to shutdown the server.\n\n"
-  `rails server`
+
+  path_to_iisExpress = File.join(tools_path, 'IIS Express', 'iisexpress.exe')
+
+  output = IO.popen(path_to_iisExpress) do |pipe|
+      sleep 3 #seconds
+      Process.kill("KILL", pipe.pid)
+      pipe.close
+  end
+
+  puts 'IIS Express successfully kickstarted.'
 end
