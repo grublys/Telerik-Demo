@@ -132,8 +132,8 @@ gotoHtml5 = (view) ->
 
 gotoRadControls = (view) ->
   switch view
-    when "RadGrid" then alert "Cannot redirect to the RadGrid"
-    when "RadTree" then alert "Cannot redirect to the RadTree"
+    when "RadGrid" then window.location.href = "http://localhost:80/demo_app"
+    when "RadTree" then alert "RadTree not yet implemented"
 
 updateLeadType = (contact_id, lead_type) ->
   $.ajax
