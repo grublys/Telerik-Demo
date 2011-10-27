@@ -1,4 +1,3 @@
-#!/usr/bin/env rake
 # Add your own tasks in files placed in lib/tasks ending in .rake,
 # for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
 
@@ -11,8 +10,8 @@ task :default => [:demo]
 task :demo do
   migrate
   seed
-  iisexpress
-  rails
+  iis
+  start
 end
 
 def migrate
@@ -31,19 +30,18 @@ def seed
   puts "complete..."
 end
 
-def iisexpress
+def iis
   puts "----------------------------------------------------------------"
-  puts "STEP 3/4 Starting IISExpress Server"
+  puts "STEP 3/4 Start IIS"
   puts "----------------------------------------------------------------"
-  `script\iisexpress.exe`
-  puts 'IIS Express successfully kickstarted.'
+  puts "\nPlease deploy the demo_app folder to IIS at the url http://localhost:80/demo_app\n"
 end
 
-def rails
+def start
   puts "----------------------------------------------------------------"
   puts "STEP 4/4 Starting Rails Server"
   puts "----------------------------------------------------------------"
-  `rails server`
   puts "\nYou may begin the demo. Visit: http://localhost:3000\n"
-  puts "\nPress Ctrl-C to shutdown the server.\n\n"end
+  puts "\nPress Ctrl-C to shutdown the server.\n\n"
+  `rails server`
 end
