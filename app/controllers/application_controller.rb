@@ -3,6 +3,12 @@ class ApplicationController < ActionController::Base
   before_filter :require_login
   helper_method :current_user
 
+  after_filter :set_access_control_headers
+  def set_access_control_headers
+    headers['Access-Control-Allow-Origin'] = '*'
+    headers['Access-Control-Request-Method'] = 'GET'
+  end
+
   private
 
   def require_login

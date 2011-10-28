@@ -132,7 +132,7 @@ gotoHtml5 = (view) ->
 
 gotoRadControls = (view) ->
   switch view
-    when "RadGrid" then window.location.href = "http://localhost:80/demo_app"
+    when "RadGrid" then window.location.href = "http://localhost:80/demo-app"
     when "RadTree" then alert "RadTree not yet implemented"
 
 updateLeadType = (contact_id, lead_type) ->
