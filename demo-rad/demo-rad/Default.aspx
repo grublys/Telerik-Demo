@@ -19,6 +19,13 @@
     <h2>
     RadGrid
     </h2>
+    <div id="selection">
+        <select id="selection_technology" name="selection[technology]"><option value="">Select Technology</option>
+            <option value="HTML5">HTML5</option>
+            <option value="RadControls">RadControls</option></select>
+        <select disabled="disabled" id="selection_view" name="selection_view"><option value="">Select View</option>[]</select>
+    </div>
+
     <telerik:RadGrid ID="RadGrid1" runat="server" PageSize="10" AutoGenerateColumns="false">
         <MasterTableView AlternatingItemStyle-CssClass="odd">
             <Columns>
