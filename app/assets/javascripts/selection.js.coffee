@@ -4,6 +4,11 @@ $ ->
     e.preventDefault() if e.preventDefault()
     updateViewsForTechnology $('select#selection_technology :selected').val()           
 
+  $('#selection_view').change (e) ->
+    e.preventDefault() if e.preventDefault()
+    gotoView $('select#selection_technology :selected').val(),
+             $('select#selection_view :selected').val()
+
 updateViewsForTechnology = (tech) ->
   if tech
     $.ajax

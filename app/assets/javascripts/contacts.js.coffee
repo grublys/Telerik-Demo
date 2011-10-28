@@ -21,11 +21,6 @@ $ ->
     e.preventDefault() if e.preventDefault()
     updateLeadType $(this).attr('data-contact_id'), $(this).attr('data-lead_type')
 
-  $('#selection_view').change (e) ->
-    e.preventDefault() if e.preventDefault()
-    gotoView $('select#selection_technology :selected').val(),
-             $('select#selection_view :selected').val()
-
   # form
   attachDraggables()
   attachDropTargets()
