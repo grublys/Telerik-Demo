@@ -12,9 +12,11 @@ class ApplicationController < ActionController::Base
   private
 
   def require_login
-    unless current_user || !request.include? 'update_views_for_technology'
-      redirect_to welcome_url
-    end
+    if current_user || request.url.include?("update_views_for_technology")
+      return
+    end    
+  
+    redirect_to welcome_url
   end
 
   def current_user
