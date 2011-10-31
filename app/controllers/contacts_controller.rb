@@ -3,8 +3,6 @@ require 'json'
 
 class ContactsController < ApplicationController
 
-  skip_before_filter :require_login
-
   # GET /contacts
   # GET /contacts.json
   def index

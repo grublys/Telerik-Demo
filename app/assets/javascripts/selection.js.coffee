@@ -13,9 +13,9 @@ updateViewsForTechnology = (tech) ->
   if tech
     $.ajax
       type: 'GET',
-      url: 'http://localhost:3000/contacts/update_views_for_technology',
-      data: "tech=#{tech}",
-      dataType: 'json',
+      url: "http://localhost:3000/contacts/update_views_for_technology/#{tech}",
+      contentType: "application/json"
+      processData: false,
       success: (data) -> updateViewSelection(data)
   else
     resetSelectionView()
