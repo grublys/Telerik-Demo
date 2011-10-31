@@ -13,7 +13,7 @@ updateViewsForTechnology = (tech) ->
   if tech
     $.ajax
       type: 'GET',
-      url: '/contacts/update_views_for_technology',
+      url: 'http://localhost:3000/contacts/update_views_for_technology',
       data: "tech=#{tech}",
       dataType: 'json',
       success: (data) -> updateViewSelection(data)
