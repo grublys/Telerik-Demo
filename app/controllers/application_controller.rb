@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
   private
 
   def require_login
-    unless current_user || request.format == 'json'
+    unless current_user || !request.include? 'update_views_for_technology'
       redirect_to welcome_url
     end
   end
