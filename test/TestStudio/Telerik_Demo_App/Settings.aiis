@@ -49,8 +49,7 @@
   <AssemblyName Type="System.String">Telerik_Demo_App</AssemblyName>
   <OutputFolder Type="System.String">bin</OutputFolder>
   <ProjectGuid Type="System.String">2f6a6fad-ec70-438d-98cc-ad5efc1dcb6e</ProjectGuid>
-  <TeamPulseServerUrl Type="System.String">
-  </TeamPulseServerUrl>
+  <TeamPulseServerUrl Type="System.String">http://localhost:9898/</TeamPulseServerUrl>
   <QuickExecutionClientReadyTimeout Type="System.Int32">30000</QuickExecutionClientReadyTimeout>
   <QuickExecutionElementWaitTimeout Type="System.Int32">10000</QuickExecutionElementWaitTimeout>
   <RecordWpfWindowStateChanged Type="System.Boolean">True</RecordWpfWindowStateChanged>

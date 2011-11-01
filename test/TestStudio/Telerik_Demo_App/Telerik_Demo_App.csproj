@@ -37,24 +37,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include=".NET Tests\WebTest.tstest" />
     <None Include="Initial Grid\Exporting Grid to PDF saves a file to filesystem.tstest" />
     <None Include="Initial Grid\Initial Grid loaded from baseline data contains correct records.tstest" />
     <None Include="Login\Invalid username and password combo shows error message.tstest" />
     <None Include="Login\Logging in as test user displays proper header.tstest" />
     <None Include="Login\Login Submit button disabled until both username &amp; password entered.tstest" />
-    <None Include="Login\WebTest.tstest" />
     <None Include="New Contact\Adding empty contact generates appropriate field and style errors.tstest" />
     <None Include="New Contact\Clicking New Contact from grid opens form in new window.tstest" />
     <None Include="New Contact\Dragging Contact Types to new contact sets correct values.tstest" />
     <None Include="New Contact\Invalid EMail formats generate appropriate errors.tstest" />
     <None Include="New Contact\Saving a New Contact with valid values shows user on grid.tstest" />
-    <None Include="New Contact\Visually Verify layout of New Contact Form.tstest" />
-    <None Include="New Contact\Visually Verify New Contact Form.tstest" />
+    <None Include="New Contact\Validate Layout of New Contact Form.tstest" />
+    <None Include="Working With AJAX\AJAX Menu demo.tstest" />
+    <None Include="Working With AJAX\AJAX Menu Items Can Be Validated.tstest" />
+    <None Include="Working with iFrames\LinkedIn profile renders in iFrame.tstest" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="New Contact\Visually Verify New Contact Form.resx">
-      <DependentUpon>Visually Verify New Contact Form.tstest</DependentUpon>
-    </None>
     <None Include="Login\Invalid username and password combo shows error message.resx">
       <DependentUpon>Invalid username and password combo shows error message.tstest</DependentUpon>
     </None>
@@ -97,12 +96,21 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Login\WebTest.resx">
+    <None Include=".NET Tests\WebTest.resx">
       <DependentUpon>WebTest.tstest</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="New Contact\Visually Verify layout of New Contact Form.resx">
-      <DependentUpon>Visually Verify layout of New Contact Form.tstest</DependentUpon>
-    </EmbeddedResource>
+    </None>
+    <None Include="New Contact\Validate Layout of New Contact Form.resx">
+      <DependentUpon>Validate Layout of New Contact Form.tstest</DependentUpon>
+    </None>
+    <None Include="Working With AJAX\AJAX Menu demo.resx">
+      <DependentUpon>AJAX Menu demo.tstest</DependentUpon>
+    </None>
+    <None Include="Working With AJAX\AJAX Menu Items Can Be Validated.resx">
+      <DependentUpon>AJAX Menu Items Can Be Validated.tstest</DependentUpon>
+    </None>
+    <None Include="Working with iFrames\LinkedIn profile renders in iFrame.resx">
+      <DependentUpon>LinkedIn profile renders in iFrame.tstest</DependentUpon>
+    </None>
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
