@@ -26,7 +26,8 @@
         <select disabled="disabled" id="selection_view" name="selection_view"><option value="">Select View</option>[]</select>
     </div>
 
-    <telerik:RadGrid ID="RadGrid1" runat="server" PageSize="10" AutoGenerateColumns="false">
+    <telerik:RadGrid ID="RadGrid1" runat="server" PageSize="10" 
+        AutoGenerateColumns="false" >
         <MasterTableView AlternatingItemStyle-CssClass="odd">
             <Columns>
                 <telerik:GridBoundColumn DataField="first_name" HeaderText="First Name" />
@@ -46,7 +47,9 @@
     <script type="text/javascript">
         function pageLoad() {
             $.getJSON('http://localhost:3000/contacts.json', function (json) {
-                var mtv = $find("<%= RadGrid1.ClientID %>").get_masterTableView(); mtv.set_dataSource(json); mtv.dataBind();
+                var mtv = $find("<%= RadGrid1.ClientID %>").get_masterTableView();
+                mtv.set_dataSource(json); 
+                mtv.dataBind();
             });
         }
     </script>
