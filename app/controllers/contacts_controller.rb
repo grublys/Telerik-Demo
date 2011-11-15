@@ -146,7 +146,7 @@ class ContactsController < ApplicationController
   end
 
   def update_views_for_technology
-    sleep 3
+    sleep 1
 	
     @technology = params[:tech]
 
