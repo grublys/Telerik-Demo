@@ -1,9 +1,9 @@
-<TestList Type="ArtOfTest.WebAii.Design.Execution.TestList" Version="2011.2.928.0">
+<TestList Type="ArtOfTest.WebAii.Design.Execution.TestList" Version="2011.2.1108.0">
   <ID Type="System.String">706f18e5-7230-4324-9edf-102bd895e708</ID>
   <TestListName Type="System.String">Multiple Demo</TestListName>
   <Date Type="System.DateTime">2011-09-29 16:01:11Z</Date>
-  <Settings Type="ArtOfTest.WebAii.Core.Settings" Version="2011.2.928.0">
-    <WebSettings Type="ArtOfTest.WebAii.Core.Settings+WebSettings" Version="2011.2.928.0">
+  <Settings Type="ArtOfTest.WebAii.Core.Settings" Version="2011.2.1108.0">
+    <WebSettings Type="ArtOfTest.WebAii.Core.Settings+WebSettings" Version="2011.2.1108.0">
       <DefaultBrowser Type="ArtOfTest.WebAii.Core.BrowserType">InternetExplorer</DefaultBrowser>
       <WebAppPhysicalPath Type="System.String">
       </WebAppPhysicalPath>
@@ -45,12 +45,12 @@
     <DisableDialogMonitoring Type="System.Boolean">False</DisableDialogMonitoring>
   </Settings>
   <Tests>
-    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2011.2.928.0">
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2011.2.1108.0">
       <ID Type="System.String">d85de241-5219-4b09-b501-7a7aa86be76b</ID>
       <Path Type="System.String">Login\Logging in as test user displays proper header.tstest</Path>
     </Item>
   </Tests>
-  <Filter Type="ArtOfTest.WebAii.Design.Execution.Filter" Version="2011.2.928.0">
+  <Filter Type="ArtOfTest.WebAii.Design.Execution.Filter" Version="2011.2.1108.0">
     <Keys />
     <Comparisons />
     <Values />

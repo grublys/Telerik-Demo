@@ -1,0 +1,230 @@
+    ======  ======
+    Time:11/1/2011 5:17:59 PM
+    Title: Initiate log
+    Message: 
+    Time:11/1/2011 5:17:59 PM
+    Title: LICENSER
+    Message: READ REGS START
+    Time:11/1/2011 5:17:59 PM
+    Title: LIC EXP_KEY
+    Message: NULL
+    Time:11/1/2011 5:17:59 PM
+    Title: LICENSER
+    Message: READ REGS SUCCESS
+    Time:11/1/2011 5:17:59 PM
+    Title: Initiate InternalManager
+    Message: Trying to Validate License
+    Time:11/1/2011 5:17:59 PM
+    Title: Requesting EVT
+    Message: EVTP
+    Time:11/1/2011 5:17:59 PM
+    Title: Requesting Validation
+    Message: ILMValidate
+    Time:11/1/2011 5:17:59 PM
+    Title: ILMValidate action
+    Message: Set PC
+    Time:11/1/2011 5:17:59 PM
+    Title: ILMValidate action
+    Message: Check for VL
+    Time:11/1/2011 5:17:59 PM
+    Title: Requesting Validation
+    Message: ILMValidate True
+    Time:11/1/2011 5:17:59 PM
+    Title: Requesting Validation
+    Message: ILMValidate True NotTrial
+    Recording: RecorderHostService constructor : Host endpoint: net.pipe://localhost/Instance/60808/DesignCanvas/4920
+    Uncategorized: Loader.LoadTranslatorGroups() : ------- Function Start -------
+    Uncategorized: Loader.LoadTranslatorGroups() : Translators Directory is : C:\Program Files (x86)\Telerik\Test Studio 2011.2\Bin\Translators
+    Uncategorized: Loader.LoadTranslatorGroups() : ------- Function End -------
+    Uncategorized: Orchestrator.set_SelectedProject() : Active Project is : 'Telerik_Demo_App'
+    Uncategorized: Orchestrator._iUIProject_ProjectOpened() : Project 'Telerik_Demo_App' Ready.
+    Time:11/1/2011 5:18:01 PM
+    Title: Initiate log
+    Message: 
+    Time:11/1/2011 5:18:01 PM
+    Title: Initiate InternalManager
+    Message: Trying to Validate License
+    Time:11/1/2011 5:18:01 PM
+    Title: Requesting EVT
+    Message: EVTP
+    Time:11/1/2011 5:18:01 PM
+    Title: Checking EVT
+    Message: EVTP has value
+    Time:11/1/2011 5:18:01 PM
+    Title: Initiate log
+    Message: 
+    Time:11/1/2011 5:18:01 PM
+    Title: Initiate InternalManager
+    Message: Trying to Validate License
+    Time:11/1/2011 5:18:01 PM
+    Title: Requesting EVT
+    Message: EVTP
+    Time:11/1/2011 5:18:01 PM
+    Title: Checking EVT
+    Message: EVTP has value
+    Time:11/1/2011 5:18:01 PM
+    Title: Initiate log
+    Message: 
+    Time:11/1/2011 5:18:01 PM
+    Title: Initiate InternalManager
+    Message: Trying to Validate License
+    Time:11/1/2011 5:18:01 PM
+    Title: Requesting EVT
+    Message: EVTP
+    Time:11/1/2011 5:18:01 PM
+    Title: Checking EVT
+    Message: EVTP has value
+    Time:11/1/2011 5:18:01 PM
+    Title: Initiate log
+    Message: 
+    Time:11/1/2011 5:18:01 PM
+    Title: Initiate InternalManager
+    Message: Trying to Validate License
+    Time:11/1/2011 5:18:01 PM
+    Title: Requesting EVT
+    Message: EVTP
+    Time:11/1/2011 5:18:01 PM
+    Title: Checking EVT
+    Message: EVTP has value
+    Time:11/1/2011 5:18:02 PM
+    Title: Initiate log
+    Message: 
+    Time:11/1/2011 5:18:02 PM
+    Title: Initiate InternalManager
+    Message: Trying to Validate License
+    Time:11/1/2011 5:18:02 PM
+    Title: Requesting EVT
+    Message: EVTP
+    Time:11/1/2011 5:18:02 PM
+    Title: Checking EVT
+    Message: EVTP has value
+    Time:11/1/2011 5:18:02 PM
+    Title: Initiate log
+    Message: 
+    Time:11/1/2011 5:18:02 PM
+    Title: Initiate InternalManager
+    Message: Trying to Validate License
+    Time:11/1/2011 5:18:02 PM
+    Title: Requesting EVT
+    Message: EVTP
+    Time:11/1/2011 5:18:02 PM
+    Title: Checking EVT
+    Message: EVTP has value
+    Time:11/1/2011 5:18:02 PM
+    Title: Initiate log
+    Message: 
+    Time:11/1/2011 5:18:02 PM
+    Title: Initiate InternalManager
+    Message: Trying to Validate License
+    Time:11/1/2011 5:18:02 PM
+    Title: Requesting EVT
+    Message: EVTP
+    Time:11/1/2011 5:18:02 PM
+    Title: Checking EVT
+    Message: EVTP has value
+    Time:11/1/2011 5:18:02 PM
+    Title: Initiate log
+    Message: 
+    Time:11/1/2011 5:18:02 PM
+    Title: Initiate InternalManager
+    Message: Trying to Validate License
+    Time:11/1/2011 5:18:02 PM
+    Title: Requesting EVT
+    Message: EVTP
+    Time:11/1/2011 5:18:02 PM
+    Title: Checking EVT
+    Message: EVTP has value
+    Time:11/1/2011 5:18:02 PM
+    Title: Initiate log
+    Message: 
+    Time:11/1/2011 5:18:02 PM
+    Title: Initiate InternalManager
+    Message: Trying to Validate License
+    Time:11/1/2011 5:18:02 PM
+    Title: Requesting EVT
+    Message: EVTP
+    Time:11/1/2011 5:18:02 PM
+    Title: Checking EVT
+    Message: EVTP has value
+    Time:11/1/2011 5:18:02 PM
+    Title: Initiate log
+    Message: 
+    Time:11/1/2011 5:18:02 PM
+    Title: Initiate InternalManager
+    Message: Trying to Validate License
+    Time:11/1/2011 5:18:02 PM
+    Title: Requesting EVT
+    Message: EVTP
+    Time:11/1/2011 5:18:02 PM
+    Title: Checking EVT
+    Message: EVTP has value
+    Time:11/1/2011 5:18:02 PM
+    Title: Initiate log
+    Message: 
+    Time:11/1/2011 5:18:02 PM
+    Title: Initiate InternalManager
+    Message: Trying to Validate License
+    Time:11/1/2011 5:18:02 PM
+    Title: Requesting EVT
+    Message: EVTP
+    Time:11/1/2011 5:18:02 PM
+    Title: Checking EVT
+    Message: EVTP has value
+    Time:11/1/2011 5:18:02 PM
+    Title: Initiate log
+    Message: 
+    Time:11/1/2011 5:18:02 PM
+    Title: Initiate InternalManager
+    Message: Trying to Validate License
+    Time:11/1/2011 5:18:02 PM
+    Title: Requesting EVT
+    Message: EVTP
+    Time:11/1/2011 5:18:02 PM
+    Title: Checking EVT
+    Message: EVTP has value
+    Time:11/1/2011 5:18:02 PM
+    Title: Initiate log
+    Message: 
+    Time:11/1/2011 5:18:02 PM
+    Title: Initiate InternalManager
+    Message: Trying to Validate License
+    Time:11/1/2011 5:18:02 PM
+    Title: Requesting EVT
+    Message: EVTP
+    Time:11/1/2011 5:18:02 PM
+    Title: Checking EVT
+    Message: EVTP has value
+    Time:11/1/2011 5:18:02 PM
+    Title: Initiate log
+    Message: 
+    Time:11/1/2011 5:18:02 PM
+    Title: Initiate InternalManager
+    Message: Trying to Validate License
+    Time:11/1/2011 5:18:02 PM
+    Title: Requesting EVT
+    Message: EVTP
+    Time:11/1/2011 5:18:02 PM
+    Title: Checking EVT
+    Message: EVTP has value
+    ProjectModel: DataHelper.GetDataSourcesList() : ------- Function Start -------
+    ProjectModel: DataHelper.GetDataSourcesList() : Building DataSourceItems in : D:\projects\Telerik-Demo\test\TestStudio\Telerik_Demo_App\Data\
+    ProjectModel: DataHelper.GetDataSourcesList() : ------- Function End -------
+    TestStudio: WebAiiTestEditorPane.PrepareForProjectOpen() : RemoveElementsAndAddTarget: Loading Project File
+    Uncategorized: Orchestrator._iUIProject_TestSelected() : Test 'Exporting Grid to PDF saves a file to filesystem' selected.
+    Uncategorized: Orchestrator._iUIProject_TestSelected() : Test 'Exporting Grid to PDF saves a file to filesystem' selected.
+    Uncategorized: Orchestrator._iUIProject_TestSelected() : Test 'Exporting Grid to PDF saves a file to filesystem' selected.
+    Uncategorized: Orchestrator._iUIProject_TestSelected() : Test 'Exporting Grid to PDF saves a file to filesystem' selected.
+    Uncategorized: Orchestrator._iUIProject_TestSelected() : Test 'Exporting Grid to PDF saves a file to filesystem' selected.
+    Uncategorized: Orchestrator._iUIProject_ProjectSaved() : Project 'Telerik_Demo_App' Saved.
+    Uncategorized: Orchestrator._iUIProject_ProjectClosed() : Project 'Telerik_Demo_App' Closed.
+    Framework: BrowserProvisioner.EndService() : Connecting to the provisioning pipe "Pipe.ArtOfTest.WebAii.BrowserProvisioner_-1652984701" in order to unblock and eventually terminate it...
+    Framework: BrowserProvisioner.EndService() : Provisioning pipe connected.
+    Framework: BrowserProvisioner.ServiceThread() : A new client has connected to the provisioning pipe but this will be treated as a termination cue.
+    Framework: BrowserProvisioner.EndService() : Provisioning thread terminated.
+    DialogPlayback: DialogMonitor.Stop() : Dialog monitoring is being halted.
+    Framework: BrowserProvisioner.EndService() : Connecting to the provisioning pipe "Pipe.ArtOfTest.WebAii.BrowserProvisioner_2144663633" in order to unblock and eventually terminate it...
+    Framework: BrowserProvisioner.EndService() : Provisioning pipe connected.
+    Framework: BrowserProvisioner.ServiceThread() : A new client has connected to the provisioning pipe but this will be treated as a termination cue.
+    Framework: BrowserProvisioner.EndService() : Provisioning thread terminated.
+    DialogPlayback: DialogMonitor.Stop() : Dialog monitoring is being halted.
+    Entering QueryClose for: Telerik.Web.UI.VSPackage.VSPackage

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <RootNamespace>Telerik_Demo_App</RootNamespace>
+    <AssemblyName>Telerik_Demo_App</AssemblyName>
+    <OutputPath>bin</OutputPath>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectGuid>{15E3F797-C1E2-40FD-BD1B-014F7EEBA126}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ArtOfTest.WebAii, Version=2011.2.928.0, Culture=neutral, PublicKeyToken=4fd5f65be123776c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Telerik\Test Studio 2011.2\Bin\ArtOfTest.WebAii.dll</HintPath>
+    </Reference>
+    <Reference Include="ArtOfTest.WebAii.Design, Version=2011.2.928.0, Culture=neutral, PublicKeyToken=4fc62bbc3827ab1d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Telerik\Test Studio 2011.2\Bin\ArtOfTest.WebAii.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Telerik.WebAii.Controls.Html, Version=2011.2.927.0, Culture=neutral, PublicKeyToken=528163f3e645de45, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Telerik\Test Studio 2011.2\Bin\Translators\Telerik.WebAii.Controls.Html.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WebAii.Controls.Xaml, Version=2011.2.927.0, Culture=neutral, PublicKeyToken=528163f3e645de45, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Telerik\Test Studio 2011.2\Bin\Translators\Telerik.WebAii.Controls.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WebAii.Controls.Xaml.Wpf, Version=2011.2.927.0, Culture=neutral, PublicKeyToken=528163f3e645de45, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Telerik\Test Studio 2011.2\Bin\Translators\Telerik.WebAii.Controls.Xaml.Wpf.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".NET Tests\WebTest.tstest" />
+    <None Include="Initial Grid\Exporting Grid to PDF saves a file to filesystem.tstest" />
+    <None Include="Initial Grid\Initial Grid loaded from baseline data contains correct records.tstest" />
+    <None Include="Login\Invalid username and password combo shows error message.tstest" />
+    <None Include="Login\Logging in as test user displays proper header.tstest" />
+    <None Include="Login\Login Submit button disabled until both username &amp; password entered.tstest" />
+    <None Include="New Contact\Adding empty contact generates appropriate field and style errors.tstest" />
+    <None Include="New Contact\Clicking New Contact from grid opens form in new window.tstest" />
+    <None Include="New Contact\Dragging Contact Types to new contact sets correct values.tstest" />
+    <None Include="New Contact\Invalid EMail formats generate appropriate errors.tstest" />
+    <None Include="New Contact\Saving a New Contact with valid values shows user on grid.tstest" />
+    <None Include="New Contact\Validate Layout of New Contact Form.tstest" />
+    <None Include="Working With AJAX\AJAX Menu demo.tstest" />
+    <None Include="Working With AJAX\AJAX Menu Items Can Be Validated.tstest" />
+    <None Include="Working with iFrames\LinkedIn profile renders in iFrame.tstest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Login\Invalid username and password combo shows error message.resx">
+      <DependentUpon>Invalid username and password combo shows error message.tstest</DependentUpon>
+    </None>
+    <None Include="Login\Logging in as test user displays proper header.resx">
+      <DependentUpon>Logging in as test user displays proper header.tstest</DependentUpon>
+    </None>
+    <None Include="Login\Login Submit button disabled until both username &amp; password entered.resx">
+      <DependentUpon>Login Submit button disabled until both username &amp; password entered.tstest</DependentUpon>
+    </None>
+    <None Include="New Contact\Adding empty contact generates appropriate field and style errors.resx">
+      <DependentUpon>Adding empty contact generates appropriate field and style errors.tstest</DependentUpon>
+    </None>
+    <None Include="New Contact\Clicking New Contact from grid opens form in new window.resx">
+      <DependentUpon>Clicking New Contact from grid opens form in new window.tstest</DependentUpon>
+    </None>
+    <None Include="New Contact\Dragging Contact Types to new contact sets correct values.resx">
+      <DependentUpon>Dragging Contact Types to new contact sets correct values.tstest</DependentUpon>
+    </None>
+    <None Include="New Contact\Invalid EMail formats generate appropriate errors.resx">
+      <DependentUpon>Invalid EMail formats generate appropriate errors.tstest</DependentUpon>
+    </None>
+    <None Include="Initial Grid\Initial Grid loaded from baseline data contains correct records.resx">
+      <DependentUpon>Initial Grid loaded from baseline data contains correct records.tstest</DependentUpon>
+    </None>
+    <None Include="New Contact\Saving a New Contact with valid values shows user on grid.resx">
+      <DependentUpon>Saving a New Contact with valid values shows user on grid.tstest</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Initial Grid\Exporting Grid to PDF saves a file to filesystem.tstest.cs">
+      <DependentUpon>Exporting Grid to PDF saves a file to filesystem.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="New Contact\Saving a New Contact with valid values shows user on grid.tstest.cs">
+      <DependentUpon>Saving a New Contact with valid values shows user on grid.tstest</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Initial Grid\Exporting Grid to PDF saves a file to filesystem.resx">
+      <DependentUpon>Exporting Grid to PDF saves a file to filesystem.tstest</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".NET Tests\WebTest.resx">
+      <DependentUpon>WebTest.tstest</DependentUpon>
+    </None>
+    <None Include="New Contact\Validate Layout of New Contact Form.resx">
+      <DependentUpon>Validate Layout of New Contact Form.tstest</DependentUpon>
+    </None>
+    <None Include="Working With AJAX\AJAX Menu demo.resx">
+      <DependentUpon>AJAX Menu demo.tstest</DependentUpon>
+    </None>
+    <None Include="Working With AJAX\AJAX Menu Items Can Be Validated.resx">
+      <DependentUpon>AJAX Menu Items Can Be Validated.tstest</DependentUpon>
+    </None>
+    <None Include="Working with iFrames\LinkedIn profile renders in iFrame.resx">
+      <DependentUpon>LinkedIn profile renders in iFrame.tstest</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Name="Telerik_Demo_App" Version="2011.2.912.0" VsProjectLanguage="CSharp" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Condition="true" Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Condition="true" Project="$(MSBuildExtensionsPath)\Telerik\WebUITestStudio\Telerik.WebUITestStudio.targets" />
+</Project>

@@ -37,9 +37,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include=".NET Tests\WebTest.tstest" />
+    <None Include=".NET Tests\Navigating to Rad page renders grid.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include=".NET Tests\RadGrid displays proper baseline data.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include=".NET Tests\RadGrid_Rows.tstest" />
     <None Include="Initial Grid\Exporting Grid to PDF saves a file to filesystem.tstest" />
     <None Include="Initial Grid\Initial Grid loaded from baseline data contains correct records.tstest" />
+    <None Include="Login\Inputting valid username and password logs on.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Login\Invalid username and password combo shows error message.tstest" />
     <None Include="Login\Logging in as test user displays proper header.tstest" />
     <None Include="Login\Login Submit button disabled until both username &amp; password entered.tstest" />
@@ -48,6 +57,9 @@
     <None Include="New Contact\Dragging Contact Types to new contact sets correct values.tstest" />
     <None Include="New Contact\Invalid EMail formats generate appropriate errors.tstest" />
     <None Include="New Contact\Saving a New Contact with valid values shows user on grid.tstest" />
+    <None Include="New Contact\Validate HTML 5 e-mail errors.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="New Contact\Validate Layout of New Contact Form.tstest" />
     <None Include="Working With AJAX\AJAX Menu demo.tstest" />
     <None Include="Working With AJAX\AJAX Menu Items Can Be Validated.tstest" />
@@ -83,6 +95,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include=".NET Tests\RadGrid_Rows.tstest.cs">
+      <DependentUpon>RadGrid_Rows.tstest</DependentUpon>
+    </Compile>
     <Compile Include="Initial Grid\Exporting Grid to PDF saves a file to filesystem.tstest.cs">
       <DependentUpon>Exporting Grid to PDF saves a file to filesystem.tstest</DependentUpon>
     </Compile>
@@ -96,9 +111,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include=".NET Tests\WebTest.resx">
-      <DependentUpon>WebTest.tstest</DependentUpon>
-    </None>
     <None Include="New Contact\Validate Layout of New Contact Form.resx">
       <DependentUpon>Validate Layout of New Contact Form.tstest</DependentUpon>
     </None>
@@ -112,9 +124,28 @@
       <DependentUpon>LinkedIn profile renders in iFrame.tstest</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <None Include=".NET Tests\Navigating to Rad page renders grid.resx">
+      <DependentUpon>Navigating to Rad page renders grid.tstest</DependentUpon>
+    </None>
+    <None Include=".NET Tests\RadGrid displays proper baseline data.resx">
+      <DependentUpon>RadGrid displays proper baseline data.tstest</DependentUpon>
+    </None>
+    <None Include="Login\Inputting valid username and password logs on.resx">
+      <DependentUpon>Inputting valid username and password logs on.tstest</DependentUpon>
+    </None>
+    <None Include="New Contact\Validate HTML 5 e-mail errors.resx">
+      <DependentUpon>Validate HTML 5 e-mail errors.tstest</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".NET Tests\RadGrid_Rows.resx">
+      <DependentUpon>RadGrid_Rows.tstest</DependentUpon>
+    </None>
+  </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties Name="Telerik_Demo_App" Version="2011.2.912.0" VsProjectLanguage="CSharp" />
+      <UserProperties VsProjectLanguage="CSharp" Version="2011.2.912.0" Name="Telerik_Demo_App" />
     </VisualStudio>
   </ProjectExtensions>
   <Import Condition="true" Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <title>Telerik Customer Relations Management System</title>
+  <link type="text/css" rel="stylesheet" media="screen" href="/assets/application.css?body=1" />
+<link type="text/css" rel="stylesheet" media="screen" href="/assets/jquery-ui-1.8.16.custom.css?body=1" />
+<link type="text/css" rel="stylesheet" media="screen" href="/assets/contacts.css?body=1" />
+<link type="text/css" rel="stylesheet" media="screen" href="/assets/help.css?body=1" />
+<link type="text/css" rel="stylesheet" media="screen" href="/assets/scaffolds.css?body=1" />
+<link type="text/css" rel="stylesheet" media="screen" href="/assets/sessions.css?body=1" />
+<link type="text/css" rel="stylesheet" media="screen" href="/assets/users.css?body=1" />
+<link type="text/css" rel="stylesheet" media="screen" href="/assets/welcome.css?body=1" />
+  <script type="text/javascript" src="/assets/jquery.js?body=1"></script>
+<script type="text/javascript" src="/assets/jquery-ui.js?body=1"></script>
+<script type="text/javascript" src="/assets/jquery_ujs.js?body=1"></script>
+<script type="text/javascript" src="/assets/contacts.js?body=1"></script>
+<script type="text/javascript" src="/assets/contacts.js.coffee%7E?body=1"></script>
+<script type="text/javascript" src="/assets/helpers.js?body=1"></script>
+<script type="text/javascript" src="/assets/selection.js?body=1"></script>
+<script type="text/javascript" src="/assets/sessions.js?body=1"></script>
+<script type="text/javascript" src="/assets/application.js?body=1"></script>
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="gaWJCviCYJVAlVY6frFw4SL867P1wLx0HKsWFB4x/aA=" />
+</head>
+<body>
+
+  <div id="top-bar">
+    <h1><img src="/assets/TelerikLogo.png" alt="Teleriklogo" /> </h1>
+    <div id="top-menu">
+      <a href="/">Home</a>
+      <a href="/help">Help</a>
+        <a href="/logout">Logout</a>
+
+    </div>
+  </div>
+
+
+  <div id="body">
+    <h2><img src="/assets/TestStudioLogo.png" alt="Teststudiologo" /> </h2>
+    <div id="content">
+      <h1>New contact</h1>
+
+<form method="post" id="new_contact" class="new_contact" action="/contacts" accept-charset="UTF-8"><div style="margin:0;padding:0;display:inline"><input type="hidden" value="✓" name="utf8" /><input type="hidden" value="gaWJCviCYJVAlVY6frFw4SL867P1wLx0HKsWFB4x/aA=" name="authenticity_token" /></div>
+
+  <div class="field">
+    <label for="contact_first_name">First name</label><br />
+    <input type="text" size="30" name="contact[first_name]" id="contact_first_name" />
+  </div>
+  <div class="field">
+    <label for="contact_last_name">Last name</label><br />
+    <input type="text" size="30" name="contact[last_name]" id="contact_last_name" />
+  </div>
+  <div class="field">
+    <label for="contact_email">Email</label><br />
+    <input type="email" size="30" name="contact[email]" id="contact_email" />
+  </div>
+  <div class="field">
+    <label for="contact_linkedin_profile">Linkedin profile</label><br />
+    <input type="text" size="30" name="contact[linkedin_profile]" id="contact_linkedin_profile" /> 
+  </div>
+  <div class="field">
+    <input type="hidden" value="0" name="contact[govt_contract]" /><input type="checkbox" value="1" name="contact[govt_contract]" id="contact_govt_contract" />
+    <label for="contact_govt_contract">Gov't Contract?</label>
+  </div>
+  <div id="govt_contracts" class="field" style="display: none;">
+    <input type="hidden" value="0" name="contact[dod]" /><input type="checkbox" value="1" name="contact[dod]" id="contact_dod" />
+    <label for="contact_dod">DOD</label><br />
+    <input type="hidden" value="0" name="contact[other]" /><input type="checkbox" value="1" name="contact[other]" id="contact_other" />
+    <label for="contact_other">Other</label>
+  </div>
+  <div id="lead_types">
+    <img src="/assets/HOT.png" draggable="true" data-lead_type="HOT" alt="Hot" />
+    <img src="/assets/NEUTRAL.png" draggable="true" data-lead_type="NEUTRAL" alt="Neutral" />
+    <img src="/assets/COLD.png" draggable="true" data-lead_type="COLD" alt="Cold" />
+  </div>
+  <div class="field">
+    <label for="contact_lead_type">Lead type</label><br />
+    <div class="drop_target">
+      
+    </div>
+    <input type="hidden" name="contact[lead_type]" id="contact_lead_type" />
+  </div>
+  <div class="actions">
+    <input type="submit" value="Create Contact" name="commit" />
+    <input type="button" value="Cancel" onclick="window.close();" />
+  </div>
+</form>
+
+
+<iframe width="100%" height="100%" id="linkedin_frame" src="/static/Jim_Holmes_LinkedIn.html">
+  &lt;p&gt;Your browser does not support iframes.&lt;/p&gt;
+</iframe>
+
+
+    </div>
+  </div>
+
+
+
+
+</body></html>
