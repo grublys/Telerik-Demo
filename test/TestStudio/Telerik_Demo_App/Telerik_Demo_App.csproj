@@ -57,12 +57,21 @@
     <None Include="New Contact\Dragging Contact Types to new contact sets correct values.tstest" />
     <None Include="New Contact\Invalid EMail formats generate appropriate errors.tstest" />
     <None Include="New Contact\Saving a New Contact with valid values shows user on grid.tstest" />
+    <None Include="New Contact\Saving a new contact.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="New Contact\Validate HTML 5 e-mail errors.tstest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="New Contact\Validate Layout of New Contact Form.tstest" />
+    <None Include="Support\Log in if needed.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Working With AJAX\AJAX Menu demo.tstest" />
     <None Include="Working With AJAX\AJAX Menu Items Can Be Validated.tstest" />
+    <None Include="Working With AJAX\Drop Down Waits.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Working with iFrames\LinkedIn profile renders in iFrame.tstest" />
   </ItemGroup>
   <ItemGroup>
@@ -104,6 +113,9 @@
     <Compile Include="New Contact\Saving a New Contact with valid values shows user on grid.tstest.cs">
       <DependentUpon>Saving a New Contact with valid values shows user on grid.tstest</DependentUpon>
     </Compile>
+    <Compile Include="Working With AJAX\AJAX Menu demo.tstest.cs">
+      <DependentUpon>AJAX Menu demo.tstest</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Initial Grid\Exporting Grid to PDF saves a file to filesystem.resx">
@@ -143,9 +155,20 @@
       <DependentUpon>RadGrid_Rows.tstest</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="New Contact\Saving a new contact.resx">
+      <DependentUpon>Saving a new contact.tstest</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Support\Log in if needed.resx">
+      <DependentUpon>Log in if needed.tstest</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Working With AJAX\Drop Down Waits.resx">
+      <DependentUpon>Drop Down Waits.tstest</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties VsProjectLanguage="CSharp" Version="2011.2.912.0" Name="Telerik_Demo_App" />
+      <UserProperties Name="Telerik_Demo_App" Version="2011.2.912.0" VsProjectLanguage="CSharp" />
     </VisualStudio>
   </ProjectExtensions>
   <Import Condition="true" Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
