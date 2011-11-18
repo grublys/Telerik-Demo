@@ -43,8 +43,10 @@
     <None Include=".NET Tests\RadGrid displays proper baseline data.tstest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include=".NET Tests\RadGrid_Rows.tstest" />
     <None Include="Initial Grid\Exporting Grid to PDF saves a file to filesystem.tstest" />
+    <None Include="Initial Grid\File Download.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Initial Grid\Initial Grid loaded from baseline data contains correct records.tstest" />
     <None Include="Login\Inputting valid username and password logs on.tstest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -56,15 +58,19 @@
     <None Include="New Contact\Clicking New Contact from grid opens form in new window.tstest" />
     <None Include="New Contact\Dragging Contact Types to new contact sets correct values.tstest" />
     <None Include="New Contact\Invalid EMail formats generate appropriate errors.tstest" />
-    <None Include="New Contact\Saving a New Contact with valid values shows user on grid.tstest" />
-    <None Include="New Contact\Saving a new contact.tstest">
+    <None Include="New Contact\Save a new contact.tstest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="New Contact\Saving a New Contact with valid values shows user on grid.tstest" />
     <None Include="New Contact\Validate HTML 5 e-mail errors.tstest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="New Contact\Validate Layout of New Contact Form.tstest" />
+    <None Include="Settings.aiis" />
     <None Include="Support\Log in if needed.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Support\Log OUT if needed.tstest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Working With AJAX\AJAX Menu demo.tstest" />
@@ -104,12 +110,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include=".NET Tests\RadGrid_Rows.tstest.cs">
-      <DependentUpon>RadGrid_Rows.tstest</DependentUpon>
-    </Compile>
-    <Compile Include="Initial Grid\Exporting Grid to PDF saves a file to filesystem.tstest.cs">
-      <DependentUpon>Exporting Grid to PDF saves a file to filesystem.tstest</DependentUpon>
-    </Compile>
     <Compile Include="New Contact\Saving a New Contact with valid values shows user on grid.tstest.cs">
       <DependentUpon>Saving a New Contact with valid values shows user on grid.tstest</DependentUpon>
     </Compile>
@@ -151,24 +151,25 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include=".NET Tests\RadGrid_Rows.resx">
-      <DependentUpon>RadGrid_Rows.tstest</DependentUpon>
+    <None Include="Initial Grid\File Download.resx">
+      <DependentUpon>File Download.tstest</DependentUpon>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="New Contact\Saving a new contact.resx">
-      <DependentUpon>Saving a new contact.tstest</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Support\Log in if needed.resx">
+    <None Include="New Contact\Save a new contact.resx">
+      <DependentUpon>Save a new contact.tstest</DependentUpon>
+    </None>
+    <None Include="Support\Log OUT if needed.resx">
+      <DependentUpon>Log OUT if needed.tstest</DependentUpon>
+    </None>
+    <None Include="Support\Log in if needed.resx">
       <DependentUpon>Log in if needed.tstest</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Working With AJAX\Drop Down Waits.resx">
+    </None>
+    <None Include="Working With AJAX\Drop Down Waits.resx">
       <DependentUpon>Drop Down Waits.tstest</DependentUpon>
-    </EmbeddedResource>
+    </None>
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties Name="Telerik_Demo_App" Version="2011.2.912.0" VsProjectLanguage="CSharp" />
+      <UserProperties Name="Telerik_Demo_App" />
     </VisualStudio>
   </ProjectExtensions>
   <Import Condition="true" Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
