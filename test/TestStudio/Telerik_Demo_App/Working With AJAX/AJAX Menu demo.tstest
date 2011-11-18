@@ -437,7 +437,7 @@
   <StopTestListOnFailure>false</StopTestListOnFailure>
   <TestAssembly>Telerik_Demo_App.dll</TestAssembly>
   <TestAssemblyPath>bin\</TestAssemblyPath>
-  <TestClass i:nil="true" />
+  <TestClass>Telerik_Demo_App.Working_With_AJAX.AJAX_Menu_demo</TestClass>
   <TestLinks xmlns:d2p1="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.ProjectModel.TestLinks" />
   <TestType>Web</TestType>
   <UniqueId>8eb8dc06-2ebb-4108-89cc-3383d5f89cf9</UniqueId>
