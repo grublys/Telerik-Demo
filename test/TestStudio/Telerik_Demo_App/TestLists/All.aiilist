@@ -19,7 +19,7 @@
       <VerboseHttpProxy Type="System.Boolean">False</VerboseHttpProxy>
       <SilverlightConnectTimeout Type="System.Int32">30000</SilverlightConnectTimeout>
       <MultiBrowsersExecution>
-        <Item Type="ArtOfTest.WebAii.Core.BrowserExecutionType">FireFox</Item>
+        <Item Type="ArtOfTest.WebAii.Core.BrowserExecutionType">InternetExplorer</Item>
       </MultiBrowsersExecution>
       <UseMultiBrowsers Type="System.Boolean">True</UseMultiBrowsers>
       <IsProfilingExecution Type="System.Boolean">False</IsProfilingExecution>
