@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="dc7306eb-6544-4c74-b521-0c95223d32e7" name="Administrator@DEMO 2011-11-16 16:53:26" runUser="DEMO\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="792c654f-c98c-401e-a661-f4c0e391d61d">
+    <Deployment userDeploymentRoot="D:\projects\Telerik-Demo\test\TestStudio\Telerik_Demo_App\TestResults" useDefaultDeploymentRoot="false" runDeploymentRoot="Administrator_DEMO 2011-11-16 16_53_26" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-11-16T16:53:26.5903043-05:00" queuing="2011-11-16T16:53:26.7313124-05:00" start="2011-11-16T16:53:26.8093168-05:00" finish="2011-11-16T16:53:44.7973457-05:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <WebAiiTest name="Exporting Grid to PDF saves a file to filesystem" storage="d:\projects\telerik-demo\test\teststudio\telerik_demo_app\initial grid\exporting grid to pdf saves a file to filesystem.tstest" priority="0" id="3a67af50-a176-4237-97df-8c6a66252944" xmlns="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0">
+      <Description xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">WebAii Testcase</Description>
+      <DeploymentItems xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+        <DeploymentItem filename="..\Login\Logging in as test user displays proper header.tstest" />
+        <DeploymentItem filename="..\bin\Telerik_Demo_App.dll" />
+        <DeploymentItem filename="..\Support\Log in if needed.tstest" />
+      </DeploymentItems>
+      <Execution id="8126b722-70ad-4ebd-bc6d-30cf3e43d231" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" />
+    </WebAiiTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="3a67af50-a176-4237-97df-8c6a66252944" executionId="8126b722-70ad-4ebd-bc6d-30cf3e43d231" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <WebAiiTestResult executionId="8126b722-70ad-4ebd-bc6d-30cf3e43d231" testId="3a67af50-a176-4237-97df-8c6a66252944" testName="Exporting Grid to PDF saves a file to filesystem" computerName="DEMO" duration="00:00:17.6759654" startTime="2011-11-16T16:53:26.9863269-05:00" endTime="2011-11-16T16:53:44.6623379-05:00" testType="c4241296-3c6e-46b1-bf92-e0bd3e0eb017" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8126b722-70ad-4ebd-bc6d-30cf3e43d231" xmlns="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0">
+      <Output xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+        <ErrorInfo>
+          <Message>------------------------------------------------------------
+'11/16/2011 4:53:27 PM' - Starting execution....
+'11/16/2011 4:53:30 PM' - Detected custom code in test. Locating test assembly: Telerik_Demo_App.dll.
+'11/16/2011 4:53:30 PM' - Assembly Found: D:\projects\Telerik-Demo\test\TestStudio\Telerik_Demo_App\TestResults\Administrator_DEMO 2011-11-16 16_53_26\Out\Telerik_Demo_App.dll
+'11/16/2011 4:53:30 PM' - Loading code class: 'Telerik_Demo_App.Exporting_Grid_to_PDF_saves_a_file_to_filesystem'.
+'11/16/2011 4:53:30 PM' - Failure detected during execution. Details:
+------------------------------------------------------------
+'11/16/2011 4:53:30 PM' - System.NullReferenceException: Object reference not set to an instance of an object.
+   at ArtOfTest.Common.Design.Data.DataResolver.GetMatchValue(Match match, DataRow data, Boolean throwError)
+   at ArtOfTest.Common.Design.Data.DataResolver.GetMatchString(String expression, DataRow data, Boolean error)
+   at ArtOfTest.Common.Design.Extensibility.Descriptors.AutomationDescriptor.BindData(String propertyName)
+   at ArtOfTest.Common.Design.Extensibility.Descriptors.AutomationDescriptor.BindData[T](String propertyName)
+   at ArtOfTest.WebAii.Design.IntrinsicTranslators.Descriptors.DownloadDialogHandlerDescriptor.CreateIEDialogs(Browser browser, List`1 dialogs)
+   at ArtOfTest.WebAii.Design.IntrinsicTranslators.Descriptors.DownloadDialogHandlerDescriptor.InitializeDialogs(Browser browser)
+   at ArtOfTest.WebAii.Design.Execution.ExecutionContext.SetDialogMonitoring(AutomationStepList steps, TestType testType)
+   at ArtOfTest.WebAii.Design.Execution.ExecutionContext.SetDialogMonitoring(Test test)
+   at ArtOfTest.WebAii.Design.Execution.ExecutionContext.SetDialogMonitoring()
+   at ArtOfTest.WebAii.Design.Execution.ExecutionEngine.InternalExecuteTestIteration(Object codeBehindInstance)
+   at ArtOfTest.WebAii.Design.Execution.ExecutionEngine.InternalExecuteTest(Test test, TestResult initializationResult)
+   at ArtOfTest.WebAii.Design.Execution.TestExecuteProxy.ExecuteTest(Test test, Settings settings, String deploymentFolder, String binariesFolder, ExecutionType exeType, Guid firstStepGuid, Guid lastStepGuid, IntPtr existingBrowserHandle, DebuggerOptions debuggerOptions)
+------------------------------------------------------------
+'11/16/2011 4:53:30 PM' - Test completed!
+</Message>
+        </ErrorInfo>
+      </Output>
+      <WebAiiTestResult Type="ArtOfTest.WebAii.Design.Execution.TestResult" Version="2011.2.1108.0" xmlns="">
+        <TestId Type="System.String">3a67af50-a176-4237-97df-8c6a66252944</TestId>
+        <TestName Type="System.String">Exporting Grid to PDF saves a file to filesystem</TestName>
+        <TestPath Type="System.String">Initial Grid\Exporting Grid to PDF saves a file to filesystem.tstest</TestPath>
+        <ProjectPath Type="System.String">
+        </ProjectPath>
+        <ResultType Type="ArtOfTest.Common.Design.ResultType">Fail</ResultType>
+        <AutomationStepResults />
+        <NotRunStepDescriptions>
+          <Item Type="System.String">[Initialize] : New Coded Step</Item>
+          <Item Type="System.String">Execute test 'Logging in as test user displays proper header.tstest'</Item>
+          <Item Type="System.String">Click 'ExportToPDFLink'</Item>
+          <Item Type="System.String">Handle 'Download' dialog. - DataDriven: [$(downloadPath)]</Item>
+          <Item Type="System.String">[Exporting_Grid_to_PDF_saves_a_file_to_filesystem_CodedStep] : New Coded Step</Item>
+        </NotRunStepDescriptions>
+        <PerStepMessages Type="System.String">------------------------------------------------------------
+'11/16/2011 4:53:27 PM' - Starting execution....
+'11/16/2011 4:53:30 PM' - Detected custom code in test. Locating test assembly: Telerik_Demo_App.dll.
+'11/16/2011 4:53:30 PM' - Assembly Found: D:\projects\Telerik-Demo\test\TestStudio\Telerik_Demo_App\TestResults\Administrator_DEMO 2011-11-16 16_53_26\Out\Telerik_Demo_App.dll
+'11/16/2011 4:53:30 PM' - Loading code class: 'Telerik_Demo_App.Exporting_Grid_to_PDF_saves_a_file_to_filesystem'.
+'11/16/2011 4:53:30 PM' - Failure detected during execution. Details:
+------------------------------------------------------------
+'11/16/2011 4:53:30 PM' - System.NullReferenceException: Object reference not set to an instance of an object.
+   at ArtOfTest.Common.Design.Data.DataResolver.GetMatchValue(Match match, DataRow data, Boolean throwError)
+   at ArtOfTest.Common.Design.Data.DataResolver.GetMatchString(String expression, DataRow data, Boolean error)
+   at ArtOfTest.Common.Design.Extensibility.Descriptors.AutomationDescriptor.BindData(String propertyName)
+   at ArtOfTest.Common.Design.Extensibility.Descriptors.AutomationDescriptor.BindData[T](String propertyName)
+   at ArtOfTest.WebAii.Design.IntrinsicTranslators.Descriptors.DownloadDialogHandlerDescriptor.CreateIEDialogs(Browser browser, List`1 dialogs)
+   at ArtOfTest.WebAii.Design.IntrinsicTranslators.Descriptors.DownloadDialogHandlerDescriptor.InitializeDialogs(Browser browser)
+   at ArtOfTest.WebAii.Design.Execution.ExecutionContext.SetDialogMonitoring(AutomationStepList steps, TestType testType)
+   at ArtOfTest.WebAii.Design.Execution.ExecutionContext.SetDialogMonitoring(Test test)
+   at ArtOfTest.WebAii.Design.Execution.ExecutionContext.SetDialogMonitoring()
+   at ArtOfTest.WebAii.Design.Execution.ExecutionEngine.InternalExecuteTestIteration(Object codeBehindInstance)
+   at ArtOfTest.WebAii.Design.Execution.ExecutionEngine.InternalExecuteTest(Test test, TestResult initializationResult)
+   at ArtOfTest.WebAii.Design.Execution.TestExecuteProxy.ExecuteTest(Test test, Settings settings, String deploymentFolder, String binariesFolder, ExecutionType exeType, Guid firstStepGuid, Guid lastStepGuid, IntPtr existingBrowserHandle, DebuggerOptions debuggerOptions)
+------------------------------------------------------------
+'11/16/2011 4:53:30 PM' - Test completed!
+</PerStepMessages>
+        <TotalNumberOfPassedSteps Type="System.Int32">0</TotalNumberOfPassedSteps>
+        <ExecutingTestStepCount Type="System.Int32">0</ExecutingTestStepCount>
+        <TotalNumberOfNotRunSteps Type="System.Int32">0</TotalNumberOfNotRunSteps>
+        <IsDataDrivenResult Type="System.Boolean">False</IsDataDrivenResult>
+        <SeparatorLineCharCount Type="System.Int32">60</SeparatorLineCharCount>
+        <ExecutionType Type="ArtOfTest.Common.Design.ExecutionType">QuickExecution</ExecutionType>
+        <EndTime Type="System.DateTime">2011-11-16 21:53:30Z</EndTime>
+        <StarTime Type="System.DateTime">2011-11-16 21:53:27Z</StarTime>
+        <DataIterationResults />
+        <VersionGroupKey Type="System.String">00000000-0000-0000-0000-000000000000</VersionGroupKey>
+      </WebAiiTestResult>
+    </WebAiiTestResult>
+  </Results>
+</TestRun>

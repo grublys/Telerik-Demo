@@ -1,0 +1,250 @@
+<html><head><META content="IE=9.0000" http-equiv="X-UA-Compatible">
+  <title>Telerik Customer Relations Management System</title>
+  <link rel="stylesheet" type="text/css" href="/assets/application.css?body=1" media="screen">
+<link rel="stylesheet" type="text/css" href="/assets/jquery-ui-1.8.16.custom.css?body=1" media="screen">
+<link rel="stylesheet" type="text/css" href="/assets/contacts.css?body=1" media="screen">
+<link rel="stylesheet" type="text/css" href="/assets/help.css?body=1" media="screen">
+<link rel="stylesheet" type="text/css" href="/assets/scaffolds.css?body=1" media="screen">
+<link rel="stylesheet" type="text/css" href="/assets/sessions.css?body=1" media="screen">
+<link rel="stylesheet" type="text/css" href="/assets/users.css?body=1" media="screen">
+<link rel="stylesheet" type="text/css" href="/assets/welcome.css?body=1" media="screen">
+  <script type="text/javascript" src="/assets/jquery.js?body=1"></script>
+<script type="text/javascript" src="/assets/jquery-ui.js?body=1"></script>
+<script type="text/javascript" src="/assets/jquery_ujs.js?body=1"></script>
+<script type="text/javascript" src="/assets/contacts.js?body=1"></script>
+<script type="text/javascript" src="/assets/contacts.js.coffee~?body=1"></script>
+<script type="text/javascript" src="/assets/helpers.js?body=1"></script>
+<script type="text/javascript" src="/assets/selection.js?body=1"></script>
+<script type="text/javascript" src="/assets/sessions.js?body=1"></script>
+<script type="text/javascript" src="/assets/application.js?body=1"></script>
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="AoS7AIFcPjhU7QcFN3q2ZoG40qcxTmOWIQxSJTkBg3k=">
+
+</head><body>
+
+  <div id="top-bar">
+    <h1><img alt="Teleriklogo" src="/assets/TelerikLogo.png"> </h1>
+    <div id="top-menu">
+      <a href="/">Home</a>
+      <a href="/help">Help</a>
+        <a href="/logout">Logout</a>
+
+    </div>
+  </div>
+
+
+  <div id="body">
+    <h2><img alt="Teststudiologo" src="/assets/TestStudioLogo.png"> </h2>
+    <div id="content">
+      <div id="description">
+  <h2>Demonstration Application: Customer Relations Management System</h2>
+
+  <p>This is a demonstration application designed to help you evaluate Telerik's Test Studio. The application is a skeleton around the metaphor of a Customer Relations Management (CRM) system. You can create new contacts, view existing ones, export the grid to a file, and a number of other actions.</p>
+  <p>This CRM application is <strong>not</strong> a real application; it's designed to give you the chance to work with several common problems around automation. This way you'll be able to use Test Studio and see how well it works! You can use the existing Test Studio project under test/TestStudio, or you can create your own.</p>
+
+</div>
+
+
+
+<p id="notice"></p>
+
+<h2>
+  HTML5 Grid
+  <div id="selection">
+  <select id="selection_technology" name="selection[technology]"><option value="">Select Technology</option>
+<option value="HTML5">HTML5</option>
+<option value="RadControls">RadControls</option></select>
+  <select id="selection_view" disabled="disabled" name="selection_view"><option value="">Select View</option>[]</select>
+</div>
+
+</h2>
+
+<table>
+  <tbody><tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+    <th>LinkedIn</th>
+    <th>Lead Type</th>
+    <th>Action</th>
+  </tr>
+
+  <tr class="even">
+    <td>Jim</td>
+    <td>Holmes</td>
+    <td>jim@iterativerose.com</td>
+    <td>http://www.linkedin.com/pub/jim-holmes/2/124/b02</td>
+    <td id="lead_type_cell-15"><img class="contact_lead_type" alt="Hot" src="/assets/HOT.png" width="23" height="23" data-contact_id="15"></td>
+    <td><a href="/contacts/15/edit" target="_blank">View Contact</a></td>
+  </tr>
+  <tr class="odd">
+    <td>Todd</td>
+    <td>Kaufman</td>
+    <td>toddkaufman@gmail.com</td>
+    <td>http://www.linkedin.com/pub/todd-kaufman/2/a58/1b1</td>
+    <td id="lead_type_cell-16"><img class="contact_lead_type" alt="Hot" src="/assets/HOT.png" width="23" height="23" data-contact_id="16"></td>
+    <td><a href="/contacts/16/edit" target="_blank">View Contact</a></td>
+  </tr>
+  <tr class="even">
+    <td>Matthew</td>
+    <td>Boston</td>
+    <td>matthew.boston@gmail.com</td>
+    <td>http://www.linkedin.com/in/mboston</td>
+    <td id="lead_type_cell-17"><img class="contact_lead_type" alt="Neutral" src="/assets/NEUTRAL.png" width="23" height="23" data-contact_id="17"></td>
+    <td><a href="/contacts/17/edit" target="_blank">View Contact</a></td>
+  </tr>
+  <tr class="odd">
+    <td>Jim</td>
+    <td>Holmes</td>
+    <td>jim@foo.com</td>
+    <td>http://linked.in</td>
+    <td id="lead_type_cell-140"><img class="contact_lead_type" alt="Hot" src="/assets/HOT.png" width="23" height="23" data-contact_id="140"></td>
+    <td><a href="/contacts/140/edit" target="_blank">View Contact</a></td>
+  </tr>
+  <tr class="even">
+    <td>Jim</td>
+    <td>Holmes</td>
+    <td>jim@foo.com</td>
+    <td>http://linked.in</td>
+    <td id="lead_type_cell-141"><img class="contact_lead_type" alt="Hot" src="/assets/HOT.png" width="23" height="23" data-contact_id="141"></td>
+    <td><a href="/contacts/141/edit" target="_blank">View Contact</a></td>
+  </tr>
+  <tr class="odd">
+    <td>Jim</td>
+    <td>Haswell</td>
+    <td>jh@foo.com</td>
+    <td>http://mypage</td>
+    <td id="lead_type_cell-142"><img class="contact_lead_type" alt="Neutral" src="/assets/NEUTRAL.png" width="23" height="23" data-contact_id="142"></td>
+    <td><a href="/contacts/142/edit" target="_blank">View Contact</a></td>
+  </tr>
+  <tr class="even">
+    <td>Jim</td>
+    <td>Haswell</td>
+    <td>jh@foo.com</td>
+    <td>http://mypage</td>
+    <td id="lead_type_cell-143"><img class="contact_lead_type" alt="Neutral" src="/assets/NEUTRAL.png" width="23" height="23" data-contact_id="143"></td>
+    <td><a href="/contacts/143/edit" target="_blank">View Contact</a></td>
+  </tr>
+  <tr class="odd">
+    <td>Jim</td>
+    <td>Holmes</td>
+    <td>jim@foo.com</td>
+    <td>http://linked.in</td>
+    <td id="lead_type_cell-144"><img class="contact_lead_type" alt="Hot" src="/assets/HOT.png" width="23" height="23" data-contact_id="144"></td>
+    <td><a href="/contacts/144/edit" target="_blank">View Contact</a></td>
+  </tr>
+  <tr class="even">
+    <td>Jim</td>
+    <td>Holmes</td>
+    <td>jim@foo.com</td>
+    <td>http://linked.in</td>
+    <td id="lead_type_cell-145"><img class="contact_lead_type" alt="Hot" src="/assets/HOT.png" width="23" height="23" data-contact_id="145"></td>
+    <td><a href="/contacts/145/edit" target="_blank">View Contact</a></td>
+  </tr>
+  <tr class="odd">
+    <td>Jim</td>
+    <td>Holmes</td>
+    <td>jim@foo.com</td>
+    <td>http://linkedin.com</td>
+    <td id="lead_type_cell-146"><img class="contact_lead_type" alt="Neutral" src="/assets/NEUTRAL.png" width="23" height="23" data-contact_id="146"></td>
+    <td><a href="/contacts/146/edit" target="_blank">View Contact</a></td>
+  </tr>
+  <tr class="even">
+    <td>Jim</td>
+    <td>Holmes</td>
+    <td>jim@foo.com</td>
+    <td>http://linkedin.com</td>
+    <td id="lead_type_cell-147"><img class="contact_lead_type" alt="Neutral" src="/assets/NEUTRAL.png" width="23" height="23" data-contact_id="147"></td>
+    <td><a href="/contacts/147/edit" target="_blank">View Contact</a></td>
+  </tr>
+  <tr class="odd">
+    <td>Jim</td>
+    <td>Haswell</td>
+    <td>jh@foo.com</td>
+    <td>http://mypage</td>
+    <td id="lead_type_cell-148"><img class="contact_lead_type" alt="Neutral" src="/assets/NEUTRAL.png" width="23" height="23" data-contact_id="148"></td>
+    <td><a href="/contacts/148/edit" target="_blank">View Contact</a></td>
+  </tr>
+  <tr class="even">
+    <td>Jim</td>
+    <td>Haswell</td>
+    <td>jh@foo.com</td>
+    <td>http://mypage</td>
+    <td id="lead_type_cell-149"><img class="contact_lead_type" alt="Neutral" src="/assets/NEUTRAL.png" width="23" height="23" data-contact_id="149"></td>
+    <td><a href="/contacts/149/edit" target="_blank">View Contact</a></td>
+  </tr>
+  <tr class="odd">
+    <td>Jim</td>
+    <td>Holmes</td>
+    <td>jim@foo.com</td>
+    <td>http://linkedin.com</td>
+    <td id="lead_type_cell-150"><img class="contact_lead_type" alt="Cold" src="/assets/COLD.png" width="23" height="23" data-contact_id="150"></td>
+    <td><a href="/contacts/150/edit" target="_blank">View Contact</a></td>
+  </tr>
+  <tr class="even">
+    <td>Jim</td>
+    <td>Holmes</td>
+    <td>jim@foo.com</td>
+    <td>http://linkedin.com</td>
+    <td id="lead_type_cell-151"><img class="contact_lead_type" alt="Cold" src="/assets/COLD.png" width="23" height="23" data-contact_id="151"></td>
+    <td><a href="/contacts/151/edit" target="_blank">View Contact</a></td>
+  </tr>
+  <tr class="odd">
+    <td>Jim</td>
+    <td>Holmes</td>
+    <td>me@foo.com</td>
+    <td>http://linked.in</td>
+    <td id="lead_type_cell-152"><img class="contact_lead_type" alt="Cold" src="/assets/COLD.png" width="23" height="23" data-contact_id="152"></td>
+    <td><a href="/contacts/152/edit" target="_blank">View Contact</a></td>
+  </tr>
+  <tr class="even">
+    <td>Jim</td>
+    <td>Holmes</td>
+    <td>me@foo.com</td>
+    <td>http://linked.in</td>
+    <td id="lead_type_cell-153"><img class="contact_lead_type" alt="Cold" src="/assets/COLD.png" width="23" height="23" data-contact_id="153"></td>
+    <td><a href="/contacts/153/edit" target="_blank">View Contact</a></td>
+  </tr>
+  <tr class="odd">
+    <td>Jim</td>
+    <td>Haswell</td>
+    <td>jh@foo.com</td>
+    <td>http://mypage</td>
+    <td id="lead_type_cell-154"><img class="contact_lead_type" alt="Neutral" src="/assets/NEUTRAL.png" width="23" height="23" data-contact_id="154"></td>
+    <td><a href="/contacts/154/edit" target="_blank">View Contact</a></td>
+  </tr>
+</tbody></table>
+
+<br>
+
+<div id="buttons">
+  <div class="left">
+    <a class="large_button gray" href="/contacts/new" target="_blank">New Contact</a>
+  </div>
+
+  <div class="right">
+    <a class="large_button green" href="/contacts/export">Export to PDF</a>
+  </div>
+</div>
+
+
+
+
+<div id="moreInfo">
+	<p>Interested in learing more about Test Studio? Visit us at <a href="http://www.telerik.com/automated-testing-tools.aspx?utm_source=TS_CRM_Demo_App&amp;utm_medium=TS_site&amp;utm_campaign=TS_HP">the Test Studio home page.</a> You can also <a href="http://www.telerik.com/automated-testing-tools/download.aspx?utm_source=TS_CRM_Demo_App&amp;utm_medium=TS_site&amp;utm_campaign=TS_Download_Trial">download a fully functional trial of Test Studio</a> complete with our full priority support to help you get started!</p>
+</div>
+
+
+    </div>
+  </div>
+
+
+
+
+<div style="outline: 0px; display: none; position: absolute; z-index: 1000;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-resizable" role="dialog" tabIndex="-1" aria-labelledby="ui-dialog-title-lead_type_dialog"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-dialog-title-lead_type_dialog" class="ui-dialog-title">Lead Type</span><a class="ui-dialog-titlebar-close ui-corner-all" role="button" href="#"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="lead_type_dialog" class="ui-dialog-content ui-widget-content">
+  <div id="lead_types">
+    <img class="lead_type_selection" alt="Hot" src="/assets/HOT.png" data-lead_type="HOT">
+    <img class="lead_type_selection" alt="Neutral" src="/assets/NEUTRAL.png" data-lead_type="NEUTRAL">
+    <img class="lead_type_selection" alt="Cold" src="/assets/COLD.png" data-lead_type="COLD">
+  </div>
+</div><div class="ui-resizable-handle ui-resizable-n"></div><div class="ui-resizable-handle ui-resizable-e"></div><div class="ui-resizable-handle ui-resizable-s"></div><div class="ui-resizable-handle ui-resizable-w"></div><div style="z-index: 1001;" class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se"></div><div style="z-index: 1002;" class="ui-resizable-handle ui-resizable-sw"></div><div style="z-index: 1003;" class="ui-resizable-handle ui-resizable-ne"></div><div style="z-index: 1004;" class="ui-resizable-handle ui-resizable-nw"></div></div></body></html>
