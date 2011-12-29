@@ -20,6 +20,8 @@ Setup the environment (windows)
 
 ## Development ##
 
+Note: If rake fails to run and gives you an error message similar to "You have already activated rake 0.9.2, but your Gemfile requires rake 0.8.7" then use "bundle exec" instead of "bundle" in the commands below.
+
 Install missing bundles
 
 ```$ bundle install```
