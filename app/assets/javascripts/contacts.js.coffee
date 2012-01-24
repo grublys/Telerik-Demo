@@ -40,17 +40,21 @@ $ ->
 
 @attachDraggables = () ->
   draggables = $('#lead_types img')
-  [].forEach.call draggables, (draggable) ->
-    draggable.addEventListener('dragstart' , handleDragStart , false)
-    draggable.addEventListener('dragend'   , handleDragEnd   , false)
+  attachDraggable(draggable) for draggable in draggables
+
+@attachDraggable = (draggable) ->
+  draggable.addEventListener('dragstart' , handleDragStart , false)
+  draggable.addEventListener('dragend'   , handleDragEnd   , false)
 
 @attachDropTargets = () ->
   drop_targets = $('.drop_target')
-  [].forEach.call drop_targets, (target) ->
-    target.addEventListener('dragenter' , handleDragEnter , false)
-    target.addEventListener('dragover'  , handleDragOver  , false)
-    target.addEventListener('dragleave' , handleDragLeave , false)
-    target.addEventListener('drop'      , handleDrop      , false)
+  attachDropTarget(target) for target in drop_targets
+
+@attachDropTarget = (target) ->
+  target.addEventListener('dragenter' , handleDragEnter , false)
+  target.addEventListener('dragover'  , handleDragOver  , false)
+  target.addEventListener('dragleave' , handleDragLeave , false)
+  target.addEventListener('drop'      , handleDrop      , false)
 
 handleDragStart = (e) ->
   e.dataTransfer.effectAllowed = 'move'
@@ -74,8 +78,7 @@ handleDrop = (e) ->
 handleDragEnd = (e) ->
   $('#contact_lead_type').val $(this).attr('data-lead_type')
   drop_targets = $('.drop_target')
-  [].forEach.call drop_targets, (target) ->
-    $(target).removeClass 'over'
+  $(target).removeClass 'over' for target in drop_targets
 
 image = (element) ->
   "<img src='#{element.src}' height='#{element.height}' width='#{element.width}' alt='#{element.alt}'/>"
