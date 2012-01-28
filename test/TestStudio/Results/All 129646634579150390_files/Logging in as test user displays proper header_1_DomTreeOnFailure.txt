@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <title>Telerik Customer Relations Management System</title>
+  <link type="text/css" rel="stylesheet" media="screen" href="/assets/application.css?body=1" />
+<link type="text/css" rel="stylesheet" media="screen" href="/assets/jquery-ui-1.8.16.custom.css?body=1" />
+<link type="text/css" rel="stylesheet" media="screen" href="/assets/contacts.css?body=1" />
+<link type="text/css" rel="stylesheet" media="screen" href="/assets/help.css?body=1" />
+<link type="text/css" rel="stylesheet" media="screen" href="/assets/scaffolds.css?body=1" />
+<link type="text/css" rel="stylesheet" media="screen" href="/assets/sessions.css?body=1" />
+<link type="text/css" rel="stylesheet" media="screen" href="/assets/users.css?body=1" />
+<link type="text/css" rel="stylesheet" media="screen" href="/assets/welcome.css?body=1" />
+  <script type="text/javascript" src="/assets/jquery.js?body=1"></script>
+<script type="text/javascript" src="/assets/jquery-ui.js?body=1"></script>
+<script type="text/javascript" src="/assets/jquery_ujs.js?body=1"></script>
+<script type="text/javascript" src="/assets/contacts.js?body=1"></script>
+<script type="text/javascript" src="/assets/contacts.js.coffee%7E?body=1"></script>
+<script type="text/javascript" src="/assets/helpers.js?body=1"></script>
+<script type="text/javascript" src="/assets/selection.js?body=1"></script>
+<script type="text/javascript" src="/assets/sessions.js?body=1"></script>
+<script type="text/javascript" src="/assets/application.js?body=1"></script>
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="7CBmzchAqk1iDIMqAuN4Q2YFVUDRuGAhW/mKFfd188w=" />
+</head>
+<body>
+
+  <div id="top-bar">
+    <h1><img src="/assets/TelerikLogo.png" alt="Teleriklogo" /> </h1>
+    <div id="top-menu">
+      <a href="/">Home</a>
+      <a href="/help">Help</a>
+        <a href="/logout">Logout</a>
+
+    </div>
+  </div>
+
+
+  <div id="body">
+    <h2><img src="/assets/TestStudioLogo.png" alt="Teststudiologo" /> </h2>
+    <div id="content">
+      <div id="description">
+  <h2>Demonstration Application: Customer Relations Management System</h2>
+
+  <p>This is a demonstration application designed to help you evaluate Telerik's Test Studio. The application is a skeleton around the metaphor of a Customer Relations Management (CRM) system. You can create new contacts, view existing ones, export the grid to a file, and a number of other actions.</p>
+  <p>This CRM application is <strong>not</strong> a real application; it's designed to give you the chance to work with several common problems around automation. This way you'll be able to use Test Studio and see how well it works! You can use the existing Test Studio project under test/TestStudio, or you can create your own.</p>
+
+</div>
+
+
+
+<p id="notice"></p>
+
+<h2>
+  HTML5 Grid
+  <div id="selection">
+  <select name="selection[technology]" id="selection_technology"><option value="">Select Technology</option>
+<option value="HTML5">HTML5</option>
+<option value="RadControls">RadControls</option></select>
+  <select name="selection_view" id="selection_view" disabled="disabled"><option value="">Select View</option>[]</select>
+</div>
+
+</h2>
+
+<table>
+  <tbody><tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+    <th>LinkedIn</th>
+    <th>Lead Type</th>
+    <th>Action</th>
+  </tr>
+
+  <tr class="even">
+    <td>Jim</td>
+    <td>Holmes</td>
+    <td>jim@iterativerose.com</td>
+    <td>http://www.linkedin.com/pub/jim-holmes/2/124/b02</td>
+    <td id="lead_type_cell-15"><img width="23" height="23" src="/assets/HOT.png" data-contact_id="15" class="contact_lead_type" alt="Hot" /></td>
+    <td><a target="_blank" href="/contacts/15/edit">View Contact</a></td>
+  </tr>
+  <tr class="odd">
+    <td>Todd</td>
+    <td>Kaufman</td>
+    <td>toddkaufman@gmail.com</td>
+    <td>http://www.linkedin.com/pub/todd-kaufman/2/a58/1b1</td>
+    <td id="lead_type_cell-16"><img width="23" height="23" src="/assets/HOT.png" data-contact_id="16" class="contact_lead_type" alt="Hot" /></td>
+    <td><a target="_blank" href="/contacts/16/edit">View Contact</a></td>
+  </tr>
+  <tr class="even">
+    <td>Matthew</td>
+    <td>Boston</td>
+    <td>matthew.boston@gmail.com</td>
+    <td>http://www.linkedin.com/in/mboston</td>
+    <td id="lead_type_cell-17"><img width="23" height="23" src="/assets/NEUTRAL.png" data-contact_id="17" class="contact_lead_type" alt="Neutral" /></td>
+    <td><a target="_blank" href="/contacts/17/edit">View Contact</a></td>
+  </tr>
+  <tr class="odd">
+    <td>MyUser</td>
+    <td>LastName</td>
+    <td>MLastName@foo.com</td>
+    <td>http://linkedin.com</td>
+    <td id="lead_type_cell-126"><img width="23" height="23" src="/assets/NEUTRAL.png" data-contact_id="126" class="contact_lead_type" alt="Neutral" /></td>
+    <td><a target="_blank" href="/contacts/126/edit">View Contact</a></td>
+  </tr>
+  <tr class="even">
+    <td>Jim</td>
+    <td>Haswell</td>
+    <td>jh@foo.com</td>
+    <td>http://mypage</td>
+    <td id="lead_type_cell-127"><img width="23" height="23" src="/assets/NEUTRAL.png" data-contact_id="127" class="contact_lead_type" alt="Neutral" /></td>
+    <td><a target="_blank" href="/contacts/127/edit">View Contact</a></td>
+  </tr>
+  <tr class="odd">
+    <td>Jim</td>
+    <td>Haswell</td>
+    <td>jh@foo.com</td>
+    <td>http://mypage</td>
+    <td id="lead_type_cell-128"><img width="23" height="23" src="/assets/NEUTRAL.png" data-contact_id="128" class="contact_lead_type" alt="Neutral" /></td>
+    <td><a target="_blank" href="/contacts/128/edit">View Contact</a></td>
+  </tr>
+  <tr class="even">
+    <td>Jim</td>
+    <td>Haswell</td>
+    <td>jh@foo.com</td>
+    <td>http://mypage</td>
+    <td id="lead_type_cell-129"><img width="23" height="23" src="/assets/NEUTRAL.png" data-contact_id="129" class="contact_lead_type" alt="Neutral" /></td>
+    <td><a target="_blank" href="/contacts/129/edit">View Contact</a></td>
+  </tr>
+  <tr class="odd">
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="even">
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="odd">
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</tbody></table>
+
+<br />
+
+<div id="buttons">
+  <div class="left">
+    <a target="_blank" class="large_button gray" href="/contacts/new">New Contact</a>
+  </div>
+
+  <div class="right">
+    <a class="large_button green" href="/contacts/export">Export to PDF</a>
+  </div>
+</div>
+
+
+
+
+<div id="moreInfo">
+	<p>Interested in learing more about Test Studio? Visit us at <a href="http://www.telerik.com/automated-testing-tools.aspx?utm_source=TS_CRM_Demo_App&amp;utm_medium=TS_site&amp;utm_campaign=TS_HP">the Test Studio home page.</a> You can also <a href="http://www.telerik.com/automated-testing-tools/download.aspx?utm_source=TS_CRM_Demo_App&amp;utm_medium=TS_site&amp;utm_campaign=TS_Download_Trial">download a fully functional trial of Test Studio</a> complete with our full priority support to help you get started!</p>
+</div>
+
+
+    </div>
+  </div>
+
+
+
+
+<div style="display: none; z-index: 1000; outline: 0px none; position: absolute;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-resizable" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-lead_type_dialog"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-dialog-title-lead_type_dialog">Lead Type</span><a href="#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="lead_type_dialog" class="ui-dialog-content ui-widget-content">
+  <div id="lead_types">
+    <img src="/assets/HOT.png" data-lead_type="HOT" class="lead_type_selection" alt="Hot" />
+    <img src="/assets/NEUTRAL.png" data-lead_type="NEUTRAL" class="lead_type_selection" alt="Neutral" />
+    <img src="/assets/COLD.png" data-lead_type="COLD" class="lead_type_selection" alt="Cold" />
+  </div>
+</div><div class="ui-resizable-handle ui-resizable-n"></div><div class="ui-resizable-handle ui-resizable-e"></div><div class="ui-resizable-handle ui-resizable-s"></div><div class="ui-resizable-handle ui-resizable-w"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se" style="z-index: 1001;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 1002;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1003;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1004;"></div></div></body></html>

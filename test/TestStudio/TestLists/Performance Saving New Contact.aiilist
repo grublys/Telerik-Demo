@@ -1,0 +1,55 @@
+<TestList Type="ArtOfTest.WebAii.Design.Execution.TestList" Version="2011.2.928.0">
+  <ID Type="System.String">99e9fae6-0b68-4d87-a3c7-6736db94d04f</ID>
+  <TestListName Type="System.String">Performance Saving New Contact</TestListName>
+  <Date Type="System.DateTime">2011-09-29 18:25:42Z</Date>
+  <Settings Type="ArtOfTest.WebAii.Core.Settings" Version="2011.2.928.0">
+    <WebSettings Type="ArtOfTest.WebAii.Core.Settings+WebSettings" Version="2011.2.928.0">
+      <DefaultBrowser Type="ArtOfTest.WebAii.Core.BrowserType">InternetExplorer</DefaultBrowser>
+      <WebAppPhysicalPath Type="System.String">
+      </WebAppPhysicalPath>
+      <EnableScriptLogging Type="System.Boolean">False</EnableScriptLogging>
+      <EnableUILessRequestViewing Type="System.Boolean">False</EnableUILessRequestViewing>
+      <LocalWebServer Type="ArtOfTest.WebAii.Core.LocalWebServerType">None</LocalWebServer>
+      <BaseUrl Type="System.String">http://localhost:3000</BaseUrl>
+      <AspNetDevServerPort Type="System.Int32">-1</AspNetDevServerPort>
+      <KillBrowserProcessOnClose Type="System.Boolean">False</KillBrowserProcessOnClose>
+      <RecycleBrowser Type="System.Boolean">False</RecycleBrowser>
+      <UseHttpProxy Type="System.Boolean">False</UseHttpProxy>
+      <EnableSilverlight Type="System.Boolean">False</EnableSilverlight>
+      <VerboseHttpProxy Type="System.Boolean">False</VerboseHttpProxy>
+      <SilverlightConnectTimeout Type="System.Int32">30000</SilverlightConnectTimeout>
+      <UseMultiBrowsers Type="System.Boolean">False</UseMultiBrowsers>
+      <IsProfilingExecution Type="System.Boolean">True</IsProfilingExecution>
+      <ProfilerConfigurations />
+    </WebSettings>
+    <ClientReadyTimeout Type="System.Int32">30000</ClientReadyTimeout>
+    <ExecuteCommandTimeout Type="System.Int32">20000</ExecuteCommandTimeout>
+    <LogLocation Type="System.String">C:\WebAiiLog\</LogLocation>
+    <QueryEventLogErrorsOnExit Type="System.Boolean">False</QueryEventLogErrorsOnExit>
+    <ExecutionDelay Type="System.Int32">0</ExecutionDelay>
+    <AnnotateExecution Type="System.Boolean">False</AnnotateExecution>
+    <SimulatedMouseMoveSpeed Type="System.Single">0.3</SimulatedMouseMoveSpeed>
+    <WaitCheckInterval Type="System.Int32">500</WaitCheckInterval>
+    <AnnotationMode Type="ArtOfTest.WebAii.Core.AnnotationMode">All</AnnotationMode>
+    <LogAnnotations Type="System.Boolean">False</LogAnnotations>
+    <IsStressRecordingMode Type="System.Boolean">False</IsStressRecordingMode>
+    <IsUserInteractiveMode Type="System.Boolean">False</IsUserInteractiveMode>
+    <CreateLogFile Type="System.Boolean">True</CreateLogFile>
+    <XMultiMgr Type="System.Boolean">True</XMultiMgr>
+    <UnexpectedDialogAction Type="ArtOfTest.WebAii.Core.UnexpectedDialogAction">HandleAndFailTest</UnexpectedDialogAction>
+    <ElementWaitTimeout Type="System.Int32">10000</ElementWaitTimeout>
+    <DisableDialogMonitoring Type="System.Boolean">False</DisableDialogMonitoring>
+  </Settings>
+  <Tests>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2011.2.928.0">
+      <ID Type="System.String">6297519a-b92c-43dd-8442-7e9f619d4431</ID>
+      <Path Type="System.String">New Contact\Saving a New Contact with valid values shows user on grid.tstest</Path>
+    </Item>
+  </Tests>
+  <Filter Type="ArtOfTest.WebAii.Design.Execution.Filter" Version="2011.2.928.0">
+    <Keys />
+    <Comparisons />
+    <Values />
+  </Filter>
+  <TestListType Type="ArtOfTest.WebAii.Design.TestListType">Performance</TestListType>
+</TestList>

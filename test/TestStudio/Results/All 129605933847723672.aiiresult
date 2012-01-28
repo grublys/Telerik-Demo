@@ -1,0 +1,703 @@
+<RunResult Type="ArtOfTest.WebAii.Design.Execution.RunResult" Version="2011.2.914.0">
+  <TestListName Type="System.String">All</TestListName>
+  <StartTime Type="System.DateTime">2011-09-15 20:49:03Z</StartTime>
+  <EndTime Type="System.DateTime">2011-09-15 20:49:44Z</EndTime>
+  <DataCollectors />
+  <TestResults>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestResult" Version="2011.2.914.0">
+      <TestId Type="System.String">e053a135-43c8-4e57-9dd7-2f6cacf59f82</TestId>
+      <TestName Type="System.String">Invalid username and password combo shows error message</TestName>
+      <TestPath Type="System.String">Login\Invalid username and password combo shows error message.tstest</TestPath>
+      <ProjectPath Type="System.String">
+      </ProjectPath>
+      <ResultType Type="ArtOfTest.Common.Design.ResultType">Fail</ResultType>
+      <AutomationStepResults>
+        <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+          <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+          <StepDescription Type="System.String">Navigate to : 'http://localhost:3000/'</StepDescription>
+          <TestId Type="System.String">e053a135-43c8-4e57-9dd7-2f6cacf59f82</TestId>
+          <TestName Type="System.String">Invalid username and password combo shows error message</TestName>
+          <TestPath Type="System.String">Login\Invalid username and password combo shows error message.tstest</TestPath>
+          <TestStepNumber Type="System.Int32">0</TestStepNumber>
+          <Order Type="System.Int32">1</Order>
+          <LogMessageOnError Type="System.String">
+          </LogMessageOnError>
+          <HashCode Type="System.Int32">1347723234</HashCode>
+          <IsManual Type="System.Boolean">False</IsManual>
+        </Item>
+        <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+          <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+          <StepDescription Type="System.String">Click 'LoginLinkLink'</StepDescription>
+          <TestId Type="System.String">e053a135-43c8-4e57-9dd7-2f6cacf59f82</TestId>
+          <TestName Type="System.String">Invalid username and password combo shows error message</TestName>
+          <TestPath Type="System.String">Login\Invalid username and password combo shows error message.tstest</TestPath>
+          <TestStepNumber Type="System.Int32">1</TestStepNumber>
+          <Order Type="System.Int32">2</Order>
+          <LogMessageOnError Type="System.String">
+          </LogMessageOnError>
+          <HashCode Type="System.Int32">2087960561</HashCode>
+          <IsManual Type="System.Boolean">False</IsManual>
+        </Item>
+        <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+          <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+          <StepDescription Type="System.String">Set 'UsernameText' text to 'foo'</StepDescription>
+          <TestId Type="System.String">e053a135-43c8-4e57-9dd7-2f6cacf59f82</TestId>
+          <TestName Type="System.String">Invalid username and password combo shows error message</TestName>
+          <TestPath Type="System.String">Login\Invalid username and password combo shows error message.tstest</TestPath>
+          <TestStepNumber Type="System.Int32">2</TestStepNumber>
+          <Order Type="System.Int32">3</Order>
+          <LogMessageOnError Type="System.String">
+          </LogMessageOnError>
+          <HashCode Type="System.Int32">1106498605</HashCode>
+          <IsManual Type="System.Boolean">False</IsManual>
+        </Item>
+        <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+          <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+          <StepDescription Type="System.String">Set 'PasswordPassword' text to 'bar'</StepDescription>
+          <TestId Type="System.String">e053a135-43c8-4e57-9dd7-2f6cacf59f82</TestId>
+          <TestName Type="System.String">Invalid username and password combo shows error message</TestName>
+          <TestPath Type="System.String">Login\Invalid username and password combo shows error message.tstest</TestPath>
+          <TestStepNumber Type="System.Int32">3</TestStepNumber>
+          <Order Type="System.Int32">4</Order>
+          <LogMessageOnError Type="System.String">
+          </LogMessageOnError>
+          <HashCode Type="System.Int32">1106498606</HashCode>
+          <IsManual Type="System.Boolean">False</IsManual>
+        </Item>
+        <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+          <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+          <StepDescription Type="System.String">Click 'LoginButtonSubmit'</StepDescription>
+          <TestId Type="System.String">e053a135-43c8-4e57-9dd7-2f6cacf59f82</TestId>
+          <TestName Type="System.String">Invalid username and password combo shows error message</TestName>
+          <TestPath Type="System.String">Login\Invalid username and password combo shows error message.tstest</TestPath>
+          <TestStepNumber Type="System.Int32">4</TestStepNumber>
+          <Order Type="System.Int32">5</Order>
+          <LogMessageOnError Type="System.String">
+          </LogMessageOnError>
+          <HashCode Type="System.Int32">2087960564</HashCode>
+          <IsManual Type="System.Boolean">False</IsManual>
+        </Item>
+        <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+          <ResultType Type="ArtOfTest.Common.Design.ResultType">Fail</ResultType>
+          <ExecutionException Type="ArtOfTest.Common.Design.Exceptions.VerificationException" Version="2011.2.914.0">
+            <HostState Type="ArtOfTest.WebAii.Design.AutomationHostState" Version="2011.2.914.0">
+              <DOMFilePath Type="System.String">All 129605933847723672_files\Invalid username and password combo shows error message_5_DomTreeOnFailure.txt</DOMFilePath>
+              <Mode Type="ArtOfTest.WebAii.Design.BrowserStateCaptureMode">DomAndImage</Mode>
+              <ImageFilePath Type="System.String">All 129605933847723672_files\Invalid username and password combo shows error message_5_ImageOnFailure.png</ImageFilePath>
+              <TechType Type="ArtOfTest.Common.TechnologyType">Html</TechType>
+              <FriendlyName Type="System.String">Capture Of 'Page (DemoApp)' @9/15/2011 4:49:20 PM</FriendlyName>
+            </HostState>
+            <ExceptionMessage Type="System.String">Element is visible verification failed! Expected: True, actual: False.</ExceptionMessage>
+            <VerificationResult Type="ArtOfTest.Common.Design.Extensibility.VerificationResult" Version="2011.2.914.0">
+              <Result Type="System.Boolean">False</Result>
+              <ErrorMessage Type="System.String">Element is visible verification failed! Expected: True, actual: False.</ErrorMessage>
+            </VerificationResult>
+            <ValueStore Type="ArtOfTest.Common.Design.Extensibility.DescriptorValueStore" Version="2011.2.914.0">
+              <ValueStore>
+                <Item Key="IsVisible" Type="System.Boolean">False</Item>
+              </ValueStore>
+            </ValueStore>
+          </ExecutionException>
+          <StepDescription Type="System.String">Verify element 'UiDialogTitleLoginDialogSpan' 'is' visible.</StepDescription>
+          <AutomationHostState Type="ArtOfTest.WebAii.Design.AutomationHostState" Version="2011.2.914.0">
+            <DOMFilePath Type="System.String">All 129605933847723672_files\Invalid username and password combo shows error message_5_DomTreeOnFailure.txt</DOMFilePath>
+            <Mode Type="ArtOfTest.WebAii.Design.BrowserStateCaptureMode">DomAndImage</Mode>
+            <ImageFilePath Type="System.String">All 129605933847723672_files\Invalid username and password combo shows error message_5_ImageOnFailure.png</ImageFilePath>
+            <TechType Type="ArtOfTest.Common.TechnologyType">Html</TechType>
+            <FriendlyName Type="System.String">Capture Of 'Page (DemoApp)' @9/15/2011 4:49:20 PM</FriendlyName>
+          </AutomationHostState>
+          <TestId Type="System.String">e053a135-43c8-4e57-9dd7-2f6cacf59f82</TestId>
+          <TestName Type="System.String">Invalid username and password combo shows error message</TestName>
+          <TestPath Type="System.String">Login\Invalid username and password combo shows error message.tstest</TestPath>
+          <TestStepNumber Type="System.Int32">5</TestStepNumber>
+          <Order Type="System.Int32">6</Order>
+          <LogMessageOnError Type="System.String">
+          </LogMessageOnError>
+          <HashCode Type="System.Int32">1164883282</HashCode>
+          <IsManual Type="System.Boolean">False</IsManual>
+        </Item>
+      </AutomationStepResults>
+      <NotRunStepDescriptions>
+        <Item Type="System.String">Verify 'TextContent' 'Contains' 'Login' on 'UiDialogTitleLoginDialogSpan'</Item>
+      </NotRunStepDescriptions>
+      <PerStepMessages Type="System.String">Overall Result: Fail
+------------------------------------------------------------
+'9/15/2011 4:49:03 PM' - Starting execution....
+------------------------------------------------------------
+'9/15/2011 4:49:18 PM' - 'Pass' : 1. Navigate to : 'http://localhost:3000/'
+'9/15/2011 4:49:18 PM' - 'Pass' : 2. Click 'LoginLinkLink'
+'9/15/2011 4:49:19 PM' - 'Pass' : 3. Set 'UsernameText' text to 'foo'
+'9/15/2011 4:49:20 PM' - 'Pass' : 4. Set 'PasswordPassword' text to 'bar'
+'9/15/2011 4:49:20 PM' - 'Pass' : 5. Click 'LoginButtonSubmit'
+'9/15/2011 4:49:20 PM' - 'Fail' : 6. Verify element 'UiDialogTitleLoginDialogSpan' 'is' visible.
+------------------------------------------------------------
+Failure Information: 
+~~~~~~~~~~~~~~~
+Element is visible verification failed! Expected: True, actual: False.
+------------------------------------------------------------
+'9/15/2011 4:49:20 PM' - Detected a failure. Step is marked 'ContinueOnFailure=False' aborting test execution.
+------------------------------------------------------------
+'9/15/2011 4:49:20 PM' - Overall Result: Fail
+'9/15/2011 4:49:20 PM' - Duration: [0 min: 15 sec: 149 msec]
+------------------------------------------------------------
+'9/15/2011 4:49:21 PM' - Test completed!
+</PerStepMessages>
+      <TotalNumberOfPassedSteps Type="System.Int32">5</TotalNumberOfPassedSteps>
+      <ExecutingTestStepCount Type="System.Int32">6</ExecutingTestStepCount>
+      <TotalNumberOfNotRunSteps Type="System.Int32">0</TotalNumberOfNotRunSteps>
+      <IsDataDrivenResult Type="System.Boolean">False</IsDataDrivenResult>
+      <SeparatorLineCharCount Type="System.Int32">60</SeparatorLineCharCount>
+      <ExecutionType Type="ArtOfTest.Common.Design.ExecutionType">QuickExecution</ExecutionType>
+      <FailureException Type="ArtOfTest.Common.Design.Exceptions.VerificationException" Version="2011.2.914.0">
+        <HostState Type="ArtOfTest.WebAii.Design.AutomationHostState" Version="2011.2.914.0">
+          <DOMFilePath Type="System.String">All 129605933847723672_files\Invalid username and password combo shows error message_5_DomTreeOnFailure.txt</DOMFilePath>
+          <Mode Type="ArtOfTest.WebAii.Design.BrowserStateCaptureMode">DomAndImage</Mode>
+          <ImageFilePath Type="System.String">All 129605933847723672_files\Invalid username and password combo shows error message_5_ImageOnFailure.png</ImageFilePath>
+          <TechType Type="ArtOfTest.Common.TechnologyType">Html</TechType>
+          <FriendlyName Type="System.String">Capture Of 'Page (DemoApp)' @9/15/2011 4:49:20 PM</FriendlyName>
+        </HostState>
+        <ExceptionMessage Type="System.String">Element is visible verification failed! Expected: True, actual: False.</ExceptionMessage>
+        <VerificationResult Type="ArtOfTest.Common.Design.Extensibility.VerificationResult" Version="2011.2.914.0">
+          <Result Type="System.Boolean">False</Result>
+          <ErrorMessage Type="System.String">Element is visible verification failed! Expected: True, actual: False.</ErrorMessage>
+        </VerificationResult>
+        <ValueStore Type="ArtOfTest.Common.Design.Extensibility.DescriptorValueStore" Version="2011.2.914.0">
+          <ValueStore>
+            <Item Key="IsVisible" Type="System.Boolean">False</Item>
+          </ValueStore>
+        </ValueStore>
+      </FailureException>
+      <EndTime Type="System.DateTime">2011-09-15 20:49:20Z</EndTime>
+      <StarTime Type="System.DateTime">2011-09-15 20:49:05Z</StarTime>
+      <DataIterationResults />
+      <VersionGroupKey Type="System.String">00000000-0000-0000-0000-000000000000</VersionGroupKey>
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestResult" Version="2011.2.914.0">
+      <TestId Type="System.String">d85de241-5219-4b09-b501-7a7aa86be76b</TestId>
+      <TestName Type="System.String">Logging in as test user displays proper header</TestName>
+      <TestPath Type="System.String">Login\Logging in as test user displays proper header.tstest</TestPath>
+      <ProjectPath Type="System.String">
+      </ProjectPath>
+      <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+      <AutomationStepResults>
+        <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+          <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+          <StepDescription Type="System.String">Navigate to : 'http://localhost:3000'</StepDescription>
+          <TestId Type="System.String">d85de241-5219-4b09-b501-7a7aa86be76b</TestId>
+          <TestName Type="System.String">Logging in as test user displays proper header</TestName>
+          <TestPath Type="System.String">Login\Logging in as test user displays proper header.tstest</TestPath>
+          <TestStepNumber Type="System.Int32">0</TestStepNumber>
+          <Order Type="System.Int32">1</Order>
+          <LogMessageOnError Type="System.String">
+          </LogMessageOnError>
+          <HashCode Type="System.Int32">1347723234</HashCode>
+          <IsManual Type="System.Boolean">False</IsManual>
+        </Item>
+        <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+          <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+          <StepDescription Type="System.String">Click 'LoginLinkLink'</StepDescription>
+          <TestId Type="System.String">d85de241-5219-4b09-b501-7a7aa86be76b</TestId>
+          <TestName Type="System.String">Logging in as test user displays proper header</TestName>
+          <TestPath Type="System.String">Login\Logging in as test user displays proper header.tstest</TestPath>
+          <TestStepNumber Type="System.Int32">1</TestStepNumber>
+          <Order Type="System.Int32">2</Order>
+          <LogMessageOnError Type="System.String">
+          </LogMessageOnError>
+          <HashCode Type="System.Int32">2087960561</HashCode>
+          <IsManual Type="System.Boolean">False</IsManual>
+        </Item>
+        <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+          <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+          <StepDescription Type="System.String">Set 'UsernameText' text to 'testuser'</StepDescription>
+          <TestId Type="System.String">d85de241-5219-4b09-b501-7a7aa86be76b</TestId>
+          <TestName Type="System.String">Logging in as test user displays proper header</TestName>
+          <TestPath Type="System.String">Login\Logging in as test user displays proper header.tstest</TestPath>
+          <TestStepNumber Type="System.Int32">2</TestStepNumber>
+          <Order Type="System.Int32">3</Order>
+          <LogMessageOnError Type="System.String">
+          </LogMessageOnError>
+          <HashCode Type="System.Int32">1106498605</HashCode>
+          <IsManual Type="System.Boolean">False</IsManual>
+        </Item>
+        <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+          <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+          <StepDescription Type="System.String">Set 'PasswordPassword' text to 'abc123'</StepDescription>
+          <TestId Type="System.String">d85de241-5219-4b09-b501-7a7aa86be76b</TestId>
+          <TestName Type="System.String">Logging in as test user displays proper header</TestName>
+          <TestPath Type="System.String">Login\Logging in as test user displays proper header.tstest</TestPath>
+          <TestStepNumber Type="System.Int32">3</TestStepNumber>
+          <Order Type="System.Int32">4</Order>
+          <LogMessageOnError Type="System.String">
+          </LogMessageOnError>
+          <HashCode Type="System.Int32">1106498606</HashCode>
+          <IsManual Type="System.Boolean">False</IsManual>
+        </Item>
+        <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+          <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+          <StepDescription Type="System.String">Click 'LoginButtonSubmit'</StepDescription>
+          <TestId Type="System.String">d85de241-5219-4b09-b501-7a7aa86be76b</TestId>
+          <TestName Type="System.String">Logging in as test user displays proper header</TestName>
+          <TestPath Type="System.String">Login\Logging in as test user displays proper header.tstest</TestPath>
+          <TestStepNumber Type="System.Int32">4</TestStepNumber>
+          <Order Type="System.Int32">5</Order>
+          <LogMessageOnError Type="System.String">
+          </LogMessageOnError>
+          <HashCode Type="System.Int32">2087960564</HashCode>
+          <IsManual Type="System.Boolean">False</IsManual>
+        </Item>
+        <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+          <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+          <StepDescription Type="System.String">Verify 'InnerText' 'Contains' 'Logged in!' on 'NoticePTag'</StepDescription>
+          <TestId Type="System.String">d85de241-5219-4b09-b501-7a7aa86be76b</TestId>
+          <TestName Type="System.String">Logging in as test user displays proper header</TestName>
+          <TestPath Type="System.String">Login\Logging in as test user displays proper header.tstest</TestPath>
+          <TestStepNumber Type="System.Int32">5</TestStepNumber>
+          <Order Type="System.Int32">6</Order>
+          <LogMessageOnError Type="System.String">
+          </LogMessageOnError>
+          <HashCode Type="System.Int32">-1313506168</HashCode>
+          <IsManual Type="System.Boolean">False</IsManual>
+        </Item>
+      </AutomationStepResults>
+      <NotRunStepDescriptions />
+      <PerStepMessages Type="System.String">Overall Result: Pass
+------------------------------------------------------------
+'9/15/2011 4:49:21 PM' - Starting execution....
+------------------------------------------------------------
+'9/15/2011 4:49:24 PM' - 'Pass' : 1. Navigate to : 'http://localhost:3000'
+'9/15/2011 4:49:24 PM' - 'Pass' : 2. Click 'LoginLinkLink'
+'9/15/2011 4:49:24 PM' - 'Pass' : 3. Set 'UsernameText' text to 'testuser'
+'9/15/2011 4:49:25 PM' - 'Pass' : 4. Set 'PasswordPassword' text to 'abc123'
+'9/15/2011 4:49:25 PM' - 'Pass' : 5. Click 'LoginButtonSubmit'
+'9/15/2011 4:49:26 PM' - 'Pass' : 6. Verify 'InnerText' 'Contains' 'Logged in!' on 'NoticePTag'
+------------------------------------------------------------
+'9/15/2011 4:49:26 PM' - Overall Result: Pass
+'9/15/2011 4:49:26 PM' - Duration: [0 min: 3 sec: 277 msec]
+------------------------------------------------------------
+'9/15/2011 4:49:26 PM' - Test completed!
+</PerStepMessages>
+      <TotalNumberOfPassedSteps Type="System.Int32">6</TotalNumberOfPassedSteps>
+      <ExecutingTestStepCount Type="System.Int32">6</ExecutingTestStepCount>
+      <TotalNumberOfNotRunSteps Type="System.Int32">0</TotalNumberOfNotRunSteps>
+      <IsDataDrivenResult Type="System.Boolean">False</IsDataDrivenResult>
+      <SeparatorLineCharCount Type="System.Int32">60</SeparatorLineCharCount>
+      <ExecutionType Type="ArtOfTest.Common.Design.ExecutionType">QuickExecution</ExecutionType>
+      <EndTime Type="System.DateTime">2011-09-15 20:49:26Z</EndTime>
+      <StarTime Type="System.DateTime">2011-09-15 20:49:22Z</StarTime>
+      <DataIterationResults />
+      <VersionGroupKey Type="System.String">00000000-0000-0000-0000-000000000000</VersionGroupKey>
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestResult" Version="2011.2.914.0">
+      <TestId Type="System.String">bb96b034-5560-4909-bf1a-096866fc288e</TestId>
+      <TestName Type="System.String">Login Submit button disabled until both username &amp; password entered</TestName>
+      <TestPath Type="System.String">Login\Login Submit button disabled until both username &amp; password entered.tstest</TestPath>
+      <ProjectPath Type="System.String">
+      </ProjectPath>
+      <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+      <AutomationStepResults>
+        <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+          <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+          <StepDescription Type="System.String">Navigate to : 'http://localhost:3000'</StepDescription>
+          <TestId Type="System.String">bb96b034-5560-4909-bf1a-096866fc288e</TestId>
+          <TestName Type="System.String">Login Submit button disabled until both username &amp; password entered</TestName>
+          <TestPath Type="System.String">Login\Login Submit button disabled until both username &amp; password entered.tstest</TestPath>
+          <TestStepNumber Type="System.Int32">0</TestStepNumber>
+          <Order Type="System.Int32">1</Order>
+          <LogMessageOnError Type="System.String">
+          </LogMessageOnError>
+          <HashCode Type="System.Int32">1347723234</HashCode>
+          <IsManual Type="System.Boolean">False</IsManual>
+        </Item>
+        <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+          <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+          <StepDescription Type="System.String">Click 'LoginLinkLink'</StepDescription>
+          <TestId Type="System.String">bb96b034-5560-4909-bf1a-096866fc288e</TestId>
+          <TestName Type="System.String">Login Submit button disabled until both username &amp; password entered</TestName>
+          <TestPath Type="System.String">Login\Login Submit button disabled until both username &amp; password entered.tstest</TestPath>
+          <TestStepNumber Type="System.Int32">1</TestStepNumber>
+          <Order Type="System.Int32">2</Order>
+          <LogMessageOnError Type="System.String">
+          </LogMessageOnError>
+          <HashCode Type="System.Int32">2087960561</HashCode>
+          <IsManual Type="System.Boolean">False</IsManual>
+        </Item>
+        <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+          <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+          <StepDescription Type="System.String">Wait for Exists 'LoginButtonSubmit'</StepDescription>
+          <TestId Type="System.String">bb96b034-5560-4909-bf1a-096866fc288e</TestId>
+          <TestName Type="System.String">Login Submit button disabled until both username &amp; password entered</TestName>
+          <TestPath Type="System.String">Login\Login Submit button disabled until both username &amp; password entered.tstest</TestPath>
+          <TestStepNumber Type="System.Int32">2</TestStepNumber>
+          <Order Type="System.Int32">3</Order>
+          <LogMessageOnError Type="System.String">
+          </LogMessageOnError>
+          <HashCode Type="System.Int32">-898084788</HashCode>
+          <IsManual Type="System.Boolean">False</IsManual>
+        </Item>
+        <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+          <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+          <StepDescription Type="System.String">Verify 'LoginButtonSubmit' is disabled</StepDescription>
+          <TestId Type="System.String">bb96b034-5560-4909-bf1a-096866fc288e</TestId>
+          <TestName Type="System.String">Login Submit button disabled until both username &amp; password entered</TestName>
+          <TestPath Type="System.String">Login\Login Submit button disabled until both username &amp; password entered.tstest</TestPath>
+          <TestStepNumber Type="System.Int32">3</TestStepNumber>
+          <Order Type="System.Int32">4</Order>
+          <LogMessageOnError Type="System.String">
+          </LogMessageOnError>
+          <HashCode Type="System.Int32">-795681699</HashCode>
+          <IsManual Type="System.Boolean">False</IsManual>
+        </Item>
+        <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+          <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+          <StepDescription Type="System.String">Set 'UsernameText' text to 'testuser'</StepDescription>
+          <TestId Type="System.String">bb96b034-5560-4909-bf1a-096866fc288e</TestId>
+          <TestName Type="System.String">Login Submit button disabled until both username &amp; password entered</TestName>
+          <TestPath Type="System.String">Login\Login Submit button disabled until both username &amp; password entered.tstest</TestPath>
+          <TestStepNumber Type="System.Int32">4</TestStepNumber>
+          <Order Type="System.Int32">5</Order>
+          <LogMessageOnError Type="System.String">
+          </LogMessageOnError>
+          <HashCode Type="System.Int32">1106498607</HashCode>
+          <IsManual Type="System.Boolean">False</IsManual>
+        </Item>
+        <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+          <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+          <StepDescription Type="System.String">Verify 'LoginButtonSubmit' is disabled</StepDescription>
+          <TestId Type="System.String">bb96b034-5560-4909-bf1a-096866fc288e</TestId>
+          <TestName Type="System.String">Login Submit button disabled until both username &amp; password entered</TestName>
+          <TestPath Type="System.String">Login\Login Submit button disabled until both username &amp; password entered.tstest</TestPath>
+          <TestStepNumber Type="System.Int32">5</TestStepNumber>
+          <Order Type="System.Int32">6</Order>
+          <LogMessageOnError Type="System.String">
+          </LogMessageOnError>
+          <HashCode Type="System.Int32">-795681697</HashCode>
+          <IsManual Type="System.Boolean">False</IsManual>
+        </Item>
+        <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+          <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+          <StepDescription Type="System.String">Set 'PasswordPassword' text to 'abc123'</StepDescription>
+          <TestId Type="System.String">bb96b034-5560-4909-bf1a-096866fc288e</TestId>
+          <TestName Type="System.String">Login Submit button disabled until both username &amp; password entered</TestName>
+          <TestPath Type="System.String">Login\Login Submit button disabled until both username &amp; password entered.tstest</TestPath>
+          <TestStepNumber Type="System.Int32">6</TestStepNumber>
+          <Order Type="System.Int32">7</Order>
+          <LogMessageOnError Type="System.String">
+          </LogMessageOnError>
+          <HashCode Type="System.Int32">1106498609</HashCode>
+          <IsManual Type="System.Boolean">False</IsManual>
+        </Item>
+        <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+          <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+          <StepDescription Type="System.String">Wait for 'LoginButtonSubmit' is enabled</StepDescription>
+          <TestId Type="System.String">bb96b034-5560-4909-bf1a-096866fc288e</TestId>
+          <TestName Type="System.String">Login Submit button disabled until both username &amp; password entered</TestName>
+          <TestPath Type="System.String">Login\Login Submit button disabled until both username &amp; password entered.tstest</TestPath>
+          <TestStepNumber Type="System.Int32">7</TestStepNumber>
+          <Order Type="System.Int32">8</Order>
+          <LogMessageOnError Type="System.String">
+          </LogMessageOnError>
+          <HashCode Type="System.Int32">-795681695</HashCode>
+          <IsManual Type="System.Boolean">False</IsManual>
+        </Item>
+      </AutomationStepResults>
+      <NotRunStepDescriptions />
+      <PerStepMessages Type="System.String">Overall Result: Pass
+------------------------------------------------------------
+'9/15/2011 4:49:26 PM' - Starting execution....
+------------------------------------------------------------
+'9/15/2011 4:49:29 PM' - 'Pass' : 1. Navigate to : 'http://localhost:3000'
+'9/15/2011 4:49:29 PM' - 'Pass' : 2. Click 'LoginLinkLink'
+'9/15/2011 4:49:29 PM' - 'Pass' : 3. Wait for Exists 'LoginButtonSubmit'
+'9/15/2011 4:49:29 PM' - 'Pass' : 4. Verify 'LoginButtonSubmit' is disabled
+'9/15/2011 4:49:31 PM' - 'Pass' : 5. Set 'UsernameText' text to 'testuser'
+'9/15/2011 4:49:31 PM' - 'Pass' : 6. Verify 'LoginButtonSubmit' is disabled
+'9/15/2011 4:49:31 PM' - 'Pass' : 7. Set 'PasswordPassword' text to 'abc123'
+'9/15/2011 4:49:32 PM' - 'Pass' : 8. Wait for 'LoginButtonSubmit' is enabled
+------------------------------------------------------------
+'9/15/2011 4:49:32 PM' - Overall Result: Pass
+'9/15/2011 4:49:32 PM' - Duration: [0 min: 3 sec: 740 msec]
+------------------------------------------------------------
+'9/15/2011 4:49:32 PM' - Test completed!
+</PerStepMessages>
+      <TotalNumberOfPassedSteps Type="System.Int32">8</TotalNumberOfPassedSteps>
+      <ExecutingTestStepCount Type="System.Int32">8</ExecutingTestStepCount>
+      <TotalNumberOfNotRunSteps Type="System.Int32">0</TotalNumberOfNotRunSteps>
+      <IsDataDrivenResult Type="System.Boolean">False</IsDataDrivenResult>
+      <SeparatorLineCharCount Type="System.Int32">60</SeparatorLineCharCount>
+      <ExecutionType Type="ArtOfTest.Common.Design.ExecutionType">QuickExecution</ExecutionType>
+      <EndTime Type="System.DateTime">2011-09-15 20:49:32Z</EndTime>
+      <StarTime Type="System.DateTime">2011-09-15 20:49:28Z</StarTime>
+      <DataIterationResults />
+      <VersionGroupKey Type="System.String">00000000-0000-0000-0000-000000000000</VersionGroupKey>
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestResult" Version="2011.2.914.0">
+      <TestId Type="System.String">6ef4f20c-2dda-419c-997c-854a69210f65</TestId>
+      <TestName Type="System.String">Clicking New Contact from grid opens form in new window</TestName>
+      <TestPath Type="System.String">New Contact\Clicking New Contact from grid opens form in new window.tstest</TestPath>
+      <ProjectPath Type="System.String">
+      </ProjectPath>
+      <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+      <AutomationStepResults>
+        <Item Type="ArtOfTest.WebAii.Design.Execution.TestAsStepResult" Version="2011.2.914.0">
+          <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+          <StepDescription Type="System.String">Execute test 'Logging in as test user displays proper header'</StepDescription>
+          <TestId Type="System.String">6ef4f20c-2dda-419c-997c-854a69210f65</TestId>
+          <TestName Type="System.String">Clicking New Contact from grid opens form in new window</TestName>
+          <TestPath Type="System.String">New Contact\Clicking New Contact from grid opens form in new window.tstest</TestPath>
+          <TestStepNumber Type="System.Int32">0</TestStepNumber>
+          <Order Type="System.Int32">1</Order>
+          <LogMessageOnError Type="System.String">
+          </LogMessageOnError>
+          <HashCode Type="System.Int32">-832664899</HashCode>
+          <IsManual Type="System.Boolean">False</IsManual>
+          <TestResult Type="ArtOfTest.WebAii.Design.Execution.TestResult" Version="2011.2.914.0">
+            <TestId Type="System.String">d85de241-5219-4b09-b501-7a7aa86be76b</TestId>
+            <TestName Type="System.String">Logging in as test user displays proper header</TestName>
+            <TestPath Type="System.String">Login\Logging in as test user displays proper header.tstest</TestPath>
+            <ProjectPath Type="System.String">
+            </ProjectPath>
+            <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+            <AutomationStepResults>
+              <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+                <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+                <StepDescription Type="System.String">Navigate to : 'http://localhost:3000'</StepDescription>
+                <TestId Type="System.String">d85de241-5219-4b09-b501-7a7aa86be76b</TestId>
+                <TestName Type="System.String">Logging in as test user displays proper header</TestName>
+                <TestPath Type="System.String">Login\Logging in as test user displays proper header.tstest</TestPath>
+                <TestStepNumber Type="System.Int32">0</TestStepNumber>
+                <Order Type="System.Int32">1</Order>
+                <LogMessageOnError Type="System.String">
+                </LogMessageOnError>
+                <HashCode Type="System.Int32">1347723234</HashCode>
+                <IsManual Type="System.Boolean">False</IsManual>
+              </Item>
+              <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+                <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+                <StepDescription Type="System.String">Click 'LoginLinkLink'</StepDescription>
+                <TestId Type="System.String">d85de241-5219-4b09-b501-7a7aa86be76b</TestId>
+                <TestName Type="System.String">Logging in as test user displays proper header</TestName>
+                <TestPath Type="System.String">Login\Logging in as test user displays proper header.tstest</TestPath>
+                <TestStepNumber Type="System.Int32">1</TestStepNumber>
+                <Order Type="System.Int32">2</Order>
+                <LogMessageOnError Type="System.String">
+                </LogMessageOnError>
+                <HashCode Type="System.Int32">2087960561</HashCode>
+                <IsManual Type="System.Boolean">False</IsManual>
+              </Item>
+              <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+                <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+                <StepDescription Type="System.String">Set 'UsernameText' text to 'testuser'</StepDescription>
+                <TestId Type="System.String">d85de241-5219-4b09-b501-7a7aa86be76b</TestId>
+                <TestName Type="System.String">Logging in as test user displays proper header</TestName>
+                <TestPath Type="System.String">Login\Logging in as test user displays proper header.tstest</TestPath>
+                <TestStepNumber Type="System.Int32">2</TestStepNumber>
+                <Order Type="System.Int32">3</Order>
+                <LogMessageOnError Type="System.String">
+                </LogMessageOnError>
+                <HashCode Type="System.Int32">1106498605</HashCode>
+                <IsManual Type="System.Boolean">False</IsManual>
+              </Item>
+              <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+                <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+                <StepDescription Type="System.String">Set 'PasswordPassword' text to 'abc123'</StepDescription>
+                <TestId Type="System.String">d85de241-5219-4b09-b501-7a7aa86be76b</TestId>
+                <TestName Type="System.String">Logging in as test user displays proper header</TestName>
+                <TestPath Type="System.String">Login\Logging in as test user displays proper header.tstest</TestPath>
+                <TestStepNumber Type="System.Int32">3</TestStepNumber>
+                <Order Type="System.Int32">4</Order>
+                <LogMessageOnError Type="System.String">
+                </LogMessageOnError>
+                <HashCode Type="System.Int32">1106498606</HashCode>
+                <IsManual Type="System.Boolean">False</IsManual>
+              </Item>
+              <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+                <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+                <StepDescription Type="System.String">Click 'LoginButtonSubmit'</StepDescription>
+                <TestId Type="System.String">d85de241-5219-4b09-b501-7a7aa86be76b</TestId>
+                <TestName Type="System.String">Logging in as test user displays proper header</TestName>
+                <TestPath Type="System.String">Login\Logging in as test user displays proper header.tstest</TestPath>
+                <TestStepNumber Type="System.Int32">4</TestStepNumber>
+                <Order Type="System.Int32">5</Order>
+                <LogMessageOnError Type="System.String">
+                </LogMessageOnError>
+                <HashCode Type="System.Int32">2087960564</HashCode>
+                <IsManual Type="System.Boolean">False</IsManual>
+              </Item>
+              <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+                <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+                <StepDescription Type="System.String">Verify 'InnerText' 'Contains' 'Logged in!' on 'NoticePTag'</StepDescription>
+                <TestId Type="System.String">d85de241-5219-4b09-b501-7a7aa86be76b</TestId>
+                <TestName Type="System.String">Logging in as test user displays proper header</TestName>
+                <TestPath Type="System.String">Login\Logging in as test user displays proper header.tstest</TestPath>
+                <TestStepNumber Type="System.Int32">5</TestStepNumber>
+                <Order Type="System.Int32">6</Order>
+                <LogMessageOnError Type="System.String">
+                </LogMessageOnError>
+                <HashCode Type="System.Int32">-1313506168</HashCode>
+                <IsManual Type="System.Boolean">False</IsManual>
+              </Item>
+            </AutomationStepResults>
+            <NotRunStepDescriptions />
+            <PerStepMessages Type="System.String">Overall Result: Pass
+------------------------------------------------------------
+'9/15/2011 4:49:34 PM' - Enabling Html Popup Tracker. Test expecting Popups.
+'9/15/2011 4:49:36 PM' - 'Pass' : 1. Navigate to : 'http://localhost:3000'
+'9/15/2011 4:49:36 PM' - 'Pass' : 2. Click 'LoginLinkLink'
+'9/15/2011 4:49:36 PM' - 'Pass' : 3. Set 'UsernameText' text to 'testuser'
+'9/15/2011 4:49:37 PM' - 'Pass' : 4. Set 'PasswordPassword' text to 'abc123'
+'9/15/2011 4:49:37 PM' - 'Pass' : 5. Click 'LoginButtonSubmit'
+'9/15/2011 4:49:37 PM' - 'Pass' : 6. Verify 'InnerText' 'Contains' 'Logged in!' on 'NoticePTag'
+------------------------------------------------------------
+'9/15/2011 4:49:37 PM' - Overall Result: Pass
+'9/15/2011 4:49:37 PM' - Duration: [0 min: 3 sec: 94 msec]
+------------------------------------------------------------
+</PerStepMessages>
+            <TotalNumberOfPassedSteps Type="System.Int32">6</TotalNumberOfPassedSteps>
+            <ExecutingTestStepCount Type="System.Int32">6</ExecutingTestStepCount>
+            <TotalNumberOfNotRunSteps Type="System.Int32">0</TotalNumberOfNotRunSteps>
+            <IsDataDrivenResult Type="System.Boolean">False</IsDataDrivenResult>
+            <SeparatorLineCharCount Type="System.Int32">60</SeparatorLineCharCount>
+            <ExecutionType Type="ArtOfTest.Common.Design.ExecutionType">QuickExecution</ExecutionType>
+            <EndTime Type="System.DateTime">2011-09-15 20:49:37Z</EndTime>
+            <StarTime Type="System.DateTime">2011-09-15 20:49:34Z</StarTime>
+            <DataIterationResults />
+            <VersionGroupKey Type="System.String">00000000-0000-0000-0000-000000000000</VersionGroupKey>
+          </TestResult>
+        </Item>
+        <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+          <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+          <StepDescription Type="System.String">Click 'NewContactLink'</StepDescription>
+          <TestId Type="System.String">6ef4f20c-2dda-419c-997c-854a69210f65</TestId>
+          <TestName Type="System.String">Clicking New Contact from grid opens form in new window</TestName>
+          <TestPath Type="System.String">New Contact\Clicking New Contact from grid opens form in new window.tstest</TestPath>
+          <TestStepNumber Type="System.Int32">1</TestStepNumber>
+          <Order Type="System.Int32">2</Order>
+          <LogMessageOnError Type="System.String">
+          </LogMessageOnError>
+          <HashCode Type="System.Int32">2087960561</HashCode>
+          <IsManual Type="System.Boolean">False</IsManual>
+        </Item>
+        <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+          <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+          <StepDescription Type="System.String">Connect to pop-up window : 'http://localhost:3000/contacts/new'</StepDescription>
+          <TestId Type="System.String">6ef4f20c-2dda-419c-997c-854a69210f65</TestId>
+          <TestName Type="System.String">Clicking New Contact from grid opens form in new window</TestName>
+          <TestPath Type="System.String">New Contact\Clicking New Contact from grid opens form in new window.tstest</TestPath>
+          <TestStepNumber Type="System.Int32">2</TestStepNumber>
+          <Order Type="System.Int32">3</Order>
+          <LogMessageOnError Type="System.String">
+          </LogMessageOnError>
+          <HashCode Type="System.Int32">512605107</HashCode>
+          <IsManual Type="System.Boolean">False</IsManual>
+        </Item>
+        <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+          <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+          <StepDescription Type="System.String">Verify 'TextContent' 'Contains' 'New contact' on 'NewContactH1Tag'</StepDescription>
+          <TestId Type="System.String">6ef4f20c-2dda-419c-997c-854a69210f65</TestId>
+          <TestName Type="System.String">Clicking New Contact from grid opens form in new window</TestName>
+          <TestPath Type="System.String">New Contact\Clicking New Contact from grid opens form in new window.tstest</TestPath>
+          <TestStepNumber Type="System.Int32">3</TestStepNumber>
+          <Order Type="System.Int32">4</Order>
+          <LogMessageOnError Type="System.String">
+          </LogMessageOnError>
+          <HashCode Type="System.Int32">-1313506170</HashCode>
+          <IsManual Type="System.Boolean">False</IsManual>
+        </Item>
+        <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+          <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+          <StepDescription Type="System.String">Verify element 'CommitSubmit' 'is' visible.</StepDescription>
+          <TestId Type="System.String">6ef4f20c-2dda-419c-997c-854a69210f65</TestId>
+          <TestName Type="System.String">Clicking New Contact from grid opens form in new window</TestName>
+          <TestPath Type="System.String">New Contact\Clicking New Contact from grid opens form in new window.tstest</TestPath>
+          <TestStepNumber Type="System.Int32">4</TestStepNumber>
+          <Order Type="System.Int32">5</Order>
+          <LogMessageOnError Type="System.String">
+          </LogMessageOnError>
+          <HashCode Type="System.Int32">1164883281</HashCode>
+          <IsManual Type="System.Boolean">False</IsManual>
+        </Item>
+        <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.914.0">
+          <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+          <StepDescription Type="System.String">Verify attribute 'value' has 'Same' value of 'Create Contact' on 'CommitSubmit'</StepDescription>
+          <TestId Type="System.String">6ef4f20c-2dda-419c-997c-854a69210f65</TestId>
+          <TestName Type="System.String">Clicking New Contact from grid opens form in new window</TestName>
+          <TestPath Type="System.String">New Contact\Clicking New Contact from grid opens form in new window.tstest</TestPath>
+          <TestStepNumber Type="System.Int32">5</TestStepNumber>
+          <Order Type="System.Int32">6</Order>
+          <LogMessageOnError Type="System.String">
+          </LogMessageOnError>
+          <HashCode Type="System.Int32">-426161341</HashCode>
+          <IsManual Type="System.Boolean">False</IsManual>
+        </Item>
+      </AutomationStepResults>
+      <NotRunStepDescriptions />
+      <PerStepMessages Type="System.String">Overall Result: Pass
+------------------------------------------------------------
+'9/15/2011 4:49:33 PM' - Starting execution....
+------------------------------------------------------------
+------------------------------------------------------------
+'9/15/2011 4:49:34 PM' - Enabling Html Popup Tracker. Test expecting Popups.
+'9/15/2011 4:49:37 PM' - 'Pass' : 1. Execute test 'Logging in as test user displays proper header'
+
+&gt;&gt;&gt; Test-as-Step 'Login\Logging in as test user displays proper header.tstest' log starts:
+
+Overall Result: Pass
+------------------------------------------------------------
+'9/15/2011 4:49:34 PM' - Enabling Html Popup Tracker. Test expecting Popups.
+'9/15/2011 4:49:36 PM' - 'Pass' : 1. Navigate to : 'http://localhost:3000'
+'9/15/2011 4:49:36 PM' - 'Pass' : 2. Click 'LoginLinkLink'
+'9/15/2011 4:49:36 PM' - 'Pass' : 3. Set 'UsernameText' text to 'testuser'
+'9/15/2011 4:49:37 PM' - 'Pass' : 4. Set 'PasswordPassword' text to 'abc123'
+'9/15/2011 4:49:37 PM' - 'Pass' : 5. Click 'LoginButtonSubmit'
+'9/15/2011 4:49:37 PM' - 'Pass' : 6. Verify 'InnerText' 'Contains' 'Logged in!' on 'NoticePTag'
+------------------------------------------------------------
+'9/15/2011 4:49:37 PM' - Overall Result: Pass
+'9/15/2011 4:49:37 PM' - Duration: [0 min: 3 sec: 94 msec]
+------------------------------------------------------------
+
+&lt;&lt;&lt; Test-as-Step 'Login\Logging in as test user displays proper header.tstest' log ends.
+
+'9/15/2011 4:49:39 PM' - 'Pass' : 2. Click 'NewContactLink'
+'9/15/2011 4:49:41 PM' - 'Pass' : 3. Connect to pop-up window : 'http://localhost:3000/contacts/new'
+'9/15/2011 4:49:41 PM' - 'Pass' : 4. Verify 'TextContent' 'Contains' 'New contact' on 'NewContactH1Tag'
+'9/15/2011 4:49:41 PM' - 'Pass' : 5. Verify element 'CommitSubmit' 'is' visible.
+'9/15/2011 4:49:41 PM' - 'Pass' : 6. Verify attribute 'value' has 'Same' value of 'Create Contact' on 'CommitSubmit'
+------------------------------------------------------------
+'9/15/2011 4:49:41 PM' - Overall Result: Pass
+'9/15/2011 4:49:41 PM' - Duration: [0 min: 7 sec: 112 msec]
+------------------------------------------------------------
+'9/15/2011 4:49:44 PM' - Test completed!
+</PerStepMessages>
+      <TotalNumberOfPassedSteps Type="System.Int32">6</TotalNumberOfPassedSteps>
+      <ExecutingTestStepCount Type="System.Int32">6</ExecutingTestStepCount>
+      <TotalNumberOfNotRunSteps Type="System.Int32">0</TotalNumberOfNotRunSteps>
+      <IsDataDrivenResult Type="System.Boolean">False</IsDataDrivenResult>
+      <SeparatorLineCharCount Type="System.Int32">60</SeparatorLineCharCount>
+      <ExecutionType Type="ArtOfTest.Common.Design.ExecutionType">QuickExecution</ExecutionType>
+      <EndTime Type="System.DateTime">2011-09-15 20:49:41Z</EndTime>
+      <StarTime Type="System.DateTime">2011-09-15 20:49:34Z</StarTime>
+      <DataIterationResults />
+      <VersionGroupKey Type="System.String">00000000-0000-0000-0000-000000000000</VersionGroupKey>
+    </Item>
+  </TestResults>
+  <ResultId Type="System.String">f521716e-2fc5-4ba0-bf54-1193c2b93078</ResultId>
+  <Machine Type="ArtOfTest.WebAii.Design.Execution.Scheduling.Machine" Version="2011.2.914.0">
+    <Id Type="System.String">00000000-0000-0000-0000-000000000000</Id>
+    <NetworkName Type="System.String">DEMO</NetworkName>
+    <OperatingSystem Type="System.String">Windows 7</OperatingSystem>
+    <InstalledBrowsers>
+      <Item Type="ArtOfTest.WebAii.Design.Execution.Scheduling.BrowserInformation" Version="2011.2.914.0">
+        <BrowserType Type="ArtOfTest.WebAii.Core.BrowserType">InternetExplorer</BrowserType>
+        <Version Type="System.String">9.0.8112.16421</Version>
+      </Item>
+      <Item Type="ArtOfTest.WebAii.Design.Execution.Scheduling.BrowserInformation" Version="2011.2.914.0">
+        <BrowserType Type="ArtOfTest.WebAii.Core.BrowserType">FireFox</BrowserType>
+        <Version Type="System.String">6.0.2 (en-US)</Version>
+      </Item>
+    </InstalledBrowsers>
+    <Status Type="ArtOfTest.WebAii.Design.Execution.Scheduling.MachineStatus">Ready</Status>
+    <DBState Type="System.Int32">0</DBState>
+  </Machine>
+  <IsManual Type="System.Boolean">False</IsManual>
+  <TestListId Type="System.String">d13c36a2-86a9-418a-a620-ed93f3014082</TestListId>
+</RunResult>

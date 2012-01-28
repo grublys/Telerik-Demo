@@ -1,0 +1,59 @@
+<TestList Type="ArtOfTest.WebAii.Design.Execution.TestList" Version="2011.2.1108.0">
+  <ID Type="System.String">706f18e5-7230-4324-9edf-102bd895e708</ID>
+  <TestListName Type="System.String">Multiple Demo</TestListName>
+  <Date Type="System.DateTime">2011-09-29 16:01:11Z</Date>
+  <Settings Type="ArtOfTest.WebAii.Core.Settings" Version="2011.2.1108.0">
+    <WebSettings Type="ArtOfTest.WebAii.Core.Settings+WebSettings" Version="2011.2.1108.0">
+      <DefaultBrowser Type="ArtOfTest.WebAii.Core.BrowserType">InternetExplorer</DefaultBrowser>
+      <WebAppPhysicalPath Type="System.String">
+      </WebAppPhysicalPath>
+      <EnableScriptLogging Type="System.Boolean">False</EnableScriptLogging>
+      <EnableUILessRequestViewing Type="System.Boolean">False</EnableUILessRequestViewing>
+      <LocalWebServer Type="ArtOfTest.WebAii.Core.LocalWebServerType">None</LocalWebServer>
+      <BaseUrl Type="System.String">http://localhost:3000</BaseUrl>
+      <AspNetDevServerPort Type="System.Int32">-1</AspNetDevServerPort>
+      <KillBrowserProcessOnClose Type="System.Boolean">False</KillBrowserProcessOnClose>
+      <RecycleBrowser Type="System.Boolean">False</RecycleBrowser>
+      <UseHttpProxy Type="System.Boolean">False</UseHttpProxy>
+      <EnableSilverlight Type="System.Boolean">False</EnableSilverlight>
+      <VerboseHttpProxy Type="System.Boolean">False</VerboseHttpProxy>
+      <SilverlightConnectTimeout Type="System.Int32">30000</SilverlightConnectTimeout>
+      <MultiBrowsersExecution>
+        <Item Type="ArtOfTest.WebAii.Core.BrowserExecutionType">InternetExplorer</Item>
+        <Item Type="ArtOfTest.WebAii.Core.BrowserExecutionType">FireFox</Item>
+      </MultiBrowsersExecution>
+      <UseMultiBrowsers Type="System.Boolean">True</UseMultiBrowsers>
+      <IsProfilingExecution Type="System.Boolean">False</IsProfilingExecution>
+      <ProfilerConfigurations />
+    </WebSettings>
+    <ClientReadyTimeout Type="System.Int32">30000</ClientReadyTimeout>
+    <ExecuteCommandTimeout Type="System.Int32">20000</ExecuteCommandTimeout>
+    <LogLocation Type="System.String">C:\WebAiiLog\</LogLocation>
+    <QueryEventLogErrorsOnExit Type="System.Boolean">False</QueryEventLogErrorsOnExit>
+    <ExecutionDelay Type="System.Int32">0</ExecutionDelay>
+    <AnnotateExecution Type="System.Boolean">False</AnnotateExecution>
+    <SimulatedMouseMoveSpeed Type="System.Single">0.3</SimulatedMouseMoveSpeed>
+    <WaitCheckInterval Type="System.Int32">500</WaitCheckInterval>
+    <AnnotationMode Type="ArtOfTest.WebAii.Core.AnnotationMode">All</AnnotationMode>
+    <LogAnnotations Type="System.Boolean">False</LogAnnotations>
+    <IsStressRecordingMode Type="System.Boolean">False</IsStressRecordingMode>
+    <IsUserInteractiveMode Type="System.Boolean">False</IsUserInteractiveMode>
+    <CreateLogFile Type="System.Boolean">True</CreateLogFile>
+    <XMultiMgr Type="System.Boolean">True</XMultiMgr>
+    <UnexpectedDialogAction Type="ArtOfTest.WebAii.Core.UnexpectedDialogAction">HandleAndFailTest</UnexpectedDialogAction>
+    <ElementWaitTimeout Type="System.Int32">10000</ElementWaitTimeout>
+    <DisableDialogMonitoring Type="System.Boolean">False</DisableDialogMonitoring>
+  </Settings>
+  <Tests>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2011.2.1108.0">
+      <ID Type="System.String">d85de241-5219-4b09-b501-7a7aa86be76b</ID>
+      <Path Type="System.String">Login\Logging in as test user displays proper header.tstest</Path>
+    </Item>
+  </Tests>
+  <Filter Type="ArtOfTest.WebAii.Design.Execution.Filter" Version="2011.2.1108.0">
+    <Keys />
+    <Comparisons />
+    <Values />
+  </Filter>
+  <TestListType Type="ArtOfTest.WebAii.Design.TestListType">Automated</TestListType>
+</TestList>

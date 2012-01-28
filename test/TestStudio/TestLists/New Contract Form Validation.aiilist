@@ -1,0 +1,55 @@
+<TestList Type="ArtOfTest.WebAii.Design.Execution.TestList" Version="2011.2.928.0">
+  <ID Type="System.String">f777a064-51c1-438b-9841-2608395c8cfd</ID>
+  <TestListName Type="System.String">New Contract Form Validation</TestListName>
+  <Date Type="System.DateTime">2011-09-29 18:39:14Z</Date>
+  <Settings Type="ArtOfTest.WebAii.Core.Settings" Version="2011.2.928.0">
+    <WebSettings Type="ArtOfTest.WebAii.Core.Settings+WebSettings" Version="2011.2.928.0">
+      <DefaultBrowser Type="ArtOfTest.WebAii.Core.BrowserType">InternetExplorer</DefaultBrowser>
+      <WebAppPhysicalPath Type="System.String">
+      </WebAppPhysicalPath>
+      <EnableScriptLogging Type="System.Boolean">False</EnableScriptLogging>
+      <EnableUILessRequestViewing Type="System.Boolean">False</EnableUILessRequestViewing>
+      <LocalWebServer Type="ArtOfTest.WebAii.Core.LocalWebServerType">None</LocalWebServer>
+      <BaseUrl Type="System.String">http://localhost:3000</BaseUrl>
+      <AspNetDevServerPort Type="System.Int32">-1</AspNetDevServerPort>
+      <KillBrowserProcessOnClose Type="System.Boolean">False</KillBrowserProcessOnClose>
+      <RecycleBrowser Type="System.Boolean">False</RecycleBrowser>
+      <UseHttpProxy Type="System.Boolean">False</UseHttpProxy>
+      <EnableSilverlight Type="System.Boolean">False</EnableSilverlight>
+      <VerboseHttpProxy Type="System.Boolean">False</VerboseHttpProxy>
+      <SilverlightConnectTimeout Type="System.Int32">30000</SilverlightConnectTimeout>
+      <UseMultiBrowsers Type="System.Boolean">False</UseMultiBrowsers>
+      <IsProfilingExecution Type="System.Boolean">False</IsProfilingExecution>
+      <ProfilerConfigurations />
+    </WebSettings>
+    <ClientReadyTimeout Type="System.Int32">30000</ClientReadyTimeout>
+    <ExecuteCommandTimeout Type="System.Int32">20000</ExecuteCommandTimeout>
+    <LogLocation Type="System.String">C:\WebAiiLog\</LogLocation>
+    <QueryEventLogErrorsOnExit Type="System.Boolean">False</QueryEventLogErrorsOnExit>
+    <ExecutionDelay Type="System.Int32">0</ExecutionDelay>
+    <AnnotateExecution Type="System.Boolean">False</AnnotateExecution>
+    <SimulatedMouseMoveSpeed Type="System.Single">0.3</SimulatedMouseMoveSpeed>
+    <WaitCheckInterval Type="System.Int32">500</WaitCheckInterval>
+    <AnnotationMode Type="ArtOfTest.WebAii.Core.AnnotationMode">All</AnnotationMode>
+    <LogAnnotations Type="System.Boolean">False</LogAnnotations>
+    <IsStressRecordingMode Type="System.Boolean">False</IsStressRecordingMode>
+    <IsUserInteractiveMode Type="System.Boolean">False</IsUserInteractiveMode>
+    <CreateLogFile Type="System.Boolean">True</CreateLogFile>
+    <XMultiMgr Type="System.Boolean">True</XMultiMgr>
+    <UnexpectedDialogAction Type="ArtOfTest.WebAii.Core.UnexpectedDialogAction">HandleAndFailTest</UnexpectedDialogAction>
+    <ElementWaitTimeout Type="System.Int32">10000</ElementWaitTimeout>
+    <DisableDialogMonitoring Type="System.Boolean">False</DisableDialogMonitoring>
+  </Settings>
+  <Tests>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2011.2.928.0">
+      <ID Type="System.String">e3533232-8b38-46e2-b909-2ed207e6c877</ID>
+      <Path Type="System.String">New Contact\Visually Verify New Contact Form.tstest</Path>
+    </Item>
+  </Tests>
+  <Filter Type="ArtOfTest.WebAii.Design.Execution.Filter" Version="2011.2.928.0">
+    <Keys />
+    <Comparisons />
+    <Values />
+  </Filter>
+  <TestListType Type="ArtOfTest.WebAii.Design.TestListType">Manual</TestListType>
+</TestList>
