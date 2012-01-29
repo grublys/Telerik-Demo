@@ -71,7 +71,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id>Fixture_Setup</d2p1:Id>
       <d2p1:Order>1</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>ee56d80a-79d4-4dea-8fd0-4f6013b95060</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>927f0abf-efd9-47dd-aabf-9f7f6cb89347</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:CodedStepDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -106,10 +106,15 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>2</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>be7b6e44-fb67-4a24-bd4f-52d059fdb042</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>c98853d6-2c1d-4296-9657-52f798122de2</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ExecuteTestActionDescriptor">
         <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <d6p1:KeyValueOfstringstring>
+              <d6p1:Key>RunsAgainstVersion</d6p1:Key>
+              <d6p1:Value />
+            </d6p1:KeyValueOfstringstring>
+          </ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
@@ -136,7 +141,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id>Open_contact_form_for_test_user</d2p1:Id>
       <d2p1:Order>3</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>391bb6bb-65d8-406c-9363-a85130b926a1</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>117c1669-7ef7-4f98-a74e-f775a2e0dd24</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:CodedStepDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -162,6 +167,8 @@
             HtmlTableRow row = table.Find.TableRow(contactName);
 
             HtmlAnchor cell = row.Find.ByContent&lt;HtmlAnchor&gt;("View Contact");
+            string windowUrl = cell.HRef;
+            SetExtractedValue("contactWindowUrl", windowUrl);
 
             cell.Click();            
 </d2p1:Code>
@@ -174,11 +181,11 @@
     <d2p1:AutomationStep i:type="d2p1:AutomationStep">
       <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
       <d2p1:CustomDescription i:nil="true" />
-      <d2p1:Description>Connect to pop-up window : '/contacts/1/edit'</d2p1:Description>
+      <d2p1:Description>Connect to pop-up window : '/contacts' - DataDriven: [$(contactWindowUrl)]</d2p1:Description>
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>4</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>89beb0bb-bb33-41a9-81bb-7530d91f05fd</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>ba6e34c3-c16f-4006-9335-5de9e607ecec</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:HtmlDialogHandlerDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -188,7 +195,12 @@
             </d6p1:KeyValueOfstringstring>
           </ConstraintValues>
         </d2p1:Constraints>
-        <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:KeyValueOfstringstring>
+            <d5p1:Key>PopupUrl</d5p1:Key>
+            <d5p1:Value>$(contactWindowUrl)</d5p1:Value>
+          </d5p1:KeyValueOfstringstring>
+        </d2p1:DataBindingExpressions>
         <d2p1:EditorType />
         <d2p1:Elements xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:LogMessageOnFailure />
@@ -203,7 +215,7 @@
         <d2p1:IsModalPopup>false</d2p1:IsModalPopup>
         <d2p1:IsUrlPartial>true</d2p1:IsUrlPartial>
         <d2p1:ModalPopupPartialCaption />
-        <d2p1:PopupUrl>/contacts/1/edit</d2p1:PopupUrl>
+        <d2p1:PopupUrl>/contacts</d2p1:PopupUrl>
         <d2p1:PopupWaitTimeout>5000</d2p1:PopupWaitTimeout>
       </d2p1:Step>
       <d2p1:StepImageKey>Coded Validation of gridfm3dnywo.cni</d2p1:StepImageKey>
@@ -217,7 +229,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>5</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>c00ceab4-5973-4791-a755-e8bf68f0f5cf</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>45965020-267d-4c75-a481-660e65a47016</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="InputValueVerificationDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -303,7 +315,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>6</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>fa3fdaef-bb3f-4c6b-aad3-b15f624c9d1f</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>f11ef516-ed17-46c7-9695-87d04f6a1a18</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="InputValueVerificationDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -389,7 +401,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>7</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>61848341-537d-4b89-b97e-76cb92ea0a02</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>6a7c25b9-6044-4fc1-93c8-f586f8dded29</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:AttributeVerificationDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -476,7 +488,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>8</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>918a4f9f-fc2c-4b83-aa89-06309cb7ee56</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>9b99e4f7-86f2-4112-b4ed-cba5f3b7bbe4</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="InputValueVerificationDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -558,11 +570,11 @@
     <d2p1:AutomationStep i:type="d2p1:AutomationStep">
       <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
       <d2p1:CustomDescription i:nil="true" />
-      <d2p1:Description>Verify attribute 'alt' has 'Contains' value of 'Hot' on 'HotImage'</d2p1:Description>
+      <d2p1:Description>Verify attribute 'alt' has 'Same' value of 'Hot' on 'Drop Target Image'</d2p1:Description>
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>9</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>3e01acb5-974a-4113-b5fe-818fefcee47f</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>22b57494-aef6-47e0-93b5-ea9934e84f71</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:AttributeVerificationDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -590,106 +602,17 @@
                       </ChainStops>
                       <Clauses>
                         <HtmlFindClause>
-                          <Clause>id=edit_contact_1</Clause>
+                          <Clause>class=drop_target</Clause>
                         </HtmlFindClause>
                         <HtmlFindClause>
-                          <Clause>tagIndex=img:3</Clause>
+                          <Clause>HtmlPath=/img[0]</Clause>
                         </HtmlFindClause>
                       </Clauses>
                       <Constraints />
                     </d9p1:value>
                   </d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
                 </FindExpressions>
-                <Name>HotImage</Name>
-                <NodeKind>4</NodeKind>
-                <TechnologyType>Html</TechnologyType>
-              </FindExpression>
-              <FindInfo i:nil="true" />
-              <Frame i:nil="true" />
-              <HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlImage</HtmlControlType>
-              <IsIndependent>false</IsIndependent>
-              <Name>verifyTarget</Name>
-              <Page i:type="d2p1:PageUri">
-                <d2p1:AlwaysUseTitleInCompare>false</d2p1:AlwaysUseTitleInCompare>
-                <d2p1:BaseUrl>http://localhost:3000</d2p1:BaseUrl>
-                <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
-                <d2p1:EquivalentUrls />
-                <d2p1:Fragment />
-                <d2p1:FriendlyName>TelerikCustomerRelations1</d2p1:FriendlyName>
-                <d2p1:Path>/contacts/1/edit</d2p1:Path>
-                <d2p1:Query />
-                <d2p1:Title>Telerik Customer Relations Management System</d2p1:Title>
-              </Page>
-              <Region i:nil="true" />
-              <TechnologyType>Html</TechnologyType>
-              <Version>200</Version>
-            </d5p1:Value>
-          </d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
-        </d2p1:Elements>
-        <d2p1:LogMessageOnFailure />
-        <d2p1:Pause>None</d2p1:Pause>
-        <d2p1:RunsAgainstVersion />
-        <d2p1:StepType>Verification</d2p1:StepType>
-        <d2p1:UseStepWaitOnElementsTimout>false</d2p1:UseStepWaitOnElementsTimout>
-        <d2p1:WaitOnElements>true</d2p1:WaitOnElements>
-        <d2p1:WaitOnElementsTimeout>10000</d2p1:WaitOnElementsTimeout>
-        <d2p1:CheckInterval>500</d2p1:CheckInterval>
-        <d2p1:DataBindVariableName i:nil="true" />
-        <d2p1:Timeout>10000</d2p1:Timeout>
-        <d2p1:AttributeName>alt</d2p1:AttributeName>
-        <d2p1:AttributeValue>Hot</d2p1:AttributeValue>
-        <d2p1:CompareType>Contains</d2p1:CompareType>
-      </d2p1:Step>
-      <d2p1:StepImageKey>Coded Validation of gridutgav4lq.lnu</d2p1:StepImageKey>
-      <d2p1:StepState>NoCode</d2p1:StepState>
-      <d2p1:Version>200</d2p1:Version>
-    </d2p1:AutomationStep>
-    <d2p1:AutomationStep i:type="d2p1:AutomationStep">
-      <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
-      <d2p1:CustomDescription i:nil="true" />
-      <d2p1:Description>Verify attribute 'alt' has 'Same' value of 'Hot' on 'HotImage'</d2p1:Description>
-      <d2p1:Enabled>true</d2p1:Enabled>
-      <d2p1:Id />
-      <d2p1:Order>10</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>de2e75c4-08ff-4748-ad7a-139a9600db1a</d2p1:Runtime_x0020_ID>
-      <d2p1:Step i:type="d2p1:AttributeVerificationDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-            <d6p1:KeyValueOfstringstring>
-              <d6p1:Key>RunsAgainstVersion</d6p1:Key>
-              <d6p1:Value />
-            </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
-        </d2p1:Constraints>
-        <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-        <d2p1:EditorType />
-        <d2p1:Elements xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-          <d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
-            <d5p1:Key>verifyTarget</d5p1:Key>
-            <d5p1:Value>
-              <DomStateKey />
-              <FindExpression i:type="HtmlFindExpressionElement">
-                <BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/form[1]/div[9]/div[1]/img[1]</BackupSearchClause>
-                <FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
-                  <d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
-                    <d9p1:key>Html</d9p1:key>
-                    <d9p1:value i:type="HtmlFindExpression">
-                      <ChainStops>
-                        <d5p1:int>1</d5p1:int>
-                      </ChainStops>
-                      <Clauses>
-                        <HtmlFindClause>
-                          <Clause>id=edit_contact_1</Clause>
-                        </HtmlFindClause>
-                        <HtmlFindClause>
-                          <Clause>tagIndex=img:3</Clause>
-                        </HtmlFindClause>
-                      </Clauses>
-                      <Constraints />
-                    </d9p1:value>
-                  </d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
-                </FindExpressions>
-                <Name>HotImage</Name>
+                <Name>Drop Target Image</Name>
                 <NodeKind>4</NodeKind>
                 <TechnologyType>Html</TechnologyType>
               </FindExpression>
@@ -736,11 +659,11 @@
     <d2p1:AutomationStep i:type="d2p1:AutomationStep">
       <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
       <d2p1:CustomDescription i:nil="true" />
-      <d2p1:Description>Verify attribute 'src' has 'Same' value of '/assets/HOT.png' on 'HotImage'</d2p1:Description>
+      <d2p1:Description>Verify attribute 'src' has 'Same' value of '/assets/HOT.png' on 'Drop Target Image'</d2p1:Description>
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
-      <d2p1:Order>11</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>000f2570-0442-452f-88a2-99e743403b3d</d2p1:Runtime_x0020_ID>
+      <d2p1:Order>10</d2p1:Order>
+      <d2p1:Runtime_x0020_ID>c9ed2bce-41c9-493b-b4ba-bb3e73f37aa8</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:AttributeVerificationDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -768,17 +691,17 @@
                       </ChainStops>
                       <Clauses>
                         <HtmlFindClause>
-                          <Clause>id=edit_contact_1</Clause>
+                          <Clause>class=drop_target</Clause>
                         </HtmlFindClause>
                         <HtmlFindClause>
-                          <Clause>tagIndex=img:3</Clause>
+                          <Clause>HtmlPath=/img[0]</Clause>
                         </HtmlFindClause>
                       </Clauses>
                       <Constraints />
                     </d9p1:value>
                   </d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
                 </FindExpressions>
-                <Name>HotImage</Name>
+                <Name>Drop Target Image</Name>
                 <NodeKind>4</NodeKind>
                 <TechnologyType>Html</TechnologyType>
               </FindExpression>
@@ -822,45 +745,6 @@
       <d2p1:StepState>NoCode</d2p1:StepState>
       <d2p1:Version>200</d2p1:Version>
     </d2p1:AutomationStep>
-    <d2p1:AutomationStep i:type="d2p1:AutomationStep">
-      <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
-      <d2p1:CustomDescription i:nil="true" />
-      <d2p1:Description>Close pop-up window : '/contacts/1/edit'</d2p1:Description>
-      <d2p1:Enabled>true</d2p1:Enabled>
-      <d2p1:Id />
-      <d2p1:Order>12</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>744afc53-235a-4377-b8b1-507efaec53bb</d2p1:Runtime_x0020_ID>
-      <d2p1:Step i:type="d2p1:HtmlDialogHandlerDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-            <d6p1:KeyValueOfstringstring>
-              <d6p1:Key>RunsAgainstVersion</d6p1:Key>
-              <d6p1:Value />
-            </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
-        </d2p1:Constraints>
-        <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-        <d2p1:EditorType />
-        <d2p1:Elements xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-        <d2p1:LogMessageOnFailure />
-        <d2p1:Pause>None</d2p1:Pause>
-        <d2p1:RunsAgainstVersion />
-        <d2p1:StepType>Action</d2p1:StepType>
-        <d2p1:UseStepWaitOnElementsTimout>false</d2p1:UseStepWaitOnElementsTimout>
-        <d2p1:WaitOnElements>false</d2p1:WaitOnElements>
-        <d2p1:WaitOnElementsTimeout>0</d2p1:WaitOnElementsTimeout>
-        <ClosesBrowser xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">false</ClosesBrowser>
-        <d2p1:HandleState>Close</d2p1:HandleState>
-        <d2p1:IsModalPopup>false</d2p1:IsModalPopup>
-        <d2p1:IsUrlPartial>true</d2p1:IsUrlPartial>
-        <d2p1:ModalPopupPartialCaption />
-        <d2p1:PopupUrl>/contacts/1/edit</d2p1:PopupUrl>
-        <d2p1:PopupWaitTimeout>5000</d2p1:PopupWaitTimeout>
-      </d2p1:Step>
-      <d2p1:StepImageKey>Coded Validation of gridzchwqsoj.hzt</d2p1:StepImageKey>
-      <d2p1:StepState>NoCode</d2p1:StepState>
-      <d2p1:Version>200</d2p1:Version>
-    </d2p1:AutomationStep>
   </Steps>
   <Version>200</Version>
   <BrowserType>NotSet</BrowserType>
@@ -874,11 +758,13 @@
     <d2p1:string>Telerik.WebAii.Controls.Xaml.Wpf, Version=2011.2.1117.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
     <d2p1:string>D:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</d2p1:string>
     <d2p1:string>System.Windows.Forms</d2p1:string>
+    <d2p1:string />
   </CurrentReferences>
   <DeploymentItems xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
     <d2p1:string>..\bin\Telerik_Demo_App.dll</d2p1:string>
     <d2p1:string>..\Login\Logging in as test user displays proper header.tstest</d2p1:string>
     <d2p1:string>..\Support\Log in if needed.tstest</d2p1:string>
+    <d2p1:string>..\Login\Providing valid credentials logs user on.tstest</d2p1:string>
   </DeploymentItems>
   <DomStatesCounter xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <HasCodeBehind>true</HasCodeBehind>
@@ -906,7 +792,7 @@
   <SilverlightEnabled>false</SilverlightEnabled>
   <StopTestListOnFailure>false</StopTestListOnFailure>
   <TestAssembly>Telerik_Demo_App.dll</TestAssembly>
-  <TestAssemblyPath>D:\projects\Telerik-Demo\test\TestStudio\bin</TestAssemblyPath>
+  <TestAssemblyPath>bin\</TestAssemblyPath>
   <TestClass>Telerik_Demo_App.Coded_Validation_of_grid</TestClass>
   <TestLinks xmlns:d2p1="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.ProjectModel.TestLinks" />
   <TestType>Web</TestType>
