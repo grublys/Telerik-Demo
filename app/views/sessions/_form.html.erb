@@ -6,6 +6,15 @@
   <%= form_tag sessions_path, :remote => true do %>
     <div class="field">
       <%= label_tag :username %>
+      <!--
+      The next two lines let you quickly change ID values for the username field. This
+      lets you quickly show how UI changes can break tests. 
+      0) Uncomment 1st line by deleting the "#" in the starting tag
+      1) Comment out the 2nd line by adding a "#"  It should look like this
+      	but without spaces (spaces keep it from being parsed)
+      	< % # text_field_tag ...
+      -->
+      <%#= text_field_tag :username, params[:username], :id => 'newid' %>
       <%= text_field_tag :username, params[:username] %>
     </div>
     <div class="field">
