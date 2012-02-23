@@ -22,6 +22,8 @@ Setup the environment (windows)
 
 Note: If rake fails to run and gives you an error message similar to "You have already activated rake 0.9.2, but your Gemfile requires rake 0.8.7" then use "bundle exec" instead of "bundle" in the commands below.
 
+Note: If "bundle exec" (as shown above) still doesn't solve your Rake issue, then try removing the troublesome Rake version. Use "gem uninstall rake" at which point you'll be prompted to select which version to remove. Select version 0.9.2 to remove. After that process finishes then continue with the steps below, starting wtih "bundle install".
+
 Install missing bundles
 
 ```$ bundle install```
