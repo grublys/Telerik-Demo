@@ -1,16 +1,16 @@
-<TestList Type="ArtOfTest.WebAii.Design.Execution.TestList" Version="2011.2.928.0">
+<TestList Type="ArtOfTest.WebAii.Design.Execution.TestList" Version="2011.2.1413.0">
   <ID Type="System.String">d47f122f-e5b6-4805-a0cd-e42cbf7fc545</ID>
   <TestListName Type="System.String">Logon Tests</TestListName>
   <Date Type="System.DateTime">2011-10-28 20:55:22Z</Date>
-  <Settings Type="ArtOfTest.WebAii.Core.Settings" Version="2011.2.928.0">
-    <WebSettings Type="ArtOfTest.WebAii.Core.Settings+WebSettings" Version="2011.2.928.0">
+  <Settings Type="ArtOfTest.WebAii.Core.Settings" Version="2011.2.1413.0">
+    <WebSettings Type="ArtOfTest.WebAii.Core.Settings+WebSettings" Version="2011.2.1413.0">
       <DefaultBrowser Type="ArtOfTest.WebAii.Core.BrowserType">InternetExplorer</DefaultBrowser>
       <WebAppPhysicalPath Type="System.String">
       </WebAppPhysicalPath>
       <EnableScriptLogging Type="System.Boolean">False</EnableScriptLogging>
       <EnableUILessRequestViewing Type="System.Boolean">False</EnableUILessRequestViewing>
       <LocalWebServer Type="ArtOfTest.WebAii.Core.LocalWebServerType">None</LocalWebServer>
-      <BaseUrl Type="System.String">http://localhost:3000</BaseUrl>
+      <BaseUrl Type="System.String">http://demo:3000</BaseUrl>
       <AspNetDevServerPort Type="System.Int32">-1</AspNetDevServerPort>
       <KillBrowserProcessOnClose Type="System.Boolean">False</KillBrowserProcessOnClose>
       <RecycleBrowser Type="System.Boolean">False</RecycleBrowser>
@@ -18,10 +18,12 @@
       <EnableSilverlight Type="System.Boolean">False</EnableSilverlight>
       <VerboseHttpProxy Type="System.Boolean">False</VerboseHttpProxy>
       <SilverlightConnectTimeout Type="System.Int32">30000</SilverlightConnectTimeout>
+      <MultiBrowsersExecution />
       <UseMultiBrowsers Type="System.Boolean">False</UseMultiBrowsers>
       <IsProfilingExecution Type="System.Boolean">False</IsProfilingExecution>
       <ProfilerConfigurations />
     </WebSettings>
+    <WpfSettings Type="ArtOfTest.WebAii.Core.Settings+WpfSettings" Version="2011.2.1413.0" />
     <ClientReadyTimeout Type="System.Int32">30000</ClientReadyTimeout>
     <ExecuteCommandTimeout Type="System.Int32">20000</ExecuteCommandTimeout>
     <LogLocation Type="System.String">C:\WebAiiLog\</LogLocation>
@@ -41,20 +43,20 @@
     <DisableDialogMonitoring Type="System.Boolean">False</DisableDialogMonitoring>
   </Settings>
   <Tests>
-    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2011.2.928.0">
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2011.2.1413.0">
       <ID Type="System.String">e053a135-43c8-4e57-9dd7-2f6cacf59f82</ID>
       <Path Type="System.String">Login\Invalid username and password combo shows error message.tstest</Path>
     </Item>
-    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2011.2.928.0">
-      <ID Type="System.String">d85de241-5219-4b09-b501-7a7aa86be76b</ID>
-      <Path Type="System.String">Login\Logging in as test user displays proper header.tstest</Path>
-    </Item>
-    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2011.2.928.0">
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2011.2.1413.0">
       <ID Type="System.String">bb96b034-5560-4909-bf1a-096866fc288e</ID>
       <Path Type="System.String">Login\Login Submit button disabled until both username &amp; password entered.tstest</Path>
     </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2011.2.1413.0">
+      <ID Type="System.String">3859855c-38d8-475f-9cf2-c6b96ca99ca4</ID>
+      <Path Type="System.String">Login\Providing proper credentials logs user on.tstest</Path>
+    </Item>
   </Tests>
-  <Filter Type="ArtOfTest.WebAii.Design.Execution.Filter" Version="2011.2.928.0">
+  <Filter Type="ArtOfTest.WebAii.Design.Execution.Filter" Version="2011.2.1413.0">
     <Keys />
     <Comparisons />
     <Values />

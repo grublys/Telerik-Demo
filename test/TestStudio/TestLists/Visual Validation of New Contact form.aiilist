@@ -1,9 +1,9 @@
-<TestList Type="ArtOfTest.WebAii.Design.Execution.TestList" Version="2011.2.928.0">
+<TestList Type="ArtOfTest.WebAii.Design.Execution.TestList" Version="2011.2.1117.0">
   <ID Type="System.String">73c36584-4602-4231-a711-d721b01e5bbd</ID>
   <TestListName Type="System.String">Visual Validation of New Contact form</TestListName>
   <Date Type="System.DateTime">2011-09-28 19:53:16Z</Date>
-  <Settings Type="ArtOfTest.WebAii.Core.Settings" Version="2011.2.928.0">
-    <WebSettings Type="ArtOfTest.WebAii.Core.Settings+WebSettings" Version="2011.2.928.0">
+  <Settings Type="ArtOfTest.WebAii.Core.Settings" Version="2011.2.1117.0">
+    <WebSettings Type="ArtOfTest.WebAii.Core.Settings+WebSettings" Version="2011.2.1117.0">
       <DefaultBrowser Type="ArtOfTest.WebAii.Core.BrowserType">InternetExplorer</DefaultBrowser>
       <WebAppPhysicalPath Type="System.String">
       </WebAppPhysicalPath>
@@ -41,12 +41,12 @@
     <DisableDialogMonitoring Type="System.Boolean">False</DisableDialogMonitoring>
   </Settings>
   <Tests>
-    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2011.2.928.0">
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2011.2.1117.0">
       <ID Type="System.String">f48069a7-9dfe-4785-9fb5-297f68a9bc50</ID>
       <Path Type="System.String">New Contact\Validate appearance of New Contact form.tstest</Path>
     </Item>
   </Tests>
-  <Filter Type="ArtOfTest.WebAii.Design.Execution.Filter" Version="2011.2.928.0">
+  <Filter Type="ArtOfTest.WebAii.Design.Execution.Filter" Version="2011.2.1117.0">
     <Keys />
     <Comparisons />
     <Values />
