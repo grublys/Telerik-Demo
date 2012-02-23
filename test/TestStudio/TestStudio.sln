@@ -3,7 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestStudio", "TestStudio.csproj", "{A26E11D0-83EA-43C9-B91A-133CE2C7816C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{88027C5B-F53F-4861-85CE-52AD9218831D}"
+	ProjectSection(SolutionItems) = preProject
+		Test Studio Settings.testsettings = Test Studio Settings.testsettings
+		TestStudio.vsmdi = TestStudio.vsmdi
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = TestStudio.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
