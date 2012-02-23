@@ -23,7 +23,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id>Initialize</d2p1:Id>
       <d2p1:Order>1</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>6b257700-340b-4c8e-8c0f-9809315bef57</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>db4ab744-88a6-4306-8bc8-4d4974869481</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:CodedStepDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -62,10 +62,15 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>2</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>ac9f25f0-a1f1-4ac2-abe4-a38fb6ef39e1</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>ae6c0444-f8a9-4f3e-ad61-954a71240622</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ExecuteTestActionDescriptor">
         <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <d6p1:KeyValueOfstringstring>
+              <d6p1:Key>RunsAgainstVersion</d6p1:Key>
+              <d6p1:Value />
+            </d6p1:KeyValueOfstringstring>
+          </ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
@@ -92,7 +97,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>3</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>2c6d58a0-f152-4955-bda8-3dcc11cc8cc1</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>6914a30f-80f5-4756-9c31-fc2a100c4105</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ClickActionDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -175,7 +180,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>4</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>5b851f27-11db-4f5a-98b6-c792d4452e47</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>1a77819e-5fae-4653-a126-09ff4ce40d97</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:DownloadDialogHandlerDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -216,7 +221,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id>Exporting_Grid_to_PDF_saves_a_file_to_filesystem_CodedStep</d2p1:Id>
       <d2p1:Order>5</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>e4de755d-653c-447d-a380-b04ac552a4ea</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>bead2c42-2a37-44d6-a512-8c2c25fa6cff</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:CodedStepDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -288,11 +293,12 @@
   <SilverlightEnabled>false</SilverlightEnabled>
   <StopTestListOnFailure>false</StopTestListOnFailure>
   <TestAssembly>Telerik_Demo_App.dll</TestAssembly>
-  <TestAssemblyPath>D:\projects\Telerik-Demo\test\TestStudio\bin</TestAssemblyPath>
+  <TestAssemblyPath>bin</TestAssemblyPath>
   <TestClass>Telerik_Demo_App.Exporting_Grid_to_PDF_saves_a_file_to_filesystem</TestClass>
   <TestLinks xmlns:d2p1="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.ProjectModel.TestLinks" />
   <TestType>Web</TestType>
   <UniqueId>3a67af50-a176-4237-97df-8c6a66252944</UniqueId>
+  <UseDefaultWpfAppPath>false</UseDefaultWpfAppPath>
   <VSProperties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
     <d2p1:KeyValueOfstringstring>
       <d2p1:Key>Timeout</d2p1:Key>
@@ -303,5 +309,6 @@
       <d2p1:Value>00000000-0000-0000-0000-000000000000</d2p1:Value>
     </d2p1:KeyValueOfstringstring>
   </VSProperties>
+  <WebKitExecutionDelay>0</WebKitExecutionDelay>
   <WpfAppPath i:nil="true" />
 </WebAiiTest>
