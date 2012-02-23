@@ -7,7 +7,7 @@
     <OutputPath>bin</OutputPath>
     <OutputType>Library</OutputType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <ProjectGuid>{A26E11D0-83EA-43C9-B91A-133CE2C7816C}</ProjectGuid>
+    <ProjectGuid>{DF496E44-28A2-431E-BBB6-F95AC179F83D}</ProjectGuid>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ArtOfTest.WebAii, Version=2011.2.1117.0, Culture=neutral, PublicKeyToken=4fd5f65be123776c">
@@ -32,49 +32,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Login\Invalid username and password combo shows error message.tstest.cs">
-      <DependentUpon>Invalid username and password combo shows error message.tstest</DependentUpon>
-    </Compile>
-    <Compile Include="New Contact\Clicking New Contact from grid opens form in new window.tstest.cs">
-      <DependentUpon>Clicking New Contact from grid opens form in new window.tstest</DependentUpon>
-    </Compile>
     <Compile Include="Support\Delete all users with %40foo.com mail addresses.tstest.cs">
       <DependentUpon>Delete all users with %40foo.com mail addresses.tstest</DependentUpon>
     </Compile>
     <None Include=".NET Tests\Navigating to Rad page renders grid.tstest" />
     <None Include=".NET Tests\RadGrid displays proper baseline data.tstest" />
-    <None Include=".NET Tests\TelerikControls.tstest">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="Initial Grid\Coded Validation of grid.tstest" />
     <None Include="Initial Grid\Exporting Grid to PDF saves a file to filesystem.tstest" />
-    <None Include="Initial Grid\Initial grid displays correct baseline records.tstest">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="Initial Grid\Initial Grid loaded from baseline data contains correct records.tstest" />
-    <None Include="Login\Inputting valid username and password logs on.tstest" />
     <None Include="Login\Invalid username and password combo shows error message.tstest" />
-    <None Include="Login\Logging in as test user displays proper header.tstest" />
     <None Include="Login\Login Submit button disabled until both username &amp; password entered.tstest" />
-    <None Include="Login\Providing proper credentials logs user on.tstest">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Login\Providing valid credentials logs user on.tstest">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <None Include="Login\Providing valid credentials logs user on.tstest" />
     <None Include="New Contact\Adding empty contact generates appropriate field and style errors.tstest" />
     <None Include="New Contact\Clicking New Contact from grid opens form in new window.tstest" />
     <None Include="New Contact\Dragging Contact Types to new contact sets correct values.tstest" />
-    <None Include="New Contact\Invalid EMail formats generate appropriate errors.tstest" />
     <None Include="New Contact\Saving a New Contact with valid values shows user on grid.tstest" />
-    <None Include="New Contact\Validate HTML 5 e-mail errors.tstest" />
     <None Include="New Contact\Validate Layout of New Contact Form.tstest" />
+    <None Include="Settings.aiis" />
     <None Include="Support\Delete all users with @foo.com mail addresses.tstest" />
     <None Include="Support\Log in if needed.tstest" />
     <None Include="Support\Log OUT if needed.tstest" />
-    <None Include="Support\Logon IF demo.tstest">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <None Include="Telerik_Demo_App\New Contact\Visually check layout of new contact form.tstest" />
     <None Include="Working With AJAX\AJAX Menu demo.tstest" />
     <None Include="Working With AJAX\AJAX Menu Items Can Be Validated.tstest" />
     <None Include="Working With AJAX\Drop Down Waits.tstest" />
@@ -105,17 +83,14 @@
     <None Include="Initial Grid\Initial Grid loaded from baseline data contains correct records.resx">
       <DependentUpon>Initial Grid loaded from baseline data contains correct records.tstest</DependentUpon>
     </None>
-    <None Include="Login\Inputting valid username and password logs on.resx">
-      <DependentUpon>Inputting valid username and password logs on.tstest</DependentUpon>
-    </None>
     <None Include="Login\Invalid username and password combo shows error message.resx">
       <DependentUpon>Invalid username and password combo shows error message.tstest</DependentUpon>
     </None>
-    <None Include="Login\Logging in as test user displays proper header.resx">
-      <DependentUpon>Logging in as test user displays proper header.tstest</DependentUpon>
-    </None>
     <None Include="Login\Login Submit button disabled until both username &amp; password entered.resx">
       <DependentUpon>Login Submit button disabled until both username &amp; password entered.tstest</DependentUpon>
+    </None>
+    <None Include="Login\Providing valid credentials logs user on.resx">
+      <DependentUpon>Providing valid credentials logs user on.tstest</DependentUpon>
     </None>
     <None Include="New Contact\Adding empty contact generates appropriate field and style errors.resx">
       <DependentUpon>Adding empty contact generates appropriate field and style errors.tstest</DependentUpon>
@@ -126,14 +101,8 @@
     <None Include="New Contact\Dragging Contact Types to new contact sets correct values.resx">
       <DependentUpon>Dragging Contact Types to new contact sets correct values.tstest</DependentUpon>
     </None>
-    <None Include="New Contact\Invalid EMail formats generate appropriate errors.resx">
-      <DependentUpon>Invalid EMail formats generate appropriate errors.tstest</DependentUpon>
-    </None>
     <None Include="New Contact\Saving a New Contact with valid values shows user on grid.resx">
       <DependentUpon>Saving a New Contact with valid values shows user on grid.tstest</DependentUpon>
-    </None>
-    <None Include="New Contact\Validate HTML 5 e-mail errors.resx">
-      <DependentUpon>Validate HTML 5 e-mail errors.tstest</DependentUpon>
     </None>
     <None Include="New Contact\Validate Layout of New Contact Form.resx">
       <DependentUpon>New Contact\Validate Layout of New Contact Form.tstest</DependentUpon>
@@ -146,6 +115,9 @@
     </None>
     <None Include="Support\Log OUT if needed.resx">
       <DependentUpon>Log OUT if needed.tstest</DependentUpon>
+    </None>
+    <None Include="Telerik_Demo_App\New Contact\Visually check layout of new contact form.resx">
+      <DependentUpon>Telerik_Demo_App\New Contact\Visually check layout of new contact form.tstest</DependentUpon>
     </None>
     <None Include="Working With AJAX\AJAX Menu demo.resx">
       <DependentUpon>AJAX Menu demo.tstest</DependentUpon>
@@ -160,28 +132,9 @@
       <DependentUpon>LinkedIn profile renders in iFrame.tstest</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <None Include=".NET Tests\TelerikControls.resx">
-      <DependentUpon>TelerikControls.tstest</DependentUpon>
-    </None>
-    <None Include="Login\Providing valid credentials logs user on.resx">
-      <DependentUpon>Providing valid credentials logs user on.tstest</DependentUpon>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Initial Grid\Initial grid displays correct baseline records.resx">
-      <DependentUpon>Initial grid displays correct baseline records.tstest</DependentUpon>
-    </None>
-    <None Include="Login\Providing proper credentials logs user on.resx">
-      <DependentUpon>Providing proper credentials logs user on.tstest</DependentUpon>
-    </None>
-    <None Include="Support\Logon IF demo.resx">
-      <DependentUpon>Logon IF demo.tstest</DependentUpon>
-    </None>
-  </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties Name="TestStudio" Version="2011.2.1102.0" VsProjectLanguage="CSharp" />
+      <UserProperties Name="TestStudio" />
     </VisualStudio>
   </ProjectExtensions>
   <Import Condition="true" Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

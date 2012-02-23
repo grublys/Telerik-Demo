@@ -88,6 +88,8 @@ namespace Telerik_Demo_App
             HtmlTableRow row = table.Find.TableRow(contactName);
 
             HtmlAnchor cell = row.Find.ByContent<HtmlAnchor>("View Contact");
+            string windowUrl = cell.HRef;
+            SetExtractedValue("contactWindowUrl", windowUrl);
 
             cell.Click();            
         }
