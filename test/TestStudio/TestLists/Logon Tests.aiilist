@@ -10,7 +10,7 @@
       <EnableScriptLogging Type="System.Boolean">False</EnableScriptLogging>
       <EnableUILessRequestViewing Type="System.Boolean">False</EnableUILessRequestViewing>
       <LocalWebServer Type="ArtOfTest.WebAii.Core.LocalWebServerType">None</LocalWebServer>
-      <BaseUrl Type="System.String">http://localhost:3000</BaseUrl>
+      <BaseUrl Type="System.String">http://demo:3000</BaseUrl>
       <AspNetDevServerPort Type="System.Int32">-1</AspNetDevServerPort>
       <KillBrowserProcessOnClose Type="System.Boolean">False</KillBrowserProcessOnClose>
       <RecycleBrowser Type="System.Boolean">False</RecycleBrowser>
@@ -18,6 +18,7 @@
       <EnableSilverlight Type="System.Boolean">False</EnableSilverlight>
       <VerboseHttpProxy Type="System.Boolean">False</VerboseHttpProxy>
       <SilverlightConnectTimeout Type="System.Int32">30000</SilverlightConnectTimeout>
+      <MultiBrowsersExecution />
       <UseMultiBrowsers Type="System.Boolean">False</UseMultiBrowsers>
       <IsProfilingExecution Type="System.Boolean">False</IsProfilingExecution>
       <ProfilerConfigurations />
@@ -49,6 +50,10 @@
     <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2011.2.1413.0">
       <ID Type="System.String">bb96b034-5560-4909-bf1a-096866fc288e</ID>
       <Path Type="System.String">Login\Login Submit button disabled until both username &amp; password entered.tstest</Path>
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2011.2.1413.0">
+      <ID Type="System.String">3859855c-38d8-475f-9cf2-c6b96ca99ca4</ID>
+      <Path Type="System.String">Login\Providing proper credentials logs user on.tstest</Path>
     </Item>
   </Tests>
   <Filter Type="ArtOfTest.WebAii.Design.Execution.Filter" Version="2011.2.1413.0">

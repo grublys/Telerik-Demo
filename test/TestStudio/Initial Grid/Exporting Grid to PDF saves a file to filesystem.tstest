@@ -58,7 +58,7 @@
     <d2p1:AutomationStep i:type="d2p1:AutomationStep">
       <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
       <d2p1:CustomDescription i:nil="true" />
-      <d2p1:Description>Execute test 'Providing valid credentials logs user on.tstest'</d2p1:Description>
+      <d2p1:Description>Execute test 'Providing valid credentials logs user on'</d2p1:Description>
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>2</d2p1:Order>
@@ -82,7 +82,7 @@
         <d2p1:UseStepWaitOnElementsTimout>false</d2p1:UseStepWaitOnElementsTimout>
         <d2p1:WaitOnElements>true</d2p1:WaitOnElements>
         <d2p1:WaitOnElementsTimeout>10000</d2p1:WaitOnElementsTimeout>
-        <d2p1:TestName>Providing valid credentials logs user on.tstest</d2p1:TestName>
+        <d2p1:TestName>Providing valid credentials logs user on</d2p1:TestName>
         <d2p1:TestPath>Login\Providing valid credentials logs user on.tstest</d2p1:TestPath>
         <d2p1:TestUniqueId>84102f18-2ac8-4333-bc34-70cc2d6490a1</d2p1:TestUniqueId>
       </d2p1:Step>
@@ -293,7 +293,7 @@
   <SilverlightEnabled>false</SilverlightEnabled>
   <StopTestListOnFailure>false</StopTestListOnFailure>
   <TestAssembly>Telerik_Demo_App.dll</TestAssembly>
-  <TestAssemblyPath>bin</TestAssemblyPath>
+  <TestAssemblyPath>bin\</TestAssemblyPath>
   <TestClass>Telerik_Demo_App.Exporting_Grid_to_PDF_saves_a_file_to_filesystem</TestClass>
   <TestLinks xmlns:d2p1="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.ProjectModel.TestLinks" />
   <TestType>Web</TestType>

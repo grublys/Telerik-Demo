@@ -47,6 +47,7 @@ namespace Telerik_Demo_App
 
     public class Coded_Validation_of_grid : BaseWebAiiTest
     {
+
         #region [ Dynamic Pages Reference ]
 
         private Pages _pages;

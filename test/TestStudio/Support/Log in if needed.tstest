@@ -74,7 +74,7 @@
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
                 <d2p1:EquivalentUrls />
                 <d2p1:Fragment />
-                <d2p1:FriendlyName>DemoApp</d2p1:FriendlyName>
+                <d2p1:FriendlyName>Logon</d2p1:FriendlyName>
                 <d2p1:Path>/welcome</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>Telerik Customer Relations Management System</d2p1:Title>
@@ -159,7 +159,7 @@
                             <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
                             <d2p1:EquivalentUrls />
                             <d2p1:Fragment />
-                            <d2p1:FriendlyName>DemoApp</d2p1:FriendlyName>
+                            <d2p1:FriendlyName>Logon</d2p1:FriendlyName>
                             <d2p1:Path>/welcome</d2p1:Path>
                             <d2p1:Query />
                             <d2p1:Title>Telerik Customer Relations Management System</d2p1:Title>
@@ -242,7 +242,7 @@
                             <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
                             <d2p1:EquivalentUrls />
                             <d2p1:Fragment />
-                            <d2p1:FriendlyName>DemoApp</d2p1:FriendlyName>
+                            <d2p1:FriendlyName>Logon</d2p1:FriendlyName>
                             <d2p1:Path>/welcome</d2p1:Path>
                             <d2p1:Query />
                             <d2p1:Title>Telerik Customer Relations Management System</d2p1:Title>
@@ -335,7 +335,7 @@
                             <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
                             <d2p1:EquivalentUrls />
                             <d2p1:Fragment />
-                            <d2p1:FriendlyName>DemoApp</d2p1:FriendlyName>
+                            <d2p1:FriendlyName>Logon</d2p1:FriendlyName>
                             <d2p1:Path>/welcome</d2p1:Path>
                             <d2p1:Query />
                             <d2p1:Title>Telerik Customer Relations Management System</d2p1:Title>
@@ -428,7 +428,7 @@
                             <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
                             <d2p1:EquivalentUrls />
                             <d2p1:Fragment />
-                            <d2p1:FriendlyName>DemoApp</d2p1:FriendlyName>
+                            <d2p1:FriendlyName>Logon</d2p1:FriendlyName>
                             <d2p1:Path>/welcome</d2p1:Path>
                             <d2p1:Query />
                             <d2p1:Title>Telerik Customer Relations Management System</d2p1:Title>
@@ -519,7 +519,7 @@
                   <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
                   <d2p1:EquivalentUrls />
                   <d2p1:Fragment />
-                  <d2p1:FriendlyName>DemoApp</d2p1:FriendlyName>
+                  <d2p1:FriendlyName>Logon</d2p1:FriendlyName>
                   <d2p1:Path>/welcome</d2p1:Path>
                   <d2p1:Query />
                   <d2p1:Title>Telerik Customer Relations Management System</d2p1:Title>
