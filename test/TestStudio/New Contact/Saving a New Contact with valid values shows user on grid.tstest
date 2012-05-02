@@ -1,4 +1,26 @@
-﻿<WebAiiTest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+﻿<WebAiiTest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://artoftest.com/schemas/WebAiiDesignCanvas/3.0.0">
+  <Description />
+  <IsManual>false</IsManual>
+  <Name>Saving a New Contact with valid values shows user on grid</Name>
+  <Owner i:nil="true" />
+  <Path>New Contact\Saving a New Contact with valid values shows user on grid.tstest</Path>
+  <Priority>0</Priority>
+  <TestType>Web</TestType>
+  <UniqueId>6297519a-b92c-43dd-8442-7e9f619d4431</UniqueId>
+  <Version>200</Version>
+  <BrowserType>NotSet</BrowserType>
+  <CurrentReferences xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:string>System</d2p1:string>
+    <d2p1:string>System.Core</d2p1:string>
+    <d2p1:string>ArtOfTest.WebAii, Version=2011.2.1413.0, Culture=neutral, PublicKeyToken=4fd5f65be123776c</d2p1:string>
+    <d2p1:string>ArtOfTest.WebAii.Design, Version=2011.2.1413.0, Culture=neutral, PublicKeyToken=4fc62bbc3827ab1d</d2p1:string>
+    <d2p1:string>Telerik.WebAii.Controls.Html, Version=2011.2.1413.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
+    <d2p1:string>Telerik.WebAii.Controls.Xaml, Version=2011.2.1413.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
+    <d2p1:string>Telerik.WebAii.Controls.Xaml.Wpf, Version=2011.2.1413.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
+    <d2p1:string>D:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</d2p1:string>
+    <d2p1:string>System.Windows.Forms</d2p1:string>
+    <d2p1:string />
+  </CurrentReferences>
   <DataInfo xmlns:d2p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0">
     <d2p1:BuiltInData i:nil="true" />
     <d2p1:BuiltInDocumentKey i:nil="true" />
@@ -12,39 +34,42 @@
     <d2p1:HasBuiltinGrid>false</d2p1:HasBuiltinGrid>
     <d2p1:TSQL />
   </DataInfo>
-  <Description />
-  <IndependentDescriptors>
-    <ElementDescriptor>
-      <DomStateKey />
-      <FindExpression i:type="HtmlFindExpressionElement">
-        <BackupSearchClause>/html[1]/body[1]/form[1]/div[4]/input[1]</BackupSearchClause>
-        <FindExpressions xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+  <DeploymentItems xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <DomStatesCounter xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <HasCodeBehind>true</HasCodeBehind>
+  <HtmlDescription />
+  <IndependentDescriptors xmlns:d2p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+    <d2p1:ElementDescriptor>
+      <d2p1:DomStateKey />
+      <d2p1:FindExpression i:type="d2p1:HtmlFindExpressionElement">
+        <d2p1:BackupSearchClause>/html[1]/body[1]/form[1]/div[4]/input[1]</d2p1:BackupSearchClause>
+        <d2p1:FindExpressions xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
           <d5p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
             <d5p1:key>Html</d5p1:key>
-            <d5p1:value i:type="HtmlFindExpression">
-              <ChainStops xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-              <Clauses>
-                <HtmlFindClause>
-                  <Clause>id=contact_email</Clause>
-                </HtmlFindClause>
-                <HtmlFindClause>
-                  <Clause>tagname=input</Clause>
-                </HtmlFindClause>
-              </Clauses>
-              <Constraints />
+            <d5p1:value i:type="d2p1:HtmlFindExpression">
+              <d2p1:ChainStops xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <d2p1:Clauses>
+                <d2p1:HtmlFindClause>
+                  <d2p1:Clause>id=contact_email</d2p1:Clause>
+                </d2p1:HtmlFindClause>
+                <d2p1:HtmlFindClause>
+                  <d2p1:Clause>tagname=input</d2p1:Clause>
+                </d2p1:HtmlFindClause>
+              </d2p1:Clauses>
+              <d2p1:Constraints />
             </d5p1:value>
           </d5p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
-        </FindExpressions>
-        <Name>ContactEmailEmail</Name>
-        <NodeKind>4</NodeKind>
-        <TechnologyType>Html</TechnologyType>
-      </FindExpression>
-      <FindInfo i:nil="true" />
-      <Frame i:nil="true" />
-      <HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlInputEmail</HtmlControlType>
-      <IsIndependent>true</IsIndependent>
-      <Name>$$Independent$$</Name>
-      <Page xmlns:d4p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0" i:type="d4p1:PageUri">
+        </d2p1:FindExpressions>
+        <d2p1:Name>ContactEmailEmail</d2p1:Name>
+        <d2p1:NodeKind>4</d2p1:NodeKind>
+        <d2p1:TechnologyType>Html</d2p1:TechnologyType>
+      </d2p1:FindExpression>
+      <d2p1:FindInfo i:nil="true" />
+      <d2p1:Frame i:nil="true" />
+      <d2p1:HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlInputEmail</d2p1:HtmlControlType>
+      <d2p1:IsIndependent>true</d2p1:IsIndependent>
+      <d2p1:Name>$$Independent$$</d2p1:Name>
+      <d2p1:Page xmlns:d4p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0" i:type="d4p1:PageUri">
         <d4p1:AlwaysUseTitleInCompare>false</d4p1:AlwaysUseTitleInCompare>
         <d4p1:BaseUrl>http://localhost:3000</d4p1:BaseUrl>
         <d4p1:CompareMode>FullPath</d4p1:CompareMode>
@@ -54,42 +79,42 @@
         <d4p1:Path>/contacts/new</d4p1:Path>
         <d4p1:Query />
         <d4p1:Title>DemoApp</d4p1:Title>
-      </Page>
-      <Region i:nil="true" />
-      <TechnologyType>Html</TechnologyType>
-      <Version>200</Version>
-    </ElementDescriptor>
-    <ElementDescriptor>
-      <DomStateKey />
-      <FindExpression i:type="HtmlFindExpressionElement">
-        <BackupSearchClause>/html[1]/body[1]/form[1]/div[5]/input[1]</BackupSearchClause>
-        <FindExpressions xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+      </d2p1:Page>
+      <d2p1:Region i:nil="true" />
+      <d2p1:TechnologyType>Html</d2p1:TechnologyType>
+      <d2p1:Version>200</d2p1:Version>
+    </d2p1:ElementDescriptor>
+    <d2p1:ElementDescriptor>
+      <d2p1:DomStateKey />
+      <d2p1:FindExpression i:type="d2p1:HtmlFindExpressionElement">
+        <d2p1:BackupSearchClause>/html[1]/body[1]/form[1]/div[5]/input[1]</d2p1:BackupSearchClause>
+        <d2p1:FindExpressions xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
           <d5p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
             <d5p1:key>Html</d5p1:key>
-            <d5p1:value i:type="HtmlFindExpression">
-              <ChainStops xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-              <Clauses>
-                <HtmlFindClause>
-                  <Clause>tagname=input</Clause>
-                </HtmlFindClause>
-                <HtmlFindClause>
-                  <Clause>id=contact_linkedin_profile</Clause>
-                </HtmlFindClause>
-              </Clauses>
-              <Constraints />
+            <d5p1:value i:type="d2p1:HtmlFindExpression">
+              <d2p1:ChainStops xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <d2p1:Clauses>
+                <d2p1:HtmlFindClause>
+                  <d2p1:Clause>tagname=input</d2p1:Clause>
+                </d2p1:HtmlFindClause>
+                <d2p1:HtmlFindClause>
+                  <d2p1:Clause>id=contact_linkedin_profile</d2p1:Clause>
+                </d2p1:HtmlFindClause>
+              </d2p1:Clauses>
+              <d2p1:Constraints />
             </d5p1:value>
           </d5p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
-        </FindExpressions>
-        <Name>ContactLinkedinProfileText</Name>
-        <NodeKind>4</NodeKind>
-        <TechnologyType>Html</TechnologyType>
-      </FindExpression>
-      <FindInfo i:nil="true" />
-      <Frame i:nil="true" />
-      <HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlInputText</HtmlControlType>
-      <IsIndependent>true</IsIndependent>
-      <Name>textTarget</Name>
-      <Page xmlns:d4p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0" i:type="d4p1:PageUri">
+        </d2p1:FindExpressions>
+        <d2p1:Name>ContactLinkedinProfileText</d2p1:Name>
+        <d2p1:NodeKind>4</d2p1:NodeKind>
+        <d2p1:TechnologyType>Html</d2p1:TechnologyType>
+      </d2p1:FindExpression>
+      <d2p1:FindInfo i:nil="true" />
+      <d2p1:Frame i:nil="true" />
+      <d2p1:HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlInputText</d2p1:HtmlControlType>
+      <d2p1:IsIndependent>true</d2p1:IsIndependent>
+      <d2p1:Name>textTarget</d2p1:Name>
+      <d2p1:Page xmlns:d4p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0" i:type="d4p1:PageUri">
         <d4p1:AlwaysUseTitleInCompare>false</d4p1:AlwaysUseTitleInCompare>
         <d4p1:BaseUrl>http://localhost:3000</d4p1:BaseUrl>
         <d4p1:CompareMode>FullPathAndQuery</d4p1:CompareMode>
@@ -99,42 +124,42 @@
         <d4p1:Path>/contacts/new</d4p1:Path>
         <d4p1:Query />
         <d4p1:Title>DemoApp</d4p1:Title>
-      </Page>
-      <Region i:nil="true" />
-      <TechnologyType>Html</TechnologyType>
-      <Version>200</Version>
-    </ElementDescriptor>
-    <ElementDescriptor>
-      <DomStateKey />
-      <FindExpression i:type="HtmlFindExpressionElement">
-        <BackupSearchClause>/html[1]/body[1]/form[1]/div[5]/div[1]/label[1]</BackupSearchClause>
-        <FindExpressions xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+      </d2p1:Page>
+      <d2p1:Region i:nil="true" />
+      <d2p1:TechnologyType>Html</d2p1:TechnologyType>
+      <d2p1:Version>200</d2p1:Version>
+    </d2p1:ElementDescriptor>
+    <d2p1:ElementDescriptor>
+      <d2p1:DomStateKey />
+      <d2p1:FindExpression i:type="d2p1:HtmlFindExpressionElement">
+        <d2p1:BackupSearchClause>/html[1]/body[1]/form[1]/div[5]/div[1]/label[1]</d2p1:BackupSearchClause>
+        <d2p1:FindExpressions xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
           <d5p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
             <d5p1:key>Html</d5p1:key>
-            <d5p1:value i:type="HtmlFindExpression">
-              <ChainStops xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-              <Clauses>
-                <HtmlFindClause>
-                  <Clause>TextContent=Email</Clause>
-                </HtmlFindClause>
-                <HtmlFindClause>
-                  <Clause>tagname=label</Clause>
-                </HtmlFindClause>
-              </Clauses>
-              <Constraints />
+            <d5p1:value i:type="d2p1:HtmlFindExpression">
+              <d2p1:ChainStops xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <d2p1:Clauses>
+                <d2p1:HtmlFindClause>
+                  <d2p1:Clause>TextContent=Email</d2p1:Clause>
+                </d2p1:HtmlFindClause>
+                <d2p1:HtmlFindClause>
+                  <d2p1:Clause>tagname=label</d2p1:Clause>
+                </d2p1:HtmlFindClause>
+              </d2p1:Clauses>
+              <d2p1:Constraints />
             </d5p1:value>
           </d5p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
-        </FindExpressions>
-        <Name>EmailLabelTag</Name>
-        <NodeKind>4</NodeKind>
-        <TechnologyType>Html</TechnologyType>
-      </FindExpression>
-      <FindInfo i:nil="true" />
-      <Frame i:nil="true" />
-      <HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlControl</HtmlControlType>
-      <IsIndependent>true</IsIndependent>
-      <Name>textTarget</Name>
-      <Page xmlns:d4p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0" i:type="d4p1:PageUri">
+        </d2p1:FindExpressions>
+        <d2p1:Name>EmailLabelTag</d2p1:Name>
+        <d2p1:NodeKind>4</d2p1:NodeKind>
+        <d2p1:TechnologyType>Html</d2p1:TechnologyType>
+      </d2p1:FindExpression>
+      <d2p1:FindInfo i:nil="true" />
+      <d2p1:Frame i:nil="true" />
+      <d2p1:HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlControl</d2p1:HtmlControlType>
+      <d2p1:IsIndependent>true</d2p1:IsIndependent>
+      <d2p1:Name>textTarget</d2p1:Name>
+      <d2p1:Page xmlns:d4p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0" i:type="d4p1:PageUri">
         <d4p1:AlwaysUseTitleInCompare>false</d4p1:AlwaysUseTitleInCompare>
         <d4p1:BaseUrl>http://localhost:3000</d4p1:BaseUrl>
         <d4p1:CompareMode>FullPathAndQuery</d4p1:CompareMode>
@@ -144,13 +169,41 @@
         <d4p1:Path>/contacts</d4p1:Path>
         <d4p1:Query />
         <d4p1:Title>DemoApp</d4p1:Title>
-      </Page>
-      <Region i:nil="true" />
-      <TechnologyType>Html</TechnologyType>
-      <Version>200</Version>
-    </ElementDescriptor>
+      </d2p1:Page>
+      <d2p1:Region i:nil="true" />
+      <d2p1:TechnologyType>Html</d2p1:TechnologyType>
+      <d2p1:Version>200</d2p1:Version>
+    </d2p1:ElementDescriptor>
   </IndependentDescriptors>
-  <Name>Saving a New Contact with valid values shows user on grid</Name>
+  <InheritParentDataSource>false</InheritParentDataSource>
+  <IsSilverlightApp>false</IsSilverlightApp>
+  <IsTestFragment>false</IsTestFragment>
+  <ProfilerBenchmarkResultsFilePath i:nil="true" />
+  <ProfilerBenchmarkResultsId>00000000-0000-0000-0000-000000000000</ProfilerBenchmarkResultsId>
+  <ProfilerConfigurationFilePath>D:\projects\Telerik-Demo\test\TestStudio\Profiler Configurations\{6297519a-b92c-43dd-8442-7e9f619d4431}.tsprofconfig</ProfilerConfigurationFilePath>
+  <ProfilerConfigurationId>00000000-0000-0000-0000-000000000000</ProfilerConfigurationId>
+  <ProfilerConfigurations xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:KeyValueOfstringbase64Binary>
+      <d2p1:Key>ArtOfTest.WebAii.Design.Execution.Profiler.ProfilerResultsMetadata</d2p1:Key>
+      <d2p1:Value>AAEAAAD/////AQAAAAAAAAAMAgAAAGBBcnRPZlRlc3QuV2ViQWlpLkRlc2lnbiwgVmVyc2lvbj0yMDExLjIuMTEwOC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTRmYzYyYmJjMzgyN2FiMWQMAwAAAFlBcnRPZlRlc3QuV2ViQWlpLCBWZXJzaW9uPTIwMTEuMi4xMTA4LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49NGZkNWY2NWJlMTIzNzc2YwwEAAAAaVRlbGVyaWsuVGVzdGluZ0ZyYW1ld29yay5JbnRlcm9wLCBWZXJzaW9uPTIwMTEuMi4xMTA4LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49OGNhMDBkM2UwZWJkNGI4YgUBAAAAQkFydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5Qcm9maWxlclJlc3VsdHNNZXRhZGF0YQ8AAAAKX3Jlc3VsdHNJZAxfb3duZXJUZXN0SWQKX3N0YXJ0VGltZQpfdG90YWxUaW1lG19iQ29sbGVjdFByb2ZpbGVyU2FtcGxlRGF0YQpfc3RyU2VydmVyDF9pU2VydmVyUG9ydA9fc3RyRGVzY3JpcHRpb24KX3N0ckZvbGRlcgxfc3RyRmlsZVBhdGgMX2Jyb3dzZXJUeXBlD19icm93c2VyVmVyc2lvbghfc2VydmVycxxfYkNsZWFyQnJvd3NlckNhY2hlQmVmb3JlUnVuF19iV2FybVVwU2VydmVyQmVmb3JlUnVuAwMAAAABAAEBAQQEAwAAC1N5c3RlbS5HdWlkC1N5c3RlbS5HdWlkDQwBCCpBcnRPZlRlc3QuV2ViQWlpLkNvcmUuQnJvd3NlckV4ZWN1dGlvblR5cGUDAAAAKVRlbGVyaWsuVGVzdGluZ0ZyYW1ld29yay5Vbml2ZXJzYWxWZXJzaW9uBAAAAMQBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuTGlzdGAxW1tBcnRPZlRlc3QuV2ViQWlpLkRlc2lnbi5FeGVjdXRpb24uUHJvZmlsZXIuUHJvZmlsZXJTZXJ2ZXJJbmZvLCBBcnRPZlRlc3QuV2ViQWlpLkRlc2lnbiwgVmVyc2lvbj0yMDExLjIuMTEwOC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTRmYzYyYmJjMzgyN2FiMWRdXQEBAgAAAAT7////C1N5c3RlbS5HdWlkCwAAAAJfYQJfYgJfYwJfZAJfZQJfZgJfZwJfaAJfaQJfagJfawAAAAAAAAAAAAAACAcHAgICAgICAgIAAAAAAAAAAAAAAAAAAAAAAfr////7////mlGXYiy53UOEQn6fYZ1EMQAAAAAAAAAAAAAAAAAAAAABBgcAAAAEREVNT0ofAAAKBggAAAANRDpcdGVtcFxQZXJmMgoF9////ypBcnRPZlRlc3QuV2ViQWlpLkNvcmUuQnJvd3NlckV4ZWN1dGlvblR5cGUBAAAAB3ZhbHVlX18ACAMAAAABAAAACgoAAAs=</d2p1:Value>
+    </d2p1:KeyValueOfstringbase64Binary>
+    <d2p1:KeyValueOfstringbase64Binary>
+      <d2p1:Key>ArtOfTest.WebAii.Design.Execution.Profiler.PerformanceCounterProfilerComponent</d2p1:Key>
+      <d2p1:Value>AAEAAAD/////AQAAAAAAAAAEAQAAAK0CU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtBcnRPZlRlc3QuV2ViQWlpLkRlc2lnbi5FeGVjdXRpb24uUHJvZmlsZXIuU2FtcGxlZFBlcmZvcm1hbmNlT2JqZWN0LCBBcnRPZlRlc3QuV2ViQWlpLkRlc2lnbiwgVmVyc2lvbj0yMDExLjIuMTEwOC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTRmYzYyYmJjMzgyN2FiMWRdXQQAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQ1LZXlWYWx1ZVBhaXJzAAMAAwiSAVN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLkdlbmVyaWNFcXVhbGl0eUNvbXBhcmVyYDFbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV1dCLECU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuS2V5VmFsdWVQYWlyYDJbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV0sW0FydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5TYW1wbGVkUGVyZm9ybWFuY2VPYmplY3QsIEFydE9mVGVzdC5XZWJBaWkuRGVzaWduLCBWZXJzaW9uPTIwMTEuMi4xMTA4LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49NGZjNjJiYmMzODI3YWIxZF1dW10DAAAACQIAAAADAAAACQMAAAAEAgAAAJIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuR2VuZXJpY0VxdWFsaXR5Q29tcGFyZXJgMVtbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XV0AAAAABwMAAAAAAQAAAAMAAAADrwJTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5LZXlWYWx1ZVBhaXJgMltbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XSxbQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24uRXhlY3V0aW9uLlByb2ZpbGVyLlNhbXBsZWRQZXJmb3JtYW5jZU9iamVjdCwgQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24sIFZlcnNpb249MjAxMS4yLjExMDguMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj00ZmM2MmJiYzM4MjdhYjFkXV0MBQAAAGBBcnRPZlRlc3QuV2ViQWlpLkRlc2lnbiwgVmVyc2lvbj0yMDExLjIuMTEwOC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTRmYzYyYmJjMzgyN2FiMWQE/P///68CU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuS2V5VmFsdWVQYWlyYDJbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV0sW0FydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5TYW1wbGVkUGVyZm9ybWFuY2VPYmplY3QsIEFydE9mVGVzdC5XZWJBaWkuRGVzaWduLCBWZXJzaW9uPTIwMTEuMi4xMTA4LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49NGZjNjJiYmMzODI3YWIxZF1dAgAAAANrZXkFdmFsdWUBBENBcnRPZlRlc3QuV2ViQWlpLkRlc2lnbi5FeGVjdXRpb24uUHJvZmlsZXIuU2FtcGxlZFBlcmZvcm1hbmNlT2JqZWN0BQAAAAYGAAAADEFQUF9QT09MX1dBUwkHAAAAAfj////8////BgkAAAAJUHJvY2Vzc29yCQoAAAAB9f////z///8GDAAAAAxQaHlzaWNhbERpc2sJDQAAAAUHAAAAQ0FydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5TYW1wbGVkUGVyZm9ybWFuY2VPYmplY3QDAAAACF9zdHJOYW1lD19zdHJEZXNjcmlwdGlvbgpfaW5zdGFuY2VzAQEDtQJTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5EaWN0aW9uYXJ5YDJbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV0sW0FydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5TYW1wbGVkUGVyZm9ybWFuY2VPYmplY3RJbnN0YW5jZSwgQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24sIFZlcnNpb249MjAxMS4yLjExMDguMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj00ZmM2MmJiYzM4MjdhYjFkXV0FAAAACQYAAAAKCQ8AAAABCgAAAAcAAAAJCQAAAAoJEQAAAAENAAAABwAAAAkMAAAACgkTAAAABA8AAAC1AlN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLkRpY3Rpb25hcnlgMltbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XSxbQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24uRXhlY3V0aW9uLlByb2ZpbGVyLlNhbXBsZWRQZXJmb3JtYW5jZU9iamVjdEluc3RhbmNlLCBBcnRPZlRlc3QuV2ViQWlpLkRlc2lnbiwgVmVyc2lvbj0yMDExLjIuMTEwOC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTRmYzYyYmJjMzgyN2FiMWRdXQQAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQ1LZXlWYWx1ZVBhaXJzAAMAAwiSAVN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLkdlbmVyaWNFcXVhbGl0eUNvbXBhcmVyYDFbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV1dCLkCU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuS2V5VmFsdWVQYWlyYDJbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV0sW0FydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5TYW1wbGVkUGVyZm9ybWFuY2VPYmplY3RJbnN0YW5jZSwgQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24sIFZlcnNpb249MjAxMS4yLjExMDguMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj00ZmM2MmJiYzM4MjdhYjFkXV1bXQEAAAAJAgAAAAMAAAAJFQAAAAERAAAADwAAAAEAAAAJAgAAAAMAAAAJFwAAAAETAAAADwAAAAEAAAAJAgAAAAMAAAAJGQAAAAcVAAAAAAEAAAABAAAAA7cCU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuS2V5VmFsdWVQYWlyYDJbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV0sW0FydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5TYW1wbGVkUGVyZm9ybWFuY2VPYmplY3RJbnN0YW5jZSwgQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24sIFZlcnNpb249MjAxMS4yLjExMDguMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj00ZmM2MmJiYzM4MjdhYjFkXV0E5v///7cCU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuS2V5VmFsdWVQYWlyYDJbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV0sW0FydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5TYW1wbGVkUGVyZm9ybWFuY2VPYmplY3RJbnN0YW5jZSwgQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24sIFZlcnNpb249MjAxMS4yLjExMDguMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj00ZmM2MmJiYzM4MjdhYjFkXV0CAAAAA2tleQV2YWx1ZQEES0FydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5TYW1wbGVkUGVyZm9ybWFuY2VPYmplY3RJbnN0YW5jZQUAAAAGGwAAAAZfVG90YWwJHAAAAAcXAAAAAAEAAAABAAAAA7cCU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuS2V5VmFsdWVQYWlyYDJbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV0sW0FydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5TYW1wbGVkUGVyZm9ybWFuY2VPYmplY3RJbnN0YW5jZSwgQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24sIFZlcnNpb249MjAxMS4yLjExMDguMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj00ZmM2MmJiYzM4MjdhYjFkXV0B4////+b///8GHgAAAAZfVG90YWwJHwAAAAcZAAAAAAEAAAABAAAAA7cCU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuS2V5VmFsdWVQYWlyYDJbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV0sW0FydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5TYW1wbGVkUGVyZm9ybWFuY2VPYmplY3RJbnN0YW5jZSwgQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24sIFZlcnNpb249MjAxMS4yLjExMDguMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj00ZmM2MmJiYzM4MjdhYjFkXV0B4P///+b///8GIQAAAAZfVG90YWwJIgAAAAUcAAAAS0FydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5TYW1wbGVkUGVyZm9ybWFuY2VPYmplY3RJbnN0YW5jZQIAAAAIX3N0ck5hbWUJX2NvdW50ZXJzAQOuAlN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLkRpY3Rpb25hcnlgMltbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XSxbQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24uRXhlY3V0aW9uLlByb2ZpbGVyLlNhbXBsZWRQZXJmb3JtYW5jZUNvdW50ZXIsIEFydE9mVGVzdC5XZWJBaWkuRGVzaWduLCBWZXJzaW9uPTIwMTEuMi4xMTA4LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49NGZjNjJiYmMzODI3YWIxZF1dBQAAAAkbAAAACSQAAAABHwAAABwAAAAJHgAAAAkmAAAAASIAAAAcAAAACSEAAAAJKAAAAAQkAAAArgJTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5EaWN0aW9uYXJ5YDJbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV0sW0FydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5TYW1wbGVkUGVyZm9ybWFuY2VDb3VudGVyLCBBcnRPZlRlc3QuV2ViQWlpLkRlc2lnbiwgVmVyc2lvbj0yMDExLjIuMTEwOC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTRmYzYyYmJjMzgyN2FiMWRdXQQAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQ1LZXlWYWx1ZVBhaXJzAAMAAwiSAVN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLkdlbmVyaWNFcXVhbGl0eUNvbXBhcmVyYDFbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV1dCLICU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuS2V5VmFsdWVQYWlyYDJbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV0sW0FydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5TYW1wbGVkUGVyZm9ybWFuY2VDb3VudGVyLCBBcnRPZlRlc3QuV2ViQWlpLkRlc2lnbiwgVmVyc2lvbj0yMDExLjIuMTEwOC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTRmYzYyYmJjMzgyN2FiMWRdXVtdAgAAAAkCAAAAAwAAAAkqAAAAASYAAAAkAAAAAQAAAAkCAAAAAwAAAAksAAAAASgAAAAkAAAAAgAAAAkCAAAAAwAAAAkuAAAAByoAAAAAAQAAAAIAAAADsAJTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5LZXlWYWx1ZVBhaXJgMltbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XSxbQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24uRXhlY3V0aW9uLlByb2ZpbGVyLlNhbXBsZWRQZXJmb3JtYW5jZUNvdW50ZXIsIEFydE9mVGVzdC5XZWJBaWkuRGVzaWduLCBWZXJzaW9uPTIwMTEuMi4xMTA4LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49NGZjNjJiYmMzODI3YWIxZF1dBNH///+wAlN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLktleVZhbHVlUGFpcmAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtBcnRPZlRlc3QuV2ViQWlpLkRlc2lnbi5FeGVjdXRpb24uUHJvZmlsZXIuU2FtcGxlZFBlcmZvcm1hbmNlQ291bnRlciwgQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24sIFZlcnNpb249MjAxMS4yLjExMDguMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj00ZmM2MmJiYzM4MjdhYjFkXV0CAAAAA2tleQV2YWx1ZQEEREFydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5TYW1wbGVkUGVyZm9ybWFuY2VDb3VudGVyBQAAAAYwAAAAGE1heGltdW0gV29ya2VyIFByb2Nlc3NlcwkxAAAAAc7////R////BjMAAAAeVG90YWwgV29ya2VyIFByb2Nlc3NlcyBDcmVhdGVkCTQAAAAHLAAAAAABAAAAAQAAAAOwAlN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLktleVZhbHVlUGFpcmAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtBcnRPZlRlc3QuV2ViQWlpLkRlc2lnbi5FeGVjdXRpb24uUHJvZmlsZXIuU2FtcGxlZFBlcmZvcm1hbmNlQ291bnRlciwgQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24sIFZlcnNpb249MjAxMS4yLjExMDguMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj00ZmM2MmJiYzM4MjdhYjFkXV0By////9H///8GNgAAABAlIFByb2Nlc3NvciBUaW1lCTcAAAAHLgAAAAABAAAAAgAAAAOwAlN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLktleVZhbHVlUGFpcmAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtBcnRPZlRlc3QuV2ViQWlpLkRlc2lnbi5FeGVjdXRpb24uUHJvZmlsZXIuU2FtcGxlZFBlcmZvcm1hbmNlQ291bnRlciwgQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24sIFZlcnNpb249MjAxMS4yLjExMDguMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj00ZmM2MmJiYzM4MjdhYjFkXV0ByP///9H///8GOQAAAAslIERpc2sgVGltZQk6AAAAAcX////R////BjwAAAAORGlzayBCeXRlcy9zZWMJPQAAAAUxAAAAREFydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5TYW1wbGVkUGVyZm9ybWFuY2VDb3VudGVyAwAAAAhfc3RyTmFtZQ9fc3RyRGVzY3JpcHRpb24IX3NhbXBsZXMBAQPKAVN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLkxpc3RgMVtbQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24uRXhlY3V0aW9uLlByb2ZpbGVyLlBlcmZvcm1hbmNlQ291bnRlclNhbXBsZSwgQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24sIFZlcnNpb249MjAxMS4yLjExMDguMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj00ZmM2MmJiYzM4MjdhYjFkXV0FAAAACTAAAAAKCT8AAAABNAAAADEAAAAJMwAAAAoJQQAAAAE3AAAAMQAAAAk2AAAACglDAAAAAToAAAAxAAAACTkAAAAKCUUAAAABPQAAADEAAAAJPAAAAAoJRwAAAAQ/AAAAygFTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5MaXN0YDFbW0FydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5QZXJmb3JtYW5jZUNvdW50ZXJTYW1wbGUsIEFydE9mVGVzdC5XZWJBaWkuRGVzaWduLCBWZXJzaW9uPTIwMTEuMi4xMTA4LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49NGZjNjJiYmMzODI3YWIxZF1dAwAAAAZfaXRlbXMFX3NpemUIX3ZlcnNpb24EAABFQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24uRXhlY3V0aW9uLlByb2ZpbGVyLlBlcmZvcm1hbmNlQ291bnRlclNhbXBsZVtdBQAAAAgICUgAAAAAAAAAAAAAAAFBAAAAPwAAAAlIAAAAAAAAAAAAAAABQwAAAD8AAAAJSAAAAAAAAAAAAAAAAUUAAAA/AAAACUgAAAAAAAAAAAAAAAFHAAAAPwAAAAlIAAAAAAAAAAAAAAAHSAAAAAABAAAAAAAAAARDQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24uRXhlY3V0aW9uLlByb2ZpbGVyLlBlcmZvcm1hbmNlQ291bnRlclNhbXBsZQUAAAAL</d2p1:Value>
+    </d2p1:KeyValueOfstringbase64Binary>
+  </ProfilerConfigurations>
+  <ProfilerResultsDirectory>D:\temp\Perf2</ProfilerResultsDirectory>
+  <ProfilerServerName i:nil="true" />
+  <QcFilePath i:nil="true" />
+  <QcId>0</QcId>
+  <QcTestVersionStamp>0</QcTestVersionStamp>
+  <ResourceFilePath>New Contact\Saving a New Contact with valid values shows user on grid.resx</ResourceFilePath>
+  <ReuseAppWindow>0</ReuseAppWindow>
+  <SilverlightAppLocalDirectory />
+  <SilverlightAppOriginUri i:nil="true" />
+  <SilverlightAppRecordLocal>false</SilverlightAppRecordLocal>
+  <SilverlightAppWebUrl />
+  <SilverlightEnabled>false</SilverlightEnabled>
   <Steps xmlns:d2p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0">
     <d2p1:AutomationStep i:type="d2p1:AutomationStep">
       <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
@@ -159,15 +212,17 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>1</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>7edc8338-fefd-48ee-91b0-1274afed0c9e</d2p1:Runtime_x0020_ID>
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
+      <d2p1:Runtime_x0020_ID>8e77e351-822e-4a88-a058-c60dc949e86e</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ExecuteTestActionDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d5p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
@@ -194,15 +249,17 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>2</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>1bf0af87-7ddd-45ba-a420-b837cd9f58f1</d2p1:Runtime_x0020_ID>
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
+      <d2p1:Runtime_x0020_ID>6be9e9ac-0ba0-45ee-afd2-062059d65490</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ExecuteTestActionDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d5p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
@@ -229,52 +286,54 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>3</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>43f2aff1-0185-4e52-98fc-94ceffce5a88</d2p1:Runtime_x0020_ID>
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
+      <d2p1:Runtime_x0020_ID>9af6fdef-a35f-4560-ac10-8c33e2a9b2fb</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:SetTextActionDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d5p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
         <d2p1:Elements xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
           <d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
             <d5p1:Key>textTarget</d5p1:Key>
-            <d5p1:Value>
-              <DomStateKey />
-              <FindExpression i:type="HtmlFindExpressionElement">
-                <BackupSearchClause>/html[1]/body[1]/form[1]/div[2]/input[1]</BackupSearchClause>
-                <FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+            <d5p1:Value xmlns:d7p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+              <d7p1:DomStateKey />
+              <d7p1:FindExpression i:type="d7p1:HtmlFindExpressionElement">
+                <d7p1:BackupSearchClause>/html[1]/body[1]/form[1]/div[2]/input[1]</d7p1:BackupSearchClause>
+                <d7p1:FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
                   <d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
                     <d9p1:key>Html</d9p1:key>
-                    <d9p1:value i:type="HtmlFindExpression">
-                      <ChainStops />
-                      <Clauses>
-                        <HtmlFindClause>
-                          <Clause>id=contact_first_name</Clause>
-                        </HtmlFindClause>
-                        <HtmlFindClause>
-                          <Clause>tagname=input</Clause>
-                        </HtmlFindClause>
-                      </Clauses>
-                      <Constraints />
+                    <d9p1:value i:type="d7p1:HtmlFindExpression">
+                      <d7p1:ChainStops />
+                      <d7p1:Clauses>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>id=contact_first_name</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>tagname=input</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                      </d7p1:Clauses>
+                      <d7p1:Constraints />
                     </d9p1:value>
                   </d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
-                </FindExpressions>
-                <Name>ContactFirstNameText</Name>
-                <NodeKind>4</NodeKind>
-                <TechnologyType>Html</TechnologyType>
-              </FindExpression>
-              <FindInfo i:nil="true" />
-              <Frame i:nil="true" />
-              <HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlInputText</HtmlControlType>
-              <IsIndependent>false</IsIndependent>
-              <Name>textTarget</Name>
-              <Page i:type="d2p1:PageUri">
+                </d7p1:FindExpressions>
+                <d7p1:Name>ContactFirstNameText</d7p1:Name>
+                <d7p1:NodeKind>4</d7p1:NodeKind>
+                <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              </d7p1:FindExpression>
+              <d7p1:FindInfo i:nil="true" />
+              <d7p1:Frame i:nil="true" />
+              <d7p1:HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlInputText</d7p1:HtmlControlType>
+              <d7p1:IsIndependent>false</d7p1:IsIndependent>
+              <d7p1:Name>textTarget</d7p1:Name>
+              <d7p1:Page i:type="d2p1:PageUri">
                 <d2p1:AlwaysUseTitleInCompare>false</d2p1:AlwaysUseTitleInCompare>
                 <d2p1:BaseUrl>http://localhost:3000</d2p1:BaseUrl>
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
@@ -284,10 +343,10 @@
                 <d2p1:Path>/contacts/new</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>DemoApp</d2p1:Title>
-              </Page>
-              <Region i:nil="true" />
-              <TechnologyType>Html</TechnologyType>
-              <Version>200</Version>
+              </d7p1:Page>
+              <d7p1:Region i:nil="true" />
+              <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              <d7p1:Version>200</d7p1:Version>
             </d5p1:Value>
           </d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
         </d2p1:Elements>
@@ -298,7 +357,10 @@
         <d2p1:UseStepWaitOnElementsTimout>false</d2p1:UseStepWaitOnElementsTimout>
         <d2p1:WaitOnElements>true</d2p1:WaitOnElements>
         <d2p1:WaitOnElementsTimeout>10000</d2p1:WaitOnElementsTimeout>
+        <AjaxTimeout xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">0</AjaxTimeout>
         <ClosesBrowser xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">false</ClosesBrowser>
+        <UseBackupSearch xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">false</UseBackupSearch>
+        <d2p1:Encrypt>false</d2p1:Encrypt>
         <d2p1:IsPassword>false</d2p1:IsPassword>
         <d2p1:KeyHoldTime>100</d2p1:KeyHoldTime>
         <d2p1:RawText>Jim</d2p1:RawText>
@@ -310,6 +372,8 @@
           <d5p1:_typedText>Jim</d5p1:_typedText>
         </d2p1:TypingInfo>
         <d2p1:TypingSpeed>50</d2p1:TypingSpeed>
+        <d2p1:_canEncrypt>false</d2p1:_canEncrypt>
+        <d2p1:_cipher i:nil="true" />
       </d2p1:Step>
       <d2p1:StepImageKey>Saving with valid values shows user on gridbhn2wneq.5x5</d2p1:StepImageKey>
       <d2p1:StepState>NoCode</d2p1:StepState>
@@ -322,52 +386,54 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>4</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>4802d7d0-218f-490f-ad06-52001dde9a48</d2p1:Runtime_x0020_ID>
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
+      <d2p1:Runtime_x0020_ID>b1dca9dd-0c44-48f7-b399-b834e30e0dd1</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:SetTextActionDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d5p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
         <d2p1:Elements xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
           <d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
             <d5p1:Key>textTarget</d5p1:Key>
-            <d5p1:Value>
-              <DomStateKey />
-              <FindExpression i:type="HtmlFindExpressionElement">
-                <BackupSearchClause>/html[1]/body[1]/form[1]/div[3]/input[1]</BackupSearchClause>
-                <FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+            <d5p1:Value xmlns:d7p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+              <d7p1:DomStateKey />
+              <d7p1:FindExpression i:type="d7p1:HtmlFindExpressionElement">
+                <d7p1:BackupSearchClause>/html[1]/body[1]/form[1]/div[3]/input[1]</d7p1:BackupSearchClause>
+                <d7p1:FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
                   <d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
                     <d9p1:key>Html</d9p1:key>
-                    <d9p1:value i:type="HtmlFindExpression">
-                      <ChainStops />
-                      <Clauses>
-                        <HtmlFindClause>
-                          <Clause>id=contact_last_name</Clause>
-                        </HtmlFindClause>
-                        <HtmlFindClause>
-                          <Clause>tagname=input</Clause>
-                        </HtmlFindClause>
-                      </Clauses>
-                      <Constraints />
+                    <d9p1:value i:type="d7p1:HtmlFindExpression">
+                      <d7p1:ChainStops />
+                      <d7p1:Clauses>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>id=contact_last_name</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>tagname=input</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                      </d7p1:Clauses>
+                      <d7p1:Constraints />
                     </d9p1:value>
                   </d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
-                </FindExpressions>
-                <Name>ContactLastNameText</Name>
-                <NodeKind>4</NodeKind>
-                <TechnologyType>Html</TechnologyType>
-              </FindExpression>
-              <FindInfo i:nil="true" />
-              <Frame i:nil="true" />
-              <HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlInputText</HtmlControlType>
-              <IsIndependent>false</IsIndependent>
-              <Name>textTarget</Name>
-              <Page i:type="d2p1:PageUri">
+                </d7p1:FindExpressions>
+                <d7p1:Name>ContactLastNameText</d7p1:Name>
+                <d7p1:NodeKind>4</d7p1:NodeKind>
+                <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              </d7p1:FindExpression>
+              <d7p1:FindInfo i:nil="true" />
+              <d7p1:Frame i:nil="true" />
+              <d7p1:HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlInputText</d7p1:HtmlControlType>
+              <d7p1:IsIndependent>false</d7p1:IsIndependent>
+              <d7p1:Name>textTarget</d7p1:Name>
+              <d7p1:Page i:type="d2p1:PageUri">
                 <d2p1:AlwaysUseTitleInCompare>false</d2p1:AlwaysUseTitleInCompare>
                 <d2p1:BaseUrl>http://localhost:3000</d2p1:BaseUrl>
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
@@ -377,10 +443,10 @@
                 <d2p1:Path>/contacts/new</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>DemoApp</d2p1:Title>
-              </Page>
-              <Region i:nil="true" />
-              <TechnologyType>Html</TechnologyType>
-              <Version>200</Version>
+              </d7p1:Page>
+              <d7p1:Region i:nil="true" />
+              <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              <d7p1:Version>200</d7p1:Version>
             </d5p1:Value>
           </d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
         </d2p1:Elements>
@@ -391,7 +457,10 @@
         <d2p1:UseStepWaitOnElementsTimout>false</d2p1:UseStepWaitOnElementsTimout>
         <d2p1:WaitOnElements>true</d2p1:WaitOnElements>
         <d2p1:WaitOnElementsTimeout>10000</d2p1:WaitOnElementsTimeout>
+        <AjaxTimeout xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">0</AjaxTimeout>
         <ClosesBrowser xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">false</ClosesBrowser>
+        <UseBackupSearch xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">false</UseBackupSearch>
+        <d2p1:Encrypt>false</d2p1:Encrypt>
         <d2p1:IsPassword>false</d2p1:IsPassword>
         <d2p1:KeyHoldTime>100</d2p1:KeyHoldTime>
         <d2p1:RawText>Haswell</d2p1:RawText>
@@ -403,6 +472,8 @@
           <d5p1:_typedText>Haswell</d5p1:_typedText>
         </d2p1:TypingInfo>
         <d2p1:TypingSpeed>50</d2p1:TypingSpeed>
+        <d2p1:_canEncrypt>false</d2p1:_canEncrypt>
+        <d2p1:_cipher i:nil="true" />
       </d2p1:Step>
       <d2p1:StepImageKey>Saving with valid values shows user on gridsygdc1of.x5b</d2p1:StepImageKey>
       <d2p1:StepState>NoCode</d2p1:StepState>
@@ -415,52 +486,54 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>5</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>17f2a1fb-3ddb-489b-85de-60ee1d784988</d2p1:Runtime_x0020_ID>
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
+      <d2p1:Runtime_x0020_ID>283bb6e4-d87f-4d83-824c-6042fdfad11b</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:SetTextActionDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d5p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
         <d2p1:Elements xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
           <d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
             <d5p1:Key>textTarget</d5p1:Key>
-            <d5p1:Value>
-              <DomStateKey />
-              <FindExpression i:type="HtmlFindExpressionElement">
-                <BackupSearchClause>/html[1]/body[1]/form[1]/div[4]/input[1]</BackupSearchClause>
-                <FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+            <d5p1:Value xmlns:d7p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+              <d7p1:DomStateKey />
+              <d7p1:FindExpression i:type="d7p1:HtmlFindExpressionElement">
+                <d7p1:BackupSearchClause>/html[1]/body[1]/form[1]/div[4]/input[1]</d7p1:BackupSearchClause>
+                <d7p1:FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
                   <d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
                     <d9p1:key>Html</d9p1:key>
-                    <d9p1:value i:type="HtmlFindExpression">
-                      <ChainStops />
-                      <Clauses>
-                        <HtmlFindClause>
-                          <Clause>id=contact_email</Clause>
-                        </HtmlFindClause>
-                        <HtmlFindClause>
-                          <Clause>tagname=input</Clause>
-                        </HtmlFindClause>
-                      </Clauses>
-                      <Constraints />
+                    <d9p1:value i:type="d7p1:HtmlFindExpression">
+                      <d7p1:ChainStops />
+                      <d7p1:Clauses>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>id=contact_email</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>tagname=input</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                      </d7p1:Clauses>
+                      <d7p1:Constraints />
                     </d9p1:value>
                   </d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
-                </FindExpressions>
-                <Name>ContactEmailEmail</Name>
-                <NodeKind>4</NodeKind>
-                <TechnologyType>Html</TechnologyType>
-              </FindExpression>
-              <FindInfo i:nil="true" />
-              <Frame i:nil="true" />
-              <HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlInputEmail</HtmlControlType>
-              <IsIndependent>false</IsIndependent>
-              <Name>textTarget</Name>
-              <Page i:type="d2p1:PageUri">
+                </d7p1:FindExpressions>
+                <d7p1:Name>ContactEmailEmail</d7p1:Name>
+                <d7p1:NodeKind>4</d7p1:NodeKind>
+                <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              </d7p1:FindExpression>
+              <d7p1:FindInfo i:nil="true" />
+              <d7p1:Frame i:nil="true" />
+              <d7p1:HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlInputEmail</d7p1:HtmlControlType>
+              <d7p1:IsIndependent>false</d7p1:IsIndependent>
+              <d7p1:Name>textTarget</d7p1:Name>
+              <d7p1:Page i:type="d2p1:PageUri">
                 <d2p1:AlwaysUseTitleInCompare>false</d2p1:AlwaysUseTitleInCompare>
                 <d2p1:BaseUrl>http://localhost:3000</d2p1:BaseUrl>
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
@@ -470,10 +543,10 @@
                 <d2p1:Path>/contacts/new</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>DemoApp</d2p1:Title>
-              </Page>
-              <Region i:nil="true" />
-              <TechnologyType>Html</TechnologyType>
-              <Version>200</Version>
+              </d7p1:Page>
+              <d7p1:Region i:nil="true" />
+              <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              <d7p1:Version>200</d7p1:Version>
             </d5p1:Value>
           </d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
         </d2p1:Elements>
@@ -484,7 +557,10 @@
         <d2p1:UseStepWaitOnElementsTimout>false</d2p1:UseStepWaitOnElementsTimout>
         <d2p1:WaitOnElements>true</d2p1:WaitOnElements>
         <d2p1:WaitOnElementsTimeout>10000</d2p1:WaitOnElementsTimeout>
+        <AjaxTimeout xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">0</AjaxTimeout>
         <ClosesBrowser xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">false</ClosesBrowser>
+        <UseBackupSearch xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">false</UseBackupSearch>
+        <d2p1:Encrypt>false</d2p1:Encrypt>
         <d2p1:IsPassword>false</d2p1:IsPassword>
         <d2p1:KeyHoldTime>100</d2p1:KeyHoldTime>
         <d2p1:RawText>jh@foo.com</d2p1:RawText>
@@ -496,6 +572,8 @@
           <d5p1:_typedText>aaasssdddfff</d5p1:_typedText>
         </d2p1:TypingInfo>
         <d2p1:TypingSpeed>50</d2p1:TypingSpeed>
+        <d2p1:_canEncrypt>false</d2p1:_canEncrypt>
+        <d2p1:_cipher i:nil="true" />
       </d2p1:Step>
       <d2p1:StepImageKey>Saving with valid values shows user on gridwbj530ks.2uq</d2p1:StepImageKey>
       <d2p1:StepState>NoCode</d2p1:StepState>
@@ -508,52 +586,54 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>6</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>b610c9a0-9f62-405e-9787-241e75e92453</d2p1:Runtime_x0020_ID>
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
+      <d2p1:Runtime_x0020_ID>b91d811a-2409-4ba1-a8e3-98457b713f1d</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:SetTextActionDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d5p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
         <d2p1:Elements xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
           <d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
             <d5p1:Key>textTarget</d5p1:Key>
-            <d5p1:Value>
-              <DomStateKey />
-              <FindExpression i:type="HtmlFindExpressionElement">
-                <BackupSearchClause>/html[1]/body[1]/form[1]/div[5]/input[1]</BackupSearchClause>
-                <FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+            <d5p1:Value xmlns:d7p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+              <d7p1:DomStateKey />
+              <d7p1:FindExpression i:type="d7p1:HtmlFindExpressionElement">
+                <d7p1:BackupSearchClause>/html[1]/body[1]/form[1]/div[5]/input[1]</d7p1:BackupSearchClause>
+                <d7p1:FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
                   <d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
                     <d9p1:key>Html</d9p1:key>
-                    <d9p1:value i:type="HtmlFindExpression">
-                      <ChainStops />
-                      <Clauses>
-                        <HtmlFindClause>
-                          <Clause>id=contact_linkedin_profile</Clause>
-                        </HtmlFindClause>
-                        <HtmlFindClause>
-                          <Clause>tagname=input</Clause>
-                        </HtmlFindClause>
-                      </Clauses>
-                      <Constraints />
+                    <d9p1:value i:type="d7p1:HtmlFindExpression">
+                      <d7p1:ChainStops />
+                      <d7p1:Clauses>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>id=contact_linkedin_profile</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>tagname=input</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                      </d7p1:Clauses>
+                      <d7p1:Constraints />
                     </d9p1:value>
                   </d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
-                </FindExpressions>
-                <Name>ContactLinkedinProfileText</Name>
-                <NodeKind>4</NodeKind>
-                <TechnologyType>Html</TechnologyType>
-              </FindExpression>
-              <FindInfo i:nil="true" />
-              <Frame i:nil="true" />
-              <HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlInputText</HtmlControlType>
-              <IsIndependent>false</IsIndependent>
-              <Name>textTarget</Name>
-              <Page i:type="d2p1:PageUri">
+                </d7p1:FindExpressions>
+                <d7p1:Name>ContactLinkedinProfileText</d7p1:Name>
+                <d7p1:NodeKind>4</d7p1:NodeKind>
+                <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              </d7p1:FindExpression>
+              <d7p1:FindInfo i:nil="true" />
+              <d7p1:Frame i:nil="true" />
+              <d7p1:HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlInputText</d7p1:HtmlControlType>
+              <d7p1:IsIndependent>false</d7p1:IsIndependent>
+              <d7p1:Name>textTarget</d7p1:Name>
+              <d7p1:Page i:type="d2p1:PageUri">
                 <d2p1:AlwaysUseTitleInCompare>false</d2p1:AlwaysUseTitleInCompare>
                 <d2p1:BaseUrl>http://localhost:3000</d2p1:BaseUrl>
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
@@ -563,10 +643,10 @@
                 <d2p1:Path>/contacts/new</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>DemoApp</d2p1:Title>
-              </Page>
-              <Region i:nil="true" />
-              <TechnologyType>Html</TechnologyType>
-              <Version>200</Version>
+              </d7p1:Page>
+              <d7p1:Region i:nil="true" />
+              <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              <d7p1:Version>200</d7p1:Version>
             </d5p1:Value>
           </d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
         </d2p1:Elements>
@@ -577,7 +657,10 @@
         <d2p1:UseStepWaitOnElementsTimout>false</d2p1:UseStepWaitOnElementsTimout>
         <d2p1:WaitOnElements>true</d2p1:WaitOnElements>
         <d2p1:WaitOnElementsTimeout>10000</d2p1:WaitOnElementsTimeout>
+        <AjaxTimeout xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">0</AjaxTimeout>
         <ClosesBrowser xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">false</ClosesBrowser>
+        <UseBackupSearch xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">false</UseBackupSearch>
+        <d2p1:Encrypt>false</d2p1:Encrypt>
         <d2p1:IsPassword>false</d2p1:IsPassword>
         <d2p1:KeyHoldTime>100</d2p1:KeyHoldTime>
         <d2p1:RawText>http://mypage</d2p1:RawText>
@@ -589,6 +672,8 @@
           <d5p1:_typedText>http://mypage</d5p1:_typedText>
         </d2p1:TypingInfo>
         <d2p1:TypingSpeed>50</d2p1:TypingSpeed>
+        <d2p1:_canEncrypt>false</d2p1:_canEncrypt>
+        <d2p1:_cipher i:nil="true" />
       </d2p1:Step>
       <d2p1:StepImageKey>Saving with valid values shows user on gridd0x0yvgl.gmr</d2p1:StepImageKey>
       <d2p1:StepState>NoCode</d2p1:StepState>
@@ -601,52 +686,54 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>7</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>7248b7e1-0d1d-466d-b75e-ca5d6765f092</d2p1:Runtime_x0020_ID>
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
+      <d2p1:Runtime_x0020_ID>6d760fe5-b0ea-4f8d-b6df-bd8ca4af9772</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:DragDropActionDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d5p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
         <d2p1:Elements xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
           <d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
             <d5p1:Key>target</d5p1:Key>
-            <d5p1:Value>
-              <DomStateKey />
-              <FindExpression i:type="HtmlFindExpressionElement">
-                <BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/form[1]/div[8]/img[2]</BackupSearchClause>
-                <FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+            <d5p1:Value xmlns:d7p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+              <d7p1:DomStateKey />
+              <d7p1:FindExpression i:type="d7p1:HtmlFindExpressionElement">
+                <d7p1:BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/form[1]/div[8]/img[2]</d7p1:BackupSearchClause>
+                <d7p1:FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
                   <d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
                     <d9p1:key>Html</d9p1:key>
-                    <d9p1:value i:type="HtmlFindExpression">
-                      <ChainStops />
-                      <Clauses>
-                        <HtmlFindClause>
-                          <Clause>tagname=img</Clause>
-                        </HtmlFindClause>
-                        <HtmlFindClause>
-                          <Clause>src=/assets/NEUTRAL.png</Clause>
-                        </HtmlFindClause>
-                      </Clauses>
-                      <Constraints />
+                    <d9p1:value i:type="d7p1:HtmlFindExpression">
+                      <d7p1:ChainStops />
+                      <d7p1:Clauses>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>tagname=img</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>src=/assets/NEUTRAL.png</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                      </d7p1:Clauses>
+                      <d7p1:Constraints />
                     </d9p1:value>
                   </d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
-                </FindExpressions>
-                <Name>NeutralIconImage</Name>
-                <NodeKind>4</NodeKind>
-                <TechnologyType>Html</TechnologyType>
-              </FindExpression>
-              <FindInfo i:nil="true" />
-              <Frame i:nil="true" />
-              <HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlImage</HtmlControlType>
-              <IsIndependent>false</IsIndependent>
-              <Name>target</Name>
-              <Page i:type="d2p1:PageUri">
+                </d7p1:FindExpressions>
+                <d7p1:Name>NeutralIconImage</d7p1:Name>
+                <d7p1:NodeKind>4</d7p1:NodeKind>
+                <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              </d7p1:FindExpression>
+              <d7p1:FindInfo i:nil="true" />
+              <d7p1:Frame i:nil="true" />
+              <d7p1:HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlImage</d7p1:HtmlControlType>
+              <d7p1:IsIndependent>false</d7p1:IsIndependent>
+              <d7p1:Name>target</d7p1:Name>
+              <d7p1:Page i:type="d2p1:PageUri">
                 <d2p1:AlwaysUseTitleInCompare>false</d2p1:AlwaysUseTitleInCompare>
                 <d2p1:BaseUrl>http://localhost:3000</d2p1:BaseUrl>
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
@@ -656,42 +743,42 @@
                 <d2p1:Path>/contacts/new</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>DemoApp</d2p1:Title>
-              </Page>
-              <Region i:nil="true" />
-              <TechnologyType>Html</TechnologyType>
-              <Version>200</Version>
+              </d7p1:Page>
+              <d7p1:Region i:nil="true" />
+              <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              <d7p1:Version>200</d7p1:Version>
             </d5p1:Value>
           </d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
           <d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
             <d5p1:Key>dropTarget</d5p1:Key>
-            <d5p1:Value>
-              <DomStateKey />
-              <FindExpression i:type="HtmlFindExpressionElement">
-                <BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/form[1]</BackupSearchClause>
-                <FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+            <d5p1:Value xmlns:d7p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+              <d7p1:DomStateKey />
+              <d7p1:FindExpression i:type="d7p1:HtmlFindExpressionElement">
+                <d7p1:BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/form[1]</d7p1:BackupSearchClause>
+                <d7p1:FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
                   <d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
                     <d9p1:key>Html</d9p1:key>
-                    <d9p1:value i:type="HtmlFindExpression">
-                      <ChainStops />
-                      <Clauses>
-                        <HtmlFindClause>
-                          <Clause>class=drop_target</Clause>
-                        </HtmlFindClause>
-                      </Clauses>
-                      <Constraints />
+                    <d9p1:value i:type="d7p1:HtmlFindExpression">
+                      <d7p1:ChainStops />
+                      <d7p1:Clauses>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>class=drop_target</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                      </d7p1:Clauses>
+                      <d7p1:Constraints />
                     </d9p1:value>
                   </d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
-                </FindExpressions>
-                <Name>Contact Type Drop Target</Name>
-                <NodeKind>4</NodeKind>
-                <TechnologyType>Html</TechnologyType>
-              </FindExpression>
-              <FindInfo i:nil="true" />
-              <Frame i:nil="true" />
-              <HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlDiv</HtmlControlType>
-              <IsIndependent>false</IsIndependent>
-              <Name>dropTarget</Name>
-              <Page i:type="d2p1:PageUri">
+                </d7p1:FindExpressions>
+                <d7p1:Name>Contact Type Drop Target</d7p1:Name>
+                <d7p1:NodeKind>4</d7p1:NodeKind>
+                <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              </d7p1:FindExpression>
+              <d7p1:FindInfo i:nil="true" />
+              <d7p1:Frame i:nil="true" />
+              <d7p1:HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlDiv</d7p1:HtmlControlType>
+              <d7p1:IsIndependent>false</d7p1:IsIndependent>
+              <d7p1:Name>dropTarget</d7p1:Name>
+              <d7p1:Page i:type="d2p1:PageUri">
                 <d2p1:AlwaysUseTitleInCompare>false</d2p1:AlwaysUseTitleInCompare>
                 <d2p1:BaseUrl>http://localhost:3000</d2p1:BaseUrl>
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
@@ -701,10 +788,10 @@
                 <d2p1:Path>/contacts/new</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>DemoApp</d2p1:Title>
-              </Page>
-              <Region i:nil="true" />
-              <TechnologyType>Html</TechnologyType>
-              <Version>200</Version>
+              </d7p1:Page>
+              <d7p1:Region i:nil="true" />
+              <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              <d7p1:Version>200</d7p1:Version>
             </d5p1:Value>
           </d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
         </d2p1:Elements>
@@ -715,7 +802,9 @@
         <d2p1:UseStepWaitOnElementsTimout>false</d2p1:UseStepWaitOnElementsTimout>
         <d2p1:WaitOnElements>true</d2p1:WaitOnElements>
         <d2p1:WaitOnElementsTimeout>10000</d2p1:WaitOnElementsTimeout>
+        <AjaxTimeout xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">0</AjaxTimeout>
         <ClosesBrowser xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">false</ClosesBrowser>
+        <UseBackupSearch xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">false</UseBackupSearch>
         <d2p1:DesktopActionType>DragDrop</d2p1:DesktopActionType>
         <d2p1:DropOffSet>
           <d2p1:ClickUnitType>Pixel</d2p1:ClickUnitType>
@@ -754,52 +843,54 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>8</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>463e4945-1fdb-4e91-8b3f-51d2026a5a5b</d2p1:Runtime_x0020_ID>
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
+      <d2p1:Runtime_x0020_ID>c43b7d20-978c-4846-9e9f-ab40e1b2da0a</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ClickActionDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d5p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
         <d2p1:Elements xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
           <d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
             <d5p1:Key>target</d5p1:Key>
-            <d5p1:Value>
-              <DomStateKey />
-              <FindExpression i:type="HtmlFindExpressionElement">
-                <BackupSearchClause>/html[1]/body[1]/form[1]/div[10]/input[1]</BackupSearchClause>
-                <FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+            <d5p1:Value xmlns:d7p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+              <d7p1:DomStateKey />
+              <d7p1:FindExpression i:type="d7p1:HtmlFindExpressionElement">
+                <d7p1:BackupSearchClause>/html[1]/body[1]/form[1]/div[10]/input[1]</d7p1:BackupSearchClause>
+                <d7p1:FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
                   <d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
                     <d9p1:key>Html</d9p1:key>
-                    <d9p1:value i:type="HtmlFindExpression">
-                      <ChainStops />
-                      <Clauses>
-                        <HtmlFindClause>
-                          <Clause>tagname=input</Clause>
-                        </HtmlFindClause>
-                        <HtmlFindClause>
-                          <Clause>name=commit</Clause>
-                        </HtmlFindClause>
-                      </Clauses>
-                      <Constraints />
+                    <d9p1:value i:type="d7p1:HtmlFindExpression">
+                      <d7p1:ChainStops />
+                      <d7p1:Clauses>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>tagname=input</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>name=commit</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                      </d7p1:Clauses>
+                      <d7p1:Constraints />
                     </d9p1:value>
                   </d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
-                </FindExpressions>
-                <Name>CommitSubmit</Name>
-                <NodeKind>4</NodeKind>
-                <TechnologyType>Html</TechnologyType>
-              </FindExpression>
-              <FindInfo i:nil="true" />
-              <Frame i:nil="true" />
-              <HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlInputSubmit</HtmlControlType>
-              <IsIndependent>false</IsIndependent>
-              <Name>target</Name>
-              <Page i:type="d2p1:PageUri">
+                </d7p1:FindExpressions>
+                <d7p1:Name>CommitSubmit</d7p1:Name>
+                <d7p1:NodeKind>4</d7p1:NodeKind>
+                <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              </d7p1:FindExpression>
+              <d7p1:FindInfo i:nil="true" />
+              <d7p1:Frame i:nil="true" />
+              <d7p1:HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlInputSubmit</d7p1:HtmlControlType>
+              <d7p1:IsIndependent>false</d7p1:IsIndependent>
+              <d7p1:Name>target</d7p1:Name>
+              <d7p1:Page i:type="d2p1:PageUri">
                 <d2p1:AlwaysUseTitleInCompare>false</d2p1:AlwaysUseTitleInCompare>
                 <d2p1:BaseUrl>http://localhost:3000</d2p1:BaseUrl>
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
@@ -809,10 +900,10 @@
                 <d2p1:Path>/contacts/new</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>DemoApp</d2p1:Title>
-              </Page>
-              <Region i:nil="true" />
-              <TechnologyType>Html</TechnologyType>
-              <Version>200</Version>
+              </d7p1:Page>
+              <d7p1:Region i:nil="true" />
+              <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              <d7p1:Version>200</d7p1:Version>
             </d5p1:Value>
           </d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
         </d2p1:Elements>
@@ -823,7 +914,9 @@
         <d2p1:UseStepWaitOnElementsTimout>false</d2p1:UseStepWaitOnElementsTimout>
         <d2p1:WaitOnElements>true</d2p1:WaitOnElements>
         <d2p1:WaitOnElementsTimeout>10000</d2p1:WaitOnElementsTimeout>
+        <AjaxTimeout xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">0</AjaxTimeout>
         <ClosesBrowser xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">false</ClosesBrowser>
+        <UseBackupSearch xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">false</UseBackupSearch>
         <d2p1:SimulateRealClick>false</d2p1:SimulateRealClick>
       </d2p1:Step>
       <d2p1:StepImageKey>Saving with valid values shows user on gridexrk41t5.dku</d2p1:StepImageKey>
@@ -837,52 +930,54 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>9</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>6e5c048a-3dd3-4100-88cb-3691e8b5ae2a</d2p1:Runtime_x0020_ID>
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
+      <d2p1:Runtime_x0020_ID>fb1a1cdd-78fb-46a2-80bc-bb76384069dc</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ContentVerificationDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d5p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
         <d2p1:Elements xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
           <d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
             <d5p1:Key>textTarget</d5p1:Key>
-            <d5p1:Value>
-              <DomStateKey />
-              <FindExpression i:type="HtmlFindExpressionElement">
-                <BackupSearchClause>/html[1]/body[1]/table[1]/tbody[1]/tr[6]/td[3]</BackupSearchClause>
-                <FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+            <d5p1:Value xmlns:d7p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+              <d7p1:DomStateKey />
+              <d7p1:FindExpression i:type="d7p1:HtmlFindExpressionElement">
+                <d7p1:BackupSearchClause>/html[1]/body[1]/table[1]/tbody[1]/tr[6]/td[3]</d7p1:BackupSearchClause>
+                <d7p1:FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
                   <d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
                     <d9p1:key>Html</d9p1:key>
-                    <d9p1:value i:type="HtmlFindExpression">
-                      <ChainStops />
-                      <Clauses>
-                        <HtmlFindClause>
-                          <Clause>TextContent=jh@foo.com</Clause>
-                        </HtmlFindClause>
-                        <HtmlFindClause>
-                          <Clause>tagname=td</Clause>
-                        </HtmlFindClause>
-                      </Clauses>
-                      <Constraints />
+                    <d9p1:value i:type="d7p1:HtmlFindExpression">
+                      <d7p1:ChainStops />
+                      <d7p1:Clauses>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>TextContent=jh@foo.com</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>tagname=td</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                      </d7p1:Clauses>
+                      <d7p1:Constraints />
                     </d9p1:value>
                   </d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
-                </FindExpressions>
-                <Name>JhFooComTableCell</Name>
-                <NodeKind>4</NodeKind>
-                <TechnologyType>Html</TechnologyType>
-              </FindExpression>
-              <FindInfo i:nil="true" />
-              <Frame i:nil="true" />
-              <HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlTableCell</HtmlControlType>
-              <IsIndependent>false</IsIndependent>
-              <Name>textTarget</Name>
-              <Page i:type="d2p1:PageUri">
+                </d7p1:FindExpressions>
+                <d7p1:Name>JhFooComTableCell</d7p1:Name>
+                <d7p1:NodeKind>4</d7p1:NodeKind>
+                <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              </d7p1:FindExpression>
+              <d7p1:FindInfo i:nil="true" />
+              <d7p1:Frame i:nil="true" />
+              <d7p1:HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlTableCell</d7p1:HtmlControlType>
+              <d7p1:IsIndependent>false</d7p1:IsIndependent>
+              <d7p1:Name>textTarget</d7p1:Name>
+              <d7p1:Page i:type="d2p1:PageUri">
                 <d2p1:AlwaysUseTitleInCompare>false</d2p1:AlwaysUseTitleInCompare>
                 <d2p1:BaseUrl>http://localhost:3000</d2p1:BaseUrl>
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
@@ -892,10 +987,10 @@
                 <d2p1:Path>/contacts</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>DemoApp</d2p1:Title>
-              </Page>
-              <Region i:nil="true" />
-              <TechnologyType>Html</TechnologyType>
-              <Version>200</Version>
+              </d7p1:Page>
+              <d7p1:Region i:nil="true" />
+              <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              <d7p1:Version>200</d7p1:Version>
             </d5p1:Value>
           </d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
         </d2p1:Elements>
@@ -908,7 +1003,9 @@
         <d2p1:WaitOnElementsTimeout>10000</d2p1:WaitOnElementsTimeout>
         <d2p1:CheckInterval>500</d2p1:CheckInterval>
         <d2p1:DataBindVariableName i:nil="true" />
+        <d2p1:EnsureStateIsCurrent>false</d2p1:EnsureStateIsCurrent>
         <d2p1:Timeout>10000</d2p1:Timeout>
+        <d2p1:UseBackupSearch>false</d2p1:UseBackupSearch>
         <d2p1:CompareType>Contains</d2p1:CompareType>
         <d2p1:ExpectedString>jh@foo.com</d2p1:ExpectedString>
         <d2p1:SegmentType>TextContent</d2p1:SegmentType>
@@ -924,15 +1021,17 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>10</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>828ea6b3-ddac-44ed-a528-643448b8665b</d2p1:Runtime_x0020_ID>
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
+      <d2p1:Runtime_x0020_ID>e48c4ffa-0471-4abe-bc22-930890de3fde</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:HtmlDialogHandlerDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d5p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
@@ -944,7 +1043,9 @@
         <d2p1:UseStepWaitOnElementsTimout>false</d2p1:UseStepWaitOnElementsTimout>
         <d2p1:WaitOnElements>false</d2p1:WaitOnElements>
         <d2p1:WaitOnElementsTimeout>0</d2p1:WaitOnElementsTimeout>
+        <AjaxTimeout xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">0</AjaxTimeout>
         <ClosesBrowser xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">true</ClosesBrowser>
+        <UseBackupSearch xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">false</UseBackupSearch>
         <d2p1:HandleState>Close</d2p1:HandleState>
         <d2p1:IsModalPopup>false</d2p1:IsModalPopup>
         <d2p1:IsUrlPartial>true</d2p1:IsUrlPartial>
@@ -957,60 +1058,13 @@
       <d2p1:Version>200</d2p1:Version>
     </d2p1:AutomationStep>
   </Steps>
-  <Version>200</Version>
-  <BrowserType>NotSet</BrowserType>
-  <CurrentReferences xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-    <d2p1:string>System</d2p1:string>
-    <d2p1:string>System.Core</d2p1:string>
-    <d2p1:string>ArtOfTest.WebAii, Version=2011.2.1108.0, Culture=neutral, PublicKeyToken=4fd5f65be123776c</d2p1:string>
-    <d2p1:string>ArtOfTest.WebAii.Design, Version=2011.2.1108.0, Culture=neutral, PublicKeyToken=4fc62bbc3827ab1d</d2p1:string>
-    <d2p1:string>Telerik.WebAii.Controls.Html, Version=2011.2.1108.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
-    <d2p1:string>Telerik.WebAii.Controls.Xaml, Version=2011.2.1108.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
-    <d2p1:string>Telerik.WebAii.Controls.Xaml.Wpf, Version=2011.2.1108.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
-    <d2p1:string>D:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</d2p1:string>
-    <d2p1:string>System.Windows.Forms</d2p1:string>
-  </CurrentReferences>
-  <DeploymentItems xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-  <DomStatesCounter xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-  <HasCodeBehind>true</HasCodeBehind>
-  <HtmlDescription />
-  <InheritParentDataSource>false</InheritParentDataSource>
-  <IsManual>false</IsManual>
-  <IsSilverlightApp>false</IsSilverlightApp>
-  <IsTestFragment>false</IsTestFragment>
-  <Owner i:nil="true" />
-  <Path>New Contact\Saving a New Contact with valid values shows user on grid.tstest</Path>
-  <Priority>0</Priority>
-  <ProfilerBenchmarkResultsFilePath i:nil="true" />
-  <ProfilerBenchmarkResultsId>00000000-0000-0000-0000-000000000000</ProfilerBenchmarkResultsId>
-  <ProfilerConfigurationFilePath>D:\projects\Telerik-Demo\test\TestStudio\Profiler Configurations\{6297519a-b92c-43dd-8442-7e9f619d4431}.tsprofconfig</ProfilerConfigurationFilePath>
-  <ProfilerConfigurationId>00000000-0000-0000-0000-000000000000</ProfilerConfigurationId>
-  <ProfilerConfigurations xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-    <d2p1:KeyValueOfstringbase64Binary>
-      <d2p1:Key>ArtOfTest.WebAii.Design.Execution.Profiler.ProfilerResultsMetadata</d2p1:Key>
-      <d2p1:Value>AAEAAAD/////AQAAAAAAAAAMAgAAAGBBcnRPZlRlc3QuV2ViQWlpLkRlc2lnbiwgVmVyc2lvbj0yMDExLjIuMTEwOC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTRmYzYyYmJjMzgyN2FiMWQMAwAAAFlBcnRPZlRlc3QuV2ViQWlpLCBWZXJzaW9uPTIwMTEuMi4xMTA4LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49NGZkNWY2NWJlMTIzNzc2YwwEAAAAaVRlbGVyaWsuVGVzdGluZ0ZyYW1ld29yay5JbnRlcm9wLCBWZXJzaW9uPTIwMTEuMi4xMTA4LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49OGNhMDBkM2UwZWJkNGI4YgUBAAAAQkFydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5Qcm9maWxlclJlc3VsdHNNZXRhZGF0YQ8AAAAKX3Jlc3VsdHNJZAxfb3duZXJUZXN0SWQKX3N0YXJ0VGltZQpfdG90YWxUaW1lG19iQ29sbGVjdFByb2ZpbGVyU2FtcGxlRGF0YQpfc3RyU2VydmVyDF9pU2VydmVyUG9ydA9fc3RyRGVzY3JpcHRpb24KX3N0ckZvbGRlcgxfc3RyRmlsZVBhdGgMX2Jyb3dzZXJUeXBlD19icm93c2VyVmVyc2lvbghfc2VydmVycxxfYkNsZWFyQnJvd3NlckNhY2hlQmVmb3JlUnVuF19iV2FybVVwU2VydmVyQmVmb3JlUnVuAwMAAAABAAEBAQQEAwAAC1N5c3RlbS5HdWlkC1N5c3RlbS5HdWlkDQwBCCpBcnRPZlRlc3QuV2ViQWlpLkNvcmUuQnJvd3NlckV4ZWN1dGlvblR5cGUDAAAAKVRlbGVyaWsuVGVzdGluZ0ZyYW1ld29yay5Vbml2ZXJzYWxWZXJzaW9uBAAAAMQBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuTGlzdGAxW1tBcnRPZlRlc3QuV2ViQWlpLkRlc2lnbi5FeGVjdXRpb24uUHJvZmlsZXIuUHJvZmlsZXJTZXJ2ZXJJbmZvLCBBcnRPZlRlc3QuV2ViQWlpLkRlc2lnbiwgVmVyc2lvbj0yMDExLjIuMTEwOC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTRmYzYyYmJjMzgyN2FiMWRdXQEBAgAAAAT7////C1N5c3RlbS5HdWlkCwAAAAJfYQJfYgJfYwJfZAJfZQJfZgJfZwJfaAJfaQJfagJfawAAAAAAAAAAAAAACAcHAgICAgICAgIAAAAAAAAAAAAAAAAAAAAAAfr////7////mlGXYiy53UOEQn6fYZ1EMQAAAAAAAAAAAAAAAAAAAAABBgcAAAAEREVNT0ofAAAKBggAAAANRDpcdGVtcFxQZXJmMgoF9////ypBcnRPZlRlc3QuV2ViQWlpLkNvcmUuQnJvd3NlckV4ZWN1dGlvblR5cGUBAAAAB3ZhbHVlX18ACAMAAAABAAAACgoAAAs=</d2p1:Value>
-    </d2p1:KeyValueOfstringbase64Binary>
-    <d2p1:KeyValueOfstringbase64Binary>
-      <d2p1:Key>ArtOfTest.WebAii.Design.Execution.Profiler.PerformanceCounterProfilerComponent</d2p1:Key>
-      <d2p1:Value>AAEAAAD/////AQAAAAAAAAAEAQAAAK0CU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtBcnRPZlRlc3QuV2ViQWlpLkRlc2lnbi5FeGVjdXRpb24uUHJvZmlsZXIuU2FtcGxlZFBlcmZvcm1hbmNlT2JqZWN0LCBBcnRPZlRlc3QuV2ViQWlpLkRlc2lnbiwgVmVyc2lvbj0yMDExLjIuMTEwOC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTRmYzYyYmJjMzgyN2FiMWRdXQQAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQ1LZXlWYWx1ZVBhaXJzAAMAAwiSAVN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLkdlbmVyaWNFcXVhbGl0eUNvbXBhcmVyYDFbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV1dCLECU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuS2V5VmFsdWVQYWlyYDJbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV0sW0FydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5TYW1wbGVkUGVyZm9ybWFuY2VPYmplY3QsIEFydE9mVGVzdC5XZWJBaWkuRGVzaWduLCBWZXJzaW9uPTIwMTEuMi4xMTA4LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49NGZjNjJiYmMzODI3YWIxZF1dW10DAAAACQIAAAADAAAACQMAAAAEAgAAAJIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuR2VuZXJpY0VxdWFsaXR5Q29tcGFyZXJgMVtbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XV0AAAAABwMAAAAAAQAAAAMAAAADrwJTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5LZXlWYWx1ZVBhaXJgMltbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XSxbQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24uRXhlY3V0aW9uLlByb2ZpbGVyLlNhbXBsZWRQZXJmb3JtYW5jZU9iamVjdCwgQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24sIFZlcnNpb249MjAxMS4yLjExMDguMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj00ZmM2MmJiYzM4MjdhYjFkXV0MBQAAAGBBcnRPZlRlc3QuV2ViQWlpLkRlc2lnbiwgVmVyc2lvbj0yMDExLjIuMTEwOC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTRmYzYyYmJjMzgyN2FiMWQE/P///68CU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuS2V5VmFsdWVQYWlyYDJbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV0sW0FydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5TYW1wbGVkUGVyZm9ybWFuY2VPYmplY3QsIEFydE9mVGVzdC5XZWJBaWkuRGVzaWduLCBWZXJzaW9uPTIwMTEuMi4xMTA4LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49NGZjNjJiYmMzODI3YWIxZF1dAgAAAANrZXkFdmFsdWUBBENBcnRPZlRlc3QuV2ViQWlpLkRlc2lnbi5FeGVjdXRpb24uUHJvZmlsZXIuU2FtcGxlZFBlcmZvcm1hbmNlT2JqZWN0BQAAAAYGAAAADEFQUF9QT09MX1dBUwkHAAAAAfj////8////BgkAAAAJUHJvY2Vzc29yCQoAAAAB9f////z///8GDAAAAAxQaHlzaWNhbERpc2sJDQAAAAUHAAAAQ0FydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5TYW1wbGVkUGVyZm9ybWFuY2VPYmplY3QDAAAACF9zdHJOYW1lD19zdHJEZXNjcmlwdGlvbgpfaW5zdGFuY2VzAQEDtQJTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5EaWN0aW9uYXJ5YDJbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV0sW0FydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5TYW1wbGVkUGVyZm9ybWFuY2VPYmplY3RJbnN0YW5jZSwgQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24sIFZlcnNpb249MjAxMS4yLjExMDguMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj00ZmM2MmJiYzM4MjdhYjFkXV0FAAAACQYAAAAKCQ8AAAABCgAAAAcAAAAJCQAAAAoJEQAAAAENAAAABwAAAAkMAAAACgkTAAAABA8AAAC1AlN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLkRpY3Rpb25hcnlgMltbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XSxbQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24uRXhlY3V0aW9uLlByb2ZpbGVyLlNhbXBsZWRQZXJmb3JtYW5jZU9iamVjdEluc3RhbmNlLCBBcnRPZlRlc3QuV2ViQWlpLkRlc2lnbiwgVmVyc2lvbj0yMDExLjIuMTEwOC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTRmYzYyYmJjMzgyN2FiMWRdXQQAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQ1LZXlWYWx1ZVBhaXJzAAMAAwiSAVN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLkdlbmVyaWNFcXVhbGl0eUNvbXBhcmVyYDFbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV1dCLkCU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuS2V5VmFsdWVQYWlyYDJbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV0sW0FydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5TYW1wbGVkUGVyZm9ybWFuY2VPYmplY3RJbnN0YW5jZSwgQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24sIFZlcnNpb249MjAxMS4yLjExMDguMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj00ZmM2MmJiYzM4MjdhYjFkXV1bXQEAAAAJAgAAAAMAAAAJFQAAAAERAAAADwAAAAEAAAAJAgAAAAMAAAAJFwAAAAETAAAADwAAAAEAAAAJAgAAAAMAAAAJGQAAAAcVAAAAAAEAAAABAAAAA7cCU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuS2V5VmFsdWVQYWlyYDJbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV0sW0FydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5TYW1wbGVkUGVyZm9ybWFuY2VPYmplY3RJbnN0YW5jZSwgQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24sIFZlcnNpb249MjAxMS4yLjExMDguMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj00ZmM2MmJiYzM4MjdhYjFkXV0E5v///7cCU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuS2V5VmFsdWVQYWlyYDJbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV0sW0FydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5TYW1wbGVkUGVyZm9ybWFuY2VPYmplY3RJbnN0YW5jZSwgQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24sIFZlcnNpb249MjAxMS4yLjExMDguMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj00ZmM2MmJiYzM4MjdhYjFkXV0CAAAAA2tleQV2YWx1ZQEES0FydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5TYW1wbGVkUGVyZm9ybWFuY2VPYmplY3RJbnN0YW5jZQUAAAAGGwAAAAZfVG90YWwJHAAAAAcXAAAAAAEAAAABAAAAA7cCU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuS2V5VmFsdWVQYWlyYDJbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV0sW0FydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5TYW1wbGVkUGVyZm9ybWFuY2VPYmplY3RJbnN0YW5jZSwgQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24sIFZlcnNpb249MjAxMS4yLjExMDguMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj00ZmM2MmJiYzM4MjdhYjFkXV0B4////+b///8GHgAAAAZfVG90YWwJHwAAAAcZAAAAAAEAAAABAAAAA7cCU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuS2V5VmFsdWVQYWlyYDJbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV0sW0FydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5TYW1wbGVkUGVyZm9ybWFuY2VPYmplY3RJbnN0YW5jZSwgQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24sIFZlcnNpb249MjAxMS4yLjExMDguMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj00ZmM2MmJiYzM4MjdhYjFkXV0B4P///+b///8GIQAAAAZfVG90YWwJIgAAAAUcAAAAS0FydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5TYW1wbGVkUGVyZm9ybWFuY2VPYmplY3RJbnN0YW5jZQIAAAAIX3N0ck5hbWUJX2NvdW50ZXJzAQOuAlN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLkRpY3Rpb25hcnlgMltbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XSxbQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24uRXhlY3V0aW9uLlByb2ZpbGVyLlNhbXBsZWRQZXJmb3JtYW5jZUNvdW50ZXIsIEFydE9mVGVzdC5XZWJBaWkuRGVzaWduLCBWZXJzaW9uPTIwMTEuMi4xMTA4LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49NGZjNjJiYmMzODI3YWIxZF1dBQAAAAkbAAAACSQAAAABHwAAABwAAAAJHgAAAAkmAAAAASIAAAAcAAAACSEAAAAJKAAAAAQkAAAArgJTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5EaWN0aW9uYXJ5YDJbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV0sW0FydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5TYW1wbGVkUGVyZm9ybWFuY2VDb3VudGVyLCBBcnRPZlRlc3QuV2ViQWlpLkRlc2lnbiwgVmVyc2lvbj0yMDExLjIuMTEwOC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTRmYzYyYmJjMzgyN2FiMWRdXQQAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQ1LZXlWYWx1ZVBhaXJzAAMAAwiSAVN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLkdlbmVyaWNFcXVhbGl0eUNvbXBhcmVyYDFbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV1dCLICU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuS2V5VmFsdWVQYWlyYDJbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV0sW0FydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5TYW1wbGVkUGVyZm9ybWFuY2VDb3VudGVyLCBBcnRPZlRlc3QuV2ViQWlpLkRlc2lnbiwgVmVyc2lvbj0yMDExLjIuMTEwOC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTRmYzYyYmJjMzgyN2FiMWRdXVtdAgAAAAkCAAAAAwAAAAkqAAAAASYAAAAkAAAAAQAAAAkCAAAAAwAAAAksAAAAASgAAAAkAAAAAgAAAAkCAAAAAwAAAAkuAAAAByoAAAAAAQAAAAIAAAADsAJTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5LZXlWYWx1ZVBhaXJgMltbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XSxbQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24uRXhlY3V0aW9uLlByb2ZpbGVyLlNhbXBsZWRQZXJmb3JtYW5jZUNvdW50ZXIsIEFydE9mVGVzdC5XZWJBaWkuRGVzaWduLCBWZXJzaW9uPTIwMTEuMi4xMTA4LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49NGZjNjJiYmMzODI3YWIxZF1dBNH///+wAlN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLktleVZhbHVlUGFpcmAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtBcnRPZlRlc3QuV2ViQWlpLkRlc2lnbi5FeGVjdXRpb24uUHJvZmlsZXIuU2FtcGxlZFBlcmZvcm1hbmNlQ291bnRlciwgQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24sIFZlcnNpb249MjAxMS4yLjExMDguMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj00ZmM2MmJiYzM4MjdhYjFkXV0CAAAAA2tleQV2YWx1ZQEEREFydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5TYW1wbGVkUGVyZm9ybWFuY2VDb3VudGVyBQAAAAYwAAAAGE1heGltdW0gV29ya2VyIFByb2Nlc3NlcwkxAAAAAc7////R////BjMAAAAeVG90YWwgV29ya2VyIFByb2Nlc3NlcyBDcmVhdGVkCTQAAAAHLAAAAAABAAAAAQAAAAOwAlN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLktleVZhbHVlUGFpcmAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtBcnRPZlRlc3QuV2ViQWlpLkRlc2lnbi5FeGVjdXRpb24uUHJvZmlsZXIuU2FtcGxlZFBlcmZvcm1hbmNlQ291bnRlciwgQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24sIFZlcnNpb249MjAxMS4yLjExMDguMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj00ZmM2MmJiYzM4MjdhYjFkXV0By////9H///8GNgAAABAlIFByb2Nlc3NvciBUaW1lCTcAAAAHLgAAAAABAAAAAgAAAAOwAlN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLktleVZhbHVlUGFpcmAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtBcnRPZlRlc3QuV2ViQWlpLkRlc2lnbi5FeGVjdXRpb24uUHJvZmlsZXIuU2FtcGxlZFBlcmZvcm1hbmNlQ291bnRlciwgQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24sIFZlcnNpb249MjAxMS4yLjExMDguMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj00ZmM2MmJiYzM4MjdhYjFkXV0ByP///9H///8GOQAAAAslIERpc2sgVGltZQk6AAAAAcX////R////BjwAAAAORGlzayBCeXRlcy9zZWMJPQAAAAUxAAAAREFydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5TYW1wbGVkUGVyZm9ybWFuY2VDb3VudGVyAwAAAAhfc3RyTmFtZQ9fc3RyRGVzY3JpcHRpb24IX3NhbXBsZXMBAQPKAVN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLkxpc3RgMVtbQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24uRXhlY3V0aW9uLlByb2ZpbGVyLlBlcmZvcm1hbmNlQ291bnRlclNhbXBsZSwgQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24sIFZlcnNpb249MjAxMS4yLjExMDguMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj00ZmM2MmJiYzM4MjdhYjFkXV0FAAAACTAAAAAKCT8AAAABNAAAADEAAAAJMwAAAAoJQQAAAAE3AAAAMQAAAAk2AAAACglDAAAAAToAAAAxAAAACTkAAAAKCUUAAAABPQAAADEAAAAJPAAAAAoJRwAAAAQ/AAAAygFTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5MaXN0YDFbW0FydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5QZXJmb3JtYW5jZUNvdW50ZXJTYW1wbGUsIEFydE9mVGVzdC5XZWJBaWkuRGVzaWduLCBWZXJzaW9uPTIwMTEuMi4xMTA4LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49NGZjNjJiYmMzODI3YWIxZF1dAwAAAAZfaXRlbXMFX3NpemUIX3ZlcnNpb24EAABFQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24uRXhlY3V0aW9uLlByb2ZpbGVyLlBlcmZvcm1hbmNlQ291bnRlclNhbXBsZVtdBQAAAAgICUgAAAAAAAAAAAAAAAFBAAAAPwAAAAlIAAAAAAAAAAAAAAABQwAAAD8AAAAJSAAAAAAAAAAAAAAAAUUAAAA/AAAACUgAAAAAAAAAAAAAAAFHAAAAPwAAAAlIAAAAAAAAAAAAAAAHSAAAAAABAAAAAAAAAARDQXJ0T2ZUZXN0LldlYkFpaS5EZXNpZ24uRXhlY3V0aW9uLlByb2ZpbGVyLlBlcmZvcm1hbmNlQ291bnRlclNhbXBsZQUAAAAL</d2p1:Value>
-    </d2p1:KeyValueOfstringbase64Binary>
-  </ProfilerConfigurations>
-  <ProfilerResultsDirectory>D:\temp\Perf2</ProfilerResultsDirectory>
-  <ProfilerServerName i:nil="true" />
-  <ResourceFilePath>New Contact\Saving a New Contact with valid values shows user on grid.resx</ResourceFilePath>
-  <ReuseAppWindow>0</ReuseAppWindow>
-  <SilverlightAppLocalDirectory />
-  <SilverlightAppOriginUri i:nil="true" />
-  <SilverlightAppRecordLocal>false</SilverlightAppRecordLocal>
-  <SilverlightAppWebUrl />
-  <SilverlightEnabled>false</SilverlightEnabled>
   <StopTestListOnFailure>false</StopTestListOnFailure>
   <TestAssembly>Telerik_Demo_App.dll</TestAssembly>
-  <TestAssemblyPath>D:\projects\Telerik-Demo\test\TestStudio\bin</TestAssemblyPath>
+  <TestAssemblyPath>bin</TestAssemblyPath>
   <TestClass>Telerik_Demo_App.Saving_a_New_Contact_with_valid_values_shows_user_on_grid</TestClass>
   <TestLinks xmlns:d2p1="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.ProjectModel.TestLinks" />
-  <TestType>Web</TestType>
-  <UniqueId>6297519a-b92c-43dd-8442-7e9f619d4431</UniqueId>
+  <UseDefaultWpfAppPath>false</UseDefaultWpfAppPath>
   <VSProperties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <WebKitExecutionDelay>0</WebKitExecutionDelay>
   <WpfAppPath i:nil="true" />
 </WebAiiTest>

@@ -1,3 +1,4 @@
+using Telerik.TestingFramework.Controls.KendoUI;
 using Telerik.WebAii.Controls.Html;
 using Telerik.WebAii.Controls.Xaml;
 using System;
@@ -44,7 +45,7 @@ namespace Telerik_Demo_App
     //
         
 
-    public class Can_export_contacts_to_PDF_on_filesystem : BaseWebAiiTest
+    public class Add_new_contact : BaseWebAiiTest
     {
         #region [ Dynamic Pages Reference ]
 
@@ -71,31 +72,8 @@ namespace Telerik_Demo_App
         
         // Add your test methods here...
     
-        [CodedStep(@"Clean up existing files")]
-        public void Fixture_setup()
-        {
-            string downloadPath = @"d:\temp\contacts.pdf";
-            SetExtractedValue("downloadPath", downloadPath );
-            
-            if (System.IO.File.Exists(downloadPath)) {
-                System.IO.File.Delete(downloadPath);
-            }
-        }
-    
-        [CodedStep(@"Check that the file actually exists")]
-        public void Validate_file_is_on_filesystem()
-        {
-            Assert.IsTrue(System.IO.File.Exists(GetExtractedValue("downloadPath").ToString()));
-        }
-    
         //[CodedStep(@"New Coded Step")]
-        //public void Can_export_contacts_to_PDF_on_filesystem_CodedStep()
-        //{
-            
-        //}
-    
-        //[CodedStep(@"New Coded Step")]
-        //public void Can_export_contacts_to_PDF_on_filesystem_CodedStep()
+        //public void Add_new_contact_CodedStep()
         //{
             
         //}

@@ -23,7 +23,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id>Initialize</d2p1:Id>
       <d2p1:Order>1</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>db4ab744-88a6-4306-8bc8-4d4974869481</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>362f6b31-61d7-457b-8bfb-bbd3fb5a1498</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:CodedStepDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -62,7 +62,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>2</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>ae6c0444-f8a9-4f3e-ad61-954a71240622</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>50fd6f08-2e3e-47ba-a9ca-e39543781ea6</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ExecuteTestActionDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -82,7 +82,7 @@
         <d2p1:UseStepWaitOnElementsTimout>false</d2p1:UseStepWaitOnElementsTimout>
         <d2p1:WaitOnElements>true</d2p1:WaitOnElements>
         <d2p1:WaitOnElementsTimeout>10000</d2p1:WaitOnElementsTimeout>
-        <d2p1:TestName>Providing valid credentials logs user on</d2p1:TestName>
+        <d2p1:TestName>Providing valid credentials logs user on.tstest</d2p1:TestName>
         <d2p1:TestPath>Login\Providing valid credentials logs user on.tstest</d2p1:TestPath>
         <d2p1:TestUniqueId>84102f18-2ac8-4333-bc34-70cc2d6490a1</d2p1:TestUniqueId>
       </d2p1:Step>
@@ -97,7 +97,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>3</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>6914a30f-80f5-4756-9c31-fc2a100c4105</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>eec40fd1-b282-4ea9-9d00-3f76ba2d065c</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ClickActionDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -180,7 +180,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>4</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>1a77819e-5fae-4653-a126-09ff4ce40d97</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>26fb8522-ce14-4eca-94f2-00ce3f04c729</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:DownloadDialogHandlerDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -221,7 +221,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id>Exporting_Grid_to_PDF_saves_a_file_to_filesystem_CodedStep</d2p1:Id>
       <d2p1:Order>5</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>bead2c42-2a37-44d6-a512-8c2c25fa6cff</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>45c84968-5f86-46e7-a153-2f1fc6ad7ecd</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:CodedStepDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -293,7 +293,7 @@
   <SilverlightEnabled>false</SilverlightEnabled>
   <StopTestListOnFailure>false</StopTestListOnFailure>
   <TestAssembly>Telerik_Demo_App.dll</TestAssembly>
-  <TestAssemblyPath>bin\</TestAssemblyPath>
+  <TestAssemblyPath>bin</TestAssemblyPath>
   <TestClass>Telerik_Demo_App.Exporting_Grid_to_PDF_saves_a_file_to_filesystem</TestClass>
   <TestLinks xmlns:d2p1="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.ProjectModel.TestLinks" />
   <TestType>Web</TestType>

@@ -12,57 +12,18 @@
     <d2p1:HasBuiltinGrid>false</d2p1:HasBuiltinGrid>
     <d2p1:TSQL />
   </DataInfo>
-  <Description>Validate we can save the grid of contacts to a PDF</Description>
+  <Description />
   <IndependentDescriptors />
-  <Name>Can export contacts to PDF on filesystem</Name>
+  <Name>DEMO Exporting the grid to a PDF</Name>
   <Steps xmlns:d2p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0">
-    <d2p1:AutomationStep i:type="d2p1:AutomationStep">
-      <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
-      <d2p1:CustomDescription i:nil="true" />
-      <d2p1:Description>[Fixture_setup] : Clean up existing files</d2p1:Description>
-      <d2p1:Enabled>true</d2p1:Enabled>
-      <d2p1:Id>Fixture_setup</d2p1:Id>
-      <d2p1:Order>1</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>5e4bc0a4-781e-48cf-abc5-f32de42f9498</d2p1:Runtime_x0020_ID>
-      <d2p1:Step i:type="d2p1:CodedStepDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-            <d6p1:KeyValueOfstringstring>
-              <d6p1:Key>RunsAgainstVersion</d6p1:Key>
-              <d6p1:Value />
-            </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
-        </d2p1:Constraints>
-        <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-        <d2p1:EditorType />
-        <d2p1:Elements xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-        <d2p1:LogMessageOnFailure />
-        <d2p1:Pause>None</d2p1:Pause>
-        <d2p1:RunsAgainstVersion />
-        <d2p1:StepType>Action</d2p1:StepType>
-        <d2p1:UseStepWaitOnElementsTimout>false</d2p1:UseStepWaitOnElementsTimout>
-        <d2p1:WaitOnElements>true</d2p1:WaitOnElements>
-        <d2p1:WaitOnElementsTimeout>10000</d2p1:WaitOnElementsTimeout>
-        <d2p1:Code>            string downloadPath = @"d:\temp\contacts.pdf";
-            SetExtractedValue("downloadPath", downloadPath );
-            
-            if (System.IO.File.Exists(downloadPath)) {
-                System.IO.File.Delete(downloadPath);
-            }</d2p1:Code>
-        <d2p1:RequiresSilverlight>false</d2p1:RequiresSilverlight>
-      </d2p1:Step>
-      <d2p1:StepImageKey>Can export contacts to PDF on filesystempkbqle05.011</d2p1:StepImageKey>
-      <d2p1:StepState>Coded</d2p1:StepState>
-      <d2p1:Version>200</d2p1:Version>
-    </d2p1:AutomationStep>
     <d2p1:AutomationStep i:type="d2p1:AutomationStep">
       <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
       <d2p1:CustomDescription i:nil="true" />
       <d2p1:Description>Execute test 'Providing valid credentials logs user on'</d2p1:Description>
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
-      <d2p1:Order>2</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>5017b4b0-ac84-4549-939c-e26ea320b695</d2p1:Runtime_x0020_ID>
+      <d2p1:Order>1</d2p1:Order>
+      <d2p1:Runtime_x0020_ID>434c41b1-a4cb-4089-ba66-ce7581d299d2</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ExecuteTestActionDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -86,7 +47,7 @@
         <d2p1:TestPath>Login\Providing valid credentials logs user on.tstest</d2p1:TestPath>
         <d2p1:TestUniqueId>84102f18-2ac8-4333-bc34-70cc2d6490a1</d2p1:TestUniqueId>
       </d2p1:Step>
-      <d2p1:StepImageKey>Can export contacts to PDF on filesystemuowgkxo4.2mx</d2p1:StepImageKey>
+      <d2p1:StepImageKey>DEMO Exporting the grid to a PDF4zqzqyj5.pmr</d2p1:StepImageKey>
       <d2p1:StepState>NoCode</d2p1:StepState>
       <d2p1:Version>200</d2p1:Version>
     </d2p1:AutomationStep>
@@ -96,8 +57,8 @@
       <d2p1:Description>Click 'ExportToPDFLink'</d2p1:Description>
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
-      <d2p1:Order>3</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>a6b9cbe4-d5e3-4adc-a1bf-333fbcfb163a</d2p1:Runtime_x0020_ID>
+      <d2p1:Order>2</d2p1:Order>
+      <d2p1:Runtime_x0020_ID>6852d39e-0fce-46ea-9f7d-e232f37124b4</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ClickActionDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -169,7 +130,7 @@
         <ClosesBrowser xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">false</ClosesBrowser>
         <d2p1:SimulateRealClick>false</d2p1:SimulateRealClick>
       </d2p1:Step>
-      <d2p1:StepImageKey>Can export contacts to PDF on filesystempb10hntt.d1p</d2p1:StepImageKey>
+      <d2p1:StepImageKey>DEMO Exporting the grid to a PDFpcjs14ba.gem</d2p1:StepImageKey>
       <d2p1:StepState>NoCode</d2p1:StepState>
       <d2p1:Version>200</d2p1:Version>
     </d2p1:AutomationStep>
@@ -179,8 +140,8 @@
       <d2p1:Description>Handle 'Download' dialog.</d2p1:Description>
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
-      <d2p1:Order>4</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>2862f476-186b-4055-8de5-d56426b87079</d2p1:Runtime_x0020_ID>
+      <d2p1:Order>3</d2p1:Order>
+      <d2p1:Runtime_x0020_ID>3493274d-9e8e-4696-8bd7-051af872885f</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:DownloadDialogHandlerDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -205,42 +166,8 @@
         <d2p1:HandlerTimeout>25000</d2p1:HandlerTimeout>
         <d2p1:DownloadPath>D:\temp\contacts.pdf</d2p1:DownloadPath>
       </d2p1:Step>
-      <d2p1:StepImageKey>Can export contacts to PDF on filesystemzsftaw2e.2zm</d2p1:StepImageKey>
+      <d2p1:StepImageKey>DEMO Exporting the grid to a PDF4n1iepyp.vdq</d2p1:StepImageKey>
       <d2p1:StepState>NoCode</d2p1:StepState>
-      <d2p1:Version>200</d2p1:Version>
-    </d2p1:AutomationStep>
-    <d2p1:AutomationStep i:type="d2p1:AutomationStep">
-      <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
-      <d2p1:CustomDescription i:nil="true" />
-      <d2p1:Description>[Validate_file_is_on_filesystem] : Check that the file actually exists</d2p1:Description>
-      <d2p1:Enabled>true</d2p1:Enabled>
-      <d2p1:Id>Validate_file_is_on_filesystem</d2p1:Id>
-      <d2p1:Order>5</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>07b4e907-b4db-4177-a159-73e708ac8c4a</d2p1:Runtime_x0020_ID>
-      <d2p1:Step i:type="d2p1:CodedStepDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-            <d6p1:KeyValueOfstringstring>
-              <d6p1:Key>RunsAgainstVersion</d6p1:Key>
-              <d6p1:Value />
-            </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
-        </d2p1:Constraints>
-        <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-        <d2p1:EditorType />
-        <d2p1:Elements xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-        <d2p1:LogMessageOnFailure />
-        <d2p1:Pause>None</d2p1:Pause>
-        <d2p1:RunsAgainstVersion />
-        <d2p1:StepType>Action</d2p1:StepType>
-        <d2p1:UseStepWaitOnElementsTimout>false</d2p1:UseStepWaitOnElementsTimout>
-        <d2p1:WaitOnElements>true</d2p1:WaitOnElements>
-        <d2p1:WaitOnElementsTimeout>10000</d2p1:WaitOnElementsTimeout>
-        <d2p1:Code>            Assert.IsTrue(System.IO.File.Exists(GetExtractedValue("downloadPath").ToString()));</d2p1:Code>
-        <d2p1:RequiresSilverlight>false</d2p1:RequiresSilverlight>
-      </d2p1:Step>
-      <d2p1:StepImageKey>Can export contacts to PDF on filesystemtcu0kc4y.1b4</d2p1:StepImageKey>
-      <d2p1:StepState>Coded</d2p1:StepState>
       <d2p1:Version>200</d2p1:Version>
     </d2p1:AutomationStep>
   </Steps>
@@ -260,23 +187,23 @@
   </CurrentReferences>
   <DeploymentItems xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <DomStatesCounter xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-  <HasCodeBehind>true</HasCodeBehind>
+  <HasCodeBehind>false</HasCodeBehind>
   <HtmlDescription />
   <InheritParentDataSource>false</InheritParentDataSource>
   <IsManual>false</IsManual>
   <IsSilverlightApp>false</IsSilverlightApp>
   <IsTestFragment>false</IsTestFragment>
-  <Owner>Jim Holmes</Owner>
-  <Path>Initial Grid\Can export contacts to PDF on filesystem.tstest</Path>
-  <Priority>3</Priority>
+  <Owner i:nil="true" />
+  <Path>Initial Grid\DEMO Exporting the grid to a PDF.tstest</Path>
+  <Priority>0</Priority>
   <ProfilerBenchmarkResultsFilePath i:nil="true" />
   <ProfilerBenchmarkResultsId>00000000-0000-0000-0000-000000000000</ProfilerBenchmarkResultsId>
-  <ProfilerConfigurationFilePath>D:\projects\Telerik-Demo\test\TestStudio\Profiler Configurations\{58ac8d91-fa15-485e-8b4a-c01fbaeb23af}.tsprofconfig</ProfilerConfigurationFilePath>
+  <ProfilerConfigurationFilePath>D:\projects\Telerik-Demo\test\TestStudio\Profiler Configurations\{e9b9ebc6-57b1-4e60-a09d-97da31ca10ac}.tsprofconfig</ProfilerConfigurationFilePath>
   <ProfilerConfigurationId>00000000-0000-0000-0000-000000000000</ProfilerConfigurationId>
   <ProfilerConfigurations xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-  <ProfilerResultsDirectory>C:\Users\ADMINI~1\AppData\Local\Temp\</ProfilerResultsDirectory>
+  <ProfilerResultsDirectory i:nil="true" />
   <ProfilerServerName i:nil="true" />
-  <ResourceFilePath>Initial Grid\Can export contacts to PDF on filesystem.resx</ResourceFilePath>
+  <ResourceFilePath>Initial Grid\DEMO Exporting the grid to a PDF.resx</ResourceFilePath>
   <ReuseAppWindow>0</ReuseAppWindow>
   <SilverlightAppLocalDirectory />
   <SilverlightAppOriginUri i:nil="true" />
@@ -285,11 +212,11 @@
   <SilverlightEnabled>false</SilverlightEnabled>
   <StopTestListOnFailure>false</StopTestListOnFailure>
   <TestAssembly>Telerik_Demo_App.dll</TestAssembly>
-  <TestAssemblyPath>bin</TestAssemblyPath>
-  <TestClass>Telerik_Demo_App.Can_export_contacts_to_PDF_on_filesystem</TestClass>
+  <TestAssemblyPath>bin\</TestAssemblyPath>
+  <TestClass i:nil="true" />
   <TestLinks xmlns:d2p1="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.ProjectModel.TestLinks" />
   <TestType>Web</TestType>
-  <UniqueId>58ac8d91-fa15-485e-8b4a-c01fbaeb23af</UniqueId>
+  <UniqueId>e9b9ebc6-57b1-4e60-a09d-97da31ca10ac</UniqueId>
   <UseDefaultWpfAppPath>false</UseDefaultWpfAppPath>
   <VSProperties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <WebKitExecutionDelay>0</WebKitExecutionDelay>

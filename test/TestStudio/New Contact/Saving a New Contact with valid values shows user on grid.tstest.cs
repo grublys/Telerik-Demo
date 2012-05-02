@@ -82,5 +82,20 @@ namespace Telerik_Demo_App
             //stand up a web service call
             //call to delete the record we just made
         //}
+    
+        //[CodedStep(@"Validate user was correctly created in DB")]
+        //public void Verify_new_record_appears_in_database()
+        //{
+            
+            //// -- move these to a support framework / API
+            //// open a connection to the database
+            //// select newly created user from the database
+            //// verify information is correct
+            
+            
+            ////TestingFramework.ValidateNewUser(.....)
+            
+            ////Assert.AreSame();
+        //}
     }
 }
