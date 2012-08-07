@@ -1,4 +1,18 @@
 ﻿<WebAiiTest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://artoftest.com/schemas/WebAiiDesignCanvas/3.0.0">
+  <DataInfo xmlns:d2p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0">
+    <d2p1:BuiltInData i:nil="true" />
+    <d2p1:BuiltInDocumentKey i:nil="true" />
+    <d2p1:ConnectionString />
+    <d2p1:DataEnabled>true</d2p1:DataEnabled>
+    <d2p1:DataProvider />
+    <d2p1:DataRange />
+    <d2p1:DataTableName />
+    <d2p1:DataType>None</d2p1:DataType>
+    <d2p1:DefaultToGrid>true</d2p1:DefaultToGrid>
+    <d2p1:HasBuiltinGrid>false</d2p1:HasBuiltinGrid>
+    <d2p1:LoadRecordsCount i:nil="true" />
+    <d2p1:TSQL />
+  </DataInfo>
   <Description />
   <IsManual>false</IsManual>
   <Name>Baseline data in grid displays correctly</Name>
@@ -33,6 +47,7 @@
     <d2p1:DataType>None</d2p1:DataType>
     <d2p1:DefaultToGrid>true</d2p1:DefaultToGrid>
     <d2p1:HasBuiltinGrid>false</d2p1:HasBuiltinGrid>
+    <d2p1:LoadRecordsCount i:nil="true" />
     <d2p1:TSQL />
   </DataInfo>
   <DeploymentItems xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
@@ -73,7 +88,12 @@
       <d2p1:Runtime_x0020_ID>c3be1504-b080-46a1-a1e0-ffd9b66870a9</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ExecuteTestActionDescriptor">
         <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
-          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <d6p1:KeyValueOfstringstring>
+              <d6p1:Key>RunsAgainstVersion</d6p1:Key>
+              <d6p1:Value />
+            </d6p1:KeyValueOfstringstring>
+          </d5p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
@@ -278,7 +298,7 @@
   </Steps>
   <StopTestListOnFailure>false</StopTestListOnFailure>
   <TestAssembly />
-  <TestAssemblyPath />
+  <TestAssemblyPath>bin</TestAssemblyPath>
   <TestClass i:nil="true" />
   <TestLinks xmlns:d2p1="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.ProjectModel.TestLinks" />
   <UseDefaultWpfAppPath>false</UseDefaultWpfAppPath>

@@ -15,6 +15,7 @@ using ArtOfTest.WebAii.Design.Execution;
 using ArtOfTest.WebAii.ObjectModel;
 using ArtOfTest.WebAii.Silverlight;
 using ArtOfTest.WebAii.Silverlight.UI;
+using SupportFramework;
 
 namespace Telerik_Demo_App
 {

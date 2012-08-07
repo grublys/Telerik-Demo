@@ -85,9 +85,16 @@ namespace Telerik_Demo_App
         [CodedStep(@"Check that the file actually exists")]
         public void Validate_file_is_on_filesystem()
         {
-            Assert.IsTrue(System.IO.File.Exists(GetExtractedValue("downloadPath").ToString()));
+            Assert.IsTrue(System.IO.File.Exists(
+                GetExtractedValue("downloadPath").ToString()));
+
+            Log.WriteLine("whatever message");
+
+            Assert.IsTrue(false, "Custom message");
         }
-    
+
+       
+            
         //[CodedStep(@"New Coded Step")]
         //public void Can_export_contacts_to_PDF_on_filesystem_CodedStep()
         //{

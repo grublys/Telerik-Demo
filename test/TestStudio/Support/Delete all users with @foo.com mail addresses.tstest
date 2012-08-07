@@ -1,4 +1,18 @@
 ﻿<WebAiiTest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://artoftest.com/schemas/WebAiiDesignCanvas/3.0.0">
+  <DataInfo xmlns:d2p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0">
+    <d2p1:BuiltInData i:nil="true" />
+    <d2p1:BuiltInDocumentKey i:nil="true" />
+    <d2p1:ConnectionString />
+    <d2p1:DataEnabled>true</d2p1:DataEnabled>
+    <d2p1:DataProvider />
+    <d2p1:DataRange />
+    <d2p1:DataTableName />
+    <d2p1:DataType>None</d2p1:DataType>
+    <d2p1:DefaultToGrid>true</d2p1:DefaultToGrid>
+    <d2p1:HasBuiltinGrid>false</d2p1:HasBuiltinGrid>
+    <d2p1:LoadRecordsCount i:nil="true" />
+    <d2p1:TSQL />
+  </DataInfo>
   <Description />
   <IsManual>false</IsManual>
   <Name>Delete all users with @foo.com mail addresses</Name>
@@ -21,6 +35,7 @@
     <d2p1:DataType>None</d2p1:DataType>
     <d2p1:DefaultToGrid>true</d2p1:DefaultToGrid>
     <d2p1:HasBuiltinGrid>false</d2p1:HasBuiltinGrid>
+    <d2p1:LoadRecordsCount i:nil="true" />
     <d2p1:TSQL />
   </DataInfo>
   <DeploymentItems xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
@@ -63,7 +78,7 @@
       <d2p1:Order>1</d2p1:Order>
       <d2p1:QcId>0</d2p1:QcId>
       <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
-      <d2p1:Runtime_x0020_ID>bc593c03-a89b-48b2-a116-be9b114e845d</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>e456e8f1-648a-4e24-b97c-200c86cb4681</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:CodedStepDescriptor">
         <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
           <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -102,7 +117,16 @@
   <TestClass>Telerik_Demo_App.Delete_all_users_with__foo_com_mail_addresses</TestClass>
   <TestLinks xmlns:d2p1="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.ProjectModel.TestLinks" />
   <UseDefaultWpfAppPath>false</UseDefaultWpfAppPath>
-  <VSProperties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <VSProperties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:KeyValueOfstringstring>
+      <d2p1:Key>Timeout</d2p1:Key>
+      <d2p1:Value>0</d2p1:Value>
+    </d2p1:KeyValueOfstringstring>
+    <d2p1:KeyValueOfstringstring>
+      <d2p1:Key>ExecId</d2p1:Key>
+      <d2p1:Value>00000000-0000-0000-0000-000000000000</d2p1:Value>
+    </d2p1:KeyValueOfstringstring>
+  </VSProperties>
   <WebKitExecutionDelay>0</WebKitExecutionDelay>
   <WpfAppPath i:nil="true" />
 </WebAiiTest>

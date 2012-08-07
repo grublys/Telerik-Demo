@@ -1,4 +1,5 @@
-﻿<WebAiiTest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+﻿<WebAiiTest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://artoftest.com/schemas/WebAiiDesignCanvas/3.0.0">
+  <CustomProperty1 />
   <DataInfo xmlns:d2p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0">
     <d2p1:BuiltInData i:nil="true" />
     <d2p1:BuiltInDocumentKey i:nil="true" />
@@ -13,38 +14,73 @@
     <d2p1:TSQL />
   </DataInfo>
   <Description />
-  <IndependentDescriptors>
-    <ElementDescriptor>
-      <DomStateKey />
-      <FindExpression i:type="HtmlFindExpressionElement">
-        <BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/h2[1]/div[1]/select[1]</BackupSearchClause>
-        <FindExpressions xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+  <IsManual>false</IsManual>
+  <Name>AJAX Menu Items Can Be Validated</Name>
+  <Owner i:nil="true" />
+  <Path>Working With AJAX\AJAX Menu Items Can Be Validated.tstest</Path>
+  <Priority>0</Priority>
+  <TestType>Web</TestType>
+  <UniqueId>1824807f-83a8-4255-bea0-23f0faa8a982</UniqueId>
+  <Version>200</Version>
+  <BrowserType>NotSet</BrowserType>
+  <CurrentReferences xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:string>System</d2p1:string>
+    <d2p1:string>System.Core</d2p1:string>
+    <d2p1:string>ArtOfTest.WebAii, Version=2011.2.928.0, Culture=neutral, PublicKeyToken=4fd5f65be123776c</d2p1:string>
+    <d2p1:string>ArtOfTest.WebAii.Design, Version=2011.2.928.0, Culture=neutral, PublicKeyToken=4fc62bbc3827ab1d</d2p1:string>
+    <d2p1:string>Telerik.WebAii.Controls.Html, Version=2011.2.928.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
+    <d2p1:string>Telerik.WebAii.Controls.Xaml, Version=2011.2.928.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
+    <d2p1:string>Telerik.WebAii.Controls.Xaml.Wpf, Version=2011.2.928.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
+  </CurrentReferences>
+  <DataInfo xmlns:d2p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0">
+    <d2p1:BuiltInData i:nil="true" />
+    <d2p1:BuiltInDocumentKey i:nil="true" />
+    <d2p1:ConnectionString />
+    <d2p1:DataEnabled>true</d2p1:DataEnabled>
+    <d2p1:DataProvider />
+    <d2p1:DataRange />
+    <d2p1:DataTableName />
+    <d2p1:DataType>None</d2p1:DataType>
+    <d2p1:DefaultToGrid>true</d2p1:DefaultToGrid>
+    <d2p1:HasBuiltinGrid>false</d2p1:HasBuiltinGrid>
+    <d2p1:TSQL />
+  </DataInfo>
+  <DeploymentItems xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <DomStatesCounter xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <HasCodeBehind>false</HasCodeBehind>
+  <HtmlDescription />
+  <IndependentDescriptors xmlns:d2p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+    <d2p1:ElementDescriptor>
+      <d2p1:DomStateKey />
+      <d2p1:FindExpression i:type="d2p1:HtmlFindExpressionElement">
+        <d2p1:BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/h2[1]/div[1]/select[1]</d2p1:BackupSearchClause>
+        <d2p1:FindExpressions xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
           <d5p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
             <d5p1:key>Html</d5p1:key>
-            <d5p1:value i:type="HtmlFindExpression">
-              <ChainStops xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-              <Clauses>
-                <HtmlFindClause>
-                  <Clause>tagname=select</Clause>
-                </HtmlFindClause>
-                <HtmlFindClause>
-                  <Clause>id=selection_technology</Clause>
-                </HtmlFindClause>
-              </Clauses>
-              <Constraints />
+            <d5p1:value i:type="d2p1:HtmlFindExpression">
+              <d2p1:ChainStops xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <d2p1:Clauses>
+                <d2p1:HtmlFindClause>
+                  <d2p1:Clause>tagname=select</d2p1:Clause>
+                </d2p1:HtmlFindClause>
+                <d2p1:HtmlFindClause>
+                  <d2p1:Clause>id=selection_technology</d2p1:Clause>
+                </d2p1:HtmlFindClause>
+              </d2p1:Clauses>
+              <d2p1:Constraints />
             </d5p1:value>
           </d5p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
-        </FindExpressions>
-        <Name>SelectionTechnologySelect</Name>
-        <NodeKind>4</NodeKind>
-        <TechnologyType>Html</TechnologyType>
-      </FindExpression>
-      <FindInfo i:nil="true" />
-      <Frame i:nil="true" />
-      <HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlSelect</HtmlControlType>
-      <IsIndependent>true</IsIndependent>
-      <Name>dropDown</Name>
-      <Page xmlns:d4p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0" i:type="d4p1:PageUri">
+        </d2p1:FindExpressions>
+        <d2p1:Name>SelectionTechnologySelect</d2p1:Name>
+        <d2p1:NodeKind>4</d2p1:NodeKind>
+        <d2p1:TechnologyType>Html</d2p1:TechnologyType>
+      </d2p1:FindExpression>
+      <d2p1:FindInfo i:nil="true" />
+      <d2p1:Frame i:nil="true" />
+      <d2p1:HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlSelect</d2p1:HtmlControlType>
+      <d2p1:IsIndependent>true</d2p1:IsIndependent>
+      <d2p1:Name>dropDown</d2p1:Name>
+      <d2p1:Page xmlns:d4p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0" i:type="d4p1:PageUri">
         <d4p1:AlwaysUseTitleInCompare>false</d4p1:AlwaysUseTitleInCompare>
         <d4p1:BaseUrl>http://localhost:3000</d4p1:BaseUrl>
         <d4p1:CompareMode>FullPathAndQuery</d4p1:CompareMode>
@@ -54,13 +90,37 @@
         <d4p1:Path>/contacts</d4p1:Path>
         <d4p1:Query />
         <d4p1:Title>Telerik Customer Relations Management System</d4p1:Title>
-      </Page>
-      <Region i:nil="true" />
-      <TechnologyType>Html</TechnologyType>
-      <Version>200</Version>
-    </ElementDescriptor>
+      </d2p1:Page>
+      <d2p1:Region i:nil="true" />
+      <d2p1:TechnologyType>Html</d2p1:TechnologyType>
+      <d2p1:Version>200</d2p1:Version>
+    </d2p1:ElementDescriptor>
   </IndependentDescriptors>
-  <Name>AJAX Menu Items Can Be Validated</Name>
+  <InheritParentDataSource>false</InheritParentDataSource>
+  <IsSilverlightApp>false</IsSilverlightApp>
+  <IsTestFragment>false</IsTestFragment>
+  <ProfilerBenchmarkResultsFilePath i:nil="true" />
+  <ProfilerBenchmarkResultsId>00000000-0000-0000-0000-000000000000</ProfilerBenchmarkResultsId>
+  <ProfilerConfigurationFilePath>D:\projects\Telerik-Demo\test\TestStudio\Profiler Configurations\{1824807f-83a8-4255-bea0-23f0faa8a982}.tsprofconfig</ProfilerConfigurationFilePath>
+  <ProfilerConfigurationId>00000000-0000-0000-0000-000000000000</ProfilerConfigurationId>
+  <ProfilerConfigurations xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:KeyValueOfstringbase64Binary>
+      <d2p1:Key>ArtOfTest.WebAii.Design.Execution.Profiler.ProfilerResultsMetadata</d2p1:Key>
+      <d2p1:Value>AAEAAAD/////AQAAAAAAAAAMAgAAAF9BcnRPZlRlc3QuV2ViQWlpLkRlc2lnbiwgVmVyc2lvbj0yMDExLjIuOTI4LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49NGZjNjJiYmMzODI3YWIxZAwDAAAAWEFydE9mVGVzdC5XZWJBaWksIFZlcnNpb249MjAxMS4yLjkyOC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTRmZDVmNjViZTEyMzc3NmMMBAAAAGhUZWxlcmlrLlRlc3RpbmdGcmFtZXdvcmsuSW50ZXJvcCwgVmVyc2lvbj0yMDExLjIuOTI4LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49OGNhMDBkM2UwZWJkNGI4YgUBAAAAQkFydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5Qcm9maWxlclJlc3VsdHNNZXRhZGF0YQ4AAAAKX3Jlc3VsdHNJZAxfb3duZXJUZXN0SWQKX3N0YXJ0VGltZQpfdG90YWxUaW1lG19iQ29sbGVjdFByb2ZpbGVyU2FtcGxlRGF0YQpfc3RyU2VydmVyDF9pU2VydmVyUG9ydA9fc3RyRGVzY3JpcHRpb24KX3N0ckZvbGRlcgxfc3RyRmlsZVBhdGgMX2Jyb3dzZXJUeXBlD19icm93c2VyVmVyc2lvbhxfYkNsZWFyQnJvd3NlckNhY2hlQmVmb3JlUnVuF19iV2FybVVwU2VydmVyQmVmb3JlUnVuAwMAAAABAAEBAQQEAAALU3lzdGVtLkd1aWQLU3lzdGVtLkd1aWQNDAEIKkFydE9mVGVzdC5XZWJBaWkuQ29yZS5Ccm93c2VyRXhlY3V0aW9uVHlwZQMAAAApVGVsZXJpay5UZXN0aW5nRnJhbWV3b3JrLlVuaXZlcnNhbFZlcnNpb24EAAAAAQECAAAABPv///8LU3lzdGVtLkd1aWQLAAAAAl9hAl9iAl9jAl9kAl9lAl9mAl9nAl9oAl9pAl9qAl9rAAAAAAAAAAAAAAAIBwcCAgICAgICAgAAAAAAAAAAAAAAAAAAAAAB+v////v///9/gCQYqINVQr6gI/D6qKmCAAAAAAAAAAAAAAAAAAAAAAAGBwAAAARERU1PSh8AAAoGCAAAACpDOlxVc2Vyc1xBZG1pbmlzdHJhdG9yXEFwcERhdGFcTG9jYWxcVGVtcFwKBff///8qQXJ0T2ZUZXN0LldlYkFpaS5Db3JlLkJyb3dzZXJFeGVjdXRpb25UeXBlAQAAAAd2YWx1ZV9fAAgDAAAAAQAAAAoAAAs=</d2p1:Value>
+    </d2p1:KeyValueOfstringbase64Binary>
+  </ProfilerConfigurations>
+  <ProfilerResultsDirectory>C:\Users\Administrator\AppData\Local\Temp\</ProfilerResultsDirectory>
+  <ProfilerServerName i:nil="true" />
+  <QcFilePath i:nil="true" />
+  <QcId>0</QcId>
+  <QcTestVersionStamp>0</QcTestVersionStamp>
+  <ResourceFilePath>Working With AJAX\AJAX Menu Items Can Be Validated.resx</ResourceFilePath>
+  <ReuseAppWindow>0</ReuseAppWindow>
+  <SilverlightAppLocalDirectory />
+  <SilverlightAppOriginUri i:nil="true" />
+  <SilverlightAppRecordLocal>false</SilverlightAppRecordLocal>
+  <SilverlightAppWebUrl />
+  <SilverlightEnabled>false</SilverlightEnabled>
   <Steps xmlns:d2p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0">
     <d2p1:AutomationStep i:type="d2p1:AutomationStep">
       <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
@@ -69,15 +129,17 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>1</d2p1:Order>
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
       <d2p1:Runtime_x0020_ID>d1bea98b-e012-4cf5-9e3b-29431949c17b</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ExecuteTestActionDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d5p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
@@ -89,7 +151,7 @@
         <d2p1:UseStepWaitOnElementsTimout>false</d2p1:UseStepWaitOnElementsTimout>
         <d2p1:WaitOnElements>true</d2p1:WaitOnElements>
         <d2p1:WaitOnElementsTimeout>10000</d2p1:WaitOnElementsTimeout>
-        <d2p1:TestName>Providing valid credentials logs user on</d2p1:TestName>
+        <d2p1:TestName>Providing valid credentials logs user on.tstest</d2p1:TestName>
         <d2p1:TestPath>Login\Providing valid credentials logs user on.tstest</d2p1:TestPath>
         <d2p1:TestUniqueId>84102f18-2ac8-4333-bc34-70cc2d6490a1</d2p1:TestUniqueId>
       </d2p1:Step>
@@ -104,52 +166,54 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>2</d2p1:Order>
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
       <d2p1:Runtime_x0020_ID>30f144ce-1032-4e77-b99e-8c92dc7bc011</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:SelectVerificationDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d5p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
         <d2p1:Elements xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
           <d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
             <d5p1:Key>selectElement</d5p1:Key>
-            <d5p1:Value>
-              <DomStateKey />
-              <FindExpression i:type="HtmlFindExpressionElement">
-                <BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/h2[1]/div[1]/select[1]</BackupSearchClause>
-                <FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+            <d5p1:Value xmlns:d7p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+              <d7p1:DomStateKey />
+              <d7p1:FindExpression i:type="d7p1:HtmlFindExpressionElement">
+                <d7p1:BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/h2[1]/div[1]/select[1]</d7p1:BackupSearchClause>
+                <d7p1:FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
                   <d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
                     <d9p1:key>Html</d9p1:key>
-                    <d9p1:value i:type="HtmlFindExpression">
-                      <ChainStops />
-                      <Clauses>
-                        <HtmlFindClause>
-                          <Clause>id=selection_technology</Clause>
-                        </HtmlFindClause>
-                        <HtmlFindClause>
-                          <Clause>tagname=select</Clause>
-                        </HtmlFindClause>
-                      </Clauses>
-                      <Constraints />
+                    <d9p1:value i:type="d7p1:HtmlFindExpression">
+                      <d7p1:ChainStops />
+                      <d7p1:Clauses>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>id=selection_technology</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>tagname=select</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                      </d7p1:Clauses>
+                      <d7p1:Constraints />
                     </d9p1:value>
                   </d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
-                </FindExpressions>
-                <Name>SelectionTechnologySelect</Name>
-                <NodeKind>4</NodeKind>
-                <TechnologyType>Html</TechnologyType>
-              </FindExpression>
-              <FindInfo i:nil="true" />
-              <Frame i:nil="true" />
-              <HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlSelect</HtmlControlType>
-              <IsIndependent>false</IsIndependent>
-              <Name>selectElement</Name>
-              <Page i:type="d2p1:PageUri">
+                </d7p1:FindExpressions>
+                <d7p1:Name>SelectionTechnologySelect</d7p1:Name>
+                <d7p1:NodeKind>4</d7p1:NodeKind>
+                <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              </d7p1:FindExpression>
+              <d7p1:FindInfo i:nil="true" />
+              <d7p1:Frame i:nil="true" />
+              <d7p1:HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlSelect</d7p1:HtmlControlType>
+              <d7p1:IsIndependent>false</d7p1:IsIndependent>
+              <d7p1:Name>selectElement</d7p1:Name>
+              <d7p1:Page i:type="d2p1:PageUri">
                 <d2p1:AlwaysUseTitleInCompare>false</d2p1:AlwaysUseTitleInCompare>
                 <d2p1:BaseUrl>http://localhost:3000</d2p1:BaseUrl>
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
@@ -159,10 +223,10 @@
                 <d2p1:Path>/contacts</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>Telerik Customer Relations Management System</d2p1:Title>
-              </Page>
-              <Region i:nil="true" />
-              <TechnologyType>Html</TechnologyType>
-              <Version>200</Version>
+              </d7p1:Page>
+              <d7p1:Region i:nil="true" />
+              <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              <d7p1:Version>200</d7p1:Version>
             </d5p1:Value>
           </d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
         </d2p1:Elements>
@@ -177,6 +241,7 @@
         <d2p1:DataBindVariableName i:nil="true" />
         <d2p1:EnsureStateIsCurrent>false</d2p1:EnsureStateIsCurrent>
         <d2p1:Timeout>10000</d2p1:Timeout>
+        <d2p1:UseBackupSearch>false</d2p1:UseBackupSearch>
         <d2p1:IndexCompareType>Equals</d2p1:IndexCompareType>
         <d2p1:SelectionIndex>0</d2p1:SelectionIndex>
         <d2p1:SelectionType>ByText</d2p1:SelectionType>
@@ -194,52 +259,54 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>3</d2p1:Order>
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
       <d2p1:Runtime_x0020_ID>6ac136df-a628-4d3d-9406-014490951ab0</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:SelectDropDownActionDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d5p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
         <d2p1:Elements xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
           <d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
             <d5p1:Key>dropDown</d5p1:Key>
-            <d5p1:Value>
-              <DomStateKey />
-              <FindExpression i:type="HtmlFindExpressionElement">
-                <BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/h2[1]/div[1]/select[1]</BackupSearchClause>
-                <FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+            <d5p1:Value xmlns:d7p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+              <d7p1:DomStateKey />
+              <d7p1:FindExpression i:type="d7p1:HtmlFindExpressionElement">
+                <d7p1:BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/h2[1]/div[1]/select[1]</d7p1:BackupSearchClause>
+                <d7p1:FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
                   <d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
                     <d9p1:key>Html</d9p1:key>
-                    <d9p1:value i:type="HtmlFindExpression">
-                      <ChainStops />
-                      <Clauses>
-                        <HtmlFindClause>
-                          <Clause>tagname=select</Clause>
-                        </HtmlFindClause>
-                        <HtmlFindClause>
-                          <Clause>id=selection_technology</Clause>
-                        </HtmlFindClause>
-                      </Clauses>
-                      <Constraints />
+                    <d9p1:value i:type="d7p1:HtmlFindExpression">
+                      <d7p1:ChainStops />
+                      <d7p1:Clauses>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>tagname=select</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>id=selection_technology</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                      </d7p1:Clauses>
+                      <d7p1:Constraints />
                     </d9p1:value>
                   </d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
-                </FindExpressions>
-                <Name>SelectionTechnologySelect</Name>
-                <NodeKind>4</NodeKind>
-                <TechnologyType>Html</TechnologyType>
-              </FindExpression>
-              <FindInfo i:nil="true" />
-              <Frame i:nil="true" />
-              <HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlSelect</HtmlControlType>
-              <IsIndependent>false</IsIndependent>
-              <Name>dropDown</Name>
-              <Page i:type="d2p1:PageUri">
+                </d7p1:FindExpressions>
+                <d7p1:Name>SelectionTechnologySelect</d7p1:Name>
+                <d7p1:NodeKind>4</d7p1:NodeKind>
+                <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              </d7p1:FindExpression>
+              <d7p1:FindInfo i:nil="true" />
+              <d7p1:Frame i:nil="true" />
+              <d7p1:HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlSelect</d7p1:HtmlControlType>
+              <d7p1:IsIndependent>false</d7p1:IsIndependent>
+              <d7p1:Name>dropDown</d7p1:Name>
+              <d7p1:Page i:type="d2p1:PageUri">
                 <d2p1:AlwaysUseTitleInCompare>false</d2p1:AlwaysUseTitleInCompare>
                 <d2p1:BaseUrl>http://localhost:3000</d2p1:BaseUrl>
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
@@ -249,10 +316,10 @@
                 <d2p1:Path>/contacts</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>Telerik Customer Relations Management System</d2p1:Title>
-              </Page>
-              <Region i:nil="true" />
-              <TechnologyType>Html</TechnologyType>
-              <Version>200</Version>
+              </d7p1:Page>
+              <d7p1:Region i:nil="true" />
+              <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              <d7p1:Version>200</d7p1:Version>
             </d5p1:Value>
           </d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
         </d2p1:Elements>
@@ -263,7 +330,9 @@
         <d2p1:UseStepWaitOnElementsTimout>false</d2p1:UseStepWaitOnElementsTimout>
         <d2p1:WaitOnElements>true</d2p1:WaitOnElements>
         <d2p1:WaitOnElementsTimeout>10000</d2p1:WaitOnElementsTimeout>
+        <AjaxTimeout xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">0</AjaxTimeout>
         <ClosesBrowser xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">false</ClosesBrowser>
+        <UseBackupSearch xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">false</UseBackupSearch>
         <d2p1:InvokeSelectionChanged>true</d2p1:InvokeSelectionChanged>
         <d2p1:SelectType>ByValue</d2p1:SelectType>
         <d2p1:SelectionIndex>1</d2p1:SelectionIndex>
@@ -281,52 +350,54 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>4</d2p1:Order>
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
       <d2p1:Runtime_x0020_ID>2912bc84-3527-4541-9e55-82e0bf078def</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ContentVerificationDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d5p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
         <d2p1:Elements xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
           <d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
             <d5p1:Key>textTarget</d5p1:Key>
-            <d5p1:Value>
-              <DomStateKey />
-              <FindExpression i:type="HtmlFindExpressionElement">
-                <BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/h2[1]/div[1]/select[2]</BackupSearchClause>
-                <FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+            <d5p1:Value xmlns:d7p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+              <d7p1:DomStateKey />
+              <d7p1:FindExpression i:type="d7p1:HtmlFindExpressionElement">
+                <d7p1:BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/h2[1]/div[1]/select[2]</d7p1:BackupSearchClause>
+                <d7p1:FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
                   <d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
                     <d9p1:key>Html</d9p1:key>
-                    <d9p1:value i:type="HtmlFindExpression">
-                      <ChainStops />
-                      <Clauses>
-                        <HtmlFindClause>
-                          <Clause>tagname=select</Clause>
-                        </HtmlFindClause>
-                        <HtmlFindClause>
-                          <Clause>id=selection_view</Clause>
-                        </HtmlFindClause>
-                      </Clauses>
-                      <Constraints />
+                    <d9p1:value i:type="d7p1:HtmlFindExpression">
+                      <d7p1:ChainStops />
+                      <d7p1:Clauses>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>tagname=select</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>id=selection_view</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                      </d7p1:Clauses>
+                      <d7p1:Constraints />
                     </d9p1:value>
                   </d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
-                </FindExpressions>
-                <Name>SelectionViewSelect</Name>
-                <NodeKind>4</NodeKind>
-                <TechnologyType>Html</TechnologyType>
-              </FindExpression>
-              <FindInfo i:nil="true" />
-              <Frame i:nil="true" />
-              <HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlSelect</HtmlControlType>
-              <IsIndependent>false</IsIndependent>
-              <Name>textTarget</Name>
-              <Page i:type="d2p1:PageUri">
+                </d7p1:FindExpressions>
+                <d7p1:Name>SelectionViewSelect</d7p1:Name>
+                <d7p1:NodeKind>4</d7p1:NodeKind>
+                <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              </d7p1:FindExpression>
+              <d7p1:FindInfo i:nil="true" />
+              <d7p1:Frame i:nil="true" />
+              <d7p1:HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlSelect</d7p1:HtmlControlType>
+              <d7p1:IsIndependent>false</d7p1:IsIndependent>
+              <d7p1:Name>textTarget</d7p1:Name>
+              <d7p1:Page i:type="d2p1:PageUri">
                 <d2p1:AlwaysUseTitleInCompare>false</d2p1:AlwaysUseTitleInCompare>
                 <d2p1:BaseUrl>http://localhost:3000</d2p1:BaseUrl>
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
@@ -336,10 +407,10 @@
                 <d2p1:Path>/contacts</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>Telerik Customer Relations Management System</d2p1:Title>
-              </Page>
-              <Region i:nil="true" />
-              <TechnologyType>Html</TechnologyType>
-              <Version>200</Version>
+              </d7p1:Page>
+              <d7p1:Region i:nil="true" />
+              <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              <d7p1:Version>200</d7p1:Version>
             </d5p1:Value>
           </d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
         </d2p1:Elements>
@@ -354,6 +425,7 @@
         <d2p1:DataBindVariableName i:nil="true" />
         <d2p1:EnsureStateIsCurrent>false</d2p1:EnsureStateIsCurrent>
         <d2p1:Timeout>10000</d2p1:Timeout>
+        <d2p1:UseBackupSearch>false</d2p1:UseBackupSearch>
         <d2p1:CompareType>Contains</d2p1:CompareType>
         <d2p1:ExpectedString>HTML5 Grid</d2p1:ExpectedString>
         <d2p1:SegmentType>InnerText</d2p1:SegmentType>
@@ -369,52 +441,54 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>5</d2p1:Order>
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
       <d2p1:Runtime_x0020_ID>5f87b14f-1ba0-49f3-8494-05ebb16cfaa1</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:SelectDropDownActionDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d5p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
         <d2p1:Elements xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
           <d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
             <d5p1:Key>dropDown</d5p1:Key>
-            <d5p1:Value>
-              <DomStateKey />
-              <FindExpression i:type="HtmlFindExpressionElement">
-                <BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/h2[1]/div[1]/select[2]</BackupSearchClause>
-                <FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+            <d5p1:Value xmlns:d7p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+              <d7p1:DomStateKey />
+              <d7p1:FindExpression i:type="d7p1:HtmlFindExpressionElement">
+                <d7p1:BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/h2[1]/div[1]/select[2]</d7p1:BackupSearchClause>
+                <d7p1:FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
                   <d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
                     <d9p1:key>Html</d9p1:key>
-                    <d9p1:value i:type="HtmlFindExpression">
-                      <ChainStops />
-                      <Clauses>
-                        <HtmlFindClause>
-                          <Clause>tagname=select</Clause>
-                        </HtmlFindClause>
-                        <HtmlFindClause>
-                          <Clause>id=selection_view</Clause>
-                        </HtmlFindClause>
-                      </Clauses>
-                      <Constraints />
+                    <d9p1:value i:type="d7p1:HtmlFindExpression">
+                      <d7p1:ChainStops />
+                      <d7p1:Clauses>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>tagname=select</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>id=selection_view</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                      </d7p1:Clauses>
+                      <d7p1:Constraints />
                     </d9p1:value>
                   </d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
-                </FindExpressions>
-                <Name>SelectionViewSelect</Name>
-                <NodeKind>4</NodeKind>
-                <TechnologyType>Html</TechnologyType>
-              </FindExpression>
-              <FindInfo i:nil="true" />
-              <Frame i:nil="true" />
-              <HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlSelect</HtmlControlType>
-              <IsIndependent>false</IsIndependent>
-              <Name>dropDown</Name>
-              <Page i:type="d2p1:PageUri">
+                </d7p1:FindExpressions>
+                <d7p1:Name>SelectionViewSelect</d7p1:Name>
+                <d7p1:NodeKind>4</d7p1:NodeKind>
+                <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              </d7p1:FindExpression>
+              <d7p1:FindInfo i:nil="true" />
+              <d7p1:Frame i:nil="true" />
+              <d7p1:HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlSelect</d7p1:HtmlControlType>
+              <d7p1:IsIndependent>false</d7p1:IsIndependent>
+              <d7p1:Name>dropDown</d7p1:Name>
+              <d7p1:Page i:type="d2p1:PageUri">
                 <d2p1:AlwaysUseTitleInCompare>false</d2p1:AlwaysUseTitleInCompare>
                 <d2p1:BaseUrl>http://localhost:3000</d2p1:BaseUrl>
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
@@ -424,10 +498,10 @@
                 <d2p1:Path>/contacts</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>Telerik Customer Relations Management System</d2p1:Title>
-              </Page>
-              <Region i:nil="true" />
-              <TechnologyType>Html</TechnologyType>
-              <Version>200</Version>
+              </d7p1:Page>
+              <d7p1:Region i:nil="true" />
+              <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              <d7p1:Version>200</d7p1:Version>
             </d5p1:Value>
           </d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
         </d2p1:Elements>
@@ -438,7 +512,9 @@
         <d2p1:UseStepWaitOnElementsTimout>false</d2p1:UseStepWaitOnElementsTimout>
         <d2p1:WaitOnElements>true</d2p1:WaitOnElements>
         <d2p1:WaitOnElementsTimeout>10000</d2p1:WaitOnElementsTimeout>
+        <AjaxTimeout xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">0</AjaxTimeout>
         <ClosesBrowser xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">false</ClosesBrowser>
+        <UseBackupSearch xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">false</UseBackupSearch>
         <d2p1:InvokeSelectionChanged>true</d2p1:InvokeSelectionChanged>
         <d2p1:SelectType>ByValue</d2p1:SelectType>
         <d2p1:SelectionIndex>0</d2p1:SelectionIndex>
@@ -456,52 +532,54 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>6</d2p1:Order>
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
       <d2p1:Runtime_x0020_ID>c36ddc01-78fe-416b-9fd6-3c4375caea6d</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ContentVerificationDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d5p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
         <d2p1:Elements xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
           <d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
             <d5p1:Key>textTarget</d5p1:Key>
-            <d5p1:Value>
-              <DomStateKey />
-              <FindExpression i:type="HtmlFindExpressionElement">
-                <BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/h2[1]</BackupSearchClause>
-                <FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+            <d5p1:Value xmlns:d7p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+              <d7p1:DomStateKey />
+              <d7p1:FindExpression i:type="d7p1:HtmlFindExpressionElement">
+                <d7p1:BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/h2[1]</d7p1:BackupSearchClause>
+                <d7p1:FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
                   <d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
                     <d9p1:key>Html</d9p1:key>
-                    <d9p1:value i:type="HtmlFindExpression">
-                      <ChainStops />
-                      <Clauses>
-                        <HtmlFindClause>
-                          <Clause>TextContent=HTML5 Tree</Clause>
-                        </HtmlFindClause>
-                        <HtmlFindClause>
-                          <Clause>tagname=h2</Clause>
-                        </HtmlFindClause>
-                      </Clauses>
-                      <Constraints />
+                    <d9p1:value i:type="d7p1:HtmlFindExpression">
+                      <d7p1:ChainStops />
+                      <d7p1:Clauses>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>TextContent=HTML5 Tree</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>tagname=h2</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                      </d7p1:Clauses>
+                      <d7p1:Constraints />
                     </d9p1:value>
                   </d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
-                </FindExpressions>
-                <Name>HTML5TreeH2Tag</Name>
-                <NodeKind>4</NodeKind>
-                <TechnologyType>Html</TechnologyType>
-              </FindExpression>
-              <FindInfo i:nil="true" />
-              <Frame i:nil="true" />
-              <HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlControl</HtmlControlType>
-              <IsIndependent>false</IsIndependent>
-              <Name>textTarget</Name>
-              <Page i:type="d2p1:PageUri">
+                </d7p1:FindExpressions>
+                <d7p1:Name>HTML5TreeH2Tag</d7p1:Name>
+                <d7p1:NodeKind>4</d7p1:NodeKind>
+                <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              </d7p1:FindExpression>
+              <d7p1:FindInfo i:nil="true" />
+              <d7p1:Frame i:nil="true" />
+              <d7p1:HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlControl</d7p1:HtmlControlType>
+              <d7p1:IsIndependent>false</d7p1:IsIndependent>
+              <d7p1:Name>textTarget</d7p1:Name>
+              <d7p1:Page i:type="d2p1:PageUri">
                 <d2p1:AlwaysUseTitleInCompare>false</d2p1:AlwaysUseTitleInCompare>
                 <d2p1:BaseUrl>http://localhost:3000</d2p1:BaseUrl>
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
@@ -511,10 +589,10 @@
                 <d2p1:Path>/contacts/treeview</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>Telerik Customer Relations Management System</d2p1:Title>
-              </Page>
-              <Region i:nil="true" />
-              <TechnologyType>Html</TechnologyType>
-              <Version>200</Version>
+              </d7p1:Page>
+              <d7p1:Region i:nil="true" />
+              <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              <d7p1:Version>200</d7p1:Version>
             </d5p1:Value>
           </d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
         </d2p1:Elements>
@@ -529,6 +607,7 @@
         <d2p1:DataBindVariableName i:nil="true" />
         <d2p1:EnsureStateIsCurrent>false</d2p1:EnsureStateIsCurrent>
         <d2p1:Timeout>10000</d2p1:Timeout>
+        <d2p1:UseBackupSearch>false</d2p1:UseBackupSearch>
         <d2p1:CompareType>Contains</d2p1:CompareType>
         <d2p1:ExpectedString>HTML5 Tree</d2p1:ExpectedString>
         <d2p1:SegmentType>TextContent</d2p1:SegmentType>
@@ -544,52 +623,54 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>7</d2p1:Order>
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
       <d2p1:Runtime_x0020_ID>d42fe3fb-1429-434d-9d7f-444f8a2e9383</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ContentVerificationDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d5p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
         <d2p1:Elements xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
           <d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
             <d5p1:Key>textTarget</d5p1:Key>
-            <d5p1:Value>
-              <DomStateKey />
-              <FindExpression i:type="HtmlFindExpressionElement">
-                <BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/h2[1]</BackupSearchClause>
-                <FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+            <d5p1:Value xmlns:d7p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+              <d7p1:DomStateKey />
+              <d7p1:FindExpression i:type="d7p1:HtmlFindExpressionElement">
+                <d7p1:BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/h2[1]</d7p1:BackupSearchClause>
+                <d7p1:FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
                   <d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
                     <d9p1:key>Html</d9p1:key>
-                    <d9p1:value i:type="HtmlFindExpression">
-                      <ChainStops />
-                      <Clauses>
-                        <HtmlFindClause>
-                          <Clause>tagname=h2</Clause>
-                        </HtmlFindClause>
-                        <HtmlFindClause>
-                          <Clause>TextContent=HTML5 Tree</Clause>
-                        </HtmlFindClause>
-                      </Clauses>
-                      <Constraints />
+                    <d9p1:value i:type="d7p1:HtmlFindExpression">
+                      <d7p1:ChainStops />
+                      <d7p1:Clauses>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>tagname=h2</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>TextContent=HTML5 Tree</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                      </d7p1:Clauses>
+                      <d7p1:Constraints />
                     </d9p1:value>
                   </d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
-                </FindExpressions>
-                <Name>HTML5TreeH2Tag</Name>
-                <NodeKind>4</NodeKind>
-                <TechnologyType>Html</TechnologyType>
-              </FindExpression>
-              <FindInfo i:nil="true" />
-              <Frame i:nil="true" />
-              <HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlControl</HtmlControlType>
-              <IsIndependent>false</IsIndependent>
-              <Name>textTarget</Name>
-              <Page i:type="d2p1:PageUri">
+                </d7p1:FindExpressions>
+                <d7p1:Name>HTML5TreeH2Tag</d7p1:Name>
+                <d7p1:NodeKind>4</d7p1:NodeKind>
+                <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              </d7p1:FindExpression>
+              <d7p1:FindInfo i:nil="true" />
+              <d7p1:Frame i:nil="true" />
+              <d7p1:HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlControl</d7p1:HtmlControlType>
+              <d7p1:IsIndependent>false</d7p1:IsIndependent>
+              <d7p1:Name>textTarget</d7p1:Name>
+              <d7p1:Page i:type="d2p1:PageUri">
                 <d2p1:AlwaysUseTitleInCompare>false</d2p1:AlwaysUseTitleInCompare>
                 <d2p1:BaseUrl>http://localhost:3000</d2p1:BaseUrl>
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
@@ -599,10 +680,10 @@
                 <d2p1:Path>/contacts/treeview</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>Telerik Customer Relations Management System</d2p1:Title>
-              </Page>
-              <Region i:nil="true" />
-              <TechnologyType>Html</TechnologyType>
-              <Version>200</Version>
+              </d7p1:Page>
+              <d7p1:Region i:nil="true" />
+              <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              <d7p1:Version>200</d7p1:Version>
             </d5p1:Value>
           </d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
         </d2p1:Elements>
@@ -617,6 +698,7 @@
         <d2p1:DataBindVariableName i:nil="true" />
         <d2p1:EnsureStateIsCurrent>false</d2p1:EnsureStateIsCurrent>
         <d2p1:Timeout>10000</d2p1:Timeout>
+        <d2p1:UseBackupSearch>false</d2p1:UseBackupSearch>
         <d2p1:CompareType>StartsWith</d2p1:CompareType>
         <d2p1:ExpectedString>HTML5 Tree</d2p1:ExpectedString>
         <d2p1:SegmentType>InnerText</d2p1:SegmentType>
@@ -626,55 +708,11 @@
       <d2p1:Version>200</d2p1:Version>
     </d2p1:AutomationStep>
   </Steps>
-  <Version>200</Version>
-  <BrowserType>NotSet</BrowserType>
-  <CurrentReferences xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-    <d2p1:string>System</d2p1:string>
-    <d2p1:string>System.Core</d2p1:string>
-    <d2p1:string>ArtOfTest.WebAii, Version=2011.2.928.0, Culture=neutral, PublicKeyToken=4fd5f65be123776c</d2p1:string>
-    <d2p1:string>ArtOfTest.WebAii.Design, Version=2011.2.928.0, Culture=neutral, PublicKeyToken=4fc62bbc3827ab1d</d2p1:string>
-    <d2p1:string>Telerik.WebAii.Controls.Html, Version=2011.2.928.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
-    <d2p1:string>Telerik.WebAii.Controls.Xaml, Version=2011.2.928.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
-    <d2p1:string>Telerik.WebAii.Controls.Xaml.Wpf, Version=2011.2.928.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
-  </CurrentReferences>
-  <CustomProperty1>bvt</CustomProperty1>
-  <DeploymentItems xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-  <DomStatesCounter xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-  <HasCodeBehind>false</HasCodeBehind>
-  <HtmlDescription />
-  <InheritParentDataSource>false</InheritParentDataSource>
-  <IsManual>false</IsManual>
-  <IsSilverlightApp>false</IsSilverlightApp>
-  <IsTestFragment>false</IsTestFragment>
-  <Owner i:nil="true" />
-  <Path>Working With AJAX\AJAX Menu Items Can Be Validated.tstest</Path>
-  <Priority>0</Priority>
-  <ProfilerBenchmarkResultsFilePath i:nil="true" />
-  <ProfilerBenchmarkResultsId>00000000-0000-0000-0000-000000000000</ProfilerBenchmarkResultsId>
-  <ProfilerConfigurationFilePath>D:\projects\Telerik-Demo\test\TestStudio\Profiler Configurations\{1824807f-83a8-4255-bea0-23f0faa8a982}.tsprofconfig</ProfilerConfigurationFilePath>
-  <ProfilerConfigurationId>00000000-0000-0000-0000-000000000000</ProfilerConfigurationId>
-  <ProfilerConfigurations xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-    <d2p1:KeyValueOfstringbase64Binary>
-      <d2p1:Key>ArtOfTest.WebAii.Design.Execution.Profiler.ProfilerResultsMetadata</d2p1:Key>
-      <d2p1:Value>AAEAAAD/////AQAAAAAAAAAMAgAAAF9BcnRPZlRlc3QuV2ViQWlpLkRlc2lnbiwgVmVyc2lvbj0yMDExLjIuOTI4LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49NGZjNjJiYmMzODI3YWIxZAwDAAAAWEFydE9mVGVzdC5XZWJBaWksIFZlcnNpb249MjAxMS4yLjkyOC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTRmZDVmNjViZTEyMzc3NmMMBAAAAGhUZWxlcmlrLlRlc3RpbmdGcmFtZXdvcmsuSW50ZXJvcCwgVmVyc2lvbj0yMDExLjIuOTI4LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49OGNhMDBkM2UwZWJkNGI4YgUBAAAAQkFydE9mVGVzdC5XZWJBaWkuRGVzaWduLkV4ZWN1dGlvbi5Qcm9maWxlci5Qcm9maWxlclJlc3VsdHNNZXRhZGF0YQ4AAAAKX3Jlc3VsdHNJZAxfb3duZXJUZXN0SWQKX3N0YXJ0VGltZQpfdG90YWxUaW1lG19iQ29sbGVjdFByb2ZpbGVyU2FtcGxlRGF0YQpfc3RyU2VydmVyDF9pU2VydmVyUG9ydA9fc3RyRGVzY3JpcHRpb24KX3N0ckZvbGRlcgxfc3RyRmlsZVBhdGgMX2Jyb3dzZXJUeXBlD19icm93c2VyVmVyc2lvbhxfYkNsZWFyQnJvd3NlckNhY2hlQmVmb3JlUnVuF19iV2FybVVwU2VydmVyQmVmb3JlUnVuAwMAAAABAAEBAQQEAAALU3lzdGVtLkd1aWQLU3lzdGVtLkd1aWQNDAEIKkFydE9mVGVzdC5XZWJBaWkuQ29yZS5Ccm93c2VyRXhlY3V0aW9uVHlwZQMAAAApVGVsZXJpay5UZXN0aW5nRnJhbWV3b3JrLlVuaXZlcnNhbFZlcnNpb24EAAAAAQECAAAABPv///8LU3lzdGVtLkd1aWQLAAAAAl9hAl9iAl9jAl9kAl9lAl9mAl9nAl9oAl9pAl9qAl9rAAAAAAAAAAAAAAAIBwcCAgICAgICAgAAAAAAAAAAAAAAAAAAAAAB+v////v///9/gCQYqINVQr6gI/D6qKmCAAAAAAAAAAAAAAAAAAAAAAAGBwAAAARERU1PSh8AAAoGCAAAACpDOlxVc2Vyc1xBZG1pbmlzdHJhdG9yXEFwcERhdGFcTG9jYWxcVGVtcFwKBff///8qQXJ0T2ZUZXN0LldlYkFpaS5Db3JlLkJyb3dzZXJFeGVjdXRpb25UeXBlAQAAAAd2YWx1ZV9fAAgDAAAAAQAAAAoAAAs=</d2p1:Value>
-    </d2p1:KeyValueOfstringbase64Binary>
-  </ProfilerConfigurations>
-  <ProfilerResultsDirectory>C:\Users\Administrator\AppData\Local\Temp\</ProfilerResultsDirectory>
-  <ProfilerServerName i:nil="true" />
-  <ResourceFilePath>Working With AJAX\AJAX Menu Items Can Be Validated.resx</ResourceFilePath>
-  <ReuseAppWindow>0</ReuseAppWindow>
-  <SilverlightAppLocalDirectory />
-  <SilverlightAppOriginUri i:nil="true" />
-  <SilverlightAppRecordLocal>false</SilverlightAppRecordLocal>
-  <SilverlightAppWebUrl />
-  <SilverlightEnabled>false</SilverlightEnabled>
   <StopTestListOnFailure>false</StopTestListOnFailure>
   <TestAssembly>Telerik_Demo_App.dll</TestAssembly>
-  <TestAssemblyPath>bin\</TestAssemblyPath>
+  <TestAssemblyPath>bin</TestAssemblyPath>
   <TestClass i:nil="true" />
   <TestLinks xmlns:d2p1="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.ProjectModel.TestLinks" />
-  <TestType>Web</TestType>
-  <UniqueId>1824807f-83a8-4255-bea0-23f0faa8a982</UniqueId>
   <UseDefaultWpfAppPath>false</UseDefaultWpfAppPath>
   <VSProperties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <WebKitExecutionDelay>0</WebKitExecutionDelay>

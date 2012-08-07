@@ -1,4 +1,18 @@
 ﻿<WebAiiTest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://artoftest.com/schemas/WebAiiDesignCanvas/3.0.0">
+  <DataInfo xmlns:d2p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0">
+    <d2p1:BuiltInData i:nil="true" />
+    <d2p1:BuiltInDocumentKey i:nil="true" />
+    <d2p1:ConnectionString />
+    <d2p1:DataEnabled>true</d2p1:DataEnabled>
+    <d2p1:DataProvider />
+    <d2p1:DataRange />
+    <d2p1:DataTableName />
+    <d2p1:DataType>None</d2p1:DataType>
+    <d2p1:DefaultToGrid>true</d2p1:DefaultToGrid>
+    <d2p1:HasBuiltinGrid>false</d2p1:HasBuiltinGrid>
+    <d2p1:LoadRecordsCount i:nil="true" />
+    <d2p1:TSQL />
+  </DataInfo>
   <Description />
   <IsManual>false</IsManual>
   <Name>Saving a New Contact with valid values shows user on grid</Name>
@@ -12,14 +26,16 @@
   <CurrentReferences xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
     <d2p1:string>System</d2p1:string>
     <d2p1:string>System.Core</d2p1:string>
-    <d2p1:string>ArtOfTest.WebAii, Version=2011.2.1413.0, Culture=neutral, PublicKeyToken=4fd5f65be123776c</d2p1:string>
-    <d2p1:string>ArtOfTest.WebAii.Design, Version=2011.2.1413.0, Culture=neutral, PublicKeyToken=4fc62bbc3827ab1d</d2p1:string>
-    <d2p1:string>Telerik.WebAii.Controls.Html, Version=2011.2.1413.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
-    <d2p1:string>Telerik.WebAii.Controls.Xaml, Version=2011.2.1413.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
-    <d2p1:string>Telerik.WebAii.Controls.Xaml.Wpf, Version=2011.2.1413.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
+    <d2p1:string>ArtOfTest.WebAii, Version=2012.1.719.0, Culture=neutral, PublicKeyToken=4fd5f65be123776c</d2p1:string>
+    <d2p1:string>ArtOfTest.WebAii.Design, Version=2012.1.719.0, Culture=neutral, PublicKeyToken=4fc62bbc3827ab1d</d2p1:string>
+    <d2p1:string>Telerik.WebAii.Controls.Html, Version=2012.1.719.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
+    <d2p1:string>Telerik.WebAii.Controls.Xaml, Version=2012.1.719.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
+    <d2p1:string>Telerik.WebAii.Controls.Xaml.Wpf, Version=2012.1.719.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
+    <d2p1:string>Telerik.TestingFramework.Controls.KendoUI, Version=2012.1.719.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
     <d2p1:string>D:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</d2p1:string>
     <d2p1:string>System.Windows.Forms</d2p1:string>
     <d2p1:string />
+    <d2p1:string>SupportFramework\bin\Debug\SupportFramework.dll</d2p1:string>
   </CurrentReferences>
   <DataInfo xmlns:d2p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0">
     <d2p1:BuiltInData i:nil="true" />
@@ -32,6 +48,7 @@
     <d2p1:DataType>None</d2p1:DataType>
     <d2p1:DefaultToGrid>true</d2p1:DefaultToGrid>
     <d2p1:HasBuiltinGrid>false</d2p1:HasBuiltinGrid>
+    <d2p1:LoadRecordsCount i:nil="true" />
     <d2p1:TSQL />
   </DataInfo>
   <DeploymentItems xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
@@ -72,10 +89,10 @@
       <d2p1:Page xmlns:d4p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0" i:type="d4p1:PageUri">
         <d4p1:AlwaysUseTitleInCompare>false</d4p1:AlwaysUseTitleInCompare>
         <d4p1:BaseUrl>http://localhost:3000</d4p1:BaseUrl>
-        <d4p1:CompareMode>FullPath</d4p1:CompareMode>
+        <d4p1:CompareMode>FullPathAndQuery</d4p1:CompareMode>
         <d4p1:EquivalentUrls xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d4p1:Fragment />
-        <d4p1:FriendlyName>DemoApp1</d4p1:FriendlyName>
+        <d4p1:FriendlyName>New Contact Page</d4p1:FriendlyName>
         <d4p1:Path>/contacts/new</d4p1:Path>
         <d4p1:Query />
         <d4p1:Title>DemoApp</d4p1:Title>
@@ -120,7 +137,7 @@
         <d4p1:CompareMode>FullPathAndQuery</d4p1:CompareMode>
         <d4p1:EquivalentUrls xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d4p1:Fragment />
-        <d4p1:FriendlyName>DemoApp1</d4p1:FriendlyName>
+        <d4p1:FriendlyName>New Contact Page</d4p1:FriendlyName>
         <d4p1:Path>/contacts/new</d4p1:Path>
         <d4p1:Query />
         <d4p1:Title>DemoApp</d4p1:Title>
@@ -168,7 +185,7 @@
         <d4p1:FriendlyName>Main Grid Page</d4p1:FriendlyName>
         <d4p1:Path>/contacts</d4p1:Path>
         <d4p1:Query />
-        <d4p1:Title>DemoApp</d4p1:Title>
+        <d4p1:Title>Telerik Customer Relations Management System</d4p1:Title>
       </d2p1:Page>
       <d2p1:Region i:nil="true" />
       <d2p1:TechnologyType>Html</d2p1:TechnologyType>
@@ -209,12 +226,12 @@
       <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
       <d2p1:CustomDescription i:nil="true" />
       <d2p1:Description>Execute test 'Delete all users with @foo.com mail addresses'</d2p1:Description>
-      <d2p1:Enabled>true</d2p1:Enabled>
+      <d2p1:Enabled>false</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>1</d2p1:Order>
       <d2p1:QcId>0</d2p1:QcId>
       <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
-      <d2p1:Runtime_x0020_ID>8e77e351-822e-4a88-a058-c60dc949e86e</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>95c1242c-9a82-4786-8a56-bdd83e409389</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ExecuteTestActionDescriptor">
         <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
           <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -245,13 +262,49 @@
     <d2p1:AutomationStep i:type="d2p1:AutomationStep">
       <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
       <d2p1:CustomDescription i:nil="true" />
-      <d2p1:Description>Execute test 'Clicking New Contact from grid opens form in new window.tstest'</d2p1:Description>
+      <d2p1:Description>[Clear_foo_contacts_from_database] : New Coded Step</d2p1:Description>
       <d2p1:Enabled>true</d2p1:Enabled>
-      <d2p1:Id />
+      <d2p1:Id>Clear_foo_contacts_from_database</d2p1:Id>
       <d2p1:Order>2</d2p1:Order>
       <d2p1:QcId>0</d2p1:QcId>
       <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
-      <d2p1:Runtime_x0020_ID>6be9e9ac-0ba0-45ee-afd2-062059d65490</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>127ee6f9-c5f9-48f9-bd25-23a61ca5e64d</d2p1:Runtime_x0020_ID>
+      <d2p1:Step i:type="d2p1:CodedStepDescriptor">
+        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <d6p1:KeyValueOfstringstring>
+              <d6p1:Key>RunsAgainstVersion</d6p1:Key>
+              <d6p1:Value />
+            </d6p1:KeyValueOfstringstring>
+          </d5p1:ConstraintValues>
+        </d2p1:Constraints>
+        <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <d2p1:EditorType />
+        <d2p1:Elements xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <d2p1:LogMessageOnFailure />
+        <d2p1:Pause>None</d2p1:Pause>
+        <d2p1:RunsAgainstVersion />
+        <d2p1:StepType>Action</d2p1:StepType>
+        <d2p1:UseStepWaitOnElementsTimout>false</d2p1:UseStepWaitOnElementsTimout>
+        <d2p1:WaitOnElements>true</d2p1:WaitOnElements>
+        <d2p1:WaitOnElementsTimeout>10000</d2p1:WaitOnElementsTimeout>
+        <d2p1:Code>            ContactFactory.Delete_all_Foo_contacts_from_database();</d2p1:Code>
+        <d2p1:RequiresSilverlight>false</d2p1:RequiresSilverlight>
+      </d2p1:Step>
+      <d2p1:StepImageKey>Saving a New Contact with valid values shows user on gridpc4skjob.pf0</d2p1:StepImageKey>
+      <d2p1:StepState>Coded</d2p1:StepState>
+      <d2p1:Version>200</d2p1:Version>
+    </d2p1:AutomationStep>
+    <d2p1:AutomationStep i:type="d2p1:AutomationStep">
+      <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
+      <d2p1:CustomDescription i:nil="true" />
+      <d2p1:Description>Execute test 'Clicking New Contact from grid opens form in new window.tstest'</d2p1:Description>
+      <d2p1:Enabled>true</d2p1:Enabled>
+      <d2p1:Id />
+      <d2p1:Order>3</d2p1:Order>
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
+      <d2p1:Runtime_x0020_ID>b9b6f47d-5987-4299-a177-7172b5d779d1</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ExecuteTestActionDescriptor">
         <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
           <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -282,13 +335,13 @@
     <d2p1:AutomationStep i:type="d2p1:AutomationStep">
       <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
       <d2p1:CustomDescription i:nil="true" />
-      <d2p1:Description>Set 'ContactFirstNameText' text to 'Jim'</d2p1:Description>
+      <d2p1:Description>Enter text 'Jim' in 'ContactFirstNameText'</d2p1:Description>
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
-      <d2p1:Order>3</d2p1:Order>
+      <d2p1:Order>4</d2p1:Order>
       <d2p1:QcId>0</d2p1:QcId>
       <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
-      <d2p1:Runtime_x0020_ID>9af6fdef-a35f-4560-ac10-8c33e2a9b2fb</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>9389d7fa-3147-41ed-867f-c92d8e06858a</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:SetTextActionDescriptor">
         <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
           <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -339,7 +392,7 @@
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
                 <d2p1:EquivalentUrls />
                 <d2p1:Fragment />
-                <d2p1:FriendlyName>DemoApp1</d2p1:FriendlyName>
+                <d2p1:FriendlyName>New Contact Page</d2p1:FriendlyName>
                 <d2p1:Path>/contacts/new</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>DemoApp</d2p1:Title>
@@ -382,13 +435,13 @@
     <d2p1:AutomationStep i:type="d2p1:AutomationStep">
       <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
       <d2p1:CustomDescription i:nil="true" />
-      <d2p1:Description>Set 'ContactLastNameText' text to 'Haswell'</d2p1:Description>
+      <d2p1:Description>Enter text 'Haswell' in 'ContactLastNameText'</d2p1:Description>
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
-      <d2p1:Order>4</d2p1:Order>
+      <d2p1:Order>5</d2p1:Order>
       <d2p1:QcId>0</d2p1:QcId>
       <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
-      <d2p1:Runtime_x0020_ID>b1dca9dd-0c44-48f7-b399-b834e30e0dd1</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>889189d0-f2e7-4876-bc49-e1f73cf3a28d</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:SetTextActionDescriptor">
         <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
           <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -439,7 +492,7 @@
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
                 <d2p1:EquivalentUrls />
                 <d2p1:Fragment />
-                <d2p1:FriendlyName>DemoApp1</d2p1:FriendlyName>
+                <d2p1:FriendlyName>New Contact Page</d2p1:FriendlyName>
                 <d2p1:Path>/contacts/new</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>DemoApp</d2p1:Title>
@@ -482,13 +535,13 @@
     <d2p1:AutomationStep i:type="d2p1:AutomationStep">
       <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
       <d2p1:CustomDescription i:nil="true" />
-      <d2p1:Description>Set 'ContactEmailEmail' text to 'jh@foo.com'</d2p1:Description>
+      <d2p1:Description>Enter text 'jh@foo.com' in 'ContactEmailEmail'</d2p1:Description>
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
-      <d2p1:Order>5</d2p1:Order>
+      <d2p1:Order>6</d2p1:Order>
       <d2p1:QcId>0</d2p1:QcId>
       <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
-      <d2p1:Runtime_x0020_ID>283bb6e4-d87f-4d83-824c-6042fdfad11b</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>1122430f-fbbd-4634-88b2-694497181ef2</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:SetTextActionDescriptor">
         <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
           <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -539,7 +592,7 @@
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
                 <d2p1:EquivalentUrls />
                 <d2p1:Fragment />
-                <d2p1:FriendlyName>DemoApp1</d2p1:FriendlyName>
+                <d2p1:FriendlyName>New Contact Page</d2p1:FriendlyName>
                 <d2p1:Path>/contacts/new</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>DemoApp</d2p1:Title>
@@ -582,13 +635,13 @@
     <d2p1:AutomationStep i:type="d2p1:AutomationStep">
       <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
       <d2p1:CustomDescription i:nil="true" />
-      <d2p1:Description>Set 'ContactLinkedinProfileText' text to 'http://mypage'</d2p1:Description>
+      <d2p1:Description>Enter text 'http://mypage' in 'ContactLinkedinProfileText'</d2p1:Description>
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
-      <d2p1:Order>6</d2p1:Order>
+      <d2p1:Order>7</d2p1:Order>
       <d2p1:QcId>0</d2p1:QcId>
       <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
-      <d2p1:Runtime_x0020_ID>b91d811a-2409-4ba1-a8e3-98457b713f1d</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>c07aefb2-7037-4d02-8ad9-9b77b24f56e3</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:SetTextActionDescriptor">
         <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
           <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -639,7 +692,7 @@
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
                 <d2p1:EquivalentUrls />
                 <d2p1:Fragment />
-                <d2p1:FriendlyName>DemoApp1</d2p1:FriendlyName>
+                <d2p1:FriendlyName>New Contact Page</d2p1:FriendlyName>
                 <d2p1:Path>/contacts/new</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>DemoApp</d2p1:Title>
@@ -685,10 +738,10 @@
       <d2p1:Description>Desktop command: Drag &amp; Drop NeutralIconImage to Contact Type Drop Target</d2p1:Description>
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
-      <d2p1:Order>7</d2p1:Order>
+      <d2p1:Order>8</d2p1:Order>
       <d2p1:QcId>0</d2p1:QcId>
       <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
-      <d2p1:Runtime_x0020_ID>6d760fe5-b0ea-4f8d-b6df-bd8ca4af9772</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>5cc83af8-7fa6-4367-9118-5f68c9dd1fc0</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:DragDropActionDescriptor">
         <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
           <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -739,7 +792,7 @@
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
                 <d2p1:EquivalentUrls />
                 <d2p1:Fragment />
-                <d2p1:FriendlyName>DemoApp1</d2p1:FriendlyName>
+                <d2p1:FriendlyName>New Contact Page</d2p1:FriendlyName>
                 <d2p1:Path>/contacts/new</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>DemoApp</d2p1:Title>
@@ -784,7 +837,7 @@
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
                 <d2p1:EquivalentUrls />
                 <d2p1:Fragment />
-                <d2p1:FriendlyName>DemoApp1</d2p1:FriendlyName>
+                <d2p1:FriendlyName>New Contact Page</d2p1:FriendlyName>
                 <d2p1:Path>/contacts/new</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>DemoApp</d2p1:Title>
@@ -842,10 +895,10 @@
       <d2p1:Description>Click 'CommitSubmit'</d2p1:Description>
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
-      <d2p1:Order>8</d2p1:Order>
+      <d2p1:Order>9</d2p1:Order>
       <d2p1:QcId>0</d2p1:QcId>
       <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
-      <d2p1:Runtime_x0020_ID>c43b7d20-978c-4846-9e9f-ab40e1b2da0a</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>1945ab46-3b90-4b8b-81b8-7ac0790d317c</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ClickActionDescriptor">
         <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
           <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -896,7 +949,7 @@
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
                 <d2p1:EquivalentUrls />
                 <d2p1:Fragment />
-                <d2p1:FriendlyName>DemoApp1</d2p1:FriendlyName>
+                <d2p1:FriendlyName>New Contact Page</d2p1:FriendlyName>
                 <d2p1:Path>/contacts/new</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>DemoApp</d2p1:Title>
@@ -929,10 +982,10 @@
       <d2p1:Description>Verify 'TextContent' 'Contains' 'jh@foo.com' on 'JhFooComTableCell'</d2p1:Description>
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
-      <d2p1:Order>9</d2p1:Order>
+      <d2p1:Order>10</d2p1:Order>
       <d2p1:QcId>0</d2p1:QcId>
       <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
-      <d2p1:Runtime_x0020_ID>fb1a1cdd-78fb-46a2-80bc-bb76384069dc</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>2f653390-bc52-433b-9c3f-632db12c423c</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ContentVerificationDescriptor">
         <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
           <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -986,7 +1039,7 @@
                 <d2p1:FriendlyName>Main Grid Page</d2p1:FriendlyName>
                 <d2p1:Path>/contacts</d2p1:Path>
                 <d2p1:Query />
-                <d2p1:Title>DemoApp</d2p1:Title>
+                <d2p1:Title>Telerik Customer Relations Management System</d2p1:Title>
               </d7p1:Page>
               <d7p1:Region i:nil="true" />
               <d7p1:TechnologyType>Html</d7p1:TechnologyType>
@@ -1020,10 +1073,10 @@
       <d2p1:Description>Close pop-up window : '/contacts'</d2p1:Description>
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
-      <d2p1:Order>10</d2p1:Order>
+      <d2p1:Order>11</d2p1:Order>
       <d2p1:QcId>0</d2p1:QcId>
       <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
-      <d2p1:Runtime_x0020_ID>e48c4ffa-0471-4abe-bc22-930890de3fde</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>b51128ca-ab89-4579-8ab5-e5c44b86dbdb</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:HtmlDialogHandlerDescriptor">
         <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
           <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -1064,7 +1117,16 @@
   <TestClass>Telerik_Demo_App.Saving_a_New_Contact_with_valid_values_shows_user_on_grid</TestClass>
   <TestLinks xmlns:d2p1="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.ProjectModel.TestLinks" />
   <UseDefaultWpfAppPath>false</UseDefaultWpfAppPath>
-  <VSProperties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <VSProperties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:KeyValueOfstringstring>
+      <d2p1:Key>Timeout</d2p1:Key>
+      <d2p1:Value>0</d2p1:Value>
+    </d2p1:KeyValueOfstringstring>
+    <d2p1:KeyValueOfstringstring>
+      <d2p1:Key>ExecId</d2p1:Key>
+      <d2p1:Value>00000000-0000-0000-0000-000000000000</d2p1:Value>
+    </d2p1:KeyValueOfstringstring>
+  </VSProperties>
   <WebKitExecutionDelay>0</WebKitExecutionDelay>
   <WpfAppPath i:nil="true" />
 </WebAiiTest>

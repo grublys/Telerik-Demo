@@ -16,6 +16,7 @@ using ArtOfTest.WebAii.ObjectModel;
 using ArtOfTest.WebAii.Silverlight;
 using ArtOfTest.WebAii.Silverlight.UI;
 
+
 namespace Telerik_Demo_App
 {
 
@@ -69,6 +70,12 @@ namespace Telerik_Demo_App
         }
 
         #endregion
+
+        [CodedStep(@"New Coded Step")]
+        public void Clear_foo_contacts_from_database()
+        {
+            ContactFactory.Delete_all_Foo_contacts_from_database();
+        }
         
         // Add your test methods here...
     

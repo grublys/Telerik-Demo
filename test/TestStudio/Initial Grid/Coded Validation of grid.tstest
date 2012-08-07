@@ -1,4 +1,4 @@
-﻿<WebAiiTest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+﻿<WebAiiTest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://artoftest.com/schemas/WebAiiDesignCanvas/3.0.0">
   <DataInfo xmlns:d2p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0">
     <d2p1:BuiltInData i:nil="true" />
     <d2p1:BuiltInDocumentKey i:nil="true" />
@@ -10,76 +10,142 @@
     <d2p1:DataType>None</d2p1:DataType>
     <d2p1:DefaultToGrid>true</d2p1:DefaultToGrid>
     <d2p1:HasBuiltinGrid>false</d2p1:HasBuiltinGrid>
+    <d2p1:LoadRecordsCount i:nil="true" />
     <d2p1:TSQL />
   </DataInfo>
   <Description />
-  <IndependentDescriptors>
-    <ElementDescriptor>
-      <DomStateKey />
-      <FindExpression i:type="HtmlFindExpressionElement">
-        <BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/table[1]</BackupSearchClause>
-        <FindExpressions xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+  <IsManual>false</IsManual>
+  <Name>Coded Validation of grid</Name>
+  <Owner i:nil="true" />
+  <Path>Initial Grid\Coded Validation of grid.tstest</Path>
+  <Priority>0</Priority>
+  <TestType>Web</TestType>
+  <UniqueId>163568be-2153-4953-8b29-bbcc53b3a211</UniqueId>
+  <Version>200</Version>
+  <BrowserType>NotSet</BrowserType>
+  <CurrentReferences xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:string>System</d2p1:string>
+    <d2p1:string>System.Core</d2p1:string>
+    <d2p1:string>ArtOfTest.WebAii, Version=2011.2.1413.0, Culture=neutral, PublicKeyToken=4fd5f65be123776c</d2p1:string>
+    <d2p1:string>ArtOfTest.WebAii.Design, Version=2011.2.1413.0, Culture=neutral, PublicKeyToken=4fc62bbc3827ab1d</d2p1:string>
+    <d2p1:string>Telerik.WebAii.Controls.Html, Version=2011.2.1413.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
+    <d2p1:string>Telerik.WebAii.Controls.Xaml, Version=2011.2.1413.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
+    <d2p1:string>Telerik.WebAii.Controls.Xaml.Wpf, Version=2011.2.1413.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
+    <d2p1:string>D:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</d2p1:string>
+    <d2p1:string>System.Windows.Forms</d2p1:string>
+    <d2p1:string />
+  </CurrentReferences>
+  <DataInfo xmlns:d2p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0">
+    <d2p1:BuiltInData i:nil="true" />
+    <d2p1:BuiltInDocumentKey i:nil="true" />
+    <d2p1:ConnectionString />
+    <d2p1:DataEnabled>true</d2p1:DataEnabled>
+    <d2p1:DataProvider />
+    <d2p1:DataRange />
+    <d2p1:DataTableName />
+    <d2p1:DataType>None</d2p1:DataType>
+    <d2p1:DefaultToGrid>true</d2p1:DefaultToGrid>
+    <d2p1:HasBuiltinGrid>false</d2p1:HasBuiltinGrid>
+    <d2p1:LoadRecordsCount i:nil="true" />
+    <d2p1:TSQL />
+  </DataInfo>
+  <DeploymentItems xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:string>..\bin\Telerik_Demo_App.dll</d2p1:string>
+    <d2p1:string>..\Login\Logging in as test user displays proper header.tstest</d2p1:string>
+    <d2p1:string>..\Support\Log in if needed.tstest</d2p1:string>
+    <d2p1:string>..\Login\Providing valid credentials logs user on.tstest</d2p1:string>
+  </DeploymentItems>
+  <DomStatesCounter xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <HasCodeBehind>true</HasCodeBehind>
+  <HtmlDescription />
+  <IndependentDescriptors xmlns:d2p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+    <d2p1:ElementDescriptor>
+      <d2p1:DomStateKey />
+      <d2p1:FindExpression i:type="d2p1:HtmlFindExpressionElement">
+        <d2p1:BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/table[1]</d2p1:BackupSearchClause>
+        <d2p1:FindExpressions xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
           <d5p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
             <d5p1:key>Html</d5p1:key>
-            <d5p1:value i:type="HtmlFindExpression">
-              <ChainStops xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <d5p1:value i:type="d2p1:HtmlFindExpression">
+              <d2p1:ChainStops xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
                 <d8p1:int>1</d8p1:int>
-              </ChainStops>
-              <Clauses>
-                <HtmlFindClause>
-                  <Clause>id=content</Clause>
-                </HtmlFindClause>
-                <HtmlFindClause>
-                  <Clause>tagIndex=table:0</Clause>
-                </HtmlFindClause>
-              </Clauses>
-              <Constraints />
+              </d2p1:ChainStops>
+              <d2p1:Clauses>
+                <d2p1:HtmlFindClause>
+                  <d2p1:Clause>id=content</d2p1:Clause>
+                </d2p1:HtmlFindClause>
+                <d2p1:HtmlFindClause>
+                  <d2p1:Clause>tagIndex=table:0</d2p1:Clause>
+                </d2p1:HtmlFindClause>
+              </d2p1:Clauses>
+              <d2p1:Constraints />
             </d5p1:value>
           </d5p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
-        </FindExpressions>
-        <Name>ContactGridTable</Name>
-        <NodeKind>4</NodeKind>
-        <TechnologyType>Html</TechnologyType>
-      </FindExpression>
-      <FindInfo i:nil="true" />
-      <Frame i:nil="true" />
-      <HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlTable</HtmlControlType>
-      <IsIndependent>true</IsIndependent>
-      <Name>$$Independent$$</Name>
-      <Page xmlns:d4p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0" i:type="d4p1:PageUri">
+        </d2p1:FindExpressions>
+        <d2p1:Name>ContactGridTable</d2p1:Name>
+        <d2p1:NodeKind>4</d2p1:NodeKind>
+        <d2p1:TechnologyType>Html</d2p1:TechnologyType>
+      </d2p1:FindExpression>
+      <d2p1:FindInfo i:nil="true" />
+      <d2p1:Frame i:nil="true" />
+      <d2p1:HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlTable</d2p1:HtmlControlType>
+      <d2p1:IsIndependent>true</d2p1:IsIndependent>
+      <d2p1:Name>$$Independent$$</d2p1:Name>
+      <d2p1:Page xmlns:d4p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0" i:type="d4p1:PageUri">
         <d4p1:AlwaysUseTitleInCompare>false</d4p1:AlwaysUseTitleInCompare>
         <d4p1:BaseUrl>http://localhost:3000</d4p1:BaseUrl>
-        <d4p1:CompareMode>FullPath</d4p1:CompareMode>
+        <d4p1:CompareMode>FullPathAndQuery</d4p1:CompareMode>
         <d4p1:EquivalentUrls xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d4p1:Fragment />
         <d4p1:FriendlyName>Main Grid Page</d4p1:FriendlyName>
         <d4p1:Path>/contacts</d4p1:Path>
         <d4p1:Query />
         <d4p1:Title>Telerik Customer Relations Management System</d4p1:Title>
-      </Page>
-      <Region i:nil="true" />
-      <TechnologyType>Html</TechnologyType>
-      <Version>200</Version>
-    </ElementDescriptor>
+      </d2p1:Page>
+      <d2p1:Region i:nil="true" />
+      <d2p1:TechnologyType>Html</d2p1:TechnologyType>
+      <d2p1:Version>200</d2p1:Version>
+    </d2p1:ElementDescriptor>
   </IndependentDescriptors>
-  <Name>Coded Validation of grid</Name>
+  <InheritParentDataSource>false</InheritParentDataSource>
+  <IsSilverlightApp>false</IsSilverlightApp>
+  <IsTestFragment>false</IsTestFragment>
+  <ProfilerBenchmarkResultsFilePath i:nil="true" />
+  <ProfilerBenchmarkResultsId>00000000-0000-0000-0000-000000000000</ProfilerBenchmarkResultsId>
+  <ProfilerConfigurationFilePath>D:\projects\Telerik-Demo\test\TestStudio\Profiler Configurations\{163568be-2153-4953-8b29-bbcc53b3a211}.tsprofconfig</ProfilerConfigurationFilePath>
+  <ProfilerConfigurationId>00000000-0000-0000-0000-000000000000</ProfilerConfigurationId>
+  <ProfilerConfigurations xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <ProfilerResultsDirectory>C:\Users\ADMINI~1\AppData\Local\Temp\</ProfilerResultsDirectory>
+  <ProfilerServerName i:nil="true" />
+  <QcFilePath i:nil="true" />
+  <QcId>0</QcId>
+  <QcTestVersionStamp>0</QcTestVersionStamp>
+  <ResourceFilePath>Initial Grid\Coded Validation of grid.resx</ResourceFilePath>
+  <ReuseAppWindow>0</ReuseAppWindow>
+  <SilverlightAppLocalDirectory />
+  <SilverlightAppOriginUri i:nil="true" />
+  <SilverlightAppRecordLocal>false</SilverlightAppRecordLocal>
+  <SilverlightAppWebUrl />
+  <SilverlightEnabled>false</SilverlightEnabled>
   <Steps xmlns:d2p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0">
     <d2p1:AutomationStep i:type="d2p1:AutomationStep">
       <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
       <d2p1:CustomDescription>[Fixture_Setup] : New Coded Step</d2p1:CustomDescription>
-      <d2p1:Description>[Fixture_Setup] : @"New Coded Step</d2p1:Description>
+      <d2p1:Description>[Fixture_Setup] : New Coded Step</d2p1:Description>
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id>Fixture_Setup</d2p1:Id>
       <d2p1:Order>1</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>47ddfd9a-4bd6-4184-9b61-8801723e37ca</d2p1:Runtime_x0020_ID>
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
+      <d2p1:Runtime_x0020_ID>751bbfb8-dad8-45fd-8437-a6143588c55d</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:CodedStepDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d5p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
@@ -91,8 +157,7 @@
         <d2p1:UseStepWaitOnElementsTimout>false</d2p1:UseStepWaitOnElementsTimout>
         <d2p1:WaitOnElements>true</d2p1:WaitOnElements>
         <d2p1:WaitOnElementsTimeout>10000</d2p1:WaitOnElementsTimeout>
-        <d2p1:Code>            SetExtractedValue("contactName", "Holmes");
-</d2p1:Code>
+        <d2p1:Code>            SetExtractedValue("contactName", "Holmes");</d2p1:Code>
         <d2p1:RequiresSilverlight>false</d2p1:RequiresSilverlight>
       </d2p1:Step>
       <d2p1:StepImageKey>Coded Validation of grid0fzymazc.3e1</d2p1:StepImageKey>
@@ -102,19 +167,21 @@
     <d2p1:AutomationStep i:type="d2p1:AutomationStep">
       <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
       <d2p1:CustomDescription i:nil="true" />
-      <d2p1:Description>Execute test 'Providing valid credentials logs user on.tstest'</d2p1:Description>
+      <d2p1:Description>Execute test 'Providing valid credentials logs user on'</d2p1:Description>
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>2</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>f18aa72c-2371-477c-8ae8-ba526825d485</d2p1:Runtime_x0020_ID>
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
+      <d2p1:Runtime_x0020_ID>0680bff1-741e-426a-ac5b-5317efeece9d</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ExecuteTestActionDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d5p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
@@ -137,19 +204,21 @@
     <d2p1:AutomationStep i:type="d2p1:AutomationStep">
       <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
       <d2p1:CustomDescription i:nil="true" />
-      <d2p1:Description>[Open_contact_form_for_test_user] : @"New Coded Step</d2p1:Description>
+      <d2p1:Description>[Open_contact_form_for_test_user] : New Coded Step</d2p1:Description>
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id>Open_contact_form_for_test_user</d2p1:Id>
       <d2p1:Order>3</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>d39cc9c2-e72e-4702-98db-d3d617017939</d2p1:Runtime_x0020_ID>
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
+      <d2p1:Runtime_x0020_ID>f425ab49-4141-4d42-82de-0e3df2453348</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:CodedStepDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d5p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
@@ -170,8 +239,7 @@
             string windowUrl = cell.HRef;
             SetExtractedValue("contactWindowUrl", windowUrl);
 
-            cell.Click();            
-</d2p1:Code>
+            cell.Click();            </d2p1:Code>
         <d2p1:RequiresSilverlight>false</d2p1:RequiresSilverlight>
       </d2p1:Step>
       <d2p1:StepImageKey>Coded Validation of gridzcfzextb.rlt</d2p1:StepImageKey>
@@ -185,15 +253,17 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>4</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>fef248fd-d64c-4067-875d-c470f81419d0</d2p1:Runtime_x0020_ID>
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
+      <d2p1:Runtime_x0020_ID>d48d6f6a-3947-45f3-9f59-7711a25e001a</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:HtmlDialogHandlerDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d5p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
           <d5p1:KeyValueOfstringstring>
@@ -210,7 +280,9 @@
         <d2p1:UseStepWaitOnElementsTimout>false</d2p1:UseStepWaitOnElementsTimout>
         <d2p1:WaitOnElements>false</d2p1:WaitOnElements>
         <d2p1:WaitOnElementsTimeout>0</d2p1:WaitOnElementsTimeout>
+        <AjaxTimeout xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">0</AjaxTimeout>
         <ClosesBrowser xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">true</ClosesBrowser>
+        <UseBackupSearch xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">false</UseBackupSearch>
         <d2p1:HandleState>Popup</d2p1:HandleState>
         <d2p1:IsModalPopup>false</d2p1:IsModalPopup>
         <d2p1:IsUrlPartial>true</d2p1:IsUrlPartial>
@@ -229,15 +301,17 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>5</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>2e622a1a-84b1-4746-9480-7f650b866b28</d2p1:Runtime_x0020_ID>
-      <d2p1:Step i:type="InputValueVerificationDescriptor">
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
+      <d2p1:Runtime_x0020_ID>1f12fd79-ea27-4915-bbec-58c856f63303</d2p1:Runtime_x0020_ID>
+      <d2p1:Step xmlns:d4p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0" i:type="d4p1:InputValueVerificationDescriptor">
         <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d4p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d4p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
@@ -245,36 +319,36 @@
           <d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
             <d5p1:Key>TargetKey1</d5p1:Key>
             <d5p1:Value>
-              <DomStateKey />
-              <FindExpression i:type="HtmlFindExpressionElement">
-                <BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/form[1]/div[2]/input[1]</BackupSearchClause>
-                <FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+              <d4p1:DomStateKey />
+              <d4p1:FindExpression i:type="d4p1:HtmlFindExpressionElement">
+                <d4p1:BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/form[1]/div[2]/input[1]</d4p1:BackupSearchClause>
+                <d4p1:FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
                   <d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
                     <d9p1:key>Html</d9p1:key>
-                    <d9p1:value i:type="HtmlFindExpression">
-                      <ChainStops />
-                      <Clauses>
-                        <HtmlFindClause>
-                          <Clause>id=contact_first_name</Clause>
-                        </HtmlFindClause>
-                        <HtmlFindClause>
-                          <Clause>tagname=input</Clause>
-                        </HtmlFindClause>
-                      </Clauses>
-                      <Constraints />
+                    <d9p1:value i:type="d4p1:HtmlFindExpression">
+                      <d4p1:ChainStops />
+                      <d4p1:Clauses>
+                        <d4p1:HtmlFindClause>
+                          <d4p1:Clause>id=contact_first_name</d4p1:Clause>
+                        </d4p1:HtmlFindClause>
+                        <d4p1:HtmlFindClause>
+                          <d4p1:Clause>tagname=input</d4p1:Clause>
+                        </d4p1:HtmlFindClause>
+                      </d4p1:Clauses>
+                      <d4p1:Constraints />
                     </d9p1:value>
                   </d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
-                </FindExpressions>
-                <Name>ContactFirstNameText</Name>
-                <NodeKind>4</NodeKind>
-                <TechnologyType>Html</TechnologyType>
-              </FindExpression>
-              <FindInfo i:nil="true" />
-              <Frame i:nil="true" />
-              <HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlInputText</HtmlControlType>
-              <IsIndependent>false</IsIndependent>
-              <Name>TargetKey1</Name>
-              <Page i:type="d2p1:PageUri">
+                </d4p1:FindExpressions>
+                <d4p1:Name>ContactFirstNameText</d4p1:Name>
+                <d4p1:NodeKind>4</d4p1:NodeKind>
+                <d4p1:TechnologyType>Html</d4p1:TechnologyType>
+              </d4p1:FindExpression>
+              <d4p1:FindInfo i:nil="true" />
+              <d4p1:Frame i:nil="true" />
+              <d4p1:HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlInputText</d4p1:HtmlControlType>
+              <d4p1:IsIndependent>false</d4p1:IsIndependent>
+              <d4p1:Name>TargetKey1</d4p1:Name>
+              <d4p1:Page i:type="d2p1:PageUri">
                 <d2p1:AlwaysUseTitleInCompare>false</d2p1:AlwaysUseTitleInCompare>
                 <d2p1:BaseUrl>http://localhost:3000</d2p1:BaseUrl>
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
@@ -284,10 +358,10 @@
                 <d2p1:Path>/contacts/1/edit</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>Telerik Customer Relations Management System</d2p1:Title>
-              </Page>
-              <Region i:nil="true" />
-              <TechnologyType>Html</TechnologyType>
-              <Version>200</Version>
+              </d4p1:Page>
+              <d4p1:Region i:nil="true" />
+              <d4p1:TechnologyType>Html</d4p1:TechnologyType>
+              <d4p1:Version>200</d4p1:Version>
             </d5p1:Value>
           </d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
         </d2p1:Elements>
@@ -302,8 +376,9 @@
         <d2p1:DataBindVariableName i:nil="true" />
         <d2p1:EnsureStateIsCurrent>false</d2p1:EnsureStateIsCurrent>
         <d2p1:Timeout>10000</d2p1:Timeout>
-        <CompareType>Exact</CompareType>
-        <ExpectedValue>Jim</ExpectedValue>
+        <d2p1:UseBackupSearch>false</d2p1:UseBackupSearch>
+        <d4p1:CompareType>Exact</d4p1:CompareType>
+        <d4p1:ExpectedValue>Jim</d4p1:ExpectedValue>
       </d2p1:Step>
       <d2p1:StepImageKey>Coded Validation of gridrk2nabod.jar</d2p1:StepImageKey>
       <d2p1:StepState>NoCode</d2p1:StepState>
@@ -316,15 +391,17 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>6</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>4af7b808-2c78-4c19-9c68-f7895a5ef904</d2p1:Runtime_x0020_ID>
-      <d2p1:Step i:type="InputValueVerificationDescriptor">
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
+      <d2p1:Runtime_x0020_ID>ef2a6de3-5f5e-4184-a049-568ac47bc57f</d2p1:Runtime_x0020_ID>
+      <d2p1:Step xmlns:d4p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0" i:type="d4p1:InputValueVerificationDescriptor">
         <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d4p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d4p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
@@ -332,36 +409,36 @@
           <d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
             <d5p1:Key>TargetKey1</d5p1:Key>
             <d5p1:Value>
-              <DomStateKey />
-              <FindExpression i:type="HtmlFindExpressionElement">
-                <BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/form[1]/div[3]/input[1]</BackupSearchClause>
-                <FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+              <d4p1:DomStateKey />
+              <d4p1:FindExpression i:type="d4p1:HtmlFindExpressionElement">
+                <d4p1:BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/form[1]/div[3]/input[1]</d4p1:BackupSearchClause>
+                <d4p1:FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
                   <d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
                     <d9p1:key>Html</d9p1:key>
-                    <d9p1:value i:type="HtmlFindExpression">
-                      <ChainStops />
-                      <Clauses>
-                        <HtmlFindClause>
-                          <Clause>id=contact_last_name</Clause>
-                        </HtmlFindClause>
-                        <HtmlFindClause>
-                          <Clause>tagname=input</Clause>
-                        </HtmlFindClause>
-                      </Clauses>
-                      <Constraints />
+                    <d9p1:value i:type="d4p1:HtmlFindExpression">
+                      <d4p1:ChainStops />
+                      <d4p1:Clauses>
+                        <d4p1:HtmlFindClause>
+                          <d4p1:Clause>id=contact_last_name</d4p1:Clause>
+                        </d4p1:HtmlFindClause>
+                        <d4p1:HtmlFindClause>
+                          <d4p1:Clause>tagname=input</d4p1:Clause>
+                        </d4p1:HtmlFindClause>
+                      </d4p1:Clauses>
+                      <d4p1:Constraints />
                     </d9p1:value>
                   </d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
-                </FindExpressions>
-                <Name>ContactLastNameText</Name>
-                <NodeKind>4</NodeKind>
-                <TechnologyType>Html</TechnologyType>
-              </FindExpression>
-              <FindInfo i:nil="true" />
-              <Frame i:nil="true" />
-              <HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlInputText</HtmlControlType>
-              <IsIndependent>false</IsIndependent>
-              <Name>TargetKey1</Name>
-              <Page i:type="d2p1:PageUri">
+                </d4p1:FindExpressions>
+                <d4p1:Name>ContactLastNameText</d4p1:Name>
+                <d4p1:NodeKind>4</d4p1:NodeKind>
+                <d4p1:TechnologyType>Html</d4p1:TechnologyType>
+              </d4p1:FindExpression>
+              <d4p1:FindInfo i:nil="true" />
+              <d4p1:Frame i:nil="true" />
+              <d4p1:HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlInputText</d4p1:HtmlControlType>
+              <d4p1:IsIndependent>false</d4p1:IsIndependent>
+              <d4p1:Name>TargetKey1</d4p1:Name>
+              <d4p1:Page i:type="d2p1:PageUri">
                 <d2p1:AlwaysUseTitleInCompare>false</d2p1:AlwaysUseTitleInCompare>
                 <d2p1:BaseUrl>http://localhost:3000</d2p1:BaseUrl>
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
@@ -371,10 +448,10 @@
                 <d2p1:Path>/contacts/1/edit</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>Telerik Customer Relations Management System</d2p1:Title>
-              </Page>
-              <Region i:nil="true" />
-              <TechnologyType>Html</TechnologyType>
-              <Version>200</Version>
+              </d4p1:Page>
+              <d4p1:Region i:nil="true" />
+              <d4p1:TechnologyType>Html</d4p1:TechnologyType>
+              <d4p1:Version>200</d4p1:Version>
             </d5p1:Value>
           </d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
         </d2p1:Elements>
@@ -389,8 +466,9 @@
         <d2p1:DataBindVariableName i:nil="true" />
         <d2p1:EnsureStateIsCurrent>false</d2p1:EnsureStateIsCurrent>
         <d2p1:Timeout>10000</d2p1:Timeout>
-        <CompareType>Exact</CompareType>
-        <ExpectedValue>Holmes</ExpectedValue>
+        <d2p1:UseBackupSearch>false</d2p1:UseBackupSearch>
+        <d4p1:CompareType>Exact</d4p1:CompareType>
+        <d4p1:ExpectedValue>Holmes</d4p1:ExpectedValue>
       </d2p1:Step>
       <d2p1:StepImageKey>Coded Validation of gridhvoe5nog.ruj</d2p1:StepImageKey>
       <d2p1:StepState>NoCode</d2p1:StepState>
@@ -403,52 +481,54 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>7</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>22ff136b-95e2-4d6b-a682-5853e1c21060</d2p1:Runtime_x0020_ID>
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
+      <d2p1:Runtime_x0020_ID>e81ca7c3-3813-4d9e-807b-4b9a33f0d9b3</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:AttributeVerificationDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d5p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
         <d2p1:Elements xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
           <d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
             <d5p1:Key>verifyTarget</d5p1:Key>
-            <d5p1:Value>
-              <DomStateKey />
-              <FindExpression i:type="HtmlFindExpressionElement">
-                <BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/form[1]/div[4]/input[1]</BackupSearchClause>
-                <FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+            <d5p1:Value xmlns:d7p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+              <d7p1:DomStateKey />
+              <d7p1:FindExpression i:type="d7p1:HtmlFindExpressionElement">
+                <d7p1:BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/form[1]/div[4]/input[1]</d7p1:BackupSearchClause>
+                <d7p1:FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
                   <d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
                     <d9p1:key>Html</d9p1:key>
-                    <d9p1:value i:type="HtmlFindExpression">
-                      <ChainStops />
-                      <Clauses>
-                        <HtmlFindClause>
-                          <Clause>id=contact_email</Clause>
-                        </HtmlFindClause>
-                        <HtmlFindClause>
-                          <Clause>tagname=input</Clause>
-                        </HtmlFindClause>
-                      </Clauses>
-                      <Constraints />
+                    <d9p1:value i:type="d7p1:HtmlFindExpression">
+                      <d7p1:ChainStops />
+                      <d7p1:Clauses>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>id=contact_email</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>tagname=input</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                      </d7p1:Clauses>
+                      <d7p1:Constraints />
                     </d9p1:value>
                   </d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
-                </FindExpressions>
-                <Name>ContactEmailEmail</Name>
-                <NodeKind>4</NodeKind>
-                <TechnologyType>Html</TechnologyType>
-              </FindExpression>
-              <FindInfo i:nil="true" />
-              <Frame i:nil="true" />
-              <HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlInputEmail</HtmlControlType>
-              <IsIndependent>false</IsIndependent>
-              <Name>verifyTarget</Name>
-              <Page i:type="d2p1:PageUri">
+                </d7p1:FindExpressions>
+                <d7p1:Name>ContactEmailEmail</d7p1:Name>
+                <d7p1:NodeKind>4</d7p1:NodeKind>
+                <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              </d7p1:FindExpression>
+              <d7p1:FindInfo i:nil="true" />
+              <d7p1:Frame i:nil="true" />
+              <d7p1:HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlInputEmail</d7p1:HtmlControlType>
+              <d7p1:IsIndependent>false</d7p1:IsIndependent>
+              <d7p1:Name>verifyTarget</d7p1:Name>
+              <d7p1:Page i:type="d2p1:PageUri">
                 <d2p1:AlwaysUseTitleInCompare>false</d2p1:AlwaysUseTitleInCompare>
                 <d2p1:BaseUrl>http://localhost:3000</d2p1:BaseUrl>
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
@@ -458,10 +538,10 @@
                 <d2p1:Path>/contacts/1/edit</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>Telerik Customer Relations Management System</d2p1:Title>
-              </Page>
-              <Region i:nil="true" />
-              <TechnologyType>Html</TechnologyType>
-              <Version>200</Version>
+              </d7p1:Page>
+              <d7p1:Region i:nil="true" />
+              <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              <d7p1:Version>200</d7p1:Version>
             </d5p1:Value>
           </d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
         </d2p1:Elements>
@@ -476,6 +556,7 @@
         <d2p1:DataBindVariableName i:nil="true" />
         <d2p1:EnsureStateIsCurrent>false</d2p1:EnsureStateIsCurrent>
         <d2p1:Timeout>10000</d2p1:Timeout>
+        <d2p1:UseBackupSearch>false</d2p1:UseBackupSearch>
         <d2p1:AttributeName>value</d2p1:AttributeName>
         <d2p1:AttributeValue>jim@iterativerose.com</d2p1:AttributeValue>
         <d2p1:CompareType>Same</d2p1:CompareType>
@@ -491,15 +572,17 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>8</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>0ffc413d-1f71-43ae-ba74-20b2175ef6ed</d2p1:Runtime_x0020_ID>
-      <d2p1:Step i:type="InputValueVerificationDescriptor">
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
+      <d2p1:Runtime_x0020_ID>b7f7e76a-90fa-4627-867a-4287c4f8c655</d2p1:Runtime_x0020_ID>
+      <d2p1:Step xmlns:d4p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0" i:type="d4p1:InputValueVerificationDescriptor">
         <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d4p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d4p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
@@ -507,36 +590,36 @@
           <d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
             <d5p1:Key>TargetKey1</d5p1:Key>
             <d5p1:Value>
-              <DomStateKey />
-              <FindExpression i:type="HtmlFindExpressionElement">
-                <BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/form[1]/div[5]/input[1]</BackupSearchClause>
-                <FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+              <d4p1:DomStateKey />
+              <d4p1:FindExpression i:type="d4p1:HtmlFindExpressionElement">
+                <d4p1:BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/form[1]/div[5]/input[1]</d4p1:BackupSearchClause>
+                <d4p1:FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
                   <d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
                     <d9p1:key>Html</d9p1:key>
-                    <d9p1:value i:type="HtmlFindExpression">
-                      <ChainStops />
-                      <Clauses>
-                        <HtmlFindClause>
-                          <Clause>id=contact_linkedin_profile</Clause>
-                        </HtmlFindClause>
-                        <HtmlFindClause>
-                          <Clause>tagname=input</Clause>
-                        </HtmlFindClause>
-                      </Clauses>
-                      <Constraints />
+                    <d9p1:value i:type="d4p1:HtmlFindExpression">
+                      <d4p1:ChainStops />
+                      <d4p1:Clauses>
+                        <d4p1:HtmlFindClause>
+                          <d4p1:Clause>id=contact_linkedin_profile</d4p1:Clause>
+                        </d4p1:HtmlFindClause>
+                        <d4p1:HtmlFindClause>
+                          <d4p1:Clause>tagname=input</d4p1:Clause>
+                        </d4p1:HtmlFindClause>
+                      </d4p1:Clauses>
+                      <d4p1:Constraints />
                     </d9p1:value>
                   </d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
-                </FindExpressions>
-                <Name>ContactLinkedinProfileText</Name>
-                <NodeKind>4</NodeKind>
-                <TechnologyType>Html</TechnologyType>
-              </FindExpression>
-              <FindInfo i:nil="true" />
-              <Frame i:nil="true" />
-              <HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlInputText</HtmlControlType>
-              <IsIndependent>false</IsIndependent>
-              <Name>TargetKey1</Name>
-              <Page i:type="d2p1:PageUri">
+                </d4p1:FindExpressions>
+                <d4p1:Name>ContactLinkedinProfileText</d4p1:Name>
+                <d4p1:NodeKind>4</d4p1:NodeKind>
+                <d4p1:TechnologyType>Html</d4p1:TechnologyType>
+              </d4p1:FindExpression>
+              <d4p1:FindInfo i:nil="true" />
+              <d4p1:Frame i:nil="true" />
+              <d4p1:HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlInputText</d4p1:HtmlControlType>
+              <d4p1:IsIndependent>false</d4p1:IsIndependent>
+              <d4p1:Name>TargetKey1</d4p1:Name>
+              <d4p1:Page i:type="d2p1:PageUri">
                 <d2p1:AlwaysUseTitleInCompare>false</d2p1:AlwaysUseTitleInCompare>
                 <d2p1:BaseUrl>http://localhost:3000</d2p1:BaseUrl>
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
@@ -546,10 +629,10 @@
                 <d2p1:Path>/contacts/1/edit</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>Telerik Customer Relations Management System</d2p1:Title>
-              </Page>
-              <Region i:nil="true" />
-              <TechnologyType>Html</TechnologyType>
-              <Version>200</Version>
+              </d4p1:Page>
+              <d4p1:Region i:nil="true" />
+              <d4p1:TechnologyType>Html</d4p1:TechnologyType>
+              <d4p1:Version>200</d4p1:Version>
             </d5p1:Value>
           </d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
         </d2p1:Elements>
@@ -564,8 +647,9 @@
         <d2p1:DataBindVariableName i:nil="true" />
         <d2p1:EnsureStateIsCurrent>false</d2p1:EnsureStateIsCurrent>
         <d2p1:Timeout>10000</d2p1:Timeout>
-        <CompareType>Exact</CompareType>
-        <ExpectedValue>http://www.linkedin.com/pub/jim-holmes/2/124/b02</ExpectedValue>
+        <d2p1:UseBackupSearch>false</d2p1:UseBackupSearch>
+        <d4p1:CompareType>Exact</d4p1:CompareType>
+        <d4p1:ExpectedValue>http://www.linkedin.com/pub/jim-holmes/2/124/b02</d4p1:ExpectedValue>
       </d2p1:Step>
       <d2p1:StepImageKey>Coded Validation of gridrupmdjgr.0ye</d2p1:StepImageKey>
       <d2p1:StepState>NoCode</d2p1:StepState>
@@ -578,54 +662,56 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>9</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>2d8a7bec-9761-4d38-8c7a-557bd3f3aee9</d2p1:Runtime_x0020_ID>
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
+      <d2p1:Runtime_x0020_ID>543a0aef-ec5a-46af-bcf2-63dda4945679</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:AttributeVerificationDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d5p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
         <d2p1:Elements xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
           <d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
             <d5p1:Key>verifyTarget</d5p1:Key>
-            <d5p1:Value>
-              <DomStateKey />
-              <FindExpression i:type="HtmlFindExpressionElement">
-                <BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/form[1]/div[9]/div[1]/img[1]</BackupSearchClause>
-                <FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+            <d5p1:Value xmlns:d7p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+              <d7p1:DomStateKey />
+              <d7p1:FindExpression i:type="d7p1:HtmlFindExpressionElement">
+                <d7p1:BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/form[1]/div[9]/div[1]/img[1]</d7p1:BackupSearchClause>
+                <d7p1:FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
                   <d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
                     <d9p1:key>Html</d9p1:key>
-                    <d9p1:value i:type="HtmlFindExpression">
-                      <ChainStops>
+                    <d9p1:value i:type="d7p1:HtmlFindExpression">
+                      <d7p1:ChainStops>
                         <d5p1:int>1</d5p1:int>
-                      </ChainStops>
-                      <Clauses>
-                        <HtmlFindClause>
-                          <Clause>class=drop_target</Clause>
-                        </HtmlFindClause>
-                        <HtmlFindClause>
-                          <Clause>HtmlPath=/img[0]</Clause>
-                        </HtmlFindClause>
-                      </Clauses>
-                      <Constraints />
+                      </d7p1:ChainStops>
+                      <d7p1:Clauses>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>class=drop_target</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>HtmlPath=/img[0]</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                      </d7p1:Clauses>
+                      <d7p1:Constraints />
                     </d9p1:value>
                   </d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
-                </FindExpressions>
-                <Name>Drop Target Image</Name>
-                <NodeKind>4</NodeKind>
-                <TechnologyType>Html</TechnologyType>
-              </FindExpression>
-              <FindInfo i:nil="true" />
-              <Frame i:nil="true" />
-              <HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlImage</HtmlControlType>
-              <IsIndependent>false</IsIndependent>
-              <Name>verifyTarget</Name>
-              <Page i:type="d2p1:PageUri">
+                </d7p1:FindExpressions>
+                <d7p1:Name>Drop Target Image</d7p1:Name>
+                <d7p1:NodeKind>4</d7p1:NodeKind>
+                <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              </d7p1:FindExpression>
+              <d7p1:FindInfo i:nil="true" />
+              <d7p1:Frame i:nil="true" />
+              <d7p1:HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlImage</d7p1:HtmlControlType>
+              <d7p1:IsIndependent>false</d7p1:IsIndependent>
+              <d7p1:Name>verifyTarget</d7p1:Name>
+              <d7p1:Page i:type="d2p1:PageUri">
                 <d2p1:AlwaysUseTitleInCompare>false</d2p1:AlwaysUseTitleInCompare>
                 <d2p1:BaseUrl>http://localhost:3000</d2p1:BaseUrl>
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
@@ -635,10 +721,10 @@
                 <d2p1:Path>/contacts/1/edit</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>Telerik Customer Relations Management System</d2p1:Title>
-              </Page>
-              <Region i:nil="true" />
-              <TechnologyType>Html</TechnologyType>
-              <Version>200</Version>
+              </d7p1:Page>
+              <d7p1:Region i:nil="true" />
+              <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              <d7p1:Version>200</d7p1:Version>
             </d5p1:Value>
           </d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
         </d2p1:Elements>
@@ -653,6 +739,7 @@
         <d2p1:DataBindVariableName i:nil="true" />
         <d2p1:EnsureStateIsCurrent>false</d2p1:EnsureStateIsCurrent>
         <d2p1:Timeout>10000</d2p1:Timeout>
+        <d2p1:UseBackupSearch>false</d2p1:UseBackupSearch>
         <d2p1:AttributeName>alt</d2p1:AttributeName>
         <d2p1:AttributeValue>Hot</d2p1:AttributeValue>
         <d2p1:CompareType>Same</d2p1:CompareType>
@@ -668,54 +755,56 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>10</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>554fe58d-7f03-4307-b0fd-52c0ca697d00</d2p1:Runtime_x0020_ID>
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
+      <d2p1:Runtime_x0020_ID>a15df379-aa56-4125-aa1d-ed4f49e0709b</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:AttributeVerificationDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d5p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
         <d2p1:Elements xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
           <d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
             <d5p1:Key>verifyTarget</d5p1:Key>
-            <d5p1:Value>
-              <DomStateKey />
-              <FindExpression i:type="HtmlFindExpressionElement">
-                <BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/form[1]/div[9]/div[1]/img[1]</BackupSearchClause>
-                <FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+            <d5p1:Value xmlns:d7p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+              <d7p1:DomStateKey />
+              <d7p1:FindExpression i:type="d7p1:HtmlFindExpressionElement">
+                <d7p1:BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/form[1]/div[9]/div[1]/img[1]</d7p1:BackupSearchClause>
+                <d7p1:FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
                   <d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
                     <d9p1:key>Html</d9p1:key>
-                    <d9p1:value i:type="HtmlFindExpression">
-                      <ChainStops>
+                    <d9p1:value i:type="d7p1:HtmlFindExpression">
+                      <d7p1:ChainStops>
                         <d5p1:int>1</d5p1:int>
-                      </ChainStops>
-                      <Clauses>
-                        <HtmlFindClause>
-                          <Clause>class=drop_target</Clause>
-                        </HtmlFindClause>
-                        <HtmlFindClause>
-                          <Clause>HtmlPath=/img[0]</Clause>
-                        </HtmlFindClause>
-                      </Clauses>
-                      <Constraints />
+                      </d7p1:ChainStops>
+                      <d7p1:Clauses>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>class=drop_target</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>HtmlPath=/img[0]</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                      </d7p1:Clauses>
+                      <d7p1:Constraints />
                     </d9p1:value>
                   </d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
-                </FindExpressions>
-                <Name>Drop Target Image</Name>
-                <NodeKind>4</NodeKind>
-                <TechnologyType>Html</TechnologyType>
-              </FindExpression>
-              <FindInfo i:nil="true" />
-              <Frame i:nil="true" />
-              <HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlImage</HtmlControlType>
-              <IsIndependent>false</IsIndependent>
-              <Name>verifyTarget</Name>
-              <Page i:type="d2p1:PageUri">
+                </d7p1:FindExpressions>
+                <d7p1:Name>Drop Target Image</d7p1:Name>
+                <d7p1:NodeKind>4</d7p1:NodeKind>
+                <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              </d7p1:FindExpression>
+              <d7p1:FindInfo i:nil="true" />
+              <d7p1:Frame i:nil="true" />
+              <d7p1:HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlImage</d7p1:HtmlControlType>
+              <d7p1:IsIndependent>false</d7p1:IsIndependent>
+              <d7p1:Name>verifyTarget</d7p1:Name>
+              <d7p1:Page i:type="d2p1:PageUri">
                 <d2p1:AlwaysUseTitleInCompare>false</d2p1:AlwaysUseTitleInCompare>
                 <d2p1:BaseUrl>http://localhost:3000</d2p1:BaseUrl>
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
@@ -725,10 +814,10 @@
                 <d2p1:Path>/contacts/1/edit</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>Telerik Customer Relations Management System</d2p1:Title>
-              </Page>
-              <Region i:nil="true" />
-              <TechnologyType>Html</TechnologyType>
-              <Version>200</Version>
+              </d7p1:Page>
+              <d7p1:Region i:nil="true" />
+              <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              <d7p1:Version>200</d7p1:Version>
             </d5p1:Value>
           </d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
         </d2p1:Elements>
@@ -743,6 +832,7 @@
         <d2p1:DataBindVariableName i:nil="true" />
         <d2p1:EnsureStateIsCurrent>false</d2p1:EnsureStateIsCurrent>
         <d2p1:Timeout>10000</d2p1:Timeout>
+        <d2p1:UseBackupSearch>false</d2p1:UseBackupSearch>
         <d2p1:AttributeName>src</d2p1:AttributeName>
         <d2p1:AttributeValue>/assets/HOT.png</d2p1:AttributeValue>
         <d2p1:CompareType>Same</d2p1:CompareType>
@@ -752,57 +842,11 @@
       <d2p1:Version>200</d2p1:Version>
     </d2p1:AutomationStep>
   </Steps>
-  <Version>200</Version>
-  <BrowserType>NotSet</BrowserType>
-  <CurrentReferences xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-    <d2p1:string>System</d2p1:string>
-    <d2p1:string>System.Core</d2p1:string>
-    <d2p1:string>ArtOfTest.WebAii, Version=2011.2.1413.0, Culture=neutral, PublicKeyToken=4fd5f65be123776c</d2p1:string>
-    <d2p1:string>ArtOfTest.WebAii.Design, Version=2011.2.1413.0, Culture=neutral, PublicKeyToken=4fc62bbc3827ab1d</d2p1:string>
-    <d2p1:string>Telerik.WebAii.Controls.Html, Version=2011.2.1413.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
-    <d2p1:string>Telerik.WebAii.Controls.Xaml, Version=2011.2.1413.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
-    <d2p1:string>Telerik.WebAii.Controls.Xaml.Wpf, Version=2011.2.1413.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
-    <d2p1:string>D:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</d2p1:string>
-    <d2p1:string>System.Windows.Forms</d2p1:string>
-    <d2p1:string />
-  </CurrentReferences>
-  <DeploymentItems xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-    <d2p1:string>..\bin\Telerik_Demo_App.dll</d2p1:string>
-    <d2p1:string>..\Login\Logging in as test user displays proper header.tstest</d2p1:string>
-    <d2p1:string>..\Support\Log in if needed.tstest</d2p1:string>
-    <d2p1:string>..\Login\Providing valid credentials logs user on.tstest</d2p1:string>
-  </DeploymentItems>
-  <DomStatesCounter xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-  <HasCodeBehind>true</HasCodeBehind>
-  <HtmlDescription />
-  <InheritParentDataSource>false</InheritParentDataSource>
-  <IsManual>false</IsManual>
-  <IsSilverlightApp>false</IsSilverlightApp>
-  <IsTestFragment>false</IsTestFragment>
-  <Owner i:nil="true" />
-  <Path>Initial Grid\Coded Validation of grid.tstest</Path>
-  <Priority>0</Priority>
-  <ProfilerBenchmarkResultsFilePath i:nil="true" />
-  <ProfilerBenchmarkResultsId>00000000-0000-0000-0000-000000000000</ProfilerBenchmarkResultsId>
-  <ProfilerConfigurationFilePath>D:\projects\Telerik-Demo\test\TestStudio\Profiler Configurations\{163568be-2153-4953-8b29-bbcc53b3a211}.tsprofconfig</ProfilerConfigurationFilePath>
-  <ProfilerConfigurationId>00000000-0000-0000-0000-000000000000</ProfilerConfigurationId>
-  <ProfilerConfigurations xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-  <ProfilerResultsDirectory>C:\Users\ADMINI~1\AppData\Local\Temp\</ProfilerResultsDirectory>
-  <ProfilerServerName i:nil="true" />
-  <ResourceFilePath>Initial Grid\Coded Validation of grid.resx</ResourceFilePath>
-  <ReuseAppWindow>0</ReuseAppWindow>
-  <SilverlightAppLocalDirectory />
-  <SilverlightAppOriginUri i:nil="true" />
-  <SilverlightAppRecordLocal>false</SilverlightAppRecordLocal>
-  <SilverlightAppWebUrl />
-  <SilverlightEnabled>false</SilverlightEnabled>
   <StopTestListOnFailure>false</StopTestListOnFailure>
   <TestAssembly>Telerik_Demo_App.dll</TestAssembly>
-  <TestAssemblyPath>bin\</TestAssemblyPath>
+  <TestAssemblyPath>bin</TestAssemblyPath>
   <TestClass>Telerik_Demo_App.Coded_Validation_of_grid</TestClass>
   <TestLinks xmlns:d2p1="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.ProjectModel.TestLinks" />
-  <TestType>Web</TestType>
-  <UniqueId>163568be-2153-4953-8b29-bbcc53b3a211</UniqueId>
   <UseDefaultWpfAppPath>false</UseDefaultWpfAppPath>
   <VSProperties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
     <d2p1:KeyValueOfstringstring>

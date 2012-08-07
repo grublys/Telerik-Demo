@@ -16,11 +16,13 @@
     <Reference Include="ArtOfTest.WebAii.Design, Version=2011.2.1117.0, Culture=neutral, PublicKeyToken=4fc62bbc3827ab1d">
       <SpecificVersion>false</SpecificVersion>
     </Reference>
-    <Reference Include="D:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll" />
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="Telerik.TestingFramework.Controls.KendoUI, Version=2012.1.410.0, Culture=neutral, PublicKeyToken=528163f3e645de45, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="Telerik.WebAii.Controls.Html, Version=2011.2.1117.0, Culture=neutral, PublicKeyToken=528163f3e645de45">
       <SpecificVersion>false</SpecificVersion>
     </Reference>
@@ -32,26 +34,68 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Initial Grid\Can export contacts to PDF on filesystem.tstest.cs">
+      <DependentUpon>Can export contacts to PDF on filesystem.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Log on only if needed.tstest.cs">
+      <DependentUpon>Log on only if needed.tstest</DependentUpon>
+    </Compile>
     <Compile Include="Support\Delete all users with %40foo.com mail addresses.tstest.cs">
       <DependentUpon>Delete all users with %40foo.com mail addresses.tstest</DependentUpon>
     </Compile>
+    <Compile Include="Support\Utilities.tstest.cs">
+      <DependentUpon>Utilities.tstest</DependentUpon>
+    </Compile>
     <None Include=".NET Tests\Navigating to Rad page renders grid.tstest" />
     <None Include=".NET Tests\RadGrid displays proper baseline data.tstest" />
+    <None Include=".NET Tests\WebTest1.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Initial Grid\Baseline data in grid displays correctly.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Initial Grid\Can export contacts to PDF on filesystem.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Initial Grid\Coded Validation of grid.tstest" />
     <None Include="Initial Grid\Exporting Grid to PDF saves a file to filesystem.tstest" />
-    <None Include="Initial Grid\Initial Grid loaded from baseline data contains correct records.tstest" />
-    <None Include="Login\Invalid username and password combo shows error message.tstest" />
+    <None Include="Initial Grid\Validate baseline dataset.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Initial Grid\Verify home page.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Load\Initial.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Login\Can log to system.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Login\Log on only if needed.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Login\Login Submit button disabled until both username &amp; password entered.tstest" />
+    <None Include="Login\Password field is masked.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Login\Providing valid credentials logs user on.tstest" />
+    <None Include="Login\Sad Path Tests\Invalid username and password combo shows error message.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Login\Sad Path Tests\Reject invalid user.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="New Contact\Adding empty contact generates appropriate field and style errors.tstest" />
     <None Include="New Contact\Clicking New Contact from grid opens form in new window.tstest" />
     <None Include="New Contact\Dragging Contact Types to new contact sets correct values.tstest" />
     <None Include="New Contact\Saving a New Contact with valid values shows user on grid.tstest" />
-    <None Include="New Contact\Validate Layout of New Contact Form.tstest" />
     <None Include="Settings.aiis" />
     <None Include="Support\Delete all users with @foo.com mail addresses.tstest" />
     <None Include="Support\Log in if needed.tstest" />
     <None Include="Support\Log OUT if needed.tstest" />
+    <None Include="Support\Utilities.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Telerik_Demo_App\New Contact\Visually check layout of new contact form.tstest" />
     <None Include="Working With AJAX\AJAX Menu demo.tstest" />
     <None Include="Working With AJAX\AJAX Menu Items Can Be Validated.tstest" />
@@ -80,12 +124,6 @@
     <None Include="Initial Grid\Exporting Grid to PDF saves a file to filesystem.resx">
       <DependentUpon>Exporting Grid to PDF saves a file to filesystem.tstest</DependentUpon>
     </None>
-    <None Include="Initial Grid\Initial Grid loaded from baseline data contains correct records.resx">
-      <DependentUpon>Initial Grid loaded from baseline data contains correct records.tstest</DependentUpon>
-    </None>
-    <None Include="Login\Invalid username and password combo shows error message.resx">
-      <DependentUpon>Invalid username and password combo shows error message.tstest</DependentUpon>
-    </None>
     <None Include="Login\Login Submit button disabled until both username &amp; password entered.resx">
       <DependentUpon>Login Submit button disabled until both username &amp; password entered.tstest</DependentUpon>
     </None>
@@ -103,9 +141,6 @@
     </None>
     <None Include="New Contact\Saving a New Contact with valid values shows user on grid.resx">
       <DependentUpon>Saving a New Contact with valid values shows user on grid.tstest</DependentUpon>
-    </None>
-    <None Include="New Contact\Validate Layout of New Contact Form.resx">
-      <DependentUpon>New Contact\Validate Layout of New Contact Form.tstest</DependentUpon>
     </None>
     <None Include="Support\Delete all users with @foo.com mail addresses.resx">
       <DependentUpon>Delete all users with %40foo.com mail addresses.tstest</DependentUpon>
@@ -131,6 +166,59 @@
     <None Include="Working with iFrames\LinkedIn profile renders in iFrame.resx">
       <DependentUpon>LinkedIn profile renders in iFrame.tstest</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".NET Tests\WebTest1.resx">
+      <DependentUpon>WebTest1.tstest</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Initial Grid\Can export contacts to PDF on filesystem.resx">
+      <DependentUpon>Can export contacts to PDF on filesystem.tstest</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Initial Grid\Baseline data in grid displays correctly.resx">
+      <DependentUpon>Baseline data in grid displays correctly.tstest</DependentUpon>
+    </None>
+    <None Include="Initial Grid\Verify home page.resx">
+      <DependentUpon>Verify home page.tstest</DependentUpon>
+    </None>
+    <None Include="Login\Log on only if needed.resx">
+      <DependentUpon>Log on only if needed.tstest</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Initial Grid\Validate baseline dataset.resx">
+      <DependentUpon>Validate baseline dataset.tstest</DependentUpon>
+    </None>
+    <None Include="Login\Password field is masked.resx">
+      <DependentUpon>Password field is masked.tstest</DependentUpon>
+    </None>
+    <None Include="Login\Sad Path Tests\Invalid username and password combo shows error message.resx">
+      <DependentUpon>Invalid username and password combo shows error message.tstest</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Login\Can log to system.resx">
+      <DependentUpon>Can log to system.tstest</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Login\Sad Path Tests\Reject invalid user.resx">
+      <DependentUpon>Reject invalid user.tstest</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SupportFramework\SupportFramework.csproj">
+      <Project>{54AB1140-FA1E-4371-9911-33C27547D5DA}</Project>
+      <Name>SupportFramework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Support\Utilities.resx">
+      <DependentUpon>Utilities.tstest</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>

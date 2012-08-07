@@ -1,4 +1,4 @@
-﻿<WebAiiTest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+﻿<WebAiiTest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://artoftest.com/schemas/WebAiiDesignCanvas/3.0.0">
   <DataInfo xmlns:d2p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0">
     <d2p1:BuiltInData i:nil="true" />
     <d2p1:BuiltInDocumentKey i:nil="true" />
@@ -10,28 +10,91 @@
     <d2p1:DataType>None</d2p1:DataType>
     <d2p1:DefaultToGrid>true</d2p1:DefaultToGrid>
     <d2p1:HasBuiltinGrid>false</d2p1:HasBuiltinGrid>
+    <d2p1:LoadRecordsCount i:nil="true" />
     <d2p1:TSQL />
   </DataInfo>
   <Description>Validate we can save the grid of contacts to a PDF</Description>
-  <IndependentDescriptors />
+  <IsManual>false</IsManual>
   <Name>Can export contacts to PDF on filesystem</Name>
+  <Owner>Jim Holmes</Owner>
+  <Path>Initial Grid\Can export contacts to PDF on filesystem.tstest</Path>
+  <Priority>3</Priority>
+  <TestType>Web</TestType>
+  <UniqueId>58ac8d91-fa15-485e-8b4a-c01fbaeb23af</UniqueId>
+  <Version>200</Version>
+  <BrowserType>NotSet</BrowserType>
+  <CurrentReferences xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:string>System</d2p1:string>
+    <d2p1:string>System.Core</d2p1:string>
+    <d2p1:string>ArtOfTest.WebAii, Version=2012.1.719.0, Culture=neutral, PublicKeyToken=4fd5f65be123776c</d2p1:string>
+    <d2p1:string>ArtOfTest.WebAii.Design, Version=2012.1.719.0, Culture=neutral, PublicKeyToken=4fc62bbc3827ab1d</d2p1:string>
+    <d2p1:string>Telerik.WebAii.Controls.Html, Version=2012.1.719.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
+    <d2p1:string>Telerik.WebAii.Controls.Xaml, Version=2012.1.719.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
+    <d2p1:string>Telerik.WebAii.Controls.Xaml.Wpf, Version=2012.1.719.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
+    <d2p1:string>Telerik.TestingFramework.Controls.KendoUI, Version=2012.1.719.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
+    <d2p1:string>D:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</d2p1:string>
+    <d2p1:string>System.Windows.Forms</d2p1:string>
+    <d2p1:string />
+    <d2p1:string>Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</d2p1:string>
+  </CurrentReferences>
+  <DataInfo xmlns:d2p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0">
+    <d2p1:BuiltInData i:nil="true" />
+    <d2p1:BuiltInDocumentKey i:nil="true" />
+    <d2p1:ConnectionString />
+    <d2p1:DataEnabled>true</d2p1:DataEnabled>
+    <d2p1:DataProvider />
+    <d2p1:DataRange />
+    <d2p1:DataTableName />
+    <d2p1:DataType>None</d2p1:DataType>
+    <d2p1:DefaultToGrid>true</d2p1:DefaultToGrid>
+    <d2p1:HasBuiltinGrid>false</d2p1:HasBuiltinGrid>
+    <d2p1:LoadRecordsCount i:nil="true" />
+    <d2p1:TSQL />
+  </DataInfo>
+  <DeploymentItems xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <DomStatesCounter xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <HasCodeBehind>true</HasCodeBehind>
+  <HtmlDescription />
+  <IndependentDescriptors xmlns:d2p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0" />
+  <InheritParentDataSource>false</InheritParentDataSource>
+  <IsSilverlightApp>false</IsSilverlightApp>
+  <IsTestFragment>false</IsTestFragment>
+  <ProfilerBenchmarkResultsFilePath i:nil="true" />
+  <ProfilerBenchmarkResultsId>00000000-0000-0000-0000-000000000000</ProfilerBenchmarkResultsId>
+  <ProfilerConfigurationFilePath>D:\projects\Telerik-Demo\test\TestStudio\Profiler Configurations\{58ac8d91-fa15-485e-8b4a-c01fbaeb23af}.tsprofconfig</ProfilerConfigurationFilePath>
+  <ProfilerConfigurationId>00000000-0000-0000-0000-000000000000</ProfilerConfigurationId>
+  <ProfilerConfigurations xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <ProfilerResultsDirectory>C:\Users\ADMINI~1\AppData\Local\Temp\</ProfilerResultsDirectory>
+  <ProfilerServerName i:nil="true" />
+  <QcFilePath i:nil="true" />
+  <QcId>0</QcId>
+  <QcTestVersionStamp>0</QcTestVersionStamp>
+  <ResourceFilePath>Initial Grid\Can export contacts to PDF on filesystem.resx</ResourceFilePath>
+  <ReuseAppWindow>0</ReuseAppWindow>
+  <SilverlightAppLocalDirectory />
+  <SilverlightAppOriginUri i:nil="true" />
+  <SilverlightAppRecordLocal>false</SilverlightAppRecordLocal>
+  <SilverlightAppWebUrl />
+  <SilverlightEnabled>false</SilverlightEnabled>
   <Steps xmlns:d2p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0">
     <d2p1:AutomationStep i:type="d2p1:AutomationStep">
       <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
       <d2p1:CustomDescription i:nil="true" />
-      <d2p1:Description>[Fixture_setup] : Clean up existing files</d2p1:Description>
+      <d2p1:Description>[Fixture_setup] : @"Clean up existing files</d2p1:Description>
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id>Fixture_setup</d2p1:Id>
       <d2p1:Order>1</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>5e4bc0a4-781e-48cf-abc5-f32de42f9498</d2p1:Runtime_x0020_ID>
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
+      <d2p1:Runtime_x0020_ID>5b817a84-c5c6-41aa-af05-9da50bc41329</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:CodedStepDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d5p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
@@ -48,7 +111,8 @@
             
             if (System.IO.File.Exists(downloadPath)) {
                 System.IO.File.Delete(downloadPath);
-            }</d2p1:Code>
+            }
+</d2p1:Code>
         <d2p1:RequiresSilverlight>false</d2p1:RequiresSilverlight>
       </d2p1:Step>
       <d2p1:StepImageKey>Can export contacts to PDF on filesystempkbqle05.011</d2p1:StepImageKey>
@@ -62,15 +126,17 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>2</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>5017b4b0-ac84-4549-939c-e26ea320b695</d2p1:Runtime_x0020_ID>
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
+      <d2p1:Runtime_x0020_ID>4415fbab-8875-4050-94c6-bf092529d7ac</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ExecuteTestActionDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d5p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
@@ -97,52 +163,54 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>3</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>a6b9cbe4-d5e3-4adc-a1bf-333fbcfb163a</d2p1:Runtime_x0020_ID>
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
+      <d2p1:Runtime_x0020_ID>24bc0063-8361-4511-b2a7-a935c84eb803</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ClickActionDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d5p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
         <d2p1:Elements xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
           <d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
             <d5p1:Key>target</d5p1:Key>
-            <d5p1:Value>
-              <DomStateKey />
-              <FindExpression i:type="HtmlFindExpressionElement">
-                <BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/div[2]/div[2]/a[1]</BackupSearchClause>
-                <FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+            <d5p1:Value xmlns:d7p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+              <d7p1:DomStateKey />
+              <d7p1:FindExpression i:type="d7p1:HtmlFindExpressionElement">
+                <d7p1:BackupSearchClause>/html[1]/body[1]/div[2]/div[1]/div[2]/div[2]/a[1]</d7p1:BackupSearchClause>
+                <d7p1:FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
                   <d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
                     <d9p1:key>Html</d9p1:key>
-                    <d9p1:value i:type="HtmlFindExpression">
-                      <ChainStops />
-                      <Clauses>
-                        <HtmlFindClause>
-                          <Clause>href=/contacts/export</Clause>
-                        </HtmlFindClause>
-                        <HtmlFindClause>
-                          <Clause>tagname=a</Clause>
-                        </HtmlFindClause>
-                      </Clauses>
-                      <Constraints />
+                    <d9p1:value i:type="d7p1:HtmlFindExpression">
+                      <d7p1:ChainStops />
+                      <d7p1:Clauses>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>href=/contacts/export</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>tagname=a</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                      </d7p1:Clauses>
+                      <d7p1:Constraints />
                     </d9p1:value>
                   </d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
-                </FindExpressions>
-                <Name>ExportToPDFLink</Name>
-                <NodeKind>4</NodeKind>
-                <TechnologyType>Html</TechnologyType>
-              </FindExpression>
-              <FindInfo i:nil="true" />
-              <Frame i:nil="true" />
-              <HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlAnchor</HtmlControlType>
-              <IsIndependent>false</IsIndependent>
-              <Name>target</Name>
-              <Page i:type="d2p1:PageUri">
+                </d7p1:FindExpressions>
+                <d7p1:Name>ExportToPDFLink</d7p1:Name>
+                <d7p1:NodeKind>4</d7p1:NodeKind>
+                <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              </d7p1:FindExpression>
+              <d7p1:FindInfo i:nil="true" />
+              <d7p1:Frame i:nil="true" />
+              <d7p1:HtmlControlType>ArtOfTest.WebAii.Controls.HtmlControls.HtmlAnchor</d7p1:HtmlControlType>
+              <d7p1:IsIndependent>false</d7p1:IsIndependent>
+              <d7p1:Name>target</d7p1:Name>
+              <d7p1:Page i:type="d2p1:PageUri">
                 <d2p1:AlwaysUseTitleInCompare>false</d2p1:AlwaysUseTitleInCompare>
                 <d2p1:BaseUrl>http://localhost:3000</d2p1:BaseUrl>
                 <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
@@ -152,10 +220,10 @@
                 <d2p1:Path>/contacts</d2p1:Path>
                 <d2p1:Query />
                 <d2p1:Title>Telerik Customer Relations Management System</d2p1:Title>
-              </Page>
-              <Region i:nil="true" />
-              <TechnologyType>Html</TechnologyType>
-              <Version>200</Version>
+              </d7p1:Page>
+              <d7p1:Region i:nil="true" />
+              <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              <d7p1:Version>200</d7p1:Version>
             </d5p1:Value>
           </d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
         </d2p1:Elements>
@@ -166,7 +234,9 @@
         <d2p1:UseStepWaitOnElementsTimout>false</d2p1:UseStepWaitOnElementsTimout>
         <d2p1:WaitOnElements>true</d2p1:WaitOnElements>
         <d2p1:WaitOnElementsTimeout>10000</d2p1:WaitOnElementsTimeout>
+        <AjaxTimeout xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">0</AjaxTimeout>
         <ClosesBrowser xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">false</ClosesBrowser>
+        <UseBackupSearch xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">false</UseBackupSearch>
         <d2p1:SimulateRealClick>false</d2p1:SimulateRealClick>
       </d2p1:Step>
       <d2p1:StepImageKey>Can export contacts to PDF on filesystempb10hntt.d1p</d2p1:StepImageKey>
@@ -180,15 +250,17 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>4</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>2862f476-186b-4055-8de5-d56426b87079</d2p1:Runtime_x0020_ID>
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
+      <d2p1:Runtime_x0020_ID>9a881492-71c2-4367-a836-0b42fb07d8db</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:DownloadDialogHandlerDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d5p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
@@ -212,19 +284,21 @@
     <d2p1:AutomationStep i:type="d2p1:AutomationStep">
       <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
       <d2p1:CustomDescription i:nil="true" />
-      <d2p1:Description>[Validate_file_is_on_filesystem] : Check that the file actually exists</d2p1:Description>
+      <d2p1:Description>[Validate_file_is_on_filesystem] : @"Check that the file actually exists</d2p1:Description>
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id>Validate_file_is_on_filesystem</d2p1:Id>
       <d2p1:Order>5</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>07b4e907-b4db-4177-a159-73e708ac8c4a</d2p1:Runtime_x0020_ID>
+      <d2p1:QcId>0</d2p1:QcId>
+      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
+      <d2p1:Runtime_x0020_ID>38f687b1-93cf-4986-85d4-1391219ef2ba</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:CodedStepDescriptor">
-        <d2p1:Constraints>
-          <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>RunsAgainstVersion</d6p1:Key>
               <d6p1:Value />
             </d6p1:KeyValueOfstringstring>
-          </ConstraintValues>
+          </d5p1:ConstraintValues>
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
@@ -236,7 +310,13 @@
         <d2p1:UseStepWaitOnElementsTimout>false</d2p1:UseStepWaitOnElementsTimout>
         <d2p1:WaitOnElements>true</d2p1:WaitOnElements>
         <d2p1:WaitOnElementsTimeout>10000</d2p1:WaitOnElementsTimeout>
-        <d2p1:Code>            Assert.IsTrue(System.IO.File.Exists(GetExtractedValue("downloadPath").ToString()));</d2p1:Code>
+        <d2p1:Code>            Assert.IsTrue(System.IO.File.Exists(
+                GetExtractedValue("downloadPath").ToString()));
+
+            Log.WriteLine("whatever message");
+
+            Assert.IsTrue(false, "Custom message");
+</d2p1:Code>
         <d2p1:RequiresSilverlight>false</d2p1:RequiresSilverlight>
       </d2p1:Step>
       <d2p1:StepImageKey>Can export contacts to PDF on filesystemtcu0kc4y.1b4</d2p1:StepImageKey>
@@ -244,54 +324,22 @@
       <d2p1:Version>200</d2p1:Version>
     </d2p1:AutomationStep>
   </Steps>
-  <Version>200</Version>
-  <BrowserType>NotSet</BrowserType>
-  <CurrentReferences xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-    <d2p1:string>System</d2p1:string>
-    <d2p1:string>System.Core</d2p1:string>
-    <d2p1:string>ArtOfTest.WebAii, Version=2011.2.1413.0, Culture=neutral, PublicKeyToken=4fd5f65be123776c</d2p1:string>
-    <d2p1:string>ArtOfTest.WebAii.Design, Version=2011.2.1413.0, Culture=neutral, PublicKeyToken=4fc62bbc3827ab1d</d2p1:string>
-    <d2p1:string>Telerik.WebAii.Controls.Html, Version=2011.2.1413.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
-    <d2p1:string>Telerik.WebAii.Controls.Xaml, Version=2011.2.1413.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
-    <d2p1:string>Telerik.WebAii.Controls.Xaml.Wpf, Version=2011.2.1413.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
-    <d2p1:string>D:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</d2p1:string>
-    <d2p1:string>System.Windows.Forms</d2p1:string>
-    <d2p1:string />
-  </CurrentReferences>
-  <DeploymentItems xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-  <DomStatesCounter xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-  <HasCodeBehind>true</HasCodeBehind>
-  <HtmlDescription />
-  <InheritParentDataSource>false</InheritParentDataSource>
-  <IsManual>false</IsManual>
-  <IsSilverlightApp>false</IsSilverlightApp>
-  <IsTestFragment>false</IsTestFragment>
-  <Owner>Jim Holmes</Owner>
-  <Path>Initial Grid\Can export contacts to PDF on filesystem.tstest</Path>
-  <Priority>3</Priority>
-  <ProfilerBenchmarkResultsFilePath i:nil="true" />
-  <ProfilerBenchmarkResultsId>00000000-0000-0000-0000-000000000000</ProfilerBenchmarkResultsId>
-  <ProfilerConfigurationFilePath>D:\projects\Telerik-Demo\test\TestStudio\Profiler Configurations\{58ac8d91-fa15-485e-8b4a-c01fbaeb23af}.tsprofconfig</ProfilerConfigurationFilePath>
-  <ProfilerConfigurationId>00000000-0000-0000-0000-000000000000</ProfilerConfigurationId>
-  <ProfilerConfigurations xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-  <ProfilerResultsDirectory>C:\Users\ADMINI~1\AppData\Local\Temp\</ProfilerResultsDirectory>
-  <ProfilerServerName i:nil="true" />
-  <ResourceFilePath>Initial Grid\Can export contacts to PDF on filesystem.resx</ResourceFilePath>
-  <ReuseAppWindow>0</ReuseAppWindow>
-  <SilverlightAppLocalDirectory />
-  <SilverlightAppOriginUri i:nil="true" />
-  <SilverlightAppRecordLocal>false</SilverlightAppRecordLocal>
-  <SilverlightAppWebUrl />
-  <SilverlightEnabled>false</SilverlightEnabled>
   <StopTestListOnFailure>false</StopTestListOnFailure>
   <TestAssembly>Telerik_Demo_App.dll</TestAssembly>
-  <TestAssemblyPath>bin</TestAssemblyPath>
+  <TestAssemblyPath>bin\</TestAssemblyPath>
   <TestClass>Telerik_Demo_App.Can_export_contacts_to_PDF_on_filesystem</TestClass>
   <TestLinks xmlns:d2p1="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.ProjectModel.TestLinks" />
-  <TestType>Web</TestType>
-  <UniqueId>58ac8d91-fa15-485e-8b4a-c01fbaeb23af</UniqueId>
   <UseDefaultWpfAppPath>false</UseDefaultWpfAppPath>
-  <VSProperties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <VSProperties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:KeyValueOfstringstring>
+      <d2p1:Key>Timeout</d2p1:Key>
+      <d2p1:Value>0</d2p1:Value>
+    </d2p1:KeyValueOfstringstring>
+    <d2p1:KeyValueOfstringstring>
+      <d2p1:Key>ExecId</d2p1:Key>
+      <d2p1:Value>00000000-0000-0000-0000-000000000000</d2p1:Value>
+    </d2p1:KeyValueOfstringstring>
+  </VSProperties>
   <WebKitExecutionDelay>0</WebKitExecutionDelay>
   <WpfAppPath i:nil="true" />
 </WebAiiTest>
