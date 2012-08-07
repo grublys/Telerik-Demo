@@ -1,0 +1,72 @@
+<TestList Type="ArtOfTest.WebAii.Design.Execution.TestList" Version="2012.1.528.0">
+  <ID Type="System.String">2c122cca-2194-46b3-8227-d49d79281442</ID>
+  <TestListName Type="System.String">Initial Logon Tests</TestListName>
+  <Date Type="System.DateTime">2012-06-05 20:15:23Z+0000000</Date>
+  <Settings Type="ArtOfTest.WebAii.Core.Settings" Version="2012.1.528.0">
+    <WebSettings Type="ArtOfTest.WebAii.Core.Settings+WebSettings" Version="2012.1.528.0">
+      <DefaultBrowser Type="ArtOfTest.WebAii.Core.BrowserType">InternetExplorer</DefaultBrowser>
+      <WebAppPhysicalPath Type="System.String">
+      </WebAppPhysicalPath>
+      <EnableScriptLogging Type="System.Boolean">False</EnableScriptLogging>
+      <EnableUILessRequestViewing Type="System.Boolean">False</EnableUILessRequestViewing>
+      <LocalWebServer Type="ArtOfTest.WebAii.Core.LocalWebServerType">None</LocalWebServer>
+      <BaseUrl Type="System.String">http://localhost:3000</BaseUrl>
+      <AspNetDevServerPort Type="System.Int32">-1</AspNetDevServerPort>
+      <KillBrowserProcessOnClose Type="System.Boolean">False</KillBrowserProcessOnClose>
+      <RecycleBrowser Type="System.Boolean">False</RecycleBrowser>
+      <UseHttpProxy Type="System.Boolean">False</UseHttpProxy>
+      <EnableSilverlight Type="System.Boolean">False</EnableSilverlight>
+      <VerboseHttpProxy Type="System.Boolean">False</VerboseHttpProxy>
+      <SilverlightConnectTimeout Type="System.Int32">30000</SilverlightConnectTimeout>
+      <MultiBrowsersExecution>
+        <Item Type="ArtOfTest.WebAii.Core.BrowserExecutionType">Safari</Item>
+        <Item Type="ArtOfTest.WebAii.Core.BrowserExecutionType">Chrome</Item>
+      </MultiBrowsersExecution>
+      <UseMultiBrowsers Type="System.Boolean">True</UseMultiBrowsers>
+      <IsProfilingExecution Type="System.Boolean">False</IsProfilingExecution>
+      <ProfilerConfigurations />
+      <__DataMembers />
+    </WebSettings>
+    <WpfSettings Type="ArtOfTest.WebAii.Core.Settings+WpfSettings" Version="2012.1.528.0">
+      <__DataMembers />
+    </WpfSettings>
+    <ClientReadyTimeout Type="System.Int32">30000</ClientReadyTimeout>
+    <ExecuteCommandTimeout Type="System.Int32">20000</ExecuteCommandTimeout>
+    <LogLocation Type="System.String">C:\WebAiiLog\</LogLocation>
+    <QueryEventLogErrorsOnExit Type="System.Boolean">False</QueryEventLogErrorsOnExit>
+    <ExecutionDelay Type="System.Int32">0</ExecutionDelay>
+    <AnnotateExecution Type="System.Boolean">False</AnnotateExecution>
+    <SimulatedMouseMoveSpeed Type="System.Single">0.3</SimulatedMouseMoveSpeed>
+    <WaitCheckInterval Type="System.Int32">500</WaitCheckInterval>
+    <AnnotationMode Type="ArtOfTest.WebAii.Core.AnnotationMode">All</AnnotationMode>
+    <LogAnnotations Type="System.Boolean">False</LogAnnotations>
+    <IsStressRecordingMode Type="System.Boolean">False</IsStressRecordingMode>
+    <IsUserInteractiveMode Type="System.Boolean">False</IsUserInteractiveMode>
+    <CreateLogFile Type="System.Boolean">True</CreateLogFile>
+    <XMultiMgr Type="System.Boolean">True</XMultiMgr>
+    <UnexpectedDialogAction Type="ArtOfTest.WebAii.Core.UnexpectedDialogAction">HandleAndFailTest</UnexpectedDialogAction>
+    <ElementWaitTimeout Type="System.Int32">10000</ElementWaitTimeout>
+    <DisableDialogMonitoring Type="System.Boolean">False</DisableDialogMonitoring>
+    <__DataMembers />
+  </Settings>
+  <Tests>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.528.0">
+      <ID Type="System.String">84102f18-2ac8-4333-bc34-70cc2d6490a1</ID>
+      <Path Type="System.String">Login\Providing valid credentials logs user on.tstest</Path>
+      <__DataMembers />
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.528.0">
+      <ID Type="System.String">bb96b034-5560-4909-bf1a-096866fc288e</ID>
+      <Path Type="System.String">Login\Login Submit button disabled until both username &amp; password entered.tstest</Path>
+      <__DataMembers />
+    </Item>
+  </Tests>
+  <Filter Type="ArtOfTest.WebAii.Design.Execution.Filter" Version="2012.1.528.0">
+    <Keys />
+    <Comparisons />
+    <Values />
+    <__DataMembers />
+  </Filter>
+  <TestListType Type="ArtOfTest.WebAii.Design.TestListType">Automated</TestListType>
+  <__DataMembers />
+</TestList>

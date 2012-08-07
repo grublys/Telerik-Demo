@@ -1,0 +1,84 @@
+<TestList Type="ArtOfTest.WebAii.Design.Execution.TestList" Version="2012.1.719.0">
+  <ID Type="System.String">6cb383a4-926d-4e03-85cb-10fa9bca2df9</ID>
+  <TestListName Type="System.String">Daily BVT Test</TestListName>
+  <Date Type="System.DateTime">2012-07-26 13:16:15Z+0000000</Date>
+  <Settings Type="ArtOfTest.WebAii.Core.Settings" Version="2012.1.719.0">
+    <WebSettings Type="ArtOfTest.WebAii.Core.Settings+WebSettings" Version="2012.1.719.0">
+      <DefaultBrowser Type="ArtOfTest.WebAii.Core.BrowserType">InternetExplorer</DefaultBrowser>
+      <WebAppPhysicalPath Type="System.String">
+      </WebAppPhysicalPath>
+      <EnableScriptLogging Type="System.Boolean">False</EnableScriptLogging>
+      <EnableUILessRequestViewing Type="System.Boolean">False</EnableUILessRequestViewing>
+      <LocalWebServer Type="ArtOfTest.WebAii.Core.LocalWebServerType">None</LocalWebServer>
+      <BaseUrl Type="System.String">http://localhost:3000</BaseUrl>
+      <AspNetDevServerPort Type="System.Int32">-1</AspNetDevServerPort>
+      <KillBrowserProcessOnClose Type="System.Boolean">False</KillBrowserProcessOnClose>
+      <RecycleBrowser Type="System.Boolean">False</RecycleBrowser>
+      <UseHttpProxy Type="System.Boolean">False</UseHttpProxy>
+      <EnableSilverlight Type="System.Boolean">False</EnableSilverlight>
+      <VerboseHttpProxy Type="System.Boolean">False</VerboseHttpProxy>
+      <SilverlightConnectTimeout Type="System.Int32">30000</SilverlightConnectTimeout>
+      <UseMultiBrowsers Type="System.Boolean">False</UseMultiBrowsers>
+      <IsProfilingExecution Type="System.Boolean">False</IsProfilingExecution>
+      <ProfilerConfigurations />
+      <__DataMembers />
+    </WebSettings>
+    <WpfSettings Type="ArtOfTest.WebAii.Core.Settings+WpfSettings" Version="2012.1.719.0">
+      <__DataMembers />
+    </WpfSettings>
+    <ClientReadyTimeout Type="System.Int32">30000</ClientReadyTimeout>
+    <ExecuteCommandTimeout Type="System.Int32">20000</ExecuteCommandTimeout>
+    <LogLocation Type="System.String">C:\WebAiiLog\</LogLocation>
+    <QueryEventLogErrorsOnExit Type="System.Boolean">False</QueryEventLogErrorsOnExit>
+    <ExecutionDelay Type="System.Int32">0</ExecutionDelay>
+    <AnnotateExecution Type="System.Boolean">False</AnnotateExecution>
+    <SimulatedMouseMoveSpeed Type="System.Single">0.3</SimulatedMouseMoveSpeed>
+    <WaitCheckInterval Type="System.Int32">500</WaitCheckInterval>
+    <AnnotationMode Type="ArtOfTest.WebAii.Core.AnnotationMode">All</AnnotationMode>
+    <LogAnnotations Type="System.Boolean">False</LogAnnotations>
+    <IsStressRecordingMode Type="System.Boolean">False</IsStressRecordingMode>
+    <IsUserInteractiveMode Type="System.Boolean">False</IsUserInteractiveMode>
+    <CreateLogFile Type="System.Boolean">True</CreateLogFile>
+    <XMultiMgr Type="System.Boolean">True</XMultiMgr>
+    <UnexpectedDialogAction Type="ArtOfTest.WebAii.Core.UnexpectedDialogAction">HandleAndFailTest</UnexpectedDialogAction>
+    <ElementWaitTimeout Type="System.Int32">10000</ElementWaitTimeout>
+    <DisableDialogMonitoring Type="System.Boolean">False</DisableDialogMonitoring>
+    <__DataMembers />
+  </Settings>
+  <Tests>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.719.0">
+      <ID Type="System.String">e053a135-43c8-4e57-9dd7-2f6cacf59f82</ID>
+      <Path Type="System.String">Login\Sad Path Tests\Invalid username and password combo shows error message.tstest</Path>
+      <__DataMembers />
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.719.0">
+      <ID Type="System.String">bb96b034-5560-4909-bf1a-096866fc288e</ID>
+      <Path Type="System.String">Login\Login Submit button disabled until both username &amp; password entered.tstest</Path>
+      <__DataMembers />
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.719.0">
+      <ID Type="System.String">6ef4f20c-2dda-419c-997c-854a69210f65</ID>
+      <Path Type="System.String">New Contact\Clicking New Contact from grid opens form in new window.tstest</Path>
+      <__DataMembers />
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.719.0">
+      <ID Type="System.String">1ed756a3-39b5-4dee-a24d-4e2f7a4a19aa</ID>
+      <Path Type="System.String">New Contact\Dragging Contact Types to new contact sets correct values.tstest</Path>
+      <__DataMembers />
+    </Item>
+  </Tests>
+  <Filter Type="ArtOfTest.WebAii.Design.Execution.Filter" Version="2012.1.719.0">
+    <Keys>
+      <Item Type="System.String">CustomProperty1</Item>
+    </Keys>
+    <Comparisons>
+      <Item Type="ArtOfTest.WebAii.Design.Execution.FilterComparison">Equals</Item>
+    </Comparisons>
+    <Values>
+      <Item Type="System.String">bvt</Item>
+    </Values>
+    <__DataMembers />
+  </Filter>
+  <TestListType Type="ArtOfTest.WebAii.Design.TestListType">Automated</TestListType>
+  <__DataMembers />
+</TestList>

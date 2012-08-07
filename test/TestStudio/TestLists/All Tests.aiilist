@@ -1,0 +1,183 @@
+<TestList Type="ArtOfTest.WebAii.Design.Execution.TestList" Version="2012.1.528.0">
+  <ID Type="System.String">aeb2f8a8-fca3-4d2c-9c40-b01b90aeb39d</ID>
+  <TestListName Type="System.String">All Tests</TestListName>
+  <Date Type="System.DateTime">2012-06-05 20:23:31Z+0000000</Date>
+  <Settings Type="ArtOfTest.WebAii.Core.Settings" Version="2012.1.528.0">
+    <WebSettings Type="ArtOfTest.WebAii.Core.Settings+WebSettings" Version="2012.1.528.0">
+      <DefaultBrowser Type="ArtOfTest.WebAii.Core.BrowserType">InternetExplorer</DefaultBrowser>
+      <WebAppPhysicalPath Type="System.String">
+      </WebAppPhysicalPath>
+      <EnableScriptLogging Type="System.Boolean">False</EnableScriptLogging>
+      <EnableUILessRequestViewing Type="System.Boolean">False</EnableUILessRequestViewing>
+      <LocalWebServer Type="ArtOfTest.WebAii.Core.LocalWebServerType">None</LocalWebServer>
+      <BaseUrl Type="System.String">http://localhost:3000</BaseUrl>
+      <AspNetDevServerPort Type="System.Int32">-1</AspNetDevServerPort>
+      <KillBrowserProcessOnClose Type="System.Boolean">False</KillBrowserProcessOnClose>
+      <RecycleBrowser Type="System.Boolean">False</RecycleBrowser>
+      <UseHttpProxy Type="System.Boolean">False</UseHttpProxy>
+      <EnableSilverlight Type="System.Boolean">False</EnableSilverlight>
+      <VerboseHttpProxy Type="System.Boolean">False</VerboseHttpProxy>
+      <SilverlightConnectTimeout Type="System.Int32">30000</SilverlightConnectTimeout>
+      <UseMultiBrowsers Type="System.Boolean">False</UseMultiBrowsers>
+      <IsProfilingExecution Type="System.Boolean">False</IsProfilingExecution>
+      <ProfilerConfigurations />
+      <__DataMembers />
+    </WebSettings>
+    <WpfSettings Type="ArtOfTest.WebAii.Core.Settings+WpfSettings" Version="2012.1.528.0">
+      <__DataMembers />
+    </WpfSettings>
+    <ClientReadyTimeout Type="System.Int32">30000</ClientReadyTimeout>
+    <ExecuteCommandTimeout Type="System.Int32">20000</ExecuteCommandTimeout>
+    <LogLocation Type="System.String">C:\WebAiiLog\</LogLocation>
+    <QueryEventLogErrorsOnExit Type="System.Boolean">False</QueryEventLogErrorsOnExit>
+    <ExecutionDelay Type="System.Int32">0</ExecutionDelay>
+    <AnnotateExecution Type="System.Boolean">False</AnnotateExecution>
+    <SimulatedMouseMoveSpeed Type="System.Single">0.3</SimulatedMouseMoveSpeed>
+    <WaitCheckInterval Type="System.Int32">500</WaitCheckInterval>
+    <AnnotationMode Type="ArtOfTest.WebAii.Core.AnnotationMode">All</AnnotationMode>
+    <LogAnnotations Type="System.Boolean">False</LogAnnotations>
+    <IsStressRecordingMode Type="System.Boolean">False</IsStressRecordingMode>
+    <IsUserInteractiveMode Type="System.Boolean">False</IsUserInteractiveMode>
+    <CreateLogFile Type="System.Boolean">True</CreateLogFile>
+    <XMultiMgr Type="System.Boolean">True</XMultiMgr>
+    <UnexpectedDialogAction Type="ArtOfTest.WebAii.Core.UnexpectedDialogAction">HandleAndFailTest</UnexpectedDialogAction>
+    <ElementWaitTimeout Type="System.Int32">10000</ElementWaitTimeout>
+    <DisableDialogMonitoring Type="System.Boolean">False</DisableDialogMonitoring>
+    <__DataMembers />
+  </Settings>
+  <Tests>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.528.0">
+      <ID Type="System.String">9ceaf6fe-2281-4c74-a733-ea1902a74d62</ID>
+      <Path Type="System.String">.NET Tests\Navigating to Rad page renders grid.tstest</Path>
+      <__DataMembers />
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.528.0">
+      <ID Type="System.String">40de4c12-8ead-4233-9677-4c4f415b2abf</ID>
+      <Path Type="System.String">.NET Tests\RadGrid displays proper baseline data.tstest</Path>
+      <__DataMembers />
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.528.0">
+      <ID Type="System.String">198dcf43-97d6-460f-ae6e-d688a1770b77</ID>
+      <Path Type="System.String">.NET Tests\WebTest1.tstest</Path>
+      <__DataMembers />
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.528.0">
+      <ID Type="System.String">e90b8469-7f9b-4473-9e38-4181982813a9</ID>
+      <Path Type="System.String">Initial Grid\Baseline data in grid displays correctly.tstest</Path>
+      <__DataMembers />
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.528.0">
+      <ID Type="System.String">58ac8d91-fa15-485e-8b4a-c01fbaeb23af</ID>
+      <Path Type="System.String">Initial Grid\Can export contacts to PDF on filesystem.tstest</Path>
+      <__DataMembers />
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.528.0">
+      <ID Type="System.String">3539876f-f1d9-4bdd-a638-ef04a9c61ecb</ID>
+      <Path Type="System.String">Initial Grid\Can export grid to PDF.tstest</Path>
+      <__DataMembers />
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.528.0">
+      <ID Type="System.String">163568be-2153-4953-8b29-bbcc53b3a211</ID>
+      <Path Type="System.String">Initial Grid\Coded Validation of grid.tstest</Path>
+      <__DataMembers />
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.528.0">
+      <ID Type="System.String">3a67af50-a176-4237-97df-8c6a66252944</ID>
+      <Path Type="System.String">Initial Grid\Exporting Grid to PDF saves a file to filesystem.tstest</Path>
+      <__DataMembers />
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.528.0">
+      <ID Type="System.String">80aa2daf-a4a2-40dd-8ae9-0696b60c297d</ID>
+      <Path Type="System.String">Initial Grid\Verify home page.tstest</Path>
+      <__DataMembers />
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.528.0">
+      <ID Type="System.String">f0ce802e-918c-4a14-81ce-573dcd0b68fe</ID>
+      <Path Type="System.String">Login\Log on only if needed.tstest</Path>
+      <__DataMembers />
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.528.0">
+      <ID Type="System.String">bb96b034-5560-4909-bf1a-096866fc288e</ID>
+      <Path Type="System.String">Login\Login Submit button disabled until both username &amp; password entered.tstest</Path>
+      <__DataMembers />
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.528.0">
+      <ID Type="System.String">84102f18-2ac8-4333-bc34-70cc2d6490a1</ID>
+      <Path Type="System.String">Login\Providing valid credentials logs user on.tstest</Path>
+      <__DataMembers />
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.528.0">
+      <ID Type="System.String">b0cbe79a-5836-4d42-9a31-1836b210f99c</ID>
+      <Path Type="System.String">New Contact\Adding empty contact generates appropriate field and style errors.tstest</Path>
+      <__DataMembers />
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.528.0">
+      <ID Type="System.String">9a93adf3-2867-4d54-af7c-f1bef6277a98</ID>
+      <Path Type="System.String">New Contact\Can create a new contact.tstest</Path>
+      <__DataMembers />
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.528.0">
+      <ID Type="System.String">6ef4f20c-2dda-419c-997c-854a69210f65</ID>
+      <Path Type="System.String">New Contact\Clicking New Contact from grid opens form in new window.tstest</Path>
+      <__DataMembers />
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.528.0">
+      <ID Type="System.String">1ed756a3-39b5-4dee-a24d-4e2f7a4a19aa</ID>
+      <Path Type="System.String">New Contact\Dragging Contact Types to new contact sets correct values.tstest</Path>
+      <__DataMembers />
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.528.0">
+      <ID Type="System.String">6297519a-b92c-43dd-8442-7e9f619d4431</ID>
+      <Path Type="System.String">New Contact\Saving a New Contact with valid values shows user on grid(1).tstest</Path>
+      <__DataMembers />
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.528.0">
+      <ID Type="System.String">6297519a-b92c-43dd-8442-7e9f619d4431</ID>
+      <Path Type="System.String">New Contact\Saving a New Contact with valid values shows user on grid.tstest</Path>
+      <__DataMembers />
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.528.0">
+      <ID Type="System.String">63fd6445-3a5a-4d65-993c-18ac49aa939f</ID>
+      <Path Type="System.String">Support\Delete all users with @foo.com mail addresses.tstest</Path>
+      <__DataMembers />
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.528.0">
+      <ID Type="System.String">56b4d87e-212b-43bf-8837-343abe075712</ID>
+      <Path Type="System.String">Support\Log in if needed.tstest</Path>
+      <__DataMembers />
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.528.0">
+      <ID Type="System.String">0b9e27cb-289a-4e33-aa3e-54aa90a689c4</ID>
+      <Path Type="System.String">Support\Log OUT if needed.tstest</Path>
+      <__DataMembers />
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.528.0">
+      <ID Type="System.String">8eb8dc06-2ebb-4108-89cc-3383d5f89cf9</ID>
+      <Path Type="System.String">Working With AJAX\AJAX Menu demo.tstest</Path>
+      <__DataMembers />
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.528.0">
+      <ID Type="System.String">1824807f-83a8-4255-bea0-23f0faa8a982</ID>
+      <Path Type="System.String">Working With AJAX\AJAX Menu Items Can Be Validated.tstest</Path>
+      <__DataMembers />
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.528.0">
+      <ID Type="System.String">1474152c-4a5e-4ce3-ad41-644a286aac61</ID>
+      <Path Type="System.String">Working With AJAX\Drop Down Waits.tstest</Path>
+      <__DataMembers />
+    </Item>
+    <Item Type="ArtOfTest.WebAii.Design.Execution.TestInfo" Version="2012.1.528.0">
+      <ID Type="System.String">88dcce55-db86-4d9c-917f-9721e62f6ea5</ID>
+      <Path Type="System.String">Working with iFrames\LinkedIn profile renders in iFrame.tstest</Path>
+      <__DataMembers />
+    </Item>
+  </Tests>
+  <Filter Type="ArtOfTest.WebAii.Design.Execution.Filter" Version="2012.1.528.0">
+    <Keys />
+    <Comparisons />
+    <Values />
+    <__DataMembers />
+  </Filter>
+  <TestListType Type="ArtOfTest.WebAii.Design.TestListType">Automated</TestListType>
+  <__DataMembers />
+</TestList>
