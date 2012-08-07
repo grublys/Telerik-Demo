@@ -46,7 +46,7 @@ Start the rails server
 
 Production URL is http://growing-planet-634.herokuapp.com/welcome
 
-Add a remote location for git to push to
+Add a remote location for git to push to [first time only]
 
 ```$ git remote add heroku git@heroku.com:growing-planet-634.git```
 
