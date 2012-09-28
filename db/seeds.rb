@@ -14,3 +14,4 @@ Contact.create(first_name: 'Matthew', last_name: 'Boston',
 
 User.delete_all
 User.create(username: 'testuser', password: 'abc123')
+User.create(username: 'newuser', password: 'def456')
