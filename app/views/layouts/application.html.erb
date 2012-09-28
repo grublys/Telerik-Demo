@@ -11,8 +11,9 @@
   <div id="top-bar">
     <h1><%= image_tag 'TelerikLogo.png' %> </h1>
     <div id="top-menu">
-      <%= link_to 'Home', root_path %>
-      <%= link_to 'Help', help_path %>
+	    <%= link_to 'Home', root_path, :id => 'home_link' %>
+	    <%#= link_to 'FAQs', root_path, :id => 'faq_link' %>
+      <%= link_to 'Help', help_path, :id => 'help_link' %>
       <%= render 'sessions/login' %>
     </div>
   </div>
