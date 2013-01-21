@@ -43,7 +43,8 @@
     <%= image_tag 'COLD.png'    , 'draggable' => true , 'data-lead_type' => 'COLD' %>
   </div>
   <div class="field">
-    <%= f.label :lead_type %><br />
+	  
+    <p>Drag a lead type to the box below</p>
     <div class="drop_target">
       <%= image_tag(lead_type_icon(@contact.lead_type)) if @contact.lead_type %>
     </div>
