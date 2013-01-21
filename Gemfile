@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rake', '0.8.7'
+gem 'rake', '0.9.2.2'
 gem 'rails', '3.1.0'
 gem 'jquery-rails'
 gem 'heroku'
@@ -18,9 +18,6 @@ group :development do
   gem 'sqlite3'
 end
 
-group :production do
-  gem 'pg'
-end
 
 group :test do
   gem 'turn', :require => false
