@@ -4,9 +4,13 @@
   <% end %>
   <br />
   <%= form_tag sessions_path, :remote => true do %>
-    <div class="field">
+
+
+	<div class="field">
       <%= label_tag :username %>
-      <!--
+      <!-- XPath for first field
+		/html/body/div[3]/div[2]/form/div[2]/input
+
       The next two lines let you quickly change ID values for the username field. This
       lets you quickly show how UI changes can break tests. 
       0) Uncomment 1st line by deleting the "#" in the starting tag
@@ -14,13 +18,19 @@
       	but without spaces (spaces keep it from being parsed)
       	< % # text_field_tag ...
       -->
-      <%#= text_field_tag :username, params[:username], :id => 'newid' %>
+      <%#= text_field_tag :username, params[:username], :id => 'newid' %> 
       <%= text_field_tag :username, params[:username] %>
     </div>
+
     <div class="field">
+      <!-- XPath for second field
+		/html/body/div[3]/div[2]/form/div[3]/input
+	-->
       <%= label_tag :password %>
       <%= password_field_tag :password %>
+      <%#= text_field_tag :password %>
     </div>
+
     <div class="actions"><%= submit_tag "Log in", :id => 'login_button' %> or <%= link_to 'Cancel', '#', :id => 'cancel_login' %></div>
   <% end %>
 </div>
