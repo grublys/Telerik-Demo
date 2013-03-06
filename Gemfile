@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rake', '0.9.2.2'
 gem 'rails', '3.1.0'
-gem 'jquery-rails'
+gem 'jquery-rails', '1.0.14'
 gem 'heroku'
 gem 'prawn' # pdf generation
 
